@@ -1,0 +1,10 @@
+# 04 — Adversarial Stress-Test Matrix (Freeze-Spec v3.0)
+
+| # | Real-World Adversary | Root-Cause Fix in v3.0 | Automated Verification Gate |
+|---|---|---|---|
+| 1 | Visiting closed stops on morning/night trips (`vt_banh_khot_bai_sau` at `06:06` before `06:30` open; `02:44 AM` dining) | Bounded early-arrival wait buffer (`wait_minutes <= 30/45m`) + strict open-hour enforcement across all passes; Pass 2 only relaxes stop count (`>=1` 24/7 stop). | 48-hour bidirectional sweep on `hcm_vungtau` and night sweep on `hcm_nhatrang` (`test_ticket_02`, `test_ticket_04`). |
+| 2 | Cross-branch teleportation (`MAIN_SPINE km 338 -> BAUTRANG_COAST km 356`) | `corridor_branches` `[diverge_km, merge_km]` exclusion: no `MAIN_SPINE` stop permitted inside `(diverge_km, merge_km)` when branch is active. | 96-run sweep verifying physical interchange windows (`test_ticket_03`, `test_ticket_05`). |
+| 3 | Pareto dominance violation (`P3` beating `P2` on all metrics at `01:00`) | 5D objective vector `(-drive, -detour, +utility, +scenic, -hazard)` with strict Pareto non-dominance filtering across portfolio. | 96-run dominance sweep (`test_ticket_03`). |
+| 4 | Poisoned session state after `HTTP 409` mutation | Atomic copy-on-write mutation: `SessionRecord` is only saved to SQLite after solver confirms requested `candidate_id` is feasible. | Multi-turn 409 rollback & archetype-integrity gate (`test_ticket_07`). |
+| 5 | Sequential Goong timeouts (`3 x 390ms = 1.18s`) & stale stop clocks on congestion | Shared `httpx.AsyncClient` + `asyncio.gather` inside `asyncio.wait_for(..., timeout=0.280)` + full per-leg clock re-propagation. | Delayed-socket `<350ms` wall-clock gate & congestion clock coherence gate (`test_ticket_08`). |
+| 6 | Unicode `NFD` shill bypass, `SĐT0909...` PII leak, JSON-LD poisoning | Boundary `NFC` normalization, non-word-boundary phone regex, entity-name JSON-LD matcher, direct SQLite promotion. | NFC/NFD equivalence, PII fuzz, JSON-LD entity binding, and SQLite promotion gate (`test_ticket_09`). |

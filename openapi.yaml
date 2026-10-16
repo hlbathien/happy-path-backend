@@ -1,0 +1,548 @@
+openapi: 3.1.0
+info:
+  title: VMAP Happy Path Autopilot API (Freeze-Spec v3.0)
+  description: Zero-cost Pareto-optimal road-trip synthesis backend for Vietnam (HCMC
+    <-> Da Lat, Nha Trang, Vung Tau) with Physical Highway Interchanges, 48-Hour Schedule
+    Validity, EV Fast-Charging, VETC Tolls & Transactional Session Mutations.
+  version: 3.0.0
+paths:
+  /v1/itineraries/plan:
+    post:
+      tags:
+      - Autopilot Planner
+      summary: Plan Itineraries
+      operationId: plan_itineraries_v1_itineraries_plan_post
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PlanRequest'
+        required: true
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PlanResponse'
+        '400':
+          description: Invalid corridor or slice
+        '409':
+          description: No feasible route under constraints
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /v1/itineraries/mutate:
+    post:
+      tags:
+      - Autopilot Planner
+      summary: Mutate Itinerary
+      operationId: mutate_itinerary_v1_itineraries_mutate_post
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/MutateRequest'
+        required: true
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MutateResponse'
+        '404':
+          description: Session not found
+        '409':
+          description: Infeasible mutation rolled back without modifying session
+        '422':
+          description: Invalid mutation action parameter
+  /v1/corridors/health:
+    get:
+      tags:
+      - System Health
+      summary: Corridor Health
+      operationId: corridor_health_v1_corridors_health_get
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CorridorHealthResponse'
+components:
+  schemas:
+    CandidateArchetype:
+      title: CandidateArchetype
+      enum:
+      - P1_EXPRESS
+      - P2_ICONIC
+      - P3_SCENIC
+      type: string
+      description: An enumeration.
+    Coordinate:
+      title: Coordinate
+      required:
+      - lat
+      - lng
+      type: object
+      properties:
+        lat:
+          title: Lat
+          maximum: 23.5
+          minimum: 8.0
+          type: number
+          description: 'Latitude in decimal degrees (Vietnam bounds: 8.0 to 23.5)'
+        lng:
+          title: Lng
+          maximum: 110.0
+          minimum: 102.0
+          type: number
+          description: 'Longitude in decimal degrees (Vietnam bounds: 102.0 to 110.0)'
+    CorridorHealthItem:
+      title: CorridorHealthItem
+      required:
+      - corridor_id
+      - name_vi
+      - total_spine_km
+      - verified_poi_count
+      - branches
+      - bidirectional_ready
+      type: object
+      properties:
+        corridor_id:
+          title: Corridor Id
+          type: string
+        name_vi:
+          title: Name Vi
+          type: string
+        total_spine_km:
+          title: Total Spine Km
+          type: number
+        verified_poi_count:
+          title: Verified Poi Count
+          type: integer
+        branches:
+          title: Branches
+          type: array
+          items:
+            type: string
+        bidirectional_ready:
+          title: Bidirectional Ready
+          type: boolean
+    CorridorHealthResponse:
+      title: CorridorHealthResponse
+      required:
+      - status
+      - engine
+      - corridors
+      type: object
+      properties:
+        status:
+          title: Status
+          type: string
+        engine:
+          title: Engine
+          type: string
+        corridors:
+          title: Corridors
+          type: array
+          items:
+            $ref: '#/components/schemas/CorridorHealthItem'
+    HTTPValidationError:
+      title: HTTPValidationError
+      type: object
+      properties:
+        detail:
+          title: Detail
+          type: array
+          items:
+            $ref: '#/components/schemas/ValidationError'
+    MutateRequest:
+      title: MutateRequest
+      required:
+      - session_id
+      - action
+      type: object
+      properties:
+        session_id:
+          title: Session Id
+          minLength: 4
+          type: string
+          description: Stateful trip session ID returned by /plan
+        corridor_id:
+          title: Corridor Id
+          type: string
+        direction:
+          title: Direction
+          type: string
+        candidate_id:
+          allOf:
+          - $ref: '#/components/schemas/CandidateArchetype'
+          default: P2_ICONIC
+        action:
+          $ref: '#/components/schemas/MutationAction'
+        target_poi_id:
+          title: Target Poi Id
+          type: string
+        target_category:
+          title: Target Category
+          type: string
+        new_departure_iso:
+          title: New Departure Iso
+          type: string
+        locked_poi_ids:
+          title: Locked Poi Ids
+          type: array
+          items:
+            type: string
+        rejected_poi_ids:
+          title: Rejected Poi Ids
+          type: array
+          items:
+            type: string
+    MutateResponse:
+      title: MutateResponse
+      required:
+      - session_id
+      - mutated_candidate
+      - duration_delta_minutes
+      - cumulative_locked_poi_ids
+      - cumulative_rejected_poi_ids
+      - delta_summary_vi
+      type: object
+      properties:
+        session_id:
+          title: Session Id
+          type: string
+        mutated_candidate:
+          $ref: '#/components/schemas/ParetoCandidate'
+        duration_delta_minutes:
+          title: Duration Delta Minutes
+          type: integer
+        cumulative_locked_poi_ids:
+          title: Cumulative Locked Poi Ids
+          type: array
+          items:
+            type: string
+        cumulative_rejected_poi_ids:
+          title: Cumulative Rejected Poi Ids
+          type: array
+          items:
+            type: string
+        delta_summary_vi:
+          title: Delta Summary Vi
+          type: string
+    MutationAction:
+      title: MutationAction
+      enum:
+      - REMOVE_STOP
+      - LOCK_STOP
+      - SKIP_CATEGORY
+      - SHIFT_DEPARTURE
+      type: string
+      description: An enumeration.
+    ParetoCandidate:
+      title: ParetoCandidate
+      required:
+      - candidate_id
+      - label
+      - corridor_id
+      - active_branch_id
+      - direction
+      - powertrain
+      - total_drive_minutes
+      - total_dwell_minutes
+      - total_duration_minutes
+      - total_detour_minutes
+      - estimated_vetc_toll_vnd
+      - ev_charging_satisfied
+      - aggregate_utility_score
+      - aggregate_scenic_score
+      - hazard_risk_score
+      - tradeoff_summary_vi
+      - encoded_polyline
+      - stops
+      type: object
+      properties:
+        candidate_id:
+          $ref: '#/components/schemas/CandidateArchetype'
+        label:
+          title: Label
+          type: string
+        corridor_id:
+          title: Corridor Id
+          type: string
+        active_branch_id:
+          title: Active Branch Id
+          type: string
+        direction:
+          title: Direction
+          type: string
+        powertrain:
+          $ref: '#/components/schemas/PowertrainMode'
+        total_drive_minutes:
+          title: Total Drive Minutes
+          type: integer
+        total_dwell_minutes:
+          title: Total Dwell Minutes
+          type: integer
+        total_wait_minutes:
+          title: Total Wait Minutes
+          type: integer
+          default: 0
+        total_duration_minutes:
+          title: Total Duration Minutes
+          type: integer
+        total_detour_minutes:
+          title: Total Detour Minutes
+          type: integer
+        estimated_vetc_toll_vnd:
+          title: Estimated Vetc Toll Vnd
+          type: integer
+        ev_charging_satisfied:
+          title: Ev Charging Satisfied
+          type: boolean
+        aggregate_utility_score:
+          title: Aggregate Utility Score
+          type: number
+        aggregate_scenic_score:
+          title: Aggregate Scenic Score
+          type: number
+        hazard_risk_score:
+          title: Hazard Risk Score
+          type: number
+        tradeoff_summary_vi:
+          title: Tradeoff Summary Vi
+          type: string
+        encoded_polyline:
+          title: Encoded Polyline
+          type: string
+        stops:
+          title: Stops
+          type: array
+          items:
+            $ref: '#/components/schemas/PlannedStop'
+        warnings:
+          title: Warnings
+          type: array
+          items:
+            type: string
+    PlanRequest:
+      title: PlanRequest
+      required:
+      - origin_query
+      - destination_query
+      type: object
+      properties:
+        origin_query:
+          title: Origin Query
+          minLength: 2
+          type: string
+          example: Ho Chi Minh City
+        destination_query:
+          title: Destination Query
+          minLength: 2
+          type: string
+          example: Da Lat
+        origin_coords:
+          $ref: '#/components/schemas/Coordinate'
+        destination_coords:
+          $ref: '#/components/schemas/Coordinate'
+        departure_iso:
+          title: Departure Iso
+          type: string
+          description: ISO-8601 departure timestamp or HH:MM (Vietnam UTC+7)
+          default: '2026-10-16T06:00:00+07:00'
+        vehicle_mode:
+          allOf:
+          - $ref: '#/components/schemas/VehicleMode'
+          default: car
+        powertrain:
+          allOf:
+          - $ref: '#/components/schemas/PowertrainMode'
+          default: ice
+        sedan_safe_only:
+          title: Sedan Safe Only
+          type: boolean
+          default: true
+    PlanResponse:
+      title: PlanResponse
+      required:
+      - session_id
+      - corridor_id
+      - corridor_name_vi
+      - direction
+      - active_start_km
+      - active_end_km
+      - departure_clock
+      - time_bucket
+      - powertrain
+      - candidates
+      type: object
+      properties:
+        session_id:
+          title: Session Id
+          type: string
+        corridor_id:
+          title: Corridor Id
+          type: string
+        corridor_name_vi:
+          title: Corridor Name Vi
+          type: string
+        direction:
+          title: Direction
+          type: string
+        active_start_km:
+          title: Active Start Km
+          type: number
+        active_end_km:
+          title: Active End Km
+          type: number
+        departure_clock:
+          title: Departure Clock
+          type: string
+        time_bucket:
+          title: Time Bucket
+          type: string
+        powertrain:
+          $ref: '#/components/schemas/PowertrainMode'
+        candidates:
+          title: Candidates
+          type: array
+          items:
+            $ref: '#/components/schemas/ParetoCandidate'
+    PlannedStop:
+      title: PlannedStop
+      required:
+      - stop_order
+      - poi_id
+      - branch_id
+      - goong_place_id
+      - name_vi
+      - commune_name
+      - category
+      - exertion_level
+      - has_ev_charge
+      - is_arrival_anchor
+      - coordinates
+      - corridor_km_from_hcm
+      - progress_km_from_origin
+      - arrival_clock
+      - service_start_clock
+      - departure_clock
+      - dwell_minutes
+      - detour_minutes
+      - utility_score
+      - scenic_score
+      - tradeoff_note_vi
+      - source_url
+      type: object
+      properties:
+        stop_order:
+          title: Stop Order
+          type: integer
+        poi_id:
+          title: Poi Id
+          type: string
+        branch_id:
+          title: Branch Id
+          type: string
+        goong_place_id:
+          title: Goong Place Id
+          type: string
+        name_vi:
+          title: Name Vi
+          type: string
+        commune_name:
+          title: Commune Name
+          type: string
+        category:
+          title: Category
+          type: string
+        exertion_level:
+          title: Exertion Level
+          type: string
+        has_ev_charge:
+          title: Has Ev Charge
+          type: boolean
+        is_arrival_anchor:
+          title: Is Arrival Anchor
+          type: boolean
+        coordinates:
+          $ref: '#/components/schemas/Coordinate'
+        corridor_km_from_hcm:
+          title: Corridor Km From Hcm
+          type: number
+        progress_km_from_origin:
+          title: Progress Km From Origin
+          type: number
+        arrival_clock:
+          title: Arrival Clock
+          type: string
+        service_start_clock:
+          title: Service Start Clock
+          type: string
+        wait_minutes:
+          title: Wait Minutes
+          type: integer
+          default: 0
+        departure_clock:
+          title: Departure Clock
+          type: string
+        dwell_minutes:
+          title: Dwell Minutes
+          type: integer
+        detour_minutes:
+          title: Detour Minutes
+          type: integer
+        utility_score:
+          title: Utility Score
+          type: number
+        scenic_score:
+          title: Scenic Score
+          type: number
+        tradeoff_note_vi:
+          title: Tradeoff Note Vi
+          type: string
+        source_url:
+          title: Source Url
+          type: string
+    PowertrainMode:
+      title: PowertrainMode
+      enum:
+      - ice
+      - ev
+      type: string
+      description: An enumeration.
+    ValidationError:
+      title: ValidationError
+      required:
+      - loc
+      - msg
+      - type
+      type: object
+      properties:
+        loc:
+          title: Location
+          type: array
+          items:
+            anyOf:
+            - type: string
+            - type: integer
+        msg:
+          title: Message
+          type: string
+        type:
+          title: Error Type
+          type: string
+    VehicleMode:
+      title: VehicleMode
+      enum:
+      - car
+      - suv
+      type: string
+      description: An enumeration.
