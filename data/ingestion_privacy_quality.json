@@ -1,0 +1,29 @@
+{
+  "ingestion_sources.jsonl": {
+    "records": 329,
+    "pii_matches": 0,
+    "non_nfc_strings": 0,
+    "unique_video_comment_texts": 1069,
+    "video_receipts_without_literal_entity_binding": 48
+  },
+  "ingestion_discovery.jsonl": {
+    "records": 66,
+    "pii_matches": 0,
+    "non_nfc_strings": 0
+  },
+  "ingestion_audit.jsonl": {
+    "records": 58,
+    "pii_matches": 0,
+    "non_nfc_strings": 0
+  },
+  "ingestion_targets.json": {
+    "records": 69,
+    "pii_matches": 0,
+    "non_nfc_strings": 0
+  },
+  "ingestion_candidates.json": {
+    "records": 4,
+    "pii_matches": 0,
+    "non_nfc_strings": 0
+  }
+}

@@ -136,7 +136,7 @@ class MutateRequest(BaseModel):
     locked_poi_ids: List[str] = Field(default_factory=list)
     rejected_poi_ids: List[str] = Field(default_factory=list)
 
-    @root_validator
+    @root_validator(skip_on_failure=True)
     def validate_action_required_fields(cls, values: dict) -> dict:
         action = values.get("action")
         target_poi = (values.get("target_poi_id") or "").strip()

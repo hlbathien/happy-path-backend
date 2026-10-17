@@ -68,21 +68,16 @@ class GoongClient:
 
                     legs = r0.get("legs") or []
                     leg_secs = [int((leg.get("duration") or {}).get("value", 0)) for leg in legs]
-                    live_secs = sum(leg_secs)
-                    if live_secs > 0:
-                        live_mins = max(5, live_secs // 60)
+                    # Only complete, positive live legs can define a stop schedule.
+                    if len(leg_secs) == len(candidate.stops) + 1 and all(s > 0 for s in leg_secs):
+                        per_leg_mins = [max(5, s // 60) for s in leg_secs]
+                        live_mins = sum(per_leg_mins)
                         baseline_drive = candidate.total_drive_minutes
-                        if live_mins > int(baseline_drive * 1.35):
-                            # Re-propagate stop arrival/service/departure clocks coherently
+                        if sum(leg_secs) / 60 > baseline_drive * 1.35:
+                            # Preserve opening-hour wait buffers and use the same leg
+                            # minutes for both stop clocks and portfolio totals.
                             dep_min, _, _ = parse_departure_minute_and_bucket(departure_iso)
                             curr_min = dep_min
-                            num_legs = max(1, len(candidate.stops) + 1)
-                            if len(leg_secs) == num_legs:
-                                per_leg_mins = [max(5, s // 60) for s in leg_secs]
-                            else:
-                                ratio = live_mins / max(1, baseline_drive)
-                                per_leg_mins = [max(5, int(round((live_mins / num_legs)))) for _ in range(num_legs)]
-                                _ = ratio
 
                             for idx, stop in enumerate(candidate.stops):
                                 leg_m = per_leg_mins[idx]
@@ -130,7 +125,7 @@ class GoongClient:
                     ),
                     return_exceptions=True,
                 ),
-                timeout=self.timeout_sec,
+                timeout=0.280,
             )
         except Exception:
             pass

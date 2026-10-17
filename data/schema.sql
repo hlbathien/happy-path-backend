@@ -75,6 +75,47 @@ CREATE TABLE IF NOT EXISTS poi_co_occurrence (
     PRIMARY KEY (corridor_id, from_poi_id, to_poi_id)
 );
 
+CREATE TABLE IF NOT EXISTS poi_verifications (
+    poi_id TEXT PRIMARY KEY REFERENCES pois(poi_id),
+    lifetime_rating REAL NOT NULL CHECK (lifetime_rating BETWEEN 1.0 AND 5.0),
+    trailing_90d_rating REAL NOT NULL CHECK (trailing_90d_rating BETWEEN 1.0 AND 5.0),
+    total_review_count INTEGER NOT NULL,
+    total_low_review_count INTEGER,
+    verified_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS poi_review_evidence (
+    poi_id TEXT NOT NULL REFERENCES pois(poi_id),
+    review_key TEXT NOT NULL,
+    published_on TEXT NOT NULL,
+    rating REAL NOT NULL CHECK (rating BETWEEN 1.0 AND 5.0),
+    review_text TEXT NOT NULL,
+    source_url TEXT NOT NULL,
+    PRIMARY KEY (poi_id, review_key)
+);
+
+CREATE TABLE IF NOT EXISTS poi_co_occurrence_sources (
+    corridor_id TEXT NOT NULL,
+    from_poi_id TEXT NOT NULL,
+    to_poi_id TEXT NOT NULL,
+    source_url TEXT NOT NULL,
+    PRIMARY KEY (corridor_id, from_poi_id, to_poi_id, source_url),
+    FOREIGN KEY (corridor_id, from_poi_id, to_poi_id)
+        REFERENCES poi_co_occurrence(corridor_id, from_poi_id, to_poi_id)
+);
+
+CREATE TABLE IF NOT EXISTS ingestion_audit (
+    audit_id INTEGER PRIMARY KEY,
+    collected_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    corridor_id TEXT NOT NULL,
+    poi_id TEXT NOT NULL,
+    venue_name TEXT NOT NULL,
+    source_url TEXT NOT NULL,
+    accepted INTEGER NOT NULL CHECK (accepted IN (0, 1)),
+    rejection_reason TEXT NOT NULL,
+    CHECK (accepted = 1 OR length(rejection_reason) > 0)
+);
+
 CREATE TABLE IF NOT EXISTS trip_sessions (
     session_id TEXT PRIMARY KEY,
     corridor_id TEXT NOT NULL REFERENCES corridors(corridor_id),

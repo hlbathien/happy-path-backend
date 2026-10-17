@@ -1,0 +1,11 @@
+{
+  "seed_targets": 25,
+  "new_discovered": 48,
+  "total_targets": 69,
+  "raw_targets_before_type_quarantine": 73,
+  "new_venue_candidate_targets": 44,
+  "quarantined_geographic_matches": 4,
+  "independent_commune_verified": false,
+  "routing_attributes_verified": false,
+  "admitted_to_pois": 0
+}

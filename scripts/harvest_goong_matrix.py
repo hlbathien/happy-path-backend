@@ -1,4 +1,12 @@
 #!/usr/bin/env python3
-"""Chunked 10x10 Goong Distance Matrix V2, Autocomplete V2 & Speed Limit API (speedlimit.goong.io) harvester."""
+"""Harvest real <=10x10 static Goong road matrices for admitted venues; no invented travel times."""
+import asyncio
+import json
+from pathlib import Path
+from happy_path.config import DB_PATH, GOONG_BASE_URL, load_goong_key
+from happy_path.core.collection import harvest_verified_edges
+
 if __name__ == "__main__":
-    print("Goong V2 10x10 matrix & Speed Limit v3.2 harvester ready.")
+    result = asyncio.run(harvest_verified_edges(DB_PATH, load_goong_key(), GOONG_BASE_URL,
+                                              Path(__file__).resolve().parent.parent / "data/ingestion_matrix_sources.jsonl"))
+    print(json.dumps(result))

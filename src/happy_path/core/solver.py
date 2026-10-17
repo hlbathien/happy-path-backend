@@ -369,7 +369,8 @@ def _enumerate_candidates_for_archetype(
         warnings: List[str] = []
         if uv_lock_override:
             warnings.append("UV_LOCK_OVERRIDE_WARNING: Điểm dừng khóa cố định nằm trong khung giờ nắng gắt 11:00-14:30.")
-        if min_stops == 1 and len(seq) == 1:
+        if (min_stops == 1 and len(seq) == 1
+                and seq[0].open_minute == 0 and seq[0].close_minute == 1440):
             warnings.append("NIGHT_SAFE_REST_ROUTING: Khung giờ đặc biệt, lộ trình chỉ giữ các trạm dừng/điểm ngắm cảnh đang mở cửa 24/7.")
 
         cand = ParetoCandidate(
@@ -413,6 +414,7 @@ def solve_pareto_portfolio(
     locked_ids: Optional[Set[str]] = None,
     rejected_ids: Optional[Set[str]] = None,
     skip_categories: Optional[Set[str]] = None,
+    preferred_candidate_id: Optional[CandidateArchetype] = None,
 ) -> Tuple[str, str, List[ParetoCandidate]]:
     dep_min, dep_clock, bucket = parse_departure_minute_and_bucket(departure_iso)
     end_km = active_end_km if active_end_km is not None else corridor.total_spine_km
@@ -434,7 +436,12 @@ def solve_pareto_portfolio(
     used_sigs: Set[Tuple[str, ...]] = set()
     portfolio: List[ParetoCandidate] = []
 
-    for arch in (CandidateArchetype.P1_EXPRESS, CandidateArchetype.P2_ICONIC, CandidateArchetype.P3_SCENIC):
+    archetypes = (CandidateArchetype.P1_EXPRESS, CandidateArchetype.P2_ICONIC, CandidateArchetype.P3_SCENIC)
+    if preferred_candidate_id is not None:
+        # A mutation must solve its requested archetype before other archetypes consume signatures.
+        archetypes = (preferred_candidate_id,) + tuple(arch for arch in archetypes if arch != preferred_candidate_id)
+    pools: Dict[CandidateArchetype, List[ParetoCandidate]] = {}
+    for arch in archetypes:
         # Pass 1: min_stops=2, max_wait_minutes=30 (always enforces open hours, UV shield, and exertion cap)
         pool = _enumerate_candidates_for_archetype(
             registry, corridor, direction, dep_min, bucket, arch, powertrain,
@@ -449,13 +456,21 @@ def solve_pareto_portfolio(
                 locked, rejected, skip_cats, min_stops=1, max_wait_minutes=45,
             )
 
+        pools[arch] = pool
+
+    # Compute the frontier before assigning archetypes: an unselected route can
+    # dominate an early choice just as a later archetype choice can. Metrics for
+    # the same stop sequence are identical across archetypes.
+    feasible = {tuple(s.poi_id for s in c.stops): c for pool in pools.values() for c in pool}
+    frontier = {
+        sig for sig, candidate in feasible.items()
+        if not any(dominates(other, candidate) for other in feasible.values())
+    }
+    for arch in archetypes:
         selected: Optional[ParetoCandidate] = None
-        for cand in pool:
+        for cand in pools[arch]:
             sig = tuple(s.poi_id for s in cand.stops)
-            if sig in used_sigs:
-                continue
-            # Strict 5D Pareto Non-Dominance Check against already selected portfolio members
-            if any(dominates(ex, cand) or dominates(cand, ex) for ex in portfolio):
+            if sig in used_sigs or sig not in frontier:
                 continue
             selected = cand
             break
@@ -464,9 +479,10 @@ def solve_pareto_portfolio(
             used_sigs.add(tuple(s.poi_id for s in selected.stops))
             portfolio.append(selected)
 
-    # Zero-Stop Direct-Drive Fallback for short/sparse slices (>= 10 km) where 0 intermediate POIs exist
+    # Sparse slices can drive directly unless locks or the long-span EV charger requirement forbid it.
     active_span_km = end_km - active_start_km
-    if not portfolio and not locked and active_span_km >= 10.0 and powertrain == PowertrainMode.ice:
+    require_ev_stop = powertrain == PowertrainMode.ev and active_span_km >= 180.0
+    if not portfolio and not locked and active_span_km >= 10.0 and not require_ev_stop:
         direct_drive_min = max(5, int(round((active_span_km / 52.0) * 60.0)))
         sliced_poly = registry.build_sliced_polyline(
             corridor=corridor,
@@ -477,7 +493,8 @@ def solve_pareto_portfolio(
             active_start_km=active_start_km,
             active_end_km=end_km,
         )
-        scaled_toll = int(round(corridor.base_vetc_toll_vnd * (active_span_km / corridor.total_spine_km)))
+        main_branch = registry.branches_by_corridor[corridor.corridor_id]["MAIN_SPINE"]
+        estimated_toll = max(0, corridor.base_vetc_toll_vnd + main_branch.toll_delta_vnd)
         portfolio.append(
             ParetoCandidate(
                 candidate_id=CandidateArchetype.P1_EXPRESS,
@@ -491,7 +508,7 @@ def solve_pareto_portfolio(
                 total_wait_minutes=0,
                 total_duration_minutes=direct_drive_min,
                 total_detour_minutes=0,
-                estimated_vetc_toll_vnd=scaled_toll,
+                estimated_vetc_toll_vnd=estimated_toll,
                 ev_charging_satisfied=True,
                 aggregate_utility_score=80.0,
                 aggregate_scenic_score=60.0,
@@ -499,7 +516,7 @@ def solve_pareto_portfolio(
                 tradeoff_summary_vi=f"P1: Lộ trình chạy thẳng trực tiếp ({active_span_km:.1f} km), lái xe {direct_drive_min} phút.",
                 encoded_polyline=sliced_poly,
                 stops=[],
-                warnings=["SPARSE_SLICE_DIRECT_DRIVE: Đoạn tuyến ngắn hoặc không có điểm dừng mở cửa, đề xuất lộ trình chạy thẳng trực tiếp."],
+                warnings=["SPARSE_SLICE_DIRECT_DRIVE: Đoạn tuyến ngắn hoặc ngoài giờ mở cửa, đề xuất lộ trình chạy thẳng trực tiếp."],
             )
         )
 

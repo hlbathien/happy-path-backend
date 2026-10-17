@@ -157,14 +157,20 @@ def build_database(db_path: Path = DEFAULT_DB_PATH) -> None:
                             (cid, u_id, v_id, bucket, drive_min, round(dist, 2), haz, poly),
                         )
         conn.commit()
+        integrity = conn.execute("PRAGMA integrity_check;").fetchall()
+        if integrity != [("ok",)]:
+            raise RuntimeError(f"Seed database integrity check failed: {integrity}")
     finally:
         conn.close()
 
-    # Atomic publication: try os.replace if on same filesystem, else write to temp in dest dir and os.replace
+    # Copy across filesystems, then atomically replace within the destination directory.
     dest_tmp = db_path.parent / f".{db_path.name}.tmp.{os.getpid()}"
-    shutil.copy2(str(tmp_db), str(dest_tmp))
-    os.replace(str(dest_tmp), str(db_path))
-    tmp_db.unlink(missing_ok=True)
+    try:
+        shutil.copy2(str(tmp_db), str(dest_tmp))
+        os.replace(str(dest_tmp), str(db_path))
+    finally:
+        dest_tmp.unlink(missing_ok=True)
+        tmp_db.unlink(missing_ok=True)
     print(f"[OK] Atomically built and published SQLite database at {db_path}")
 
 if __name__ == "__main__":

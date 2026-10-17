@@ -1,3 +1,4 @@
+import fcntl
 import hashlib
 import json
 import math
@@ -178,7 +179,10 @@ class CorridorRegistry:
         self.pois_by_id: Dict[str, POINode] = {}
         self.edges: Dict[Tuple[str, str, str, str], Tuple[int, float, float, str]] = {}
         self.co_occurrence: Dict[Tuple[str, str, str], float] = {}
-        self._load()
+        try:
+            self._load()
+        except sqlite3.DatabaseError as exc:
+            raise RuntimeError(f"Corrupt SQLite schema in {self.runtime_db_path}: {exc}") from exc
 
     @staticmethod
     def _verify_sqlite_file(path: Path) -> None:
@@ -197,23 +201,36 @@ class CorridorRegistry:
                 conn.execute("PRAGMA journal_mode = DELETE;")
                 conn.execute("PRAGMA synchronous = NORMAL;")
                 conn.execute("PRAGMA busy_timeout = 5000;")
-                conn.execute("BEGIN IMMEDIATE;")
-                conn.execute("SELECT count(*) FROM corridors;")
-                conn.rollback()
-                return src_path
+                for table in ("corridors", "corridor_branches", "pois", "corridor_edges", "poi_co_occurrence", "trip_sessions"):
+                    conn.execute(f"SELECT * FROM {table} LIMIT 0;")
+                try:
+                    conn.execute("BEGIN IMMEDIATE;")
+                except sqlite3.OperationalError:
+                    pass  # Only a failed lock acquisition selects shared storage.
+                else:
+                    conn.execute("ROLLBACK;")
+                    return src_path
             finally:
                 conn.close()
-        except sqlite3.OperationalError:
-            path_hash = hashlib.md5(str(src_path).encode("utf-8")).hexdigest()[:12]
-            shared_tmp = Path(f"/tmp/happy_path_shared_{path_hash}.db")
-            if not shared_tmp.exists() or src_path.stat().st_mtime > shared_tmp.stat().st_mtime + 1.0:
-                staging = Path(f"/tmp/happy_path_shared_{path_hash}.tmp")
-                shutil.copy2(str(src_path), str(staging))
-                staging.replace(shared_tmp)
-            self._verify_sqlite_file(shared_tmp)
-            return shared_tmp
         except sqlite3.DatabaseError as exc:
             raise RuntimeError(f"Corrupt SQLite schema in {src_path}: {exc}") from exc
+
+        path_hash = hashlib.md5(str(src_path).encode("utf-8")).hexdigest()
+        shared_tmp = Path(f"/tmp/happy_path_shared_{path_hash}.db")
+        # Serialize first publication so another worker cannot replace an active store.
+        with shared_tmp.with_suffix(".lock").open("a") as lock:
+            fcntl.flock(lock.fileno(), fcntl.LOCK_EX)
+            # Once published, the shared database owns durable session state.
+            # Source timestamps must never overwrite committed mutations on restart.
+            if not shared_tmp.exists():
+                staging = shared_tmp.with_suffix(".tmp")
+                try:
+                    shutil.copy2(str(src_path), str(staging))
+                    staging.replace(shared_tmp)
+                finally:
+                    staging.unlink(missing_ok=True)
+            self._verify_sqlite_file(shared_tmp)
+        return shared_tmp
 
     def _connect(self) -> sqlite3.Connection:
         conn = sqlite3.connect(str(self.runtime_db_path), timeout=5.0, isolation_level=None)
@@ -232,6 +249,7 @@ class CorridorRegistry:
                 p_rows = conn.execute("SELECT * FROM pois ORDER BY corridor_km ASC").fetchall()
                 e_rows = conn.execute("SELECT * FROM corridor_edges").fetchall()
                 co_rows = conn.execute("SELECT * FROM poi_co_occurrence").fetchall()
+                conn.execute("SELECT * FROM trip_sessions LIMIT 0;")
             except sqlite3.Error as exc:
                 raise RuntimeError(f"Failed loading required tables from {self.runtime_db_path}: {exc}") from exc
 
@@ -396,7 +414,7 @@ class CorridorRegistry:
         wps_directional = []
         for lat, lng, hcm_km in corridor.spine_waypoints:
             prog_km = hcm_km if direction == "outbound" else (corridor.total_spine_km - hcm_km)
-            if active_start_km + 1.0 < prog_km < active_end_km - 1.0:
+            if active_start_km < prog_km < active_end_km:
                 wps_directional.append((prog_km, lat, lng))
         wps_directional.sort(key=lambda item: item[0])
 
@@ -405,24 +423,18 @@ class CorridorRegistry:
             s_prog = s.corridor_km if direction == "outbound" else (corridor.total_spine_km - s.corridor_km)
             stop_items.append((s_prog, s.lat, s.lng))
 
-        # Merge stops and intermediate spine waypoints so len(vertices) >= len(stops) + 3
+        # Merge stops and intermediate spine waypoints in travel order.
         prev_km = active_start_km
         for s_prog, s_lat, s_lng in stop_items:
             for wp_km, wp_lat, wp_lng in wps_directional:
-                if prev_km + 2.0 < wp_km < s_prog - 2.0:
+                if prev_km < wp_km < s_prog:
                     pts.append((wp_lat, wp_lng))
             pts.append((s_lat, s_lng))
             prev_km = s_prog
 
         for wp_km, wp_lat, wp_lng in wps_directional:
-            if prev_km + 2.0 < wp_km < active_end_km - 2.0:
+            if prev_km < wp_km < active_end_km:
                 pts.append((wp_lat, wp_lng))
-
-        # Ensure at least one intermediate road vertex even if 0 stops and short slice
-        if len(pts) == 1:
-            mid_lat = round((origin_coord.lat + dest_coord.lat) / 2.0 + 0.0015, 6)
-            mid_lng = round((origin_coord.lng + dest_coord.lng) / 2.0 + 0.0015, 6)
-            pts.append((mid_lat, mid_lng))
 
         pts.append((dest_coord.lat, dest_coord.lng))
         return encode_polyline(pts)

@@ -1,0 +1,52 @@
+{
+  "raw_targets": 73,
+  "retained_acquisition_targets": 69,
+  "excluded_non_venues": [
+    {
+      "poi_id": "discovered_bd4288d22d2a70bc",
+      "name": "Vườn nho thái an - cô Hoa",
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ],
+      "reason": "Geographic primitive, not a verified consumer venue"
+    },
+    {
+      "poi_id": "discovered_f4ff00af8c49bbf3",
+      "name": "Quán Ăn Hải Sản Ốc Ben",
+      "types": [
+        "political",
+        "sublocality",
+        "sublocality_level_1"
+      ],
+      "reason": "Geographic primitive, not a verified consumer venue"
+    },
+    {
+      "poi_id": "discovered_6bad6eab67d5b37d",
+      "name": "Cà phê Vườn Đào",
+      "types": [
+        "premise",
+        "street_address"
+      ],
+      "reason": "Geographic primitive, not a verified consumer venue"
+    },
+    {
+      "poi_id": "discovered_b7ec67a39e84c51e",
+      "name": "Cà Phê Cây Sấu",
+      "types": [
+        "political",
+        "sublocality",
+        "sublocality_level_1"
+      ],
+      "reason": "Geographic primitive, not a verified consumer venue"
+    }
+  ],
+  "ambiguous_names": {
+    "thac pongour": 2,
+    "tram sac o to dien": 8,
+    "banh khot vung tau": 2
+  },
+  "review_verified": 0,
+  "admitted_to_pois": 0,
+  "note": "Identity and geographic staging only; this is not the review evidence or data-sufficiency gate."
+}

@@ -5,7 +5,7 @@ PYTHONPATH := src
 
 setup:
 	$(PYTHON) -m pip install --upgrade pip
-	$(PYTHON) -m pip install fastapi "uvicorn[standard]" httpx pydantic pytest pyyaml
+	$(PYTHON) -m pip install fastapi "uvicorn[standard]" httpx pydantic pytest pyyaml beautifulsoup4
 
 seed:
 	PYTHONPATH=$(PYTHONPATH) $(PYTHON) scripts/seed_db.py

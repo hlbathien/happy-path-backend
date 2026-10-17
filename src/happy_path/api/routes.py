@@ -1,3 +1,4 @@
+import sqlite3
 import uuid
 from fastapi import APIRouter, HTTPException, Request
 from happy_path.clients.goong import GoongClient
@@ -194,6 +195,7 @@ async def mutate_itinerary(payload: MutateRequest, request: Request) -> MutateRe
         locked_ids=staged.locked_poi_ids,
         rejected_ids=staged.rejected_poi_ids,
         skip_categories=staged.skip_categories,
+        preferred_candidate_id=payload.candidate_id,
     )
 
     # Strict Archetype Integrity: never silently substitute P2_ICONIC when P1_EXPRESS was requested!
@@ -239,16 +241,20 @@ async def mutate_itinerary(payload: MutateRequest, request: Request) -> MutateRe
 @router.get("/v1/corridors/health", response_model=CorridorHealthResponse, tags=["System Health"])
 async def corridor_health(request: Request) -> CorridorHealthResponse:
     registry: CorridorRegistry = request.app.state.registry
+    registry.reload()
+    with sqlite3.connect(registry.runtime_db_path) as conn:
+        verified_counts = dict(conn.execute(
+            "SELECT p.corridor_id,COUNT(*) FROM pois p JOIN poi_verifications v USING(poi_id) GROUP BY p.corridor_id"
+        ))
     items = []
     for cid, meta in registry.corridors.items():
-        pois = registry.pois_by_corridor.get(cid, [])
         branches = sorted(registry.branches_by_corridor.get(cid, {}).keys())
         items.append(
             CorridorHealthItem(
                 corridor_id=cid,
                 name_vi=meta.name_vi,
                 total_spine_km=meta.total_spine_km,
-                verified_poi_count=len(pois),
+                verified_poi_count=verified_counts.get(cid, 0),
                 branches=branches,
                 bidirectional_ready=True,
             )

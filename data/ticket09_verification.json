@@ -1,0 +1,237 @@
+{
+  "database": "/mnt/d/happy-path-backend/data/happy_path.db",
+  "checked_at": "2026-10-16T21:53:34.908290+00:00",
+  "gates": {
+    "volume_and_rejection": {
+      "passed": false,
+      "total_pois": 25,
+      "verified_pois": 0,
+      "verified_by_corridor": {
+        "hcm_dalat": 0,
+        "hcm_nhatrang": 0,
+        "hcm_vungtau": 0
+      },
+      "distinct_rejected_candidates": 28,
+      "rejection_classes": [
+        "INVALID_COMMUNE",
+        "INVALID_RATING"
+      ],
+      "missing_veto_classes": [
+        "COMMUNE_MISMATCH",
+        "SENTIMENT_DRIFT_DECAY",
+        "SHILL_TRAP_VETO"
+      ]
+    },
+    "review_evidence": {
+      "passed": false,
+      "promoted_venues": 0,
+      "dated_review_rows": 0,
+      "pii_matches": 0,
+      "evidence_failures": []
+    },
+    "topology_and_ev": {
+      "passed": false,
+      "corridors": {
+        "hcm_dalat": {
+          "passed": false,
+          "max_24h_spine_gap_km": 110.0,
+          "ev_slot_stops": 3,
+          "arrival_anchors": 2,
+          "alternative_branch_counts": {
+            "BRANCH_BAOLOC_LOOP": 2,
+            "BRANCH_QL28B_DAININH": 2
+          }
+        },
+        "hcm_nhatrang": {
+          "passed": false,
+          "max_24h_spine_gap_km": 112.0,
+          "ev_slot_stops": 4,
+          "arrival_anchors": 3,
+          "alternative_branch_counts": {
+            "BRANCH_VINHHY_DT702": 2,
+            "BRANCH_BAUTRANG_COAST": 2
+          }
+        },
+        "hcm_vungtau": {
+          "passed": false,
+          "max_24h_spine_gap_km": 53.0,
+          "ev_slot_stops": 3,
+          "arrival_anchors": 2,
+          "alternative_branch_counts": {
+            "BRANCH_LONGSON_ISLAND": 1,
+            "BRANCH_SUOINGHE_LOOP": 1
+          }
+        }
+      }
+    },
+    "co_occurrence": {
+      "passed": false,
+      "total_directed_pairs": 15,
+      "supported_directed_pairs": 0,
+      "supported_by_corridor": {
+        "hcm_dalat": 0,
+        "hcm_nhatrang": 0,
+        "hcm_vungtau": 0
+      }
+    },
+    "mutation_resilience": {
+      "passed": false,
+      "probes": [
+        {
+          "corridor_id": "hcm_dalat",
+          "clock": "06:00",
+          "plan_status": 200,
+          "mutations": [
+            {
+              "passed": true,
+              "status": 200,
+              "removed": "dl_doi_che_tam_chau",
+              "new_open_replacements": [
+                "dl_thac_dambri"
+              ],
+              "all_stops_open": true
+            },
+            {
+              "passed": true,
+              "status": 200,
+              "removed": "dl_thac_dambri",
+              "new_open_replacements": [
+                "dl_tram_dung_tam_chau_bao_loc"
+              ],
+              "all_stops_open": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "corridor_id": "hcm_dalat",
+          "clock": "21:30",
+          "plan_status": 200,
+          "mutations": [
+            {
+              "passed": true,
+              "status": 200,
+              "removed": "dl_tram_dung_hung_thinh_dinh_quan",
+              "new_open_replacements": [
+                "dl_tram_sac_ev_long_thanh_km42"
+              ],
+              "all_stops_open": true
+            },
+            {
+              "passed": true,
+              "status": 200,
+              "removed": "dl_tram_sac_ev_long_thanh_km42",
+              "new_open_replacements": [
+                "dl_deo_dai_ninh_panorama",
+                "dl_tram_sac_ev_ham_tan_ql28b"
+              ],
+              "all_stops_open": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "corridor_id": "hcm_nhatrang",
+          "clock": "06:00",
+          "plan_status": 200,
+          "mutations": [
+            {
+              "passed": true,
+              "status": 200,
+              "removed": "nt_tram_sac_ev_ham_tan_km135",
+              "new_open_replacements": [
+                "nt_phan_rang_culinary_ql27",
+                "nt_tram_nui_xa_tho_ttc"
+              ],
+              "all_stops_open": true
+            },
+            {
+              "passed": true,
+              "status": 200,
+              "removed": "nt_tram_nui_xa_tho_ttc",
+              "new_open_replacements": [
+                "nt_doi_cat_bau_trang",
+                "nt_vinh_vinh_hy_overlook"
+              ],
+              "all_stops_open": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "corridor_id": "hcm_nhatrang",
+          "clock": "21:30",
+          "plan_status": 200,
+          "mutations": [
+            {
+              "passed": true,
+              "status": 200,
+              "removed": "nt_tram_sac_ev_ham_tan_km135",
+              "new_open_replacements": [
+                "nt_tram_nui_xa_tho_ttc"
+              ],
+              "all_stops_open": true
+            },
+            {
+              "passed": false,
+              "status": 200,
+              "removed": "nt_tram_nui_xa_tho_ttc",
+              "new_open_replacements": [],
+              "all_stops_open": true
+            }
+          ],
+          "passed": false
+        },
+        {
+          "corridor_id": "hcm_vungtau",
+          "clock": "06:00",
+          "plan_status": 200,
+          "mutations": [
+            {
+              "passed": true,
+              "status": 200,
+              "removed": "vt_bo_sua_long_thanh_outbound",
+              "new_open_replacements": [
+                "vt_chua_dai_tong_lam"
+              ],
+              "all_stops_open": true
+            },
+            {
+              "passed": false,
+              "status": 200,
+              "removed": "vt_chua_dai_tong_lam",
+              "new_open_replacements": [],
+              "all_stops_open": true
+            }
+          ],
+          "passed": false
+        },
+        {
+          "corridor_id": "hcm_vungtau",
+          "clock": "21:30",
+          "plan_status": 200,
+          "mutations": [
+            {
+              "passed": true,
+              "status": 200,
+              "removed": "vt_bo_sua_long_thanh_outbound",
+              "new_open_replacements": [
+                "vt_mui_nghinh_phong"
+              ],
+              "all_stops_open": true
+            },
+            {
+              "passed": false,
+              "status": 200,
+              "removed": "vt_chua_dai_tong_lam",
+              "new_open_replacements": [],
+              "all_stops_open": true
+            }
+          ],
+          "passed": false
+        }
+      ]
+    }
+  },
+  "all_passed": false
+}
