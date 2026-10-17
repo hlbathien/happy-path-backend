@@ -268,7 +268,7 @@ async def harvest_verified_edges(db_path: Path, key: str, base_url: str, receipt
 
 async def _facebook(urls: List[str], receipts: Path) -> List[Dict[str, Any]]:
     from playwright.async_api import async_playwright
-    endpoint = os.getenv("BU_CDP_URL") or os.getenv("CDP_URL")
+    endpoint = os.getenv("FACEBOOK_CDP_URL") or os.getenv("BU_CDP_URL") or os.getenv("CDP_URL")
     if not endpoint:
         append_receipt(receipts, dict(engine="facebook-cdp", success=False, reason="FACEBOOK_CDP_UNAVAILABLE"))
         return []
@@ -318,10 +318,13 @@ async def collect_candidates(db_path: Path, goong_key: str, goong_base_url: str,
                 result = await crawler.arun(url, config=CrawlerRunConfig(cache_mode=CacheMode.BYPASS, page_timeout=25000, verbose=False))
             text = scrub_pii(result.markdown.raw_markdown if result.markdown else "")
             reason = "" if result.success else "WEB_FETCH_BLOCKED"
+            if result.status_code and result.status_code >= 400:
+                reason = f"WEB_HTTP_{result.status_code}"
             if any(marker in text.casefold() for marker in ("unusual traffic", "captcha", "please complete the following challenge", "please complete the verification test", "performing security verification")):
                 reason = "WEB_CHALLENGE_REQUIRED"
             if " ".join(text.casefold().split()) == "500 sorry, something went wrong.":
                 reason = "WEB_APPLICATION_ERROR"
+            result.success = bool(result.success and not reason)
             document = dict(engine="crawl4ai", source_url=url, success=bool(result.success and not reason),
                             status=result.status_code, reason=reason, text=text)
             append_receipt(receipts, document)

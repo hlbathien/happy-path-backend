@@ -1,0 +1,9 @@
+{
+  "sqlite_integrity": "ok",
+  "unique_video_ids": 307,
+  "export_row_counts_match": true,
+  "orphan_hits": 0,
+  "creator_handles_in_source_urls": 0,
+  "retained_titles_pass_pii_checks": true,
+  "searches_without_direct_video_links": 1
+}

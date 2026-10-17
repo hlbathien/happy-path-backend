@@ -1,0 +1,23 @@
+{
+  "hcm_dalat": {
+    "mapped_places": 194,
+    "provider_typed_venues": 91,
+    "regions": 6,
+    "review_sources": 43,
+    "dated_written_reviews": 126
+  },
+  "hcm_nhatrang": {
+    "mapped_places": 181,
+    "provider_typed_venues": 105,
+    "regions": 9,
+    "review_sources": 67,
+    "dated_written_reviews": 209
+  },
+  "hcm_vungtau": {
+    "mapped_places": 124,
+    "provider_typed_venues": 55,
+    "regions": 6,
+    "review_sources": 28,
+    "dated_written_reviews": 99
+  }
+}

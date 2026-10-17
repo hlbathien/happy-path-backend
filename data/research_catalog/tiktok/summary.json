@@ -1,0 +1,13 @@
+{
+  "searches": 36,
+  "successful_searches": 36,
+  "unique_video_links": 307,
+  "videos_by_corridor": {
+    "hcm_dalat": 102,
+    "hcm_nhatrang": 111,
+    "hcm_vungtau": 99
+  },
+  "metadata_attempts": 9,
+  "metadata_successes": 0,
+  "production_pois_promoted": 0
+}

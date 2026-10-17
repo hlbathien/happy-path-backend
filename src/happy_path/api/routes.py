@@ -1,5 +1,6 @@
 import sqlite3
 import uuid
+from contextlib import closing
 from fastapi import APIRouter, HTTPException, Request
 from happy_path.clients.goong import GoongClient
 from happy_path.core.graph import CorridorRegistry, SessionRecord
@@ -242,7 +243,7 @@ async def mutate_itinerary(payload: MutateRequest, request: Request) -> MutateRe
 async def corridor_health(request: Request) -> CorridorHealthResponse:
     registry: CorridorRegistry = request.app.state.registry
     registry.reload()
-    with sqlite3.connect(registry.runtime_db_path) as conn:
+    with closing(sqlite3.connect(registry.runtime_db_path)) as conn:
         verified_counts = dict(conn.execute(
             "SELECT p.corridor_id,COUNT(*) FROM pois p JOIN poi_verifications v USING(poi_id) GROUP BY p.corridor_id"
         ))

@@ -1,16 +1,46 @@
-import fcntl
 import hashlib
 import json
 import math
+import os
 import shutil
 import sqlite3
+import tempfile
 import unicodedata
+from contextlib import contextmanager
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Dict, List, Optional, Set, Tuple
 from happy_path.schemas.itinerary import Coordinate
 
 SQLITE_HEADER = b"SQLite format 3\x00"
+
+
+@contextmanager
+def _exclusive_file_lock(path: Path):
+    """Serialize shared-store publication on POSIX and Windows."""
+    with path.open("a+b") as lock:
+        if os.name == "nt":
+            import msvcrt
+
+            if lock.seek(0, 2) == 0:
+                lock.write(b"\0")
+                lock.flush()
+            lock.seek(0)
+            msvcrt.locking(lock.fileno(), msvcrt.LK_LOCK, 1)
+            try:
+                yield
+            finally:
+                lock.seek(0)
+                msvcrt.locking(lock.fileno(), msvcrt.LK_UNLCK, 1)
+        else:
+            import fcntl
+
+            fcntl.flock(lock.fileno(), fcntl.LOCK_EX)
+            try:
+                yield
+            finally:
+                fcntl.flock(lock.fileno(), fcntl.LOCK_UN)
+
 
 def normalize_vn(text: str) -> str:
     text = unicodedata.normalize("NFC", text).strip().lower()
@@ -216,10 +246,10 @@ class CorridorRegistry:
             raise RuntimeError(f"Corrupt SQLite schema in {src_path}: {exc}") from exc
 
         path_hash = hashlib.md5(str(src_path).encode("utf-8")).hexdigest()
-        shared_tmp = Path(f"/tmp/happy_path_shared_{path_hash}.db")
+        shared_directory = Path(tempfile.gettempdir()) if os.name == "nt" else Path("/tmp")
+        shared_tmp = shared_directory / f"happy_path_shared_{path_hash}.db"
         # Serialize first publication so another worker cannot replace an active store.
-        with shared_tmp.with_suffix(".lock").open("a") as lock:
-            fcntl.flock(lock.fileno(), fcntl.LOCK_EX)
+        with _exclusive_file_lock(shared_tmp.with_suffix(".lock")):
             # Once published, the shared database owns durable session state.
             # Source timestamps must never overwrite committed mutations on restart.
             if not shared_tmp.exists():

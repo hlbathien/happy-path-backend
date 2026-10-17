@@ -1,0 +1,10 @@
+{
+  "attempted_unique_videos": 5,
+  "captions_collected": 1,
+  "failures": {
+    "OVERLOAD_PROTECTION": 4
+  },
+  "pending_videos": 306,
+  "production_pois_promoted": 0,
+  "failed_attempts": 7
+}

@@ -74,3 +74,7 @@ Desktop.ini
 !.scratch/happy-path-autopilot/
 .scratch/happy-path-autopilot/*
 !.scratch/happy-path-autopilot/issues/
+
+# Raw acquisition dumps and machine-specific live crawler status
+data/crawl_runs/
+data/research_catalog/tiktok/active_crawl.json

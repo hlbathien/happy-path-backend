@@ -1,0 +1,3663 @@
+[
+  {
+    "place_id": "iY-qEPb2yat3_nIuunu7umD6JwmOeG24q4p1TqNFdYdeyVwXonmRa28cZku-tbu5aESNMIVpoEBg824vgUSnul_BZg-1VI2pbeBfS4l5iZNsiUwfvx-Zhm7yRDSJHr5ul",
+    "corridor_id": "hcm_dalat",
+    "region": "Dầu Giây",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 3.211
+  },
+  {
+    "place_id": "sRayj5A5c3xkoHsnqmKM_H6wVTSGb7rEYcZVH7asjOBpY3cGZBeyyIXGZwOyomXQUKOIPLZy-0llxsVGh2GAg1axKgGrYZCEZKBWQoBwgOllTZoWthaQCgGdFTWKAPfvA",
+    "corridor_id": "hcm_dalat",
+    "region": "Dầu Giây",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 1.027
+  },
+  {
+    "place_id": "2Ht8MEN6XNl6rawING2G6mIJJ6uYcZ2drkkFOqwLhp1-gFeRtW4H1mOvcYGbCeXifJZtL61hpIRjx2kRrlOZ13itSIz6oQ57ZsnpIXJ5unve-hFsIqAiOnlOsUyOeeeXe",
+    "corridor_id": "hcm_dalat",
+    "region": "Dầu Giây",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 2.335
+  },
+  {
+    "place_id": "p_aI5ybvwdXTPzS5OvHu0a0OWXA2Id_Zj05BQO6B4gYGGumYMRGr-bYq6ujNQaqilk21QEr5FlVjrq3IQo3aBXu-TfjGPVKtt4KlfS4l5iWyJk0wfvx-ZMDS7RG6JHvJt",
+    "corridor_id": "hcm_dalat",
+    "region": "Dầu Giây",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 7.034
+  },
+  {
+    "place_id": "rzag-w3Sv0R1s1sduG28K0WMQ5d2YuE_lKNiHENZnZd712pWpQaBk3XWfV8gBZLCb4hPpaIHjut7rmG-pHCg2m80mqKiW6hLdrLWUJJikvt3iFUcEpASCcHWgXy-SkukF",
+    "corridor_id": "hcm_dalat",
+    "region": "Dầu Giây",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 1.674
+  },
+  {
+    "place_id": "iDEHRYe4WF_3hh9Wu0LzYvKpYE2JRYhhyqpzOYhFjGmPzF0zoWq6Xu67JiiOerZvusxFDo9pgM_Xl1EUaqKAdY24qcEsdRZBs4aheSoh4iG2Ikk0evqSYb8i6RR6INfNs",
+    "corridor_id": "hcm_dalat",
+    "region": "Dầu Giây",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 0.944
+  },
+  {
+    "place_id": "rjPxb0tYgb5volRIjhqsjXDLf2Q2IGKDMboZbELw3rJBq0XVDjzW0yli-vCpbQ6j8apC_DrN8_dNvyENMv2xD8l5qbAG_lkCJkGpCTI5-judrlEuiuBiejmkYQ7yOGfXO",
+    "corridor_id": "hcm_dalat",
+    "region": "Dầu Giây",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 0.854
+  },
+  {
+    "place_id": "WPY9RM-PJnZblrSGjkNu_W2WUKeIafO7dJBTBDCBhmpfq0yMDLiBimiHVBVruqXoba99T3pru-tfl5mYViUCB0V6HRDCjHpXAbalfS4l5ieBsk0wfvx-ZiW67RDSJHvLJ",
+    "corridor_id": "hcm_dalat",
+    "region": "Dầu Giây",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 0.855
+  },
+  {
+    "place_id": "koJ6k1fxuKx2uUBPaLSS41qmfQujaLjhXJB5DKB4hvN0kmUvoEemzVyOXwyjaZToYDNHq71Dgv1gbnE-unq46gR6vcgWgR_XrbqofSIpciuNvkE8cvByaim24RzeFHYrK",
+    "corridor_id": "hcm_dalat",
+    "region": "Dầu Giây",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 0.901
+  },
+  {
+    "place_id": "cW64VExHlJC0ulwkoWusymiTuCVtdaT1WpK6NCrto-fNrpmUxt0ZHzl3O8Qq5elPaY84zRLtA9c1ghWgEt0yQz2qSeki0eYb0boJcSIp6iqpv408cvByaiqZtRzeKHfHK",
+    "corridor_id": "hcm_dalat",
+    "region": "Dầu Giây",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 1.23
+  },
+  {
+    "place_id": "g2WP1c9rf3BYyFUPjvOPQnHIgBSP30I9seKOfAbzIa0JoylFNitaDbnGWQj2J_INso15BTLnJkzaRriFFvDO9RHLKdBG-9kJ_a6-fTY_mWRlqlUoZuY-fvYe9QjIYaPRt",
+    "corridor_id": "hcm_dalat",
+    "region": "Dầu Giây",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 1.413
+  },
+  {
+    "place_id": "fNl6CHyWnkBjkEkRrVTl4XS_dluRU5_kd7xlL55TImtx_2kslt6ysmUiiaRF8tKCyefhTGJl_ltpTgU4CtAuewUe8Zl2uU4aber5IXJ4nnvd7hFtuqAiOnnmsUyOeCeXe",
+    "corridor_id": "hcm_dalat",
+    "region": "Dầu Giây",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 1.044
+  },
+  {
+    "place_id": "YFPXQJlPhqdj2jQro1ez1XqtZSSsVOWser1UEOp9jph6rydxtH2WnnqyOxOgfpmbfNtDEKN5kZ1hgEc6rVSwsk6i2TGbU4ZterI5IXJ5unvd7hFsIqAiOnnmsUyOeCeXe",
+    "corridor_id": "hcm_dalat",
+    "region": "Dầu Giây",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 0.945
+  },
+  {
+    "place_id": "U6xDV6ygkm5jkEcdsn2d2E-0aTN8erjs24dHKwp0jtZ_2m5cmXGR2WCHMRGsVbDESYEnOK5xlvxJ2F0-rmyC4E-ATwiYloZ8er5IXJ7envId7rFsIhAiOnnmoUyOeCeXe",
+    "corridor_id": "hcm_dalat",
+    "region": "Dầu Giây",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 0.215
+  },
+  {
+    "place_id": "_ZiKSCKkZoJUsyS1Ak5r62OMerNHsI7qU7EpYTmFgoBUnSyyQWBgwGOuR7c4_XH2VLJTtEVxgYJQnViFT2OkQGihjcdAT3ngZq6sghRygutnoke0PxSSEgmWwT4I7FfnC",
+    "corridor_id": "hcm_dalat",
+    "region": "Dầu Giây",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 1.6
+  },
+  {
+    "place_id": "g5yZFHkB6maymHUNsn2BfGaubQK8YqzxVKEpD4pOgr9knEtg-AeBjWedT0-1SE-8UJ2CFKtgJMtVrrAGS06wgWXEEsCSEc6zFZqJUO4JygutnmEdAtBSSgmWwTz-CFfnC",
+    "corridor_id": "hcm_dalat",
+    "region": "Dầu Giây",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 1.091
+  },
+  {
+    "place_id": "En8SjFWEUk1UqFlHtkmI-GW0WSuCdouFU51RH4IRnIB6m3RGsXu8PzFSbtklOT4jvZaQJgbQ9qYRSmqhJgz2q5lZ_iyqxTpvAYKS2RoRghO10nkESZrKUhGO2STlhE__E",
+    "corridor_id": "hcm_dalat",
+    "region": "Dầu Giây",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 1.638
+  },
+  {
+    "place_id": "iR63C2vJiU5gzVCBuESnM22Rcc-MRaDBaLonSo56jfZfkEQMux-Z1G56TUAdEaq_Lbs2IBl92oIlZkFAwbUWWjLnPLzWGQmzRbalfS4F5ieBsk0wfv6WZu24fRDSJu_KJ",
+    "corridor_id": "hcm_dalat",
+    "region": "Dầu Giây",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 3.212
+  },
+  {
+    "place_id": "V3FwlZSQKadYtUQOcViSv2LSTHGTAI3pVrl6cZBYieZ0m0ADd6SF03-2bppmAyrMdKlAlZJ3ic2d0UAsk3SdfLnzT1EsWebrpbVDkP1dllfxwj1ADowOFlXKnWCiVAu7V",
+    "corridor_id": "hcm_dalat",
+    "region": "Dầu Giây",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 4.681
+  },
+  {
+    "place_id": "mZI3LKuZmmdPgE9amHmB43yAdheYLa-qaZIFUIKxUgZaRhkQWqGbGf5WAfgeyabXlfoVpGZ9mgdBOl2I2r2mV8UipTCaveLjSfblPW5lpmX3wg1wPe6-JfH6rVCQPDuLZ",
+    "corridor_id": "hcm_dalat",
+    "region": "Dầu Giây",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 3.125
+  },
+  {
+    "place_id": "X3uKoW1lSFRw1JIvV1-l-6Nzd1HVcpGXlaOjIz1Ylu1Ei5QdXH2w-nugI0NHYUZGWRbGg7Vdbgj1z16LCPHOK6UXWoRQ",
+    "corridor_id": "hcm_dalat",
+    "region": "Dầu Giây",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 2.481
+  },
+  {
+    "place_id": "1LGkk4yQY6NDsjUM-5xwoVEOjQVThm4uVbYpaKl5j7EpFd5E8lwWboqNySgjbY-CiQptGFaBYg3F0v2NXWpOypXLzfArnBCqTd7NFn_pjUaV2iVYFkwWDk3ShXi7TBOih",
+    "corridor_id": "hcm_dalat",
+    "region": "Dầu Giây",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 1.104
+  },
+  {
+    "place_id": "fKBC05vtBXRFoFoNubWh-nSNXiJwrWDKXtdEFZKfYNpGojU3or2czJu_Yx6iY1pFVkL9aM6STX5B1o3ceoIsE-zTUehCl6WPbd7NFUZOTBfp2iVYFpYMEKnShXpOT6HEu",
+    "corridor_id": "hcm_dalat",
+    "region": "Dầu Giây",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 0.932
+  },
+  {
+    "place_id": "MxqvUsxLYSGE2mvaq1d-BoO-VZ6aVY8tGda1Rn61VpjJh203_r2OYOX6SUXmvb59GmL9LSa5VjFpj2VmtrH2E2H3nMuM",
+    "corridor_id": "hcm_dalat",
+    "region": "Dầu Giây",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 0.636
+  },
+  {
+    "place_id": "vqaDGqBjG9VlaHdNrXOi7lqtWSymg0bMXJNkSL6U8_Ntv0ytOihqE7WiUdzCNRrWEbq9uT4ojrsVblEUqshtBzr6_tgxcc1qNv6xaTow1jOVpaEl8uhqcjJZrQTGMG_fM",
+    "corridor_id": "hcm_dalat",
+    "region": "Dầu Giây",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 2.191
+  },
+  {
+    "place_id": "X3uKoW1lSFRw1JIvV1-l-6Nzd1HVcpGXlaOjIz1Ylu1Ei5QdXH2w-nugI0NHYUZGWRbGg7Vdbgj1z16LCPHOK6UXWoRQ",
+    "corridor_id": "hcm_dalat",
+    "region": "Dầu Giây",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 2.481
+  },
+  {
+    "place_id": "C1QLdIGxWWYwMlRNoKyv1h-9f02OWKqfHa6VTZx-kVA4guKSr1R_4pG_YSS2f6P1eJNqS5hRnZkGglB7r1HGgnxysO3m3fJ3uX71LeJ1QnfQLh216q1iNnSCvUHmdCubd",
+    "corridor_id": "hcm_dalat",
+    "region": "Dầu Giây",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 0.664
+  },
+  {
+    "place_id": "MxqvUsxLYSGE2mvaq1d-BoO-VZ6aVY8tGda1Rn61VpjJh203_r2OYOX6SUXmvb59GmL9LSa5VjFpj2VmtrH2E2H3nMuM",
+    "corridor_id": "hcm_dalat",
+    "region": "Dầu Giây",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 0.636
+  },
+  {
+    "place_id": "oIhv0itLjOhf1HBQr3OKwludYlGkYqOadaBLIKdeoPp4vmkXk1-wwniMfSC7Y57wQot9PbsF4ZVuok8_uUGLtzW-NPB2VcumQdrJEUJJikvt3dlcEpASCkoh1X6CSBekv",
+    "corridor_id": "hcm_dalat",
+    "region": "Dầu Giây",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 1.015
+  },
+  {
+    "place_id": "HJEfq1S1IGhku349qqq8mk-1YpmydpnjfIYgfbAO5vBUgGJzmQ7m-UjcZRSZRL_ELe4dMFrNpe95zulRYsOJ233u4Pl2vD7v5fblPW5lpmfB84lyDrw-JmX4Pq5ZUDiTZ",
+    "corridor_id": "hcm_dalat",
+    "region": "Dầu Giây",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 0.962
+  },
+  {
+    "place_id": "o-7Mo5ARU3ZwvUtXkQWzkm_UYhIoB7_TTcY9El3Vcs70PzmoqdXCroXafWHO4VLdcdY_jcqxj4lRw11xToHOJ7UGPX56gXR6WdbFH7pFhkfiZi1QHpweBdJGjXCyRBurR",
+    "corridor_id": "hcm_dalat",
+    "region": "Dầu Giây",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 0.907
+  },
+  {
+    "place_id": "uFd1EcpdHTd3zi1Nv3i3zHSVXw6LQPXzYJNT6OKN7gtBuuWUPuWmk_W22eTOLR6uJbpBTNb1HlvVoqEYToKaC6HFbfTKMkKjsbqpcSIp6iuNvbk-CvIUcuJBtR4ocmvGK",
+    "corridor_id": "hcm_dalat",
+    "region": "Dầu Giây",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 0.754
+  },
+  {
+    "place_id": "qk6peXEhZZx_3kHjsSK63qqWVTVmepvQprk2G1VRtp1mup4jY3uEm3-ATSKtaZTfSIF_Bp1TmJCXqTIksgx-_oiHtA6mD7brfFG4WphomKPF9fF0Org56mIJ_VSWYiA_Y",
+    "corridor_id": "hcm_dalat",
+    "region": "Dầu Giây",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 0.957
+  },
+  {
+    "place_id": "HI2OjHVpoqmEzVIxbGq1zam7FRianaapGYoPDCKVCuoh1JXAwMmgmiGGReJSHQI7MW5JsFYtAoe1tuiE3m2-1jx-UQh2ldov4b6tdSYt7veJukU4dmx2Li2y5RjbwHLnL",
+    "corridor_id": "hcm_dalat",
+    "region": "Dầu Giây",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 0.971
+  },
+  {
+    "place_id": "-JFU1XTtq3N1sWo2u3SeKG-hRHOXfp0lcNdEDqdynfF4o2YXlAez2XjVNyugTYoHBo7JYLUFj6tSn121XlnCRkkegOxC6cL11mYFcU5FhsZV1i0cHpweBkXajXCyRBurR",
+    "corridor_id": "hcm_dalat",
+    "region": "Định Quán",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 16.786
+  },
+  {
+    "place_id": "VIyRW55D1nRHtmENvFuRl3PRT3KQA47qVbp0cpN5iuV3mQC9bp2WF3keIACJbpJZnd6qnKkPPis5_0kMvkHee8HKmTFKQWuXocrpAVJZmlv9ztlMAoACGmXGkWyuWAZbt",
+    "corridor_id": "hcm_dalat",
+    "region": "Định Quán",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 5.791
+  },
+  {
+    "place_id": "VqvOd1YhZ2VVnWMIrmihz3y3YES5eJRKtcLHRm4-qnSuw0yErCG93WOkfBiwEIvDerBdwNa2IeN5gpmgRgY-chWLBUiO1S6n5Y6dRRYd3h-5inUIRsRGXh2C1SjqHj_wQ",
+    "corridor_id": "hcm_dalat",
+    "region": "Định Quán",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 16.566
+  },
+  {
+    "place_id": "lroDTAIAA2ZGplFLplyQK0UaIU2alpOXwcI9QOFqWmv58tSRTky_l0EeMAUChFJaRQLYbU5eZdOVqphRboO2k4WvQIkBynrhcobZUdHJTlv9zjP9boACGlnGkK1uWAe3W",
+    "corridor_id": "hcm_dalat",
+    "region": "Định Quán",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 16.278
+  },
+  {
+    "place_id": "qhhduiIsmE7dtGSQsWmiGNC7QX-yUb1404FReq43i0nRqWO0r0WQfvlnVaipaYh50Kt3GKl463qYu1ZcpVIhKfNyob7GydyB88bhVWphomJeIgk4Org59f9iqVSWYD-N8",
+    "corridor_id": "hcm_dalat",
+    "region": "Định Quán",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 16.357
+  },
+  {
+    "place_id": "fgt4lEpnTpyArXoHnWxRxniCkCmdfiVReK03E6p-3uB8hUpYmQim25OSTSSrCnXUnIRgEawIuZlirmhamla1n3uwrGhxFY7KfeLyaXpxsnPV5hlkKqrCMnHsKUSGcrufc",
+    "corridor_id": "hcm_dalat",
+    "region": "Định Quán",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 16.269
+  },
+  {
+    "place_id": "qONkng67pzZIgXYsIHuCnGd7UJGWqLh21VLNIm4l2iVRMfWVbp2aj5bpwMyiuU6fmfqhMW69ov55zuWJanmvn0me7RAerVbDRfblPW5lpmfB8g1wPr6uJmX6rVCQPmeLZ",
+    "corridor_id": "hcm_dalat",
+    "region": "Định Quán",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 16.768
+  },
+  {
+    "place_id": "PcRgSZ1NZRJUqF8lHtkmI-GW2WSu0douFU4JRH4IRnIB6m3RGsXuMgIuaXTC6PXnviKRVSbRmqYRlmn9SgxKq5labfyqxTrbAYKRSjIR0hEZhnkHtshKUqEmEYzmEE_-2",
+    "corridor_id": "hcm_dalat",
+    "region": "Định Quán",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 16.72
+  },
+  {
+    "place_id": "gBB6d45xS5j1wWQZYXWaYv2kxD-GE_lb_LpbGLc_vHvmtyxNtSOWeIWIX0KAS6dv8bRpBcEQqHjcrFsytmeWVM6cfgmwEpZi76ZQqoZ2hmOGREAOcsBCWYca0iTuGEUti",
+    "corridor_id": "hcm_dalat",
+    "region": "Định Quán",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 16.224
+  },
+  {
+    "place_id": "jvBOi4iEtnlbqGwFtYObamLNITG-25dv65I7tNKJCaWlrlUZKjh6tinWFUh2OHPW5artCJYlBlLpuzFYsomiP0ne6JU-idDLgb6tGm4t7SeJukV0dvR2ni2ybRjaLHLnL",
+    "corridor_id": "hcm_dalat",
+    "region": "Định Quán",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 4.916
+  },
+  {
+    "place_id": "c7jQdhamccxwWY0zpliu6nFOZaC1XdZ-ccKdzvb5dlN1D03stowOp0nCNOiGjA4yRatBzJb1ZiNR2tFkUp2TvzX3TZ1G-ApTdm7RCVpRkcP1wjlECogKElJSmWSmUA-_U",
+    "corridor_id": "hcm_dalat",
+    "region": "Định Quán",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 7.955
+  },
+  {
+    "place_id": "Z5e5aHluiKF4uXMTiWyE0mpFlj2JbJTKMUUjar4HiPQcpGpMjbqtibmRa4j1eWojAHJB0Bbh2gK1CunxOjm-Ni3ekUQiObKaLeKheSohtiIcekk0evm_hmB-6RTWIbPPI",
+    "corridor_id": "hcm_dalat",
+    "region": "Định Quán",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 0.784
+  },
+  {
+    "place_id": "WaemzlPrtjB2uGMmvXauLXKbOpGVZbQ0frJjnJN0lzNFpnuUowO6dnWlezORl4gBc45BLqYAm5dq0mRwvV2u433TG2iSWJeWcLRCVpRklP1xjlECogKElHOmWSmUOA-_U",
+    "corridor_id": "hcm_dalat",
+    "region": "Định Quán",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 4.848
+  },
+  {
+    "place_id": "u1z_N1u_QL1xzyY1PsH0rjaFvfiO9cqPJr716DbBGjd1tk0A1vHysy1-URwK6UJ3SW4UiNL8akpQaxVhJc0eCzb-9VDKNRJXEaa1bT2l9jeSNl0gbaBudjWq_QDBvjfbN",
+    "corridor_id": "hcm_dalat",
+    "region": "Định Quán",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 9.134
+  },
+  {
+    "place_id": "UJAEb0_ZX7hDin0nl3CJvmyVWxahX4KsK7BHQ-h9gqw9sZ1Q7m1urHuhqBTtYqykdaNHUJVjtHB4sUppRaZXsoGywYHbaXruSDLJEdvtfkqR3iGIEkleCknWgXy_SBemg",
+    "corridor_id": "hcm_dalat",
+    "region": "Định Quán",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 4.901
+  },
+  {
+    "place_id": "R75eWoxehGgrlW4Cuhu203esZRK_fI0OPd6BcOLp9hIgik10JpUGhj3ywbgGLWoD4fZJcT4ps88lFvForvkG-xYOwNb-HVUHwNKxpTox8jOVJoGsauhqcjEGWaDGMG_fM",
+    "corridor_id": "hcm_dalat",
+    "region": "Định Quán",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 4.944
+  },
+  {
+    "place_id": "RqmLm25ip2hs-G8xomrNzWmFdSa1UojDaaolCI2DpUK5qXAwdY6X27qVXjK7QIfMW5JsFY5Ai-1tuiE3oR-bhHaUQh1GHI-lb6u1SV17MuJukU6LvR0di2y5RjaLHPD7L",
+    "corridor_id": "hcm_dalat",
+    "region": "Định Quán",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 0.794
+  },
+  {
+    "place_id": "wHVbZJaq74limFcYr5hDmmafS0ODSvXcZ8N6Ga9m_e1XmSgDh3S7hm-nSxmAdaDxUcIsAoF1qGL0P35BtZz1UVBmUwi3T6DbYqaORIZ2tFBjnO8QhhCAwhmG0SzuGEf3G",
+    "corridor_id": "hcm_dalat",
+    "region": "Định Quán",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 9.456
+  },
+  {
+    "place_id": "eU9Pt0acgsJldmoGtcKWw3tlYSiKnbblao1SQvbNq2dsalwArsGJ9mB3XDyCnLvBZ2ZLNLVIhcdnL6QitGeZh1OlX0G4pYnyYXVTR4Wfh9exgE0ATs7eVhWISSDiFqf7F",
+    "corridor_id": "hcm_dalat",
+    "region": "Định Quán",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 1.963
+  },
+  {
+    "place_id": "ho-SuqR8a8had288l0Km_HWXUSeJaPKN4WZFSBbkxh85eRaprtYcNwVlNagiiTa7pbLqATo5q9-pebGcUiEGA0JdfRTGiH5TBbKheSoh4iOFtkk0evh6YgG-6RTWIH_OI",
+    "corridor_id": "hcm_dalat",
+    "region": "Định Quán",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 2.2
+  },
+  {
+    "place_id": "hZpLx1iKqH5Xtnsvq3iaw2mral-xe5kjS9w0mKx1kiJLgG0fs2ugmH7aal6oDaTxqE08Fal6tPxMgGYVqnu_0n27ZuMEaeZ7CfrpMpJpqePN_gF8MtpoMmpKsVyeVDah9",
+    "corridor_id": "hcm_dalat",
+    "region": "Định Quán",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 1.227
+  },
+  {
+    "place_id": "82xfiQQVu-tblm49jkNt_aeWUPImaXSMWJBTiLhqhs9fq0wMtHaB9W2regiOeq-Bbbt9azBP9uhflmaPa0CB0V6HRDCjHpXApW1ES4l5ieC5pk0wfvx-ZiW67RDSGHonJ",
+    "corridor_id": "hcm_dalat",
+    "region": "Định Quán",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 13.535
+  },
+  {
+    "place_id": "dWm7Bh6JTKJopXo8gWuJuFi4eUzQaIqLWM8nMb9mgdRYk4YMoER-i3ere5DCPpbfiXrMvD7qWp-9fk20GuWiswXWobgm3ao3RbalfS4l5ieBsk0wfa7-ZiW67RDQfHvLJ",
+    "corridor_id": "hcm_dalat",
+    "region": "Định Quán",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 5.158
+  },
+  {
+    "place_id": "uwDS6GefLod-pjGIoFs3_naZbxemdJv_Rpg8UpBdpJVBlzksp3Xo1UG0QlK-WrHjQadGLaFklFpFiJdQkHaxTX20bFWXpbn1c7dBVVqXdf5yRjVIBoXMBl5elWiqXcOzX",
+    "corridor_id": "hcm_dalat",
+    "region": "Định Quán",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 10.392
+  },
+  {
+    "place_id": "00KXKn2XcJelmUkYQF116KS2f1KW7FrtfnO7Jpdak9W1bHYsvnWl5EakcAGRZanxcNNaEZB2n9BHiE4LvQKXyGq1b1SnWp-Pc7dBVZdnkv6YjVIuWgRFyl4eloQFaAOzX",
+    "corridor_id": "hcm_dalat",
+    "region": "Định Quán",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 10.726
+  },
+  {
+    "place_id": "_2M1rRGsvJeuTlEffai9vcZ7Wl1Wb4eu3Xs5H6JSg4fleFIkqQuTvMJ4JSq0ufLm-1mI1oa9-sYGYkE4Ztmx-n-17ZFu1f-C_9npJXZ9vn4WfJlp4qQmPCd97UiKfCOSz",
+    "corridor_id": "hcm_dalat",
+    "region": "Định Quán",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 19.379
+  },
+  {
+    "place_id": "U3qYcYJ40JdKkGMXsXeogiG-SX-mfIubZ91rWbFbtdFJ3D4-s2i903-AbzidD5TcZahvKrK0kMF_uXcOnmeDmn3eTTxVVLbmfKqqWrhomPF9Tl0Org6ImH-qVSWYKD-PY",
+    "corridor_id": "hcm_dalat",
+    "region": "Định Quán",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 14.865
+  },
+  {
+    "place_id": "aFHgspQ6Qn39pTI0o1jrdfyabLild5hFmxR2p5M_lpSci14vpHbrWWOk0RSRWbJClKRFLqJnLUbRi06Xk3VTfva3b1aUWbpw_bRCVpRklHGUjlECpOgKEc9SmWSmiA-9w",
+    "corridor_id": "hcm_dalat",
+    "region": "Định Quán",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 1.738
+  },
+  {
+    "place_id": "q092p2WrYoJIgXYss3uciWeqUB0gVJuJSLt9nlRM46NkujZbp2blp3Cofh2uU-a_fqiRW69oTOdzuZ5ae57SsGe7tQdrVdGZfUS5W5lLp8Il8g1wPrw-Z4n6rVCSZDtmW",
+    "corridor_id": "hcm_dalat",
+    "region": "Định Quán",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 1.286
+  },
+  {
+    "place_id": "l4JCh7VlKiJutkqUuk4FzFenTpuwSgeFV7Qoj4Zk-ItXmHyItWVFgm67UrmrThHvYoZwh4lLHINRmEq6tUsGhWG2IYetZoj0Y6dRRYd3Y-B4RnUJisRE6h2C1SvyHED7H",
+    "corridor_id": "hcm_dalat",
+    "region": "Định Quán",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 0.711
+  },
+  {
+    "place_id": "GJ5leltcgawI5HF6mGyunWC8T1-tb6LZeJZTMbRxh-dOvFsRm0Os5GLhZRGvbpaud-xpJLdUge15sDg6oGG-kWCaZXyjAL6Bep6IsbEgnhPd7jp5uqAisnnnlUyOeCbLe",
+    "corridor_id": "hcm_dalat",
+    "region": "Bảo Lộc",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 2.664
+  },
+  {
+    "place_id": "bFdTvfecek7OvXkQoH-Od_7YNCSIrbIJ8m4dTIbdXuH7WJziAm5ajfEhfsiavC-B_nXmuMK9UgXvH2UM5t32aYvWvMFq3YY6snr5IXHpunnuehFsIqAiOeZGsUyOeCd7l",
+    "corridor_id": "hcm_dalat",
+    "region": "Bảo Lộc",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 7.002
+  },
+  {
+    "place_id": "T5ZMGQ-oVE_jgE9amHmBfJLqAdheYa-pkxoFEFnusgX_thjcsVGaVZ-XdTyCuDIV-0IFpFJ9mkk7xl7U2r2mVSNKpkSaveLhi8Ll9q1tpmXyZg1yZrw-JftmrVCSZDuJ9",
+    "corridor_id": "hcm_dalat",
+    "region": "Bảo Lộc",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 6.348
+  },
+  {
+    "place_id": "d5DkKexzb3Jxs2QhunGplnWgPTOScbXJebFkNJRikJOboXw3pAS9odWxaCpCY4-_dKJGM6EHnF5t1ZwculqJY3rUqVSVXV5CRd7NFUZNjk_p2iVYFpQWDk3ShXi6TBOjT",
+    "corridor_id": "hcm_dalat",
+    "region": "Bảo Lộc",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 10.514
+  },
+  {
+    "place_id": "6K5BuN1w9HZ3tFkzvmopdnuYbyCSnKSb0NJBC6J9daYCpmMSmGq2kUnRURejRITEZrddKKJx79F10mhSk0KUl3WlPhW_cISQZLRCVpRxlP0CjOlEConOElAMtWaaUcO_U",
+    "corridor_id": "hcm_dalat",
+    "region": "Bảo Lộc",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 12.019
+  },
+  {
+    "place_id": "nHnTen4F7JRluWA8f2mnqaioNRtyarnoZ6pnt7Fcm5hMlU5XsGuDwiK7SmWeDpfkL6tSPbJ75J9yk3wCqNFa1Vk3huB2dRp90qbtNWX9rm_KbgV4NrQ2Lm3ypViabDODb",
+    "corridor_id": "hcm_dalat",
+    "region": "Bảo Lộc",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 11.73
+  },
+  {
+    "place_id": "VAioeZJ9gmx-h3Edrm2NI2GDZcTOtfu3-SYZiWZl8sNZ32UcbtZaScU69Ylm0fKDafIdQXa7Ykdx8vzQ5r3qsnFS-RFqeSKPper5IXFOynvcnbp57W4SOngisUyOeCeXe",
+    "corridor_id": "hcm_dalat",
+    "region": "Bảo Lộc",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 6.999
+  },
+  {
+    "place_id": "uEJd3l4AgvVpxyylNsn_9j22tfCG_cKHLXr-jD7JEj99CNm94a36uyb43bU6RfJ_QWZaHS70YvVJxvsc1kEWXz1m_VjCPRo_Ga69ZTY9_j-ZqlUoZuRmfj2i9QjKPGPTP",
+    "corridor_id": "hcm_dalat",
+    "region": "Bảo Lộc",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 0.666
+  },
+  {
+    "place_id": "okqhg5wHVWFRmikjgmKD62qxXUWpYbHGasdOFbRJj-KMTsQF3qHN95a1Gr8OyQJzFYWygcb5IZ8uqsWwMmRV-gVODeAKqcTqHZ6NV-INzQepmmUYVtRWTg2SxTj6Di_gU",
+    "corridor_id": "hcm_dalat",
+    "region": "Bảo Lộc",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 0.666
+  },
+  {
+    "place_id": "k4XFfLGdkqxMvWoGt1CdnHiaRF6bCNrhJHlyeZVQgZixX0gHL7m6NxE-EciWqC51QfKHEIZp_gUh02Ugkm3yV-3mtR1mbUe7jeb1LX51tnX94h1gLq_SNC3qvUCCvCubd",
+    "corridor_id": "hcm_dalat",
+    "region": "Bảo Lộc",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 1.878
+  },
+  {
+    "place_id": "hqmKcomFHZNoqCMuo2qkwm-7cgq7RIKJbagnB4hte8BoumFNjImaiGjPMFy4eYlEYIHQM6BCa81YMH4IuLNE1Gmlcki7eKvTbZNfS7x5ieBsk0wfvx-ZiW567RDSJHvLJ",
+    "corridor_id": "hcm_dalat",
+    "region": "Bảo Lộc",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 11.988
+  },
+  {
+    "place_id": "ECKxe58wQn1vgAl7mXi9mHmGbTKqcJ_Hf4YKXaFW5Z12v1YkmSa56HiuP3ipkGj_eNihILZS3-N1vpcQtVZw2XrbVgOtSYyae79vXa9Jan_Z6hQmzqVKPn3gJCK2fl-RS",
+    "corridor_id": "hcm_dalat",
+    "region": "Bảo Lộc",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 2.975
+  },
+  {
+    "place_id": "f63aqDSafV97uUAjtnuKynsVbZzdUIWZZKZ1Iqp7kt5kgzVYrVG0ypW5dQycD3iao7tAF6dMzVu5_lGGSmg_pBmamQ9qwdZKefrpMWJpqmvN-gF8MrAyKV32omieaDeFX",
+    "corridor_id": "hcm_dalat",
+    "region": "Bảo Lộc",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 1.344
+  },
+  {
+    "place_id": "IE_QILXGl1R9hrAFkXq7sH6rXD6lUpGcc1R2PZkNv95IuUNbqWiL3wH6rbV-ZDqd7fZZ2Ap7qqHt4mVR9swyj5zmltUizVIXdfUy5W5lpmfB8g1wPrw-JmX6rVCSZDuLZ",
+    "corridor_id": "hcm_dalat",
+    "region": "Bảo Lộc",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 1.121
+  },
+  {
+    "place_id": "iLKIS5liQ2RpxFk6sU2uxmSYeI-FTEfIYawuqbNzhP9kh00FshaTg1awVS6BY6bCCZ8RWD75_qYBQmVk8sDlNhWXGn0yAAibYZKBWQoBwgOllmkUWthaQgGeyTT2AF_vA",
+    "corridor_id": "hcm_dalat",
+    "region": "Bảo Lộc",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 0.666
+  },
+  {
+    "place_id": "l59WSKlYe4PbgU4BtJmx79n-GY1qaU-zFftpCALZ_5PROgDEanm2t_yaQUmGsUoHoK7k1fZgbse1IhWdsrFLs2UmBfxGuSrnCe79JXa1vn7N69loJnwmPhXitUiKfCOTf",
+    "corridor_id": "hcm_dalat",
+    "region": "Bảo Lộc",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 0.79
+  },
+  {
+    "place_id": "mvtllVgGerZkeF8BqniahHC5dS-pV4KYS5RAXp15nu5KuTMFYnGiz0k3cYV6cDaTtI9112qcjf_q4g31XrFeK-H2CDKhYaX7SirpMsJpqfvN_gF8MrAyKmn2oVyeakuEN",
+    "corridor_id": "hcm_dalat",
+    "region": "Bảo Lộc",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 0.687
+  },
+  {
+    "place_id": "ahiOi7-UNLhdrXECI36WxXNvK76FvqMSb3xYiTF9pI15dknamIqGFQGly97o3rJVEacp6ijRsjY9kr0i7CX_yyXPIYrtPbaiIaa1bjRt9jeRol0i7MBudjWq_QIL2Go3N",
+    "corridor_id": "hcm_dalat",
+    "region": "Bảo Lộc",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 8.513
+  },
+  {
+    "place_id": "oyiQu5mx1VxwnmEcrFyjkXSefgi7W6vweKBqN6ximdR1sjsolAW32UCfWBK9Bo2TdqZ2HogGkZJHoVw_kQWZlm9zlzVEi43T3dWFHU5Fhkfh0i1QHpweBkXajdSxcBurR",
+    "corridor_id": "hcm_dalat",
+    "region": "Bảo Lộc",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 2.237
+  },
+  {
+    "place_id": "T4zMgIwzg39rgkkjphi5i2uwVTm02QI31XZZ_aK5tvdEqyVpujFu71VyvInOqhKYaba0iCpfONcpdr1WKPlGl6nKWSRC2GozyaKxaTox8uuVplkkaoBq-QWucjDH3G75B",
+    "corridor_id": "hcm_dalat",
+    "region": "Bảo Lộc",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 12.509
+  },
+  {
+    "place_id": "NKRZUaJklHZqjS17oV2Uy3WkLiGmALbRaKc-cL0Cn90LqGdqkQGY9EOMYxu4Zuf8cL9ZELRflJN0jV1RpnSUlmmlO1CT1JvJcLROCVpRrmP1xjlECogKElHOmWSmUnO8D",
+    "corridor_id": "hcm_dalat",
+    "region": "Bảo Lộc",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 1.246
+  },
+  {
+    "place_id": "YatwFqxkUmKamSoggYjogGmyXjmqskrFacRNRoCMCcOF-t0U0x65yyGSaRkWxn0vGYo9JBL2jFsh9qW8PgKFyglCfewGpTVaEZKD7QoCAFullmkUWtpAXgGeyTT2y-2LA",
+    "corridor_id": "hcm_dalat",
+    "region": "Bảo Lộc",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 0.38
+  },
+  {
+    "place_id": "mXiVnZG1e4lL3jM5mICZ8XCrR1-ze1TccHurD67LdVPhnU1wtsmm30Zaofiioa2TfhrpQHaRSsNFkg3YWmQ-4IEmGYpuwa-IYfblPW5lpq33wg1wPmQ-vfH6rVCSZDuLZ",
+    "corridor_id": "hcm_dalat",
+    "region": "Bảo Lộc",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 0.38
+  },
+  {
+    "place_id": "Y6wLv3-vCx95vWY6HLeR4XmtSCmbcqfZfNtIAqt-JP10r2qVmAsbkXeFZtHWsbo3NTb5UIatv5th4sWF_mludnkvbN3y2fI2Zeb1LUJ2SbfR4h19Yq52NnXqvUCCdCubd",
+    "corridor_id": "hcm_dalat",
+    "region": "Bảo Lộc",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 0.437
+  },
+  {
+    "place_id": "YHVPgT9rqYpQmHkNq22kO2ayU8q8fZFBZcdxQ41Jq8tTxiQkr3KnyWWgrgKHFY7Gf3ayMKh9ittlo20UhGKZgGfEVyawTqz8ZqJUQIJygutnmE-wFBSSgmEWwR7SCFfnC",
+    "corridor_id": "hcm_dalat",
+    "region": "Bảo Lộc",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 0.299
+  },
+  {
+    "place_id": "FlVyc1bzhYBnoUkPqn9ihVeeUS2GrnCPUbFwDr1L6ZNpxaxEt02tgH54FAaxo4DQfZo5XbAVnPlpvB8mtmKyCyH2wsiSISbpZZKCwQsRkgOlwmkUWtmWQgGeyTT2AF_vA",
+    "corridor_id": "hcm_dalat",
+    "region": "Bảo Lộc",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 1.221
+  },
+  {
+    "place_id": "fqpp5tF4bqtJuWUWtWqCn2eZPzeqaLede4BMBqxLpsJpJhmIlslSR8H27ll-oe2aaZN6BI55pIJtwu1yZr2sg3Wfcdh2veZG8fblPW5lpnPB8g1wPrw-JmX6rVCSZDuLZ",
+    "corridor_id": "hcm_dalat",
+    "region": "Bảo Lộc",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 1.056
+  },
+  {
+    "place_id": "ebJ5mH9VmGh8u2MXnkKIyHnfbzavUoebZqR3IKh5kNxmgZBar1O2N6qC2lx4DZeYnrl6FaVCoex9llQEtA3r2GSYQV0hd5CcfLhOpFpomPF9gKl0Org6ImH-qVSWYD-PY",
+    "corridor_id": "hcm_dalat",
+    "region": "Bảo Lộc",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 2.358
+  },
+  {
+    "place_id": "d5xQ9WFQP0R4pkvGuHY-zni6QxC2YpbkEJhPQoFUpN9Xp0sDtlua-mSqSyGvUIreZ7ZyCK8SpPlkpn5DgEqoxGemS46zSrwaYqZ92YZ2hu-0nEMQYxCWibC0SzuGAEYb9",
+    "corridor_id": "hcm_dalat",
+    "region": "Bảo Lộc",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 1.295
+  },
+  {
+    "place_id": "Xj2U6gWJnBZy1VpRrmOLw26iSlClY6H7dI1Km6ZfoSp5cWghko2x6XdeTiemYp93Q4rxPLoE4Hxvo78-uWPszG5OjByUc-iRd7NFoVFjk_p2iVaTpQWDk3ShXVi6TBOjT",
+    "corridor_id": "hcm_dalat",
+    "region": "Bảo Lộc",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 0.586
+  },
+  {
+    "place_id": "I2BR24q4tRKbY0morWemzRhuQbitT4yBqFVrIIQQosOkeklGtHWthqSLXgCEE2A9urZr92VmhB-DZkkkr8lW--hFgUT2uSZjApGFSjIR0hEaeY0HtshKUhLZgSTmEE__E",
+    "corridor_id": "hcm_dalat",
+    "region": "Bảo Lộc",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 3.457
+  },
+  {
+    "place_id": "ka_GgbergbdmxnIejlyH8mWjdjidFP7Dfb1cH7BKZfu7sCsksnB8_WtMogxjqK2CaKBuAnIXV_Z_n1w1iWCRsVObeQ44FZHJZaFX27Nxgehkm0QXQxeRDgWazTDyBFvrB",
+    "corridor_id": "hcm_dalat",
+    "region": "Bảo Lộc",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 2.36
+  },
+  {
+    "place_id": "mWN_dJ5aqfTatVYZY3SPm2euZUKCe-7dZsJLGK5n_OxWmCkChj66zmWle3WtQ4jwUMNKA4B0ofVQnS1AtGf0q1HBUgm2TqGZY6dRRYd3h-5inUIRsRGXhB2C1SjqHEPzH",
+    "corridor_id": "hcm_dalat",
+    "region": "Bảo Lộc",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 1.334
+  },
+  {
+    "place_id": "p2SL4e91PN6uXSEAas3qa39xzbjS1Db_rq9lALHhEidGAVJZbnnZk6mlOtwCzaJXDhk4_Wql2kfvfSFA5qWuF54d9IA-fSIHZuXx7W5lpmfCDflwPrw-Jmat9VCSRDuKZ",
+    "corridor_id": "hcm_dalat",
+    "region": "Bảo Lộc",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 2.561
+  },
+  {
+    "place_id": "Sr2u0mA3JrbxyjGgrvH6qo1n1dG2kNo-QauZCYKYY8JZl9nQKjxjwNm87QpC5fKmRbchaAKWjgKxlQslOf6b0Qm3vKEu5Ga2va-ZrTY9_j5VZj2oZuRmfvWjPQjKHGPSP",
+    "corridor_id": "hcm_dalat",
+    "region": "Bảo Lộc",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 3.9
+  },
+  {
+    "place_id": "RqFsZKmiuZFGlG8Xacyiwka3Mk5o7QIOEYacsL4sfjq1aq1FJu3ql22KpThS1abX4b7pkEIxpi9RqhUYrp2-x9R6hXjK3WpfPb4NdSYt7i6tu4k4dvR2bi2y5RjaLHPDL",
+    "corridor_id": "hcm_dalat",
+    "region": "Bảo Lộc",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 6.186
+  },
+  {
+    "place_id": "Go5uSUeMNf5xlHBIi0W28FytVTi7QKKgWshRT7--kK5qkns0pbIuHj12se4O6GRLnXb1FsolBhJNyvyI1umyNxWmSWROyb4jcaKxaaIx8jEFOlklpuuWcGmu-QTGMG_fM",
+    "corridor_id": "hcm_dalat",
+    "region": "Bảo Lộc",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 4.679
+  },
+  {
+    "place_id": "NfN-4MJXg4MMkqQVnH64qHyVfTeFaCOvepp1naQPWJhzulMhnFN440y2MdSKzvFD6fd1tJbNHkuZwu1cVsHW03H_eUwaqU4m2fp9MWJpqmrp_gF8MrAyKmn2oVyeaDeHa",
+    "corridor_id": "hcm_dalat",
+    "region": "Di Linh",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 12.307
+  },
+  {
+    "place_id": "h1N27lR5Xp5IgbWWqFJaw39cqbupeeLGeKt2JaRr69JOhlRbp3uRLIEmqT-WoDac2Z31AApF5mZ-oZ1xY8Ga38mTeTCafRJXmfblPW5lpmfB8g6sPXA-JmX6rrySZDuLZ",
+    "corridor_id": "hcm_dalat",
+    "region": "Di Linh",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 14.133
+  },
+  {
+    "place_id": "Mr2Pj3C90GVYyFUPNo6PgHHIeNUUQvOfa6N_Abxs3g8hoylFNikKD83GuaAuxGYP8h5FBTLlsk23JriEzvF69RXLKdBG-REL2a6-fTY9_WeZqo0pruRmfjxmVQmiPGPTP",
+    "corridor_id": "hcm_dalat",
+    "region": "Di Linh",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 15.988
+  },
+  {
+    "place_id": "lI13axhXQHECj2IapWqWa3G5eqcVdbvmQ7Y-q6hZle8suZpzpVhc6RCLlPSGgZav9R4ozA7x3jtxC01wRp1mnlnKLbliTZLvScbUzQ5Vllfxwj1ADo52FA3KnWCiVle7V",
+    "corridor_id": "hcm_dalat",
+    "region": "Di Linh",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 1.978
+  },
+  {
+    "place_id": "pUlULWWJT69LgD4Xrw6jxnu5YiCRaZaqcLViB5pokZ2rhjccSVS0mpalbhmnD7DttLZVLWp955tyHfVA-q1SS0KlPQCGqUpnlfblPW5lpe_B8g1wPr5kPmX6rVCSZDuLZ",
+    "corridor_id": "hcm_dalat",
+    "region": "Di Linh",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 5.875
+  },
+  {
+    "place_id": "en0XnWp9Mnd8qpAVpXmXaFXcmAGyUqL5camXPiFrY918u5ClIaq-7Hm5QlUMs4Saf4Fef7IPmJtOqFU2ngyQKn2aCTTyZaIT-tHxOWphomPG4gl0Org6ImH-qVSWYD-PY",
+    "corridor_id": "hcm_dalat",
+    "region": "Di Linh",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 5.883
+  },
+  {
+    "place_id": "oluv9bhq9aVzvWkqhn-rvViidTeNYY70a5FDCKcZ8edkl3ULjhnx92mUGRi4fYHTYZBsAaR-qMlkQ61PvGGsyGxDKU2qnGKzuaq5YTI5-judrlEsYuBg3jmy8Q56OaTPO",
+    "corridor_id": "hcm_dalat",
+    "region": "Di Linh",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 8.796
+  },
+  {
+    "place_id": "ufiHYG6IRAK2w149Y0qpwYKff2VmQK6rgM8pj1F0g0u1nkq0YRGX8K20YDW1dKHFYMNRCFd4roe3nl47YkuYgofBIQVjTI_fh6dRRWJ3h-4-nUKxSBhGXh0q1ETpjEPzH",
+    "corridor_id": "hcm_dalat",
+    "region": "Di Linh",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 12.028
+  },
+  {
+    "place_id": "1ZqSj3B3ubZ0lGUYqFinlXDRegy_X6_0fJ1uM6hmnaRx0D8skAG0lHe3elC-Z4mXcoxyGr8ClVhDpZY7PmgGTWGuPQDGdZYnzpyxDtXFllfyVV1ADowOFcZWnWCiVAu5y",
+    "corridor_id": "hcm_dalat",
+    "region": "Di Linh",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 5.344
+  },
+  {
+    "place_id": "EHtBb0anuqIyRnBtiodp0W-VRj6Kl2nJb7ogBL2LH_drkl1Pjq56immSIU66ix_DWZN3BruLg3917ua5NjY50iGynUguNpXuIb6tdSYuLHeJukYQdvU4ci2y5uTab8GnL",
+    "corridor_id": "hcm_dalat",
+    "region": "Di Linh",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 6.517
+  },
+  {
+    "place_id": "hOwcU0jBU9hSZ0wZYZqJjbZIUEZ4SJmpY4d2G7VInZ9ktViFtHeezHjCJWqud6zOZ6QjKK9Ip8NUtooctmoj3Fef9PImDSb_6YaULR4V1hexgn0ATsxOVhWK3tzhIEv7F",
+    "corridor_id": "hcm_dalat",
+    "region": "Di Linh",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 4.942
+  },
+  {
+    "place_id": "sWdZbNo6YkZ9o04Hskil036ZcEezcKHLY5tGMYZOh_1mxVYahheqglWcTie0Fp-xfZkpRfEU8IVqv3NzgowD8GSNeDywi4v0Z6OLQYNzg1VmmeoVtRFWTg69kTmGDPvjD",
+    "corridor_id": "hcm_dalat",
+    "region": "Di Linh",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 9.087
+  },
+  {
+    "place_id": "H_R7VZRBh6ZhpE4Ith37zVmXLhe6apOkWIh0B40durlYqUUwrjGAv1iXRVW_PdHybpBvMbpBpuhpqV0Mu0SE4GKScE42ja4vDbKheSoh4iOFtkk0evmyYiB66RTWIb_PI",
+    "corridor_id": "hcm_dalat",
+    "region": "Di Linh",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 15.552
+  },
+  {
+    "place_id": "sIS7aa-Kbcttg1YDQXtG3G2TnCKwvG2PcoRjNJ0W7R8hypSNOyqVsjGm1azitsUCMa4xWAYKMGfhpaHcQcKZjzP-EVUmsjHyINYxaaJa6GuVOnEkavowbjGv3QTGgvm7M",
+    "corridor_id": "hcm_dalat",
+    "region": "Di Linh",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 17.172
+  },
+  {
+    "place_id": "pZOCm_Li-U1nqFFef0aD8reybBpLeal5t4FoHbHwl2llg3Q-sVaflGWqUgWcaOe9cVNa6FaxSk-xxVmAvq2up-36DYxSxDuSpf7tNWfprm5t-gV4NIg2Lm3ypVq0mDODb",
+    "corridor_id": "hcm_dalat",
+    "region": "Di Linh",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 3.313
+  },
+  {
+    "place_id": "MabhQVGZkUB2j3kVpmWF0C_ReaR0dmj2O45qpeV0uN5_0U8TvXma0Hy6alG6AajSdKBYco91ltSetzx0p1yQKW5S2VVKrXJpMcrZAVJZmlv9zjFMAoACGlnGkWyuWAe3W",
+    "corridor_id": "hcm_dalat",
+    "region": "Di Linh",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 6.498
+  },
+  {
+    "place_id": "xmZHYbwUY41iZyQvsmCKnlOuX0-xYNiHY4wNTLeNS4B8m1RAvJKShmabJBu3O7zbZaNMTrBgisauVEsGs0SngKGYdUOHSPDJZqJUQIJyEgutnmEcUtBSSgmWwTz-CFfnC",
+    "corridor_id": "hcm_dalat",
+    "region": "Di Linh",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 1.978
+  },
+  {
+    "place_id": "OoARY2XdUEx6iV4ErWSEwVbCcCq1E6H1bZ5eMqtal89muXdFw4-ptYi1dEWBaFffi5ghRLdoj-VQwU4ntB3Wb-VaZVhGBZZ_HY6dRRYdKh-5inXdgsUKXhz61ShGHEPzH",
+    "corridor_id": "hcm_dalat",
+    "region": "Di Linh",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 6.899
+  },
+  {
+    "place_id": "QAAP6FR2R2iUj18pl1uQKcMyMZSKkuoYvLFtDRLyMuHHPt1sXvWblcZmlahuhdOWalbZhW5dLmnLQjhRLoVykfOGInqQ7ZY5L_7ZykZZmlnOWjFMAoACGcdakWyuWAe1y",
+    "corridor_id": "hcm_dalat",
+    "region": "Di Linh",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 0.797
+  },
+  {
+    "place_id": "eEbRTo5cti5HnzEIp3Sn_0elRZ-PZ6RQaeguXpFnp1pBn5U4oAG15ZhBRQgygdaTf5IdCEaYCiPdwtnNTl161lGebdg6hALfjc5dBVZdnjf5yh1IBoQGll3DsWiqXALvX",
+    "corridor_id": "hcm_dalat",
+    "region": "Di Linh",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 0.54
+  },
+  {
+    "place_id": "FqIOYUlVj7pGoEZ0rimi4lXWSWKYd7WlR9aiHzcEm9txrJESu2Dr5EGfa12hYon5RowRPrtxmOpBo10voluQ7nS8ZFSaQWZDVdLByUpBGkPl1vGAGpgaAkHeKXS2QB-vQ",
+    "corridor_id": "hcm_dalat",
+    "region": "Di Linh",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 15.865
+  },
+  {
+    "place_id": "QXK-Ob6YC5dHtHAZqXaHx37RPS2iZYv3dY4xKL5esZJ3iVp1klaql0DTbAKgAOmVdqdeOVpdiJRy0C6mpXSTzmumc1NKaIf8uzBzVZRdnl_63jVIBnwGHoXClWiqXAOzX",
+    "corridor_id": "hcm_dalat",
+    "region": "Di Linh",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 15.573
+  },
+  {
+    "place_id": "nkLCeJ8q2r54kVp9tTCfmHijRgt7U6VSqpDmOU5-hWxIvSZJrmCf63uXXF6aCbmGft0xGbWzhNlObEYtmbyT-WGFWgO2Ca3he79JXaVvn_Z6hVoJqQmPnJ3itUiKfCOTf",
+    "corridor_id": "hcm_dalat",
+    "region": "Di Linh",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 2.522
+  },
+  {
+    "place_id": "H522DoCSxrWF8IFSRX9uFzWBQrF6rba959UREL6hRr3qVg2YYnFCvd-Shch6_fK7_TZJyMrQKhJph7kAwt23iwmCCMxKafeafeb1LX51tnfR4h1h_qwuNnXqvUAudCubd",
+    "corridor_id": "hcm_dalat",
+    "region": "Di Linh",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 6.496
+  },
+  {
+    "place_id": "D5p9tsixB9h6uWM_nVEh7H3cUZR6nhyqf7tNNd98mGhRqk5asWWi2HiCXpeuDhXkKToZBlLJohOZ8q1VbsUWItEmcTlufer2HVbh8WphomPFOgl0Org6IkH-qVSWYD-OY",
+    "corridor_id": "hcm_dalat",
+    "region": "Di Linh",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 0.706
+  },
+  {
+    "place_id": "nCXafGIhKAtiUawAnNrnUHVJczutmIBsfINnOqGZ4lGuhVUnTLCTvqmZZ5Ob91ltYb86opqdsVB5hllftu-uC3uFewqu1YRseLxKXpz1nAp5hlmUGeAqMC6quUZx73Od-",
+    "corridor_id": "hcm_dalat",
+    "region": "Di Linh",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 2.434
+  },
+  {
+    "place_id": "WvMeqEHyaKR2gH8HuId3kmyJZwi2i6ZqXqsjBbX7iERuM4UGWuEWLiGwNXk6JeLbgape6Hi5qk8FfzqEMukS6i2-Wcy6OeabPbKheRYh4iOFtkkpNvh6kiG-YRTWIH7rI",
+    "corridor_id": "hcm_dalat",
+    "region": "Di Linh",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 0.742
+  },
+  {
+    "place_id": "fSmlA5phabFngyk8nRTBn4uwsSNGc2Wt8L2iP5xi9LFTsFC04sUlOVVKw_0WzYNOQfrZeJaJKyqFVqSQ6ohXbplOCTg6jY4ODZ4NVQZlz6pNmtUYVsRWD-GSDTj6vFMOM",
+    "corridor_id": "hcm_dalat",
+    "region": "Di Linh",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 0.738
+  },
+  {
+    "place_id": "DE6Cy4uDVa9-nLk7hV6EeGObRieDSK3GfaBkMakWsYeMr14Gm3x-OrWaZNq9FLosZL94Z4JspsUNmlpSvk-f4mGcLQVhvaHTZ6NVQRVzg-pmmUYVtRWTg2SxTj6DFFPjD",
+    "corridor_id": "hcm_dalat",
+    "region": "Di Linh",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 4.808
+  },
+  {
+    "place_id": "ibVP5TF9cunVYtUIVu26z1liWeDy_dYH7WKV2B4hmq_OBzWowj1urdPW5Q2uGDLr3dM1oR7dyidR0kVQJuX6CwmOpuzBUiYWKbal5S4lMiW3gkx8fv0SZbG67HjSJRPLJ",
+    "corridor_id": "hcm_dalat",
+    "region": "Di Linh",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 5.452
+  },
+  {
+    "place_id": "b38mJU9nsWpdhrUoDrwjk2XafcDiue4ObU4BkOaJ_4ZpPhlYkqrOQmmFSZAmsvaH0YryQK5lSOX16hW5ctZ6tsniGeAmtCIfWe79JXZ9vn_Z6hVoJqQmPn3itUiKfCOTf",
+    "corridor_id": "hcm_dalat",
+    "region": "Di Linh",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 2.349
+  },
+  {
+    "place_id": "hEeaaamgqpJ60lE8RuqaK62BuZT-5M5KIaLhQqVtOjv5ajSFIjHik9mvNZTi6HbT9b81lM7dHR-pqgqgWaLxtk22FeUgcdejCbppcSIp6iuNvkE8cvByaim24RzeKHfHK",
+    "corridor_id": "hcm_dalat",
+    "region": "Di Linh",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 5.809
+  },
+  {
+    "place_id": "mVRUWIu9nkB11Tc8oXOey3S9TFyiKTI2UcJ8ec6RfgZNviEdTr3CBlUafQAijBq_IdrBfV6BymdVHslgVrwe0k3GLZlCUW-PadaMGU7Fhkfh0R5EHpweBkXZzXCyRo-rR",
+    "corridor_id": "hcm_dalat",
+    "region": "Di Linh",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 0.718
+  },
+  {
+    "place_id": "RLqJ41mm0tVsllkWoWyUh3uRdE2NaOExpGlV-0Vo8xfNl6ENJnq68W-5UT24OVWr_X8wiDI-ue_pfknBPu2j7gF6WXQa5Qa7ObKheSoh4iOFtkk0evh6YiG-6RTWIH_PI",
+    "corridor_id": "hcm_dalat",
+    "region": "Di Linh",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 2.097
+  },
+  {
+    "place_id": "Updo37VjSV1-vHsQmX6Pz37YRTGoVYCcYaNwl69-lydhhjDbqFS2n3raSl6eVaafeJL5FEqJTnyZ9kWTrrXqzAwrskFqfcEabe7-jXZ9vn_Z6hVoJqQmPn3itUiKfCOTf",
+    "corridor_id": "hcm_dalat",
+    "region": "Di Linh",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 3.823
+  },
+  {
+    "place_id": "mKS60EFBcGZZuElXppxEWXWkdjuSSZuVQ43oD5IBjJBqi6ZWZGuckESooVa4dZj_dapFArRZ75RCiOrktk11vLUaLb_ahXqY6cLRCVpRklP1xjlECogKElHOmmymUA1nU",
+    "corridor_id": "hcm_dalat",
+    "region": "Di Linh",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 3.15
+  },
+  {
+    "place_id": "exdkmlazgGF_oWlBqn-u4lahVSCqSpjAiJ9oRLIX_1CD_OSezhhaI4WRCVQKHYLnJYqMvQ4asotlXYm8mvk26wlCYsgBJVo-BZKCzQoBwj-llmkUWthaQgGeyTT2AF_vA",
+    "corridor_id": "hcm_dalat",
+    "region": "Di Linh",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 3.674
+  },
+  {
+    "place_id": "Zp5gsGRR_11iOUWYsUui2mBDSkewYfvfcrJvPL1X8ssUn1ZCvlCI_GC8c0OwTb73Wax-G4Z-gOl_sUVBh4iuj-vHVT-GZH2McKBWQoBlgOkWmkUWtmeQgLKyCTT0XgPvA",
+    "corridor_id": "hcm_dalat",
+    "region": "Di Linh",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 5.623
+  },
+  {
+    "place_id": "OLHJYZs5ReBXrX0BqHC7TGaixDurSKRYYZhILrd-kspQsHo1tlyJiWeyS0awZZHIcLJujrBgAcljrU9jvPKogWWidkuDrbqPFZbNXQ6FxgehkgUQXtxeRgWazTDyBFvrB",
+    "corridor_id": "hcm_dalat",
+    "region": "Đức Trọng",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 9.174
+  },
+  {
+    "place_id": "GmOOsod-pRhxpmwMlmebzXOJWp-WdYsic1qm1aF1l-t1RPEFTknet0APSUnOgAS7fN4-7l6cDRZJpa6VRkV2-lHC7TheRaLmUc7dBVZdnpf5ymFIBlwGNl3ChWiqXAOzX",
+    "corridor_id": "hcm_dalat",
+    "region": "Đức Trọng",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 18.643
+  },
+  {
+    "place_id": "TmRnhqWhsZmqi30HYUj4o37TcEc6snDLY5tGszFOTv1mxYcahhdWglLFJAO0Fp_xfZlZRYVz8Npqv3MDgFmyL8GSNeDywYov0Z6NVQYNzg-qvZkYVtRWTg5mxTj6DjBTD",
+    "corridor_id": "hcm_dalat",
+    "region": "Đức Trọng",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 0.729
+  },
+  {
+    "place_id": "OJ5Tll0iJ0N72ld8qx1c7HS9epG0UI2_8edhjrLxShth3vTSum0OSx0_YSwWbCLidedlHMKBTjplJkJYkrUeeCH-Q4QK3C7Kfep1IXJ5uvvd7hFsIqAiOnnmsUyOeCeXe",
+    "corridor_id": "hcm_dalat",
+    "region": "Đức Trọng",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 9.353
+  },
+  {
+    "place_id": "fYV6cIlYu29drXECi36Wv3O-zSPFK6O-b5R8Erh9pI40kmldpnKGy3auQEumfZWOasoxN4Jsio9kr0g0jX_yyXPIYgm7baiIaa1bT419j1eRol0gbuxudjWq_QDCNofYa",
+    "corridor_id": "hcm_dalat",
+    "region": "Đức Trọng",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 8.828
+  },
+  {
+    "place_id": "2JTbdrqbbbOci3wmv3FCloi5WhegVXoORQrFGPK18g-lusG9RoWy22m2KXVatBq3sdHFGUaVitXeilGhQlGHtXm2xeQ2hX7pOKrNFd5Njk_pRiVYFpQWDk3ShXi6TBOjT",
+    "corridor_id": "hcm_dalat",
+    "region": "Đức Trọng",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 0.732
+  },
+  {
+    "place_id": "xmKpSbJVs31ioTl7hUmM9GXEYgSGJ67HiKNwLU1JgGRnsqlCjxdW0H68WQG6YYz8Vp5ZH6pwnP5ks01DqayQhFFdCVkOHn6WCZKBWQoBwgOllmkUWthaQgGeyTT2AF_vA",
+    "corridor_id": "hcm_dalat",
+    "region": "Đức Trọng",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 0.611
+  },
+  {
+    "place_id": "kXdvojmHZSFMCXoQpL6owXxI8rQBlrJGdbqiyKjCBlppOU7eWOL-8G3pvoNZMgJLqSH6YXVeu4dtOJ6xTRzmV10hVrSZIvp7iem6eXFuEnvd7CKgIU6yOnnkJniNTsuXe",
+    "corridor_id": "hcm_dalat",
+    "region": "Đức Trọng",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 1.92
+  },
+  {
+    "place_id": "vHcgHKl2lltDu0QKvVuo6nqoT0i5boXTR7ssCrduksgek6l8xvHSG2ke7Rwu4bazXpmuCBLqrpFN5uMMMlGuKjWqjcU6gbvX4eqpcSGgziuMckE-Kb22aih24RzeKbvHK",
+    "corridor_id": "hcm_dalat",
+    "region": "Đức Trọng",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 3.361
+  },
+  {
+    "place_id": "mVNxdr1csJ5AoVwtoWKB6G_XWx6hW-LZb61MNqRhq_lwoVg0oFq4kXV1ZiugXK2TdbcocpBHv8h4oFU-kGCr80ePZpGRXJHYdTFHsZFhkfh0i3MHp1SBkXajByyjBurRT",
+    "corridor_id": "hcm_dalat",
+    "region": "Đức Trọng",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 0.198
+  },
+  {
+    "place_id": "E-2Bt4CMTqFSnFEGshCq-FW0UkG2i0_ZZqddPLOiZu1lqFE9s5wShlW1UTa1daG2erZZMD1JiIRjilaFSWSEzWW4QEdZSZuoYIFS8RoR0hKRhnkESsmCUhBK2STmEY__E",
+    "corridor_id": "hcm_dalat",
+    "region": "Đức Trọng",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 0.393
+  },
+  {
+    "place_id": "zWfStnX9QllDi10Ip5yYWWnQuFeVlojJpkGOCnJZjPO2kpEk0pWaMkUKKWRSlZi1ZdrXfvb5ZOXAyp5sNp3syRUaOmBqSWK52cLRCVpTrlGRxjlECogKElHOmWSmUA-_U",
+    "corridor_id": "hcm_dalat",
+    "region": "Đức Trọng",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 0.731
+  },
+  {
+    "place_id": "eG-Rdj82D0e9s6NjahGj5qJtomCWVrPioEZtnruRXZKfcURhuh-Jy45wN2G6N53uoXhYcbgI7pWZ63Zcohe_sq11fkyXU5XZsXRHYZEHkfhzB1STLXCyBkaN1pwZcKOrR",
+    "corridor_id": "hcm_dalat",
+    "region": "Đức Trọng",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 2.24
+  },
+  {
+    "place_id": "dWNH8khhB29VtV9CtU-ZwqlVYUC2SfbjjZy9bQ4URiVjtpis3gBL2zFSkfje0dYWCU6VTioRnCDx5tbf2QBC3_mfDs0iyeKvsT6UxU4V1hexgn0ATsxOVhWK3SDiFEv7F",
+    "corridor_id": "hcm_dalat",
+    "region": "Đức Trọng",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 2.239
+  },
+  {
+    "place_id": "IzGSsOFXSJp6vHEIsoH2Vm5G_eVuuQyeWnq2yTq9XX_5PR9gRtWxT2U_afBip5WX2focJHqtUrOdjrFhasFKb3E6BMVu0buDVer5IXJ5unvd7hFt6qAiOngisU3meCeXe",
+    "corridor_id": "hcm_dalat",
+    "region": "Đức Trọng",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 2.1
+  },
+  {
+    "place_id": "W5p6XK2XxPrSqgFF8T1WUhwTcTauZVZBVfoKEBqhVxWt5qEUhqWqAnU6rlzipajPTermxNbJVut5Jqz4Bq3eUwUqCThaeVKLnfLhOWphomPF9gl0Org6ImH-qVSWYD-PY",
+    "corridor_id": "hcm_dalat",
+    "region": "Đức Trọng",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 2.18
+  },
+  {
+    "place_id": "pPq9XvHFcUafuj223nXYRaEeKQJn-ATWXcrl3nbxAVPR00XSVogC550Q6XLSiAzHKdKVc5pNfp81FpUCrmnUK72ipZlgOZ0PpcbXqlZVlA_xwj1CFowMolXKnWO6VAizV",
+    "corridor_id": "hcm_dalat",
+    "region": "Đức Trọng",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 4.402
+  },
+  {
+    "place_id": "PblmIrPPhElttbcptk2XTVSMQQa5SZikVIYrBIVniPtUm39gtk2-wSGbLl8KudYjsYYpzEoFIqIBShD1JtkibhmK1HwWuZYT3YKRSRoR0hO1hnkESixKyhGO2STmUE__E",
+    "corridor_id": "hcm_dalat",
+    "region": "Đức Trọng",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 5.154
+  },
+  {
+    "place_id": "2yG2k1GvLa5Kr_Ulhgq6VXuCUQKif5TFS9hJGp1vkNVNrTo4rW-y1GXuSWTyZCeKfe35VPKusnJ96eDsRr1CE9FV1cx-qC-bUeJRKXpxsnLx59VmwqgqMnHsKUa6cC-fc",
+    "corridor_id": "hcm_dalat",
+    "region": "Đức Trọng",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 0.807
+  },
+  {
+    "place_id": "KUiFT4NnxUpmrWwCqoxP-WqlWUe-x5rafp9KR7ZPr-NVg4s6hl6cVmGbxQxOcY2EffiyB3FRJosV-jxQjqjqihiWxU2CyFaPrZ4NVQYNzmepmk0YVsRWxg2H4Tj61ZK_D",
+    "corridor_id": "hcm_dalat",
+    "region": "Đức Trọng",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 0.84
+  },
+  {
+    "place_id": "aOtHFyycbYdnm3mwN2OBgFKwbbKojWL7fJ1PAYq4jYNlErm0eyTus62VgVxSHnbDjZgNbGYJfnspgo206tHGg61PEKEezYoGuZoFPQIJygqJnmFQUtBSSgmWwTz-CFfnC",
+    "corridor_id": "hcm_dalat",
+    "region": "Đức Trọng",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 12.236
+  },
+  {
+    "place_id": "QI6TbxBEZrptuiMfvIZ6_XW5V5BKPkYqKXs9tuy0ckYonl2m7onmVz3TMVAeBe_K4a5N6OPV2pdAws350uUTOwAa6XCm_VInObUSpS4l5ieBsX2sfv0yZiW67HzSJHvLJ",
+    "corridor_id": "hcm_dalat",
+    "region": "Đức Trọng",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 7.24
+  },
+  {
+    "place_id": "a02DKWZ-bvC93rXQocW29-Ly8IQ-Ifa38c75zSKVDj4xYgVqjpH9Ch4ARlza4GnGIUr9GkaZv8ItmrGgWvEKh9VmzYAmJUovHa69ZTY9_j-ZqlUoZuRmfj2i9QjKPGPTP",
+    "corridor_id": "hcm_dalat",
+    "region": "Đức Trọng",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 12.803
+  },
+  {
+    "place_id": "GmOOsod-pRhxpmwMlmebzXOJWp-WdYsic1qm1aF1l-t1RPEFTknet0APSUnOgAS7fN4-7l6cDRZJpa6VRkV2-lHC7TheRaLmUc7dBVZdnpf5ymFIBlwGNl3ChWiqXAOzX",
+    "corridor_id": "hcm_dalat",
+    "region": "Đức Trọng",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 18.643
+  },
+  {
+    "place_id": "FWDjHhWuhE98WEAZspyCR2ihYDexbZqAU4xPRoEVhhvZSoSlAjWaE_nCMVz6sY7z1Z8VtO79PoOJim2WKtBSSO2WaceCofZLKZqJUQIJygutnmEcUtLCSgmWwTz8UgvnC",
+    "corridor_id": "hcm_dalat",
+    "region": "Đức Trọng",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 1.504
+  },
+  {
+    "place_id": "YUmQVlqDfU6X2zkyr-NSesWzfa0QJkKae5FRfaqsj5B-hkldoX6dj3qFY1uYU6HGJeL5RWa58l9tJvFYboQm6nX-Fs16aVe3Ue2i_XZ9vn_Z6hVoJqQmPn3itUiKfCOTf",
+    "corridor_id": "hcm_dalat",
+    "region": "Đức Trọng",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 0.142
+  },
+  {
+    "place_id": "dsVhs6CpzbefZ2QwtLSF3FRkdUA8w4aHVEhqrj0rjdhUdHIArJy_92FnSAq0mrvuUmUjCrafZ4pTq3kKtaTjZGJmeQW7pYHdYXVTR4WfhexgE0ATs7eVhW9ISSDiNqf6F",
+    "corridor_id": "hcm_dalat",
+    "region": "Đức Trọng",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 0.1
+  },
+  {
+    "place_id": "FHFhsqXDA01ir1lFgxehgH3GcACFFa3BY51WHbFOodxns3g4gmKFx-meaf4y5rwzxZ2BGqTpO8N5ixYu-QU6bnVOd_wyyT_yEZ6NVQYNzg-pmmUYVtWeTYRWxTj6Dg_hk",
+    "corridor_id": "hcm_dalat",
+    "region": "Đức Trọng",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 1.216
+  },
+  {
+    "place_id": "EMFFu0GsepxmqmkFtnWVwHifibQrZmnmUZ71tYFkqM5vwV8DZK2KwAFe2S0tpdLjCZJ8_SLZlhsRkpywhP0yahFCmXLdCTIrxYo5QYoZ2hqZE70NjsBCWhmG0SzuGEf3G",
+    "corridor_id": "hcm_dalat",
+    "region": "Đà Lạt",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 2.835
+  },
+  {
+    "place_id": "F6xn-rUecftNsFZFso9y8lbGWQa-sqWBV8YnD6oUiIthvFkCq3DL9Hy8WWKxBpw5Vp8u6athiHJRs00_skuA_mSsdEaASYDFZKBWQoBwgOllmkUWtmSCQgBayTT2AZ_vA",
+    "corridor_id": "hcm_dalat",
+    "region": "Đà Lạt",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 5.696
+  },
+  {
+    "place_id": "mo6AdrUfIihisywQS3We8npbtIm2aR2FUbTAZJg_YoWerU-FqhNm-WKtckKcdP36ZLV1N8F5vN97tnEJtUuBz2CwUyamW4bBYoZQRJx2hu9jsEMQtBCWhAmGGSzuqEf3G",
+    "corridor_id": "hcm_dalat",
+    "region": "Đà Lạt",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 1.674
+  },
+  {
+    "place_id": "Rr3X8YXo7Li4lUMVo3paR3GVbkm5grBo6pRXS7p3uFvMlF8JpnivavWhZQuVV5Zo46pbFL9Gkne6PzEdOjB-vaGWmTE2NWqxu46pcSIp6im-KkE8cvBwzbcq4R5qKHTdu",
+    "corridor_id": "hcm_dalat",
+    "region": "Đà Lạt",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 3.099
+  },
+  {
+    "place_id": "qqnqQZS5IU1Iez4HqKiQVUho8F-rgYBKZmjjUZ6o55pODiE3r4aT3n4NkD56r-tJSVPKQHquHiPh_UWhcmLp8m3kPdwG5uK7sfGhOWpiCmPF9Dl0OrqqImH8PVZeYtCXY",
+    "corridor_id": "hcm_dalat",
+    "region": "Đà Lạt",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 3.74
+  },
+  {
+    "place_id": "f5LtCJi2AcZxpE8s0He00HK_WzuodJXeaLc4FZBfuJ5otG0tp3WKk3OMbS-kAJrRRo9xV5Ndlrpw8DwqvJkCp2t0XwCoibjlcoZAVJZmlv9zjQFMAoABblnGkhiuWAVvW",
+    "corridor_id": "hcm_dalat",
+    "region": "Đà Lạt",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 2.205
+  },
+  {
+    "place_id": "2CB4Yn8ksY1K2kevBh2d4WOSapydUNHrCeY1tE65-kdp62ENfmFCR7029ZjqubJHuTINTXqt-gdt3eTMhrlevx7xgZgOsVo3kUL15X51tlZ1Lh1ixqwv0nXoLUK-dCubd",
+    "corridor_id": "hcm_dalat",
+    "region": "Đà Lạt",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 0.428
+  },
+  {
+    "place_id": "SAx2c1RhtF8dvnCSEXOwkWzXBr6MBLzQcpRHoClfsM2goml2HXOd1pOxRKQScaUjgdoxXr1Bg4c9z1F_SXHCK7kKMo6NQXu2VdrJEkgRikvt3iFekLwSCknWgmpIrBelf",
+    "corridor_id": "hcm_dalat",
+    "region": "Đà Lạt",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 0.647
+  },
+  {
+    "place_id": "d3dPtkm2wottwF0-wLUBqmCcfEOBqK3MZUgqjD23gEdSnUmD8-2CU2RJmUgqup6LGY1JSC7p7rYRUnV04tEmbgWHCSAaEIozcYKRSRoR0hO1hnkESshKUhGO2STmEE__E",
+    "corridor_id": "hcm_dalat",
+    "region": "Đà Lạt",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 1.857
+  },
+  {
+    "place_id": "W3iYvrG1ETp1gWhcoX2l-U2FSl19r62ceSZGl1J_C6N4JK4z9Rm3g4LNiSiC1fLnCha41e7Z_5NkJs2OQrQhhxnusd4OpCIf0e79JXZ9vn_Z6hVoJqQmPn3itUiKfCOTf",
+    "corridor_id": "hcm_dalat",
+    "region": "Đà Lạt",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 1.874
+  },
+  {
+    "place_id": "h5c6_IdDSqJ6tGAjtHa1rFGrfD6EaP34YphKAWMQ7viBunnwCbY8QoXqYTkathNr8ZZlSCK13wKVtpEplrkbBpWWmIGixEeeHY6dRRYd3q51i7kJKsRE-SmC1EYeHEMeI",
+    "corridor_id": "hcm_dalat",
+    "region": "Đà Lạt",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 1.172
+  },
+  {
+    "place_id": "RKGNv1B93UtzrUA1s33-xXOxaRu9G53v1SJNfSYo0r4JcrECFvQjUfGShS5G-fIHVW5d5A6QZr_JvrXVIi0Gjz2ytdhFAb7fSaa24T1tBjeRol0gbuxudjWq_QDCNGvbN",
+    "corridor_id": "hcm_dalat",
+    "region": "Đà Lạt",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 1.009
+  },
+  {
+    "place_id": "S2-HYlWsxcRShnsPqZqmyGePUUO-ZLCDf5NzQalprU1RxMkmqC3C6iFCzWUKrcowmfbB3MjmqiNlnobIWb2CbgmXGfySyTK7-ZKBWQoBwgOllmkUWthaQgGeyTT2AF_vA",
+    "corridor_id": "hcm_dalat",
+    "region": "Đà Lạt",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 1.663
+  },
+  {
+    "place_id": "l6VnaVqgjVoojl5xllqLlSOYZEWlWo3NLYdCcL3XuekWtgFrvFrkyhqrUUagSpvkFbdgc3WWm5QOj0p9d12l0TqJSnOQZC7gj7dBcpdnVf4BRjbtwUgGHlyqln3OXAOyh",
+    "corridor_id": "hcm_dalat",
+    "region": "Đà Lạt",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 2.695
+  },
+  {
+    "place_id": "BnaZjXHillO9eEgRkHCCc9agXxGj2OoEbK1UD69h4stHsUQtumOd1HTXdgq6YCieb9R-t7py5ils1T8fkaOR0XDUZlwHl--SdbElR5Fhkfh0i1QHp3WBkQejXCyRdurTR",
+    "corridor_id": "hcm_dalat",
+    "region": "Đà Lạt",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 4.254
+  },
+  {
+    "place_id": "oVq_0wXUKnfXdnlRpmKb4XSwbi-5XrHxNdV6EVKNfi9U5cXpQll6f4HxOdDOwlrWQStREPa0Fg5RKnXIpoF6T7E6ddw-6BpCSRbN2UZNjk_pWiXQFpQWD6JuhLpyTBJNe",
+    "corridor_id": "hcm_dalat",
+    "region": "Đà Lạt",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 2.699
+  },
+  {
+    "place_id": "kU65z3uh1EJZkiEraYqL42IyVblqabnOYk2nHbxGh4R1Rsw_QaDqpWK4g0igeZRwaW_ND7ZAosOodmQEix72qiVuUcAqiefCPb6tdSYt7i-JukU4dvR2bi2y5RjaLHPDL",
+    "corridor_id": "hcm_dalat",
+    "region": "Đà Lạt",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 1.042
+  },
+  {
+    "place_id": "Lj0RuJuMHOlFo0VWrWGhV4XTVSpymYhWSRNU0trkHm5hyr0peuGPYkG5xvz0qoqH6RREElo9yDelCoF4soViT7Xe_Z1WTWpPWd7NFUZNjk_p2iVZ3pQWDkwWhXnSTBOjT",
+    "corridor_id": "hcm_dalat",
+    "region": "Đà Lạt",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 0.723
+  },
+  {
+    "place_id": "daMrBUtWRKN2sH0grHGZl0KzoFeaT5J1RKGiU_JbvJadvj0duV9D1enUYB-lSJ76cotbcKcSvOtvUoFRYl17t0EKNPVe4YuzZdrJEUJJikvt2iFcEpASCknegXy-SBenS",
+    "corridor_id": "hcm_dalat",
+    "region": "Đà Lạt",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 0.862
+  },
+  {
+    "place_id": "FUK01EKUjm99WaU5qV2H30RdURajWYiWRKecFJV3mDtEi-sxpl2Y6GikOYzK-Zqr8uHFjApFYlJCai1lwpliplg-lpnJ2MpTncJu-VnVktP1xlFECogKELXOmWZSUA-8p",
+    "corridor_id": "hcm_dalat",
+    "region": "Đà Lạt",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 1.115
+  },
+  {
+    "place_id": "TJWLlWtOi4NvFVqSoniX4mtOd86OufjRahRWlEei8IRaDiWoinng7tmw0Rs-NeK38XA8hb4x4pfmRMnNcuGv4zV0FXqu6Qq3Wb0lpkYtdi0ZuHeK5vR2be2w2RqeLHPDL",
+    "corridor_id": "hcm_dalat",
+    "region": "Đà Lạt",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 1.455
+  },
+  {
+    "place_id": "ZmeNiopjUoZfrmNBsE-O_l-yVS2EcI2wV5t8GYQXO4NgnX2at3JAhm3EYwaHSY7pU6JUFLJPr4J5nFA7hUus4E-deSy3SLDGrlSiQIEJygutHmGUUtBSSgk-wZj-CFfnC",
+    "corridor_id": "hcm_dalat",
+    "region": "Đà Lạt",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 2.677
+  },
+  {
+    "place_id": "YDuwSPBP_T1mnW0EEhHD4gXyyU0Oxc6DFZL5HLahtivtSm3mKh1-NZlSzLMANrqCHa7J1F6s4sPFlnSQmvH2shnyieRy_cJ2CZqJUQIJygutnmEcUtBSSgmWwTz-CFfnC",
+    "corridor_id": "hcm_dalat",
+    "region": "Đà Lạt",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 1.196
+  },
+  {
+    "place_id": "WRO4pkpnhb5VuFEYtk_bjFWbYzGydfamVUnACoVmPQF5eGv-jHuCulWkth1zTvqEecDEQr8dg2Y9lnH8EtHnPiG6kcz2EWYeEYKRSRoR07ZRhnkESsqiE_2MSSTmEtsSL",
+    "corridor_id": "hcm_dalat",
+    "region": "Đà Lạt",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 2.749
+  },
+  {
+    "place_id": "nbRRQXlnta5mY0oRrniuhUplpEatd5vl_KRSP3BmqfOttUI-sWW982WmXSKraLn-eYBeIMN0BlIJXtGAGjxGluW2kaAnOTfj9Y6dRRYd3h-5inUIRsRGXh2C1SjqIEIfH",
+    "corridor_id": "hcm_dalat",
+    "region": "Đà Lạt",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 1.469
+  },
+  {
+    "place_id": "iSpuYHGctlZojJsrlU6Uc5KLbTVeTWL3WdLBuIbkGi5dOv78WpWypyolxdC-tYaHbaK9CHZKqfNVKinEcrl-P8j2MdxWtBbHDRV6zUZNjk_pWdnQFpQWDk16hdy6TBOjT",
+    "corridor_id": "hcm_dalat",
+    "region": "Đà Lạt",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 2.265
+  },
+  {
+    "place_id": "9au6tDNuRlh0qkdGMnr65woK2Txy6HJp06KZDTkd7qNNblI0PR1eW9ly7cUija4Zu0pB-BKOFHlxoqnJPjLikyGiqcRaoa7DVv6pcSIp6iuNvkE8cvByaim24RzeKHfHK",
+    "corridor_id": "hcm_dalat",
+    "region": "Đà Lạt",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 2.9
+  },
+  {
+    "place_id": "dZgupTlK7Fpw0Z8tvnO1TnaZpTrRaZTffrapFJFeuZJptXVapmyL60CPLHSpZpvQR45wCZJcl_Fxpj0rvQOHk2qRIXgGpALnkc7dBVZdnl_5yLlKNoQG7l3CHWiqXAAHX",
+    "corridor_id": "hcm_dalat",
+    "region": "Đà Lạt",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 3.09
+  },
+  {
+    "place_id": "jFeaLDOPKAJrpUAJlQLu03zTeqcyWYmRdXFupKhl65CPKRVwuoFiZ4WvSbi-QX6v-aHczIZO2uJRwZFBWv52nWXKMcrmn5o3ccQNDtZVllfxwj1BYowOFlXKnA1iVAu7V",
+    "corridor_id": "hcm_dalat",
+    "region": "Đà Lạt",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 6.167
+  },
+  {
+    "place_id": "3521WglhqbN-rVIJtmC2vH2FaF5Sb4P9JSbwmtZB-SuthrSc6sXCl6329Wl6vfaHmCttGOKxsjJpPrHgeoQm91nW8cBG2VeDle79Je59vn_ZdhVp6qQmPn3itUiKXCOSf",
+    "corridor_id": "hcm_dalat",
+    "region": "Đà Lạt",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 2.915
+  },
+  {
+    "place_id": "Wqm2Tp-RJ4Ums2x-rn2fxiqub5C0flqdTtkxnFJwl8JOfakaaIWl7JXhuSh-ZbaH0SJc5EKx_sYBJ-WMQr36613i-Yx-tfJvHe797XbNvn_ZJoXoJhQmPn3itUiKfCOTf",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Hàm Tân",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 19.382
+  },
+  {
+    "place_id": "q_ctWbOMssBgmW8DsnOTxn7Hby2wYPPgV5g5fGRiYsiHx0dNaa5v_2nHBXCewcr7EYplOQ7BjgMJioSonsUqcrFaCWkS9SoygZKBWQoBwgOllj0UWthaaiGeQTT2AF_uA",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Hàm Tân",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 9.741
+  },
+  {
+    "place_id": "Zbaa__uHlGZlqF5ChBKmEHpJwQeCEqrGZH8dRGrZgpttJtH8_hWC-_VPCXR-6d6L2YJpBBLl299llwklGtWao-FScSgu1SJqDYKRSjIR0i0ZhnkHtshI9hGO2SYSEEznE",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Hàm Tân",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 11.253
+  },
+  {
+    "place_id": "TC5ZZEeGgUNyvkuivrz8xXMxYb9Ev57nX65XCrhtoNRYrkcOixmSyM6XXA-lfWzyN8lbV4-OQ8pNolcQuHz29_GmtYWq9b7TTF65Yao5-judrlEsYuBiejmm8hjOOGfVD",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Hàm Tân",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 17.092
+  },
+  {
+    "place_id": "b2_21rUPGGlyFySsgvWmRaG-hUAK-14KIbINDSLhEnY9zlFtPs2ydiGuUv04if7PUaqynS7xuhclbrkQJsxuooW00eo-IR_-XaUxbT419jeRol0gbu4JAjWq_GzCNnUDN",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Hàm Tân",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 11.885
+  },
+  {
+    "place_id": "Y76MnUt4rnNbvWddtnWy_kq9STyTVGrbcTIN0WIQL4-N9rzt-ml6Uw3i9UgqtfLDVrqWUX35VvzOahMU6ogumJUyvSt6vY5MceLxKXpxsUfV5hpwKqgpZnHuuUSGcC-fc",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Hàm Tân",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 16.832
+  },
+  {
+    "place_id": "Sb6_uuWEfMxylWM2uUWM021BvDm-GK7Jc0EkmE6Uah8VysH8siRmA0VqwdyOJG__kaKxFaLxHjIsIlUFsNWyMjnG9I4tIg3OgaNFaToyAjKxplkkauhqcbmu-QTGMjPcb",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Hàm Tân",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 16.005
+  },
+  {
+    "place_id": "50qvVItnGWFsyDf0p2ugD0LK16KzRahHc0rul7tCkltYotc3i1OOcmnJiUqlfJZ5cIDICohE9bxzhq8uKG2CJF6n5hi_QrxqW2K5qTI5-jktrlI4YuIEYQ2m8zjOOnvVD",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Hàm Tân",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 16.187
+  },
+  {
+    "place_id": "u35UrKV8HJVnq1QhuWnq0WenXA-pD337iYdQlp5oXcBIuFRLqUSRhX2qPl6veOPBT4NtF7ANu-Z7uWFcIFW323i5Yp8FVaPGe7lPW5lL9mfC1aVQPrw-JmYOrXCSZDuLZ",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Hàm Tân",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 4.251
+  },
+  {
+    "place_id": "521bgkxDrd5pkSlJpW2K7mvIGbwubTflaaIgkrtHp_2pfvnULjqKC03CBJA2IkUSGZKh1Mb5tjtZZlyRNiBiNx2evYUqPQoJq5q5YTI5-jmprlEsYuBiejmm8bDOOQ_XO",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Hàm Tân",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 6.832
+  },
+  {
+    "place_id": "UaLnvk-Ssr5dlEm9S0eu1mqERrwwbPe8bdNjsU5-_sdbk1qyAhiD0iW29a7kXfIf7cm5Vik29oEFyjOWLM2hsSXPLWYpOcYDzaKxajBp8jOVpvkmWMRqcjGu6QYw1G_fM",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Hàm Tân",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 11.463
+  },
+  {
+    "place_id": "z7xDQLrfoI5_r1tXt2m49EC3bTa8XI7WRol-UqQB6el3pTFUkACkdGiOYVOdlr1ydp45VZBftLVBdC95qAGs1EalMBalaZmXcrZAVJlmlv9zjFMQAlgCGlnGkWyuWAe3W",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Hàm Tân",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 18.084
+  },
+  {
+    "place_id": "vL1LuCCBy1nyyVQOj3GOcNHJeRWiQ55qyY5-AKJtgmnyy1BMi0OCWP2vVz83f4JfyJC8j0BthpLUbE0yva9kc_dEdRC_RZ5q565DTI5-jmuOlFgYuBieac68QzOO2GfVq",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Hàm Tân",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 5.783
+  },
+  {
+    "place_id": "RnMiQmZbeQIxEjzEYoAGsyXS2bVulZpmVcroIbaBnnnR_iTgTv5K0Wy-qTwiRZ0DimohEVZB26dNGpl8xpFud30CqTy6kXZbqup5AVKVmlnK2_1MAoACGlnGkWyuWAe3W",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Hàm Tân",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 10.556
+  },
+  {
+    "place_id": "NwzgcPhqV1973FNYp2qCymerQ1msaqjhI4Tyfa9WqEMohGEfm7a4qE1XMBXj3pacSoN1frN46Z01qkdmsA3lxWeFNBWdeuGYfrMqSWJpqmkx_gPMMrAyKmn2olSeaDVfa",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Hàm Tân",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 10.044
+  },
+  {
+    "place_id": "s3o4KmaoY2Z_m3YOsX6CgGWtTAG_Ya_yV6JuDLxNgftnn0DgEsUyCgVCbRCFjjrHpU54nF0u_msizx60FVk2zgrNInyeHcK_GZaFXQ4FxgeiJZUQXtxeRZJuBTDyBFvrB",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Hàm Tân",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 10.068
+  },
+  {
+    "place_id": "aolscbFAYqdsrlcCi1ed3WzKgiO6R3qOc7GSNb1shclzlCJPukakjWmhb06-SLSNaax9ALBBjfk0v3Z1ohRj-oRGDVEjNYoWNaa1bT419jeRol0gbuxudjWq_QDCNGvbN",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Hàm Tân",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 10.922
+  },
+  {
+    "place_id": "zBmqbkZJQWi-vHIip213Wm6VayOLc6LzXJRKDL1u__WDoGM3saBt8PdAd02MvrLcZchCSq-9880tmllICsXyUyWySQU6yf4DyaKw1ToxajOVphHwauhqclmuMQTGMG_fM",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Hàm Tân",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 8.825
+  },
+  {
+    "place_id": "OGK6j1YmTU1SmTl7thcnC32KgDh6zcI-Daax7NLZxiIRQny6sqQWtg7KhLk1icYz0h55SQ4aI_2BQsElkssWLySe8WVazS4D8ZKBWQoBwgOllmkUWthaQgGeyTT2AF_vA",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Hàm Tân",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 19.161
+  },
+  {
+    "place_id": "6Cx1Z12GhEFtzglSoUSm8mHMgNG1Q65sTJG6vUxElHVepDGkjVWIzWhqkH-jXZCPMXp2Lo5Ch84MqSgioWvzjVipHl65RLrgbKhK4TYh4iOFtkh5Fvh6YiG-6NUWIH_PI",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Phan Thiết",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 5.067
+  },
+  {
+    "place_id": "qnnHwJh8mrplgmKBcq3vzkEqHTRyqDJSQtH9NOLF5-Zi03FFZrw3vVWWrohedDmMheahR655SPONIqE0Hpnji53qkawOxZeSYarhOWpho8Yh9gl0OfA6Y466qVSV_D9iX",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Phan Thiết",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 5.821
+  },
+  {
+    "place_id": "eYLOW8ui8IlnyVcOj2-dx2m_QA68G_X9c72I3S7B-otRYbBAypf2u0XN8eT-5GKiGcMthNqVtkkNzvGoAyhiBIPmObzqIbo6Naq5YTI5-judrlEsYuBiejmm8QzOOGfXO",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Phan Thiết",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 1.84
+  },
+  {
+    "place_id": "DV50fpvb3UuTgmCZq3qYLjWpdGWxe6HiGIRWfJoilJR0t3R5ngfQsgSBaHmsDqn6AIVWcZtGh9MjukJKrWi58l7dMX-qe6mYWbu3fphrm_INTYF8rQN2LeSapVn-bm-AM",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Phan Thiết",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 1.19
+  },
+  {
+    "place_id": "uFZnmouT34NmeXQisoPo801rTh8iaZfpcYR0qB1rtd5m3VFdrA7lmmWCViKwapP6Tao9FrJ5qcJ6f0Fcmw-TlKd6ViObVvK5f7tNWZtrqfJ-gbcNmw2tm3xeqSabDODNb",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Phan Thiết",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 5.791
+  },
+  {
+    "place_id": "W1dlTGVNwY7DrWBHgRWjTH_EggKHF69yYZ9UH7NMo96tZXo6gDi7xbG9X2DCERKfzZZ9EAbxz8txgx0xDsGOZ_bOfTw5RY_6GsKFXQ4Fxgehkm0QXtxeR-mazTDyBFomB",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Phan Thiết",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 0.734
+  },
+  {
+    "place_id": "mjt0zC1kAyxmuURypHeVIGWkuadQdJaX00REvqN3nchij2sQvHqvl0CkQgqnWav-M4pDGqZ1u_Odj90apXSwaWm0cRWrdpHNQ7VwWJPVlV_xQj3KVowOFlVincSiVAu7V",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Phan Thiết",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 0.735
+  },
+  {
+    "place_id": "cRn6v1CdlV1qyn4S1i1CR_mmvejSNGPLPabFQE7xGb_eFgicovjS8cNJ8dky3pKxAZMqODqcbo2Jzk1A5vaGd119sdQK7l53Faa1bT419jeRol0gbuxudjWq_QDCNGvbN",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Phan Thiết",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 1.231
+  },
+  {
+    "place_id": "WHVcVUDZYXNvsVwpr-7iYW-tdQehB4Hzo49DVVRgs8iWsFwooUyNwXixRxSRWp2ZR4tlH7gFs8lzsWlUl12T_071wag2knl3OsbFHU5Grkfh0i1wHpweBkXajVCyRBurR",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Phan Thiết",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 2.896
+  },
+  {
+    "place_id": "rGSJtGJRZN6KiF8FP2WFwFfDcXsrEqD0bJ9fM7hblo5nwnZEgWm0zleqfgioTAYPc_ZkgRbZRjuRpwE8mtqqa-Fd0VxCAmJ7GYqZQRIZ2hu9jnEMQsBCWhmG0SzuGSxHG",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Phan Thiết",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 1.18
+  },
+  {
+    "place_id": "5ak6pHiCqVlzu2FXsGW0-Ey7W0-wUIJ-2pVyXqgNhUp75T1YnAySxX6FQJKbUKNdeKg10yNTuMNNnHW5tg2g2Eo8TBqpZZWbfrpMWJpqmvN_gF8MrAyKmn2MoVyeaDeHa",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Phan Thiết",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 1.32
+  },
+  {
+    "place_id": "sAPRJ3J3kECnj24aR3qz3bylRFaraoaWfFjQVLxePcdy4ZjMzmmW-3muPQyxEApnRaKViub9qncxyU520k3WOenDTlzGnWbvrcbVDV5Vllfxwj1ADowOFlXKnWCiVAu7V",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Phan Thiết",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 9.573
+  },
+  {
+    "place_id": "54etJpuaUVNZ9qpMAa5q3YH-XwS5WMIV_2ap5FHmem397gk1fD56h02aEYDsNq5vTSYNnFg-UnZ5lqW9dvp2ymHy3Qhtkm3mYf7tNWbWta_J-gV4iDZuLm3ypVg0MqeDb",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Phan Thiết",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 15.072
+  },
+  {
+    "place_id": "dJtRllaPJ3Rto0YPkwRx1XrVfDSi6F8qc4xol65j7TVDiloopl6c222jXZymWVb4brChrTVivpJ3ib9QuV-hVlXaK4F6hBIvad7MFRZNjk_p2iVYFpQWDk3ShXi6TBOjT",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Phan Thiết",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 0.737
+  },
+  {
+    "place_id": "kox0qIhYK6Fvim43lVtW7kKzSyaaXrylX75EndZyUZBPsGWOlXCa60XWPFaTWaz5Q6NbK5dfjZNsoTwNpHLg23eMR1escZbCdqBEULJikvt3klUcEdgSCkqSgXy91BenS",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Phan Thiết",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 0.862
+  },
+  {
+    "place_id": "J-pibmBIEFx_vVMIt3q3nHyEaWG0fIKyX_xLJrR_sL1TrGCRqHE77aysZaRbC6DnoNpHOa1tjZtOrXkfoAi813S9cZa3VOEQer5I5J5uInvd7hFsIqAiOnnmsUyOeCeXe",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Phan Thiết",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 0.602
+  },
+  {
+    "place_id": "bnKDnDbUKpN0TmAMlbGP4HcGZCqTr-zRd1hOoQ2iqelvYjmiVoLKD73FgWj661LKQegV8ELlxXuRtjb0no4lOyUEHaxyls5uDd2NFUZOJ2_p2BVYFpaGDk3QEXi6Tv-jT",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Phan Thiết",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 0.336
+  },
+  {
+    "place_id": "rGqCanZE5mmSaCpKpm6JQMtqIy2kb-2RoVxYT7hugfm9a3YIjUeCj5RnvytqUKvVrlqzMr1ujd2UoSdOixuOxGRpYkmMQYHlrWhbT419jeQ0G0iXuxudjYXN1QDCNGva_",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Phan Thiết",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 0.71
+  },
+  {
+    "place_id": "5Hp_sVKBWKth8hzcXng66n360fzWtapjAeIF3WqYN4ppxuFEjnqq-31WAZhghn6Z8-N9vUSdFkGNyuVUXsne23n3cUZeoUQSdfLhOi5homPF9gl0Org6IkH-qVSWYD-OY",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Phan Thiết",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 0.542
+  },
+  {
+    "place_id": "OQ2oQGu9HRy5lHAzdjKMio1Gk2-LL6XOVk5sdWmhk492p1YOHnSx0lzOcDqNHLLDbLdwBYpkrs1aklKntoRH6mkEJZS1l6nbb6tdSYt7i-JukU47dvYObHWy5RjaLi_DL",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Phan Thiết",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 0.71
+  },
+  {
+    "place_id": "mn5XI5J45dNIgz0UrA2gxXi6YQSpaqiZc7ZhLpVXrJ5KhWsfszS40nCCTyCbMa5XuTIRIWZx6lpJKqlM9qFeR30ymQyKpUajmmrpMWJpqfvN_gF8MrAyKmrZ9VyeaDeHa",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Phan Thiết",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 1.744
+  },
+  {
+    "place_id": "SkGTrIaEfkl4JGbCvqZRv6GA2Cgeac5-fS9oyOK4JhJ98glUFt2yA40qsRhG3bufgfoZvLa9jpsVh21ETrFGb1XqveDyqQZzba654XrxsnPV5nFkKqgqMnHuuUSGcC-fc",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Phan Thiết",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 0.668
+  },
+  {
+    "place_id": "kXf2uGsWz1tqp6BfoVS0mUe0U2alFliOcqcwW54tiqu6ckMCQ1FWa_46lfmW_GHTLpLc8sHEQd3LfiEdlv1KWpne1bXa8VOnkcrZAZpYAlv9zjFMAoCuGlnGkWwGWL-3W",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Phan Thiết",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 17.266
+  },
+  {
+    "place_id": "joOslIzlWkFtrHc0uXyMiXLJexW8bZzJoL5_F6VGNWiPklFtvX8wsV6TRSO7Ua7tarBZE4wYnMhyrlkasmz_ylp0BrgqmY4BuaHdaToz1jHxploQavhqcSWu-jDG6G_fM",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Phan Thiết",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 1.315
+  },
+  {
+    "place_id": "eLtIpx9MFWDxUuVAZt06_2lSaYjCzdI33YcF5C4R6xf9UuWqng2apxXsATCG1ZcP7eMFLZ7aKQ9h4nX5ktYWOzm-lcjyFWImGYaVTR4W3hexgn0ATdbOVhWK3SI2FEv44",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Bắc Bình",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 16.447
+  },
+  {
+    "place_id": "vZt_qXx_IFZ_hKkUNA25nH2CnTauaZvDe4J0lKUOm5lZu1LhnVJy4mXcbF-ae6X7fNxsJLJGk-dxulYUsXS13XnfUgerfreeUohNWNZtru_J-IpOBrQ2LXlYNfCabDODb",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Bắc Bình",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 17.298
+  },
+  {
+    "place_id": "Q7-klrpVMnJyiVsKv3W033Fbqpm_XTGTfFNQ5npYCutFHsEx0plS2lJ6mW2elZC935ad5qJF0Dcl3mHI2vAOs6FuqRy-8W4rScrZAVJZmlv9zjFMAoACGlnGkWyuWAe3W",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Bắc Bình",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 6.88
+  },
+  {
+    "place_id": "XYCZelSRkq5gskNOrFOS4n-uQzGYbJGfJ4dLSZgLhpoFgW5cq2F8mnmHSzqWlm-Zf7JPCFNTs55IvvUnZayw_EyBZTBXq6zaer5IXJ5unvd7hFsIIqAiOnnmsUyOeCeXe",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Bắc Bình",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 2.889
+  },
+  {
+    "place_id": "ohgaRb7Ia0GnlrQNdpnNriVuSIXyKfP_lXb0CdLGgn4llR0giu8mhjWvIFVG7G4zccZYTf7wZvvVlsCpVkG66bnG8KFq8xLaDhKxOSYw1RWiMlnxBuhqcjGu-MUGMG_fM",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Bắc Bình",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 3.642
+  },
+  {
+    "place_id": "dGud3XpuUCxFtWm-k2aOGmumMzumZLuRd4x3CqBAvJZFimUpWGqe02i2vhM7cY2WZdKaL5JyYpe5fKcslWfq0bfQoxGjdbCQcbVDV5VPllfxwj1ADowOFlXKnWCiVAu7V",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Bắc Bình",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 5.528
+  },
+  {
+    "place_id": "daN6KCsc22lzszg1uHG_2XSgaXCgEZUmddrNfX5NgkpJzoZpWvgaBPHOXk5LUYpLLe9ZpPLtZqJFDiGUTo1-ez3KIaVOnY7DIdrJEUJJikvt2iFcEpASCknegX6AvBenS",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Bắc Bình",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 3.369
+  },
+  {
+    "place_id": "nAWua3icn2x4rzYKqW-T6GCsQQeac4SfS9oysK6UhAl8OFWCt5-GA43i8VQe3bufgfoYlb69jpsVh2y0TrFGb1VGvejx-qnjbnLxKXkFsSfV5hlkKqgqMnHuuUSGcC-fc",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Bắc Bình",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 19.788
+  },
+  {
+    "place_id": "iH9fpSINwrtxhWy3WHl__aGBTlmrD0mYfadCL7F7tfl8ukI-nGnk5ErdQXmoFL3GfKkxVqp74JRlslZnqQzdh7eTcxWtDIN_qPBNWZtrm_J-gV4NrQ2LmN3ypViabDODb",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Bắc Bình",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 3.618
+  },
+  {
+    "place_id": "oYlfjJFboHVsiGUddm2ik3a-fRKscrzhRCs5sa9ekuiddlsXol902R-RX1a7Yr76QKxwBLs0jdua1HAWoFU6gRZGMaTSUY7zVdrJEUJJikvt3iFcEpASCknWgXy-SBenS",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Bắc Bình",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 5.528
+  },
+  {
+    "place_id": "mqFNf3RHQg60khDpPqwqnwq-9ZgMTbZKeULGuKatslZlmgjMYeVCwnrSScgJ_bL_pS5VPXpt94pFNsVQ6r1CW1EvYRCWuVp3heb1LX51tnfR4h38Lq1iNnXqvCyCdCubd",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Bắc Bình",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 5.528
+  },
+  {
+    "place_id": "YDywL-iYdrZjfpnHtlR23WhKjTywcYGyaLJuMP5LgfZRn1ACsFyCgWugT0yycoKFZKIcDLrNIkdFWxERHsWCZ-lZbxQc",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Bắc Bình",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 2.192
+  },
+  {
+    "place_id": "thKE5GFJTaRUpSIbtGeM7FS0i0O3dFb2ep2cPYJ0-84ZStF0rsxKPwm6lLwSzEfc9VbdRzLVPlAJjm3RAhE2lh2WMax0TE4imtvCyqGB0hO1SYEGeshKUhEZjZjmESf_E",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Bắc Bình",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 19.812
+  },
+  {
+    "place_id": "pUBHBq5-1RUpmvV2rhxOlhHnCdARlgWPFqZlSGRFKPthjt3xnhmY8_lDCcB6CSqH1Y0qZiLp1tdpmQkr0B2W2-1eZSQi2S_iAY6dRRYd3h-5inY8RsRGXQmC1hzqHEPzH",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Bắc Bình",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 19.396
+  },
+  {
+    "place_id": "mKYDpqEpcFaTuElXpllE6HWkSTuSZpuVQ41BD7gBjJBqkmRWi2uckHOObzCpZZOj_dbRFAptZpJRCim8tuV269kaLb5yhXqY6cLRC0JRklP1xLVF2olmElHMCjgKUWe_U",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Bắc Bình",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 3.825
+  },
+  {
+    "place_id": "Lotgirn673FvoFlWuhWLTkO_XpuhcaESRb9k-K1hn5xtiXw2uV7ql0KLRgitTrXxeSpesqRam-R5HWgno2Oh83aLaxy5BuzVyd7NFUZNjk_p2iVZ3pQWDkwWhXnSTBOjT",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Bắc Bình",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 3.299
+  },
+  {
+    "place_id": "lHxcDJiYsa55uTI_snu1en6qYxuq05NVfLk2VZkhmNF5qxZqnXCI7GWBVSGXaKnBcdxjIphTfJuigm8ZqVVJxbR4Y1mtabrCgrKhOWpBomJh9gl0Oqg6ImH-qVSXxD-PY",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Tuy Phong",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 1.354
+  },
+  {
+    "place_id": "otBgK7kBt3ZHt2sYkWSl32mkMTlzZqSTjI5CLnVnvpRHiGwIvGic3H27RWhmmn49ncLZ_LZCUl5V-tVIuoWXo02mYeBOhd9KSc7JBVZd1l_5yjVIBoWeHl3ClWiqXAOzX",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Tuy Phong",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 4.118
+  },
+  {
+    "place_id": "GEobon31b4FznnaUvW2s25VyRWwq8GoKMaaJbLqdDhu9vym9PuWqO186_aS6LaEfRtL5HKohEbNZevrwRW_1u9HOysBWnfPHyaq5YTI5-N-drlEuOuBgYjmm8QzOOGYb1",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Tuy Phong",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 15.222
+  },
+  {
+    "place_id": "k3mvUGx_RCRLhUgfUAmz4HUytklhLVqvAf767lapXhSV8sUj0qq-423S8U1gLtricY3lAKZ1QkZmvek9Zrn2d1LF8QF6YUIKYob1LX51tnfR4hyRYqwuNnXqvCyCdCubd",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Tuy Phong",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 2.57
+  },
+  {
+    "place_id": "RpvoS2PeVnlyt70bpU1dDiKEPUqpDpSbBKpnFJ5_gOdSulYjrEuHwmaFSiSsRrXhfYNoIqlStft6uqkfTleX83GBk16weLeof5jQWZtru_J-gV4NrQ2Lm3ypViabDONDb",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Tuy Phong",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 7.272
+  },
+  {
+    "place_id": "XntbfX1bLYqlUgHFzrlXjmniXSAKRa-awq4dEGUkOldneqFdfqGia30m1QCicDbfye4eWJKcMYsN-q1qVqlKZnmWrXLWwUJXdfVxPuZlpmfB8g1wPrw-JmX6rIFSZDuLZ",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Tuy Phong",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 2.359
+  },
+  {
+    "place_id": "nAxXfXvhlap7tkBcfra4mZoOaRlkV7TYepLfBKioMuIR-xWEhT5ug3nu5PC-cebzofoRfGqdo6cd73FdYq3iC5kqEVBWrVuWdfrpMWJpqmvMjgF9_rAx4mgyoVyeaig3a",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Tuy Phong",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 17.41
+  },
+  {
+    "place_id": "vbwIfehAmt1N_vZwIt2G0aXx6_HyCX7RLhEjqbrB_qFtgrJ07pHGvU3va5xigfq1HYNqblo1tsjlOoNeReQi3cSe95HThVJ5Irb73XJ5uqFt7hJ4IjgieU3ms3iPlCaxT",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Tuy Phong",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 3.811
+  },
+  {
+    "place_id": "nkmtx9u5gHtNsXgr31WA65jlRjBif4aakE5FEq58vdmQrVoal2B91mFCMQStoq3-e-BrWZl9gCZJl3D9n1aRA0iDUia1CL_WJe59JXZ9vhfZ6Uo8JqQlan5fkUiKfCLN4",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Tuy Phong",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 18.666
+  },
+  {
+    "place_id": "DVypyky2dWZ-uMmE9sHiW5mSqTy6cdaDee9xPBax5lvpzV5UcnwyoI0ttuNKraYoUSrmSfqxo4VOo3N9_JnuamZ2rMBuxe4qefrpMWJpqmvN_gF8MrAyKmn14VyeaqOHa",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Tuy Phong",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 2.93
+  },
+  {
+    "place_id": "tVamolKES6lVnasIrmihZWB8t0S5z5R4bsJ0Rq5MPs5WSsOqrHchzGMhSUGCEIvDerdwNa14j95gprURaIiPZ2LBgSBO1nIX5Y6dRRYd3h-5iY0IRsRGXh51gSjqHEPzH",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Tuy Phong",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 3.482
+  },
+  {
+    "place_id": "IArdnEidvep_p2ovJH-umHu7M7Q9bL_Hd55qOpqSfZ1Ms3I5qq-8nneBr1w7CIfiepKYJ68J25Vjp20StFTannSeYVHqbUb2feZ1LX51th394jVh5q_SvUAvmC3qdCrFQ",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Tuy Phong",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 14.234
+  },
+  {
+    "place_id": "kbm6Rk4cBG9vqWS5OWiAjluqbLVGVovrXbi7hFJCSo9azSSloHnwjHW6RiaOHIfja5JCC75BpfJ2uU1Pjkf0yYOUJE6he_VbwG9dSYt7i-KrpzJ7OvWmbi2xuHTaLHfDL",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Tuy Phong",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 15.321
+  },
+  {
+    "place_id": "GEobon31b4FznnaUvW2s25VyRWwq8GoKMaaJbLqdDhu9vym9PuWqO186_aS6LaEfRtL5HKohEbNZevrwRW_1u9HOysBWnfPHyaq5YTI5-N-drlEuOuBgYjmm8QzOOGYb1",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Tuy Phong",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 15.222
+  },
+  {
+    "place_id": "AV-V0HH0jHF0p2UYqLmad3BYegy_la8sfKRu0PajVnTNmtj8skHGzz3WaSCC-Z42XcolyGr8ClZZDpVg7kwGdkqePQDFYZYnzlLVrV0Nllfxwj1ADowOFlZ2nWCiVAu5y",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Tuy Phong",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 17.162
+  },
+  {
+    "place_id": "dXnknGp-tk9z3UMam3uJ032rVBqoD-HpZ6aSBKRq6V9MlcAmsWi6n2SWDT6rtrztX2tkIrHfhp1n3jQUIwxX2nvfMmpouqG2ZfrpMWHqamvN_gF8MrAyKmnioVyeafeHa",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Tuy Phong",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 18.245
+  },
+  {
+    "place_id": "a39nWZvnrqhWqH8Ng2id7zGrRgCYdKmYTN01P4N_sJgOhVIChHuseUuCQV_g0KgMeYFoKqFkq8Jmk2wNUnFat3Ld9TiKbRpvc0rtNO5trrZR-gV4N8g2bi3ypVibgDKnb",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Tuy Phong",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 17.123
+  },
+  {
+    "place_id": "u36SmlgFqpzpfVMVV2W2sE20SzefaoTzS6tqFKdRiZ9z32JerQ645EuES3ixA5rKZ4BHaKoPhuNzpmk8lXis0meqQ6g-U6MDefrpMqJpqmvN_gF8MIwyKmn2oV6wnDeHa",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Tuy Phong",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 17.135
+  },
+  {
+    "place_id": "AcY9ZY5PW8RjxoFWgH52_X_GkRqBTHGtZd6ND7JiX61mxI1DhExU_VehOCG8jXDyUJD-ds7diQsdribMvskt6oHzbkR-wSlf4ZaGBQ4FxROhkm5EXtxdMgWaz-jyBFkzB",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Tuy Phong",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 2.971
+  },
+  {
+    "place_id": "_lqYcEBwlqFy0y5eomaf5X20VSu9WrX1atExFKdbj9F-tD1Ukkqb3ka2bBaSAbGUpdBOOXC7h5CpARU4tpJmXWnaZSgu-AuhzlLdBVZ9nl5d1jVIBc3KHlwGlWiqXAOzX",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Tuy Phong",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 8.199
+  },
+  {
+    "place_id": "sligbXPumnBCvk-eoFE9X3OiT52UYAmTRYtHipSdB5ZsjWKap1A1ll-IdZ6iYwT5abJDv6JfK5JEjGm8lbU488EB2aaCnjVDWW3ZEkpJiBPt3iFeCpAQvknWgX-mSBSvS",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Tuy Phong",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 3.134
+  },
+  {
+    "place_id": "IskBZ0RxQLqg6jEYdAGsj6W2baQIL5mVoLptZkZ_npJ0iTgTW7-0yZmYQyeaZ5fikIhQEVUZ26dOkpl8xQFudnqWqTy5yXZbflrZAVHNmlv-gjFMAcVuGlpakACtyW-3W",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Tuy Phong",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 2.581
+  },
+  {
+    "place_id": "UGe0e8MQgKpvwV8Gh2eVz2G3SAa0E_31e7pDGLh29dxQplM6rWSKhGy0UwmcdKDxP7FpeK1lmoHGPigIiRCGxsLDYjKGZviFcaZiRIZ2hu9jAS5wQsBCWhmGOSzuGEf1D",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Cà Ná",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 2.735
+  },
+  {
+    "place_id": "MCGjl49AdaNojWm5klyv6UVRTLSiWbssQ7dIcaZ1iVbRi2Jzkl6d7GjQYhulAKv-RKRPcLJ2aWJBrpncKlDvn3HCLilCrdpHFcadDV1hllfxwlbUDUAOFlXKnWCiVAu7V",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Cà Ná",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 16.04
+  },
+  {
+    "place_id": "V26OTH9jPPhkmHo0sWCCibOzbi9RrZGDq2G7AoCeTMpmrW4dhBeox2Ofdie2FLPgY59YGoFcnclroG45t3Kj6FDHZUSwYYDKCK6FlQ4Fxgehkm0SOtxcXgWazOEyBFvrB",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Cà Ná",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 1.438
+  },
+  {
+    "place_id": "btmakEyJqR9tliYGjx-rjm8wbp5C8e4nRaYZmS7ccJKVgi0Ayj0Cv8225fja_ebfpYM5-NqBUgfVjqEQGo2ZEz2zNpxW5QECMbam7gV95iUtsk4nga7-ZiW67RDQfHvLJ",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Cà Ná",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 1.105
+  },
+  {
+    "place_id": "dp4XoVeoDqJssl8qrGLh2myUuVwSiBILwQIxbX5pjsJVDK1azy0--6HaOXzWSWV_KRIhmoBwGsO1wsmqdlF5w0HOyabynu17NdrJEUJJikvt3iFcEpASCknWgXy-SBenS",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Cà Ná",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 2.186
+  },
+  {
+    "place_id": "rgh9jnlTIltdPrm0irlSO52DYVBGuQ-3WYHpuOatXpPaif1U7r3y3nnqiaRivSLicer-sWn6fsMd3r28xn2mkkUiAUz6eSPyeer5uXJ6yJ_d7W4SeqFMInnmsCSOeU-Xe",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Cà Ná",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 1.438
+  },
+  {
+    "place_id": "8lgwWXeXho5UpWhKu0SF9VS5XiaPe4aIXJB3Eo8ckY27lqVLeXaBjZe8aEy0eIXiWGtfH4GppLlyRFswiUCn63KWbSe8Q7vNX6lsS4l5ieBMk24fvx9EiZm57bTSJHkTJ",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Cà Ná",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 1.036
+  },
+  {
+    "place_id": "UYBRnL5QeOJNvGsHtlGbnXnbRV-aCbDgeIRzXplRsO99rkkKkm-M1X6tSSOrCpzFfaBJIJt-gMR1G2Eklmn6UlJOsRlglfXj677xKml5snPV5hngKqgqMnHuuWSGcC-fc",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Cà Ná",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 0.97
+  },
+  {
+    "place_id": "qQngfYaablFBsExffpOufZ2GsQTNRsJNLmJBJB5qFhGLFrmxegyWUTPepQWOiE5B9nLxNCqxRsUr-gmcllFWym9iDZzJOVq549bxKXpxsnHmchlkKqgqMe9yuUSGcC-d4",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Cà Ná",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 0.975
+  },
+  {
+    "place_id": "tLS8hz9ARIVgt31yHXaK3GKYSzOHZJrEAYrctCbBkS_pmn4ZCgxJQ-m-nUz63d4bOVKpiZHoLo4N4nrYSgEyvjmGqX4mAeQaFYqZQqIZ2hu9jnEMQsBCWhmG0SzuGEf3G",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Cà Ná",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 0.944
+  },
+  {
+    "place_id": "mbBSs4SDS5BaxmI9t0mY23eyWUO1mBfjamVNMbGiuv3EVy4bshV_BnyseCyXCuv9zV6NVL7FJs9BhskVGTmGY-1fELsU",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Phan Rang",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 1.563
+  },
+  {
+    "place_id": "u0W7dDZ3iLZpzXy89EKLF27MXok6QpvpYc9Gum5F8Oi6UZIqSEa7Til1kWbgkeIePXKheuU1Cm9tqzk67DWqT8FzPJbg",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Phan Rang",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 0.663
+  },
+  {
+    "place_id": "UGennQCnv3dCi0gM0XTuk3LTTDqruYnTLHZMdPJSbWNwTpKcuv2c_4muLXBGmdayXdY1AOKVkhZdzpFwhmnST5nGmQFavWLjdcbVxV5VllfxDj3ADowOFlXKnWCiVAu7V",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Phan Rang",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 4.16
+  },
+  {
+    "place_id": "eYt6_UlWhA2aglA7cjGb87GpRV1yeanerN9WDWVRlyKw3F76TWu1L6q3aFh5qYTdprhSH2aTsmmNblHQUS9OBmbK6YBp_aeCfm7tNWX5rt_Ktm14NfA2Bm5upViZ_DODb",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Phan Rang",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 3.576
+  },
+  {
+    "place_id": "CH7Ihqb18mGxJ2kchkbKu138LZS-krOXBT9owAK1tntZ6gFM6J22ax3ysV7W9llMJYB-sWKCZRPZ8omYTtHe42leAaR6pU7D4er5Iep5unvdchFt7qAiOnnmsUyOeCeXe",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Phan Rang",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 2.187
+  },
+  {
+    "place_id": "RsTIhjdJrS1zlGK4OESNQGy90r8SGb-hcUgnhb4bpK9zsX6ISxiB0Fu9W4gJaf7lGq1EvUhpjYptlEBvbYqNj3CCIrtPcrzQaYFbjRt9jeRol01i7MBudjWq_QI00GvbN",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Phan Rang",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 2.171
+  },
+  {
+    "place_id": "79yKqXZQbe6lmuEYWpne2fOerYx6QDlWoTrl3J5h4SNxkpE0Drw-Y-Hy0a3qzlzaYSbpNIau5gP5PgmBpqHqU5kmqdzeud5TAfLhOWphomPF9gl0Org6ImH-qVSWYD-PY",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Phan Rang",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 3.267
+  },
+  {
+    "place_id": "h3qQBa9mnZHEU3QnqVKy5H92T1m3bOHZToBDHqwJkt56r3xYrlCd2E68b1qbCrDefPVlXaALkoB5rGVcrVWemWKsW1u3V5Laer5IXJ5unvd7hFsIqAiOnInmWUyOeCeWs",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Phan Rang",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 3.75
+  },
+  {
+    "place_id": "qZDO0eOXiLpiln9Ltmqy7lqSXUq4HJuLbmxRPKJopjG0alHqh2-PLWh6Lgj3Va5Fb7nVHqFo8yJ2pHRMuh-kyGyUYAbRH7u-bKheSoh4iOFtkk0evh6YiG-6RT4WAH_OI",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Phan Rang",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 2.183
+  },
+  {
+    "place_id": "Nbtld0jFRXVzjD9xlQKn1yqLUGumZbnmmok_Kat0f-K0ijsupl-nLHGkp-JASLMpaKWVM6PBchtxDtDIYv523A0W0WBWUWLCVcbXNV5VDlfxwj1ADowOFlXKnWCiVAu7V",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Phan Rang",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 0.631
+  },
+  {
+    "place_id": "eiOWJ1xLvX5ir1CsHle8_k-8W6mtbobHeq98HqM4gtx6hlMlqAqS9XqtSwijU7jDeb80EK5_sNdjkU8Yt1OAbXqeZVq0meHsf75IXJ5unvd7hFuyqAiOnnkIUI6yeCeXe",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Phan Rang",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 0.725
+  },
+  {
+    "place_id": "euWNfKgCU3p0gIGldoHxT-EyEpFyuCkudeKJHKrR-sPx5v0cnmZFs_2CBVzuY4bLDebg0CLd-r9jesmJarAmCx2CtdhCsCYb1er5IXJ5unvd7hFsIqAiOnpasUyOeCeV5",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Phan Rang",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 1.089
+  },
+  {
+    "place_id": "lmP5pqqAPKWhxu05cq2m25mWpUQSxeJSaeoF3l7FnWlV_fNqUsg8hTd19QeOqUgbcZXpwXqWHotBPVLQZsQ6i7HxFq1mekLZqfLhOWpjnmPF9gl0Org6ImH-qVSWYD-PY",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Phan Rang",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 0.83
+  },
+  {
+    "place_id": "GbWu1Z-Apa5uxCUoomy9vWlCjwyEQo50a8YhAY99bbxu5mdLihu4vmnWYCKPGoemZox0NctEvpVe0ngOg0K6Nm9OdJWtfo-va-ZZTY9ruZV_j0oZn2q3PvWjPQjL0GL2j",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Phan Rang",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 1.318
+  },
+  {
+    "place_id": "lBqUlYRTknJwI4NdrVbgS3uo3baZaOVHSgHas6oMNllR-ftpcq2uaQ6tn8SurZbRheITAWaQPlmF9qJ1YqXiaX2ao3l-zUZZMfrrzWJpqml9_gJoMrAyKV32o2ieaDeFX",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Phan Rang",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 0.141
+  },
+  {
+    "place_id": "Wy6TuqQJmZ53iG22o2aWk2jTYQ-md4bQTdy9lpL9cq5VADUsqcmWO1mvRp3R5CLT3cKpDS5YChtJotEMAqHbl0EC0bRC8eZrvcrZAVJZmlv9zjFMAoACGlnGkWyuWAe3W",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Phan Rang",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 1.82
+  },
+  {
+    "place_id": "nn-3IpyMZoxUpRtWPY-27FS0tE1ndEP2ep09XYJ0i4ZStKiosxL7z2UrClGBEffMVbcCdLVPlORjm80BrhE2lh2WmHVKyE4jwYGBGQYR0hO2kYRJJshKUhGO2OUmEE__E",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Phan Rang",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 2.584
+  },
+  {
+    "place_id": "tmROwYZfcitnwzQ4sqN07GRLK521mEjlbxlI99rSVdPBgw_o7tIlSL3myzTR2tkyBtFJQKreVZNWmwEBDYJ16_rXBKwM",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Phan Rang",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 1.263
+  },
+  {
+    "place_id": "Z5ReYJS1vuh1t2AlvnWtknF1LjmWpKXNfWY3MLF3kJdGpXgzoAC5n3CPSgm8Z4uTcI1zLZhapZRC0QMYmGm74H6ta1CRW9CVc7dBVZRdnl_5yjVIBoQGHl3ClWiqXAOzX",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Phan Rang",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 0.412
+  },
+  {
+    "place_id": "mAWS1aFVcnJxnkVTl2Lr2HSiY1GXcIjPbbxjErkFkOJwokZWiAfv8UCVSSynBrJdd9XQEKZznGB5KXezoLyA7m1S_TROiMOPJdLDrUpBGkPl1imAGpgaAkHeiXS2QnwfQ",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Phan Rang",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 1.486
+  },
+  {
+    "place_id": "umjlqW6vfJwYlFkOWl2i8Ee-Wkm8bqpBRr7RNLttlFUaoFk1u201jBqvd6mJcjmNQb5ROIxrgIhsgl5Iv22MxUGwUU-Jg2iJk6xaToxphIwa0lkkaumvljKAbQTGMvvfM",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Phan Rang",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 1.151
+  },
+  {
+    "place_id": "jWjnx1d2DGxlYvUcQpBio52mQQz-wbYY3Wcpb1499gghfv7wqKIF9avSQvwq5oPBromlHLrlHjo2-vSkDvYaWQmfJYQ245vRDaq7GTI5-jlhrlGwYuEuejmm8GDOOGfXO",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Phan Rang",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 1.039
+  },
+  {
+    "place_id": "bJWAodaIlBZygGctoVqfp0CVVTfSUb5DzeqFdIbxcSsp1oIwooF1FiHWjWRGzY-_UR6JFP9VZb8BxoFVW1JNx60dePqM",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Phan Rang",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 0.926
+  },
+  {
+    "place_id": "JE-qzJByVxVulFumo3mW42oUdoKPRvmTa89u0KNq8eFXR4UPi3iV83dbuD60aaz9Xc5oDo0gpDNdkHn4uWr5TVyUXwS7Q6zXbrhcSKp6iuNvik8cvBy6aim24RzeKHfHK",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Phan Rang",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 0.927
+  },
+  {
+    "place_id": "SVN1bj8kAPHqMwCNmsUO5eT2bUcKFYPv9Tp1dNq12jN5gt2sBt2eq4m6afzyyWaWHYJ5dH7NImPuoVX-Lrnsd5qaec4yCWabiYKRSRoR0hO1hnkG2EhKUhGO2SbKEE__E",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Phan Rang",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 0.781
+  },
+  {
+    "place_id": "LacC0VQIOwBx0E-Zv3cs0GiYW7SodJXef7c4cpBfuJMVtG1op3WKL3KMYXS_6poZRrpxd5NblvBwj10qvDyGkmuJX6QAAQbjlcrZAnpZmlqhzjFP_oACGlnGkWyuWAe3W",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Phan Rang",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 0.197
+  },
+  {
+    "place_id": "nuduonRZRqpHjk0JlgXr1Hd0ST-uc4zW1nFJFpFiorxd2XErKWKioTqKRboWBamScIhyPaBFmICioWEkdnGS45aSjn1O6XUXYdLC9UpBgkPl1ilUGpgaAkHeiXS2QB-vQ",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Phan Rang",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 1.299
+  },
+  {
+    "place_id": "vWsZUr8YuUpxrXQovH29-Ga8IQ-Ifq38c75zSKVDj4xYgYc3RpH-XWnK91U6kf4PwkW5GKaZv8ItmrGgWvDah9VmzYEKJCYvHa69ZQoB_j-ZqlU1Kj22fj6NoQjKPGfTP",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Phan Rang",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 0.819
+  },
+  {
+    "place_id": "SAllUou2ssZJp2ULgmWU1F7DcyqzTpuHerhrPLRljIx6nStGs0-qwGScf6iDYL2EdAZepbljhPBhin8YhBH3xHi4PV2ua4yAYKRBRhN0h8O1hnkEShBKUhGO2STlmhP_E",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Phan Rang",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 0.08
+  },
+  {
+    "place_id": "TZ-fJV1kMb92rjk_qFPg9n6RZx-ufJP3TqyQWphVNJ1JgJ8kr33g2k6sUia2Urnre69OP6lsnJ9JgH2ts0W52nWXfphSUrFYe_28XUlvn_Z6hVoJJqQmPn3itUiKfCOTf",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Phan Rang",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 1.117
+  },
+  {
+    "place_id": "s0ivAI0Sb1O3tmIheHSghrapfjyuaoX_YJpIPKxn-uxvnH4DSBL6hmGahQovSKPYip9upCq91Z8L-UKZErGqnw2ekIkGzE6flYaVTR2F1heyFn0ATYBOVhWK3SDiFEv7F",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Phan Rang",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 2.351
+  },
+  {
+    "place_id": "TXBRj3OI6LBpsSYgt0Cz_OWGOeOmxY4wAUbMrRWJKgIdWny47gmL_9GSxZDWFsqb0VrBnOk22g4BSn1pHh2GmxWqje0KArK7iZE1WQoCggOllmkUWthaQgGeyTT2AF_vA",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Vĩnh Hy",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 0.55
+  },
+  {
+    "place_id": "scOti0kamk5F-xyREtme-xX2MVgdxgpz6afxaMapyTq9n2YsGsGBssGexXka1XqKAZ5laYbQYn_xSoXhPqXyL4VSZdDuFXqHlZ6NVQYNzg-pmmTpGtRWTg2SxFT6DFPjD",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Vĩnh Hy",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 0.549
+  },
+  {
+    "place_id": "mBmT901ZIZR9sG8prX6cxa6tbFlNfZ-et9oysKpzlMFNJGuGtW2mJUuFGUZu3fqISS4M6E698svpKhmATrH141Lm9YByif3vEeLx-XpxKnPV5hmxRqgqMnHuuClGcC-fc",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Vĩnh Hy",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 0.553
+  },
+  {
+    "place_id": "QKxwRYpDgoRTmkc7s0mg2GSySEGyT_ndY7BiZr9t8Mk-nVRVvBaK_lPETyKFSI31fLNbYIQZrut8vEdisH2chX_FVz3pX479EZqJUQIJygutnmEcUtBSSgmWwTz-CFfnC",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Vĩnh Hy",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 10.632
+  },
+  {
+    "place_id": "TXBRj3OI6LBpsSYgt0Cz_OWGOeOmxY4wAUbMrRWJKgIdWny47gmL_9GSxZDWFsqb0VrBnOk22g4BSn1pHh2GmxWqje0KArK7iZE1WQoCggOllmkUWthaQgGeyTT2AF_vA",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Vĩnh Hy",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 0.55
+  },
+  {
+    "place_id": "scOti0kamk5F-xyREtme-xX2MVgdxgpz6afxaMapyTq9n2YsGsGBssGexXka1XqKAZ5laYbQYn_xSoXhPqXyL4VSZdDuFXqHlZ6NVQYNzg-pmmTpGtRWTg2SxFT6DFPjD",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Vĩnh Hy",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 0.549
+  },
+  {
+    "place_id": "-EiyVGNmsFqCw_HQ-YU_9xbTKWjebLYXUfElOMvhpudzHo14SshSl4XygLTqwcICHVKBWLLFKk2ZNxkbTs2KbYkVZxwU",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Vĩnh Hy",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 0.449
+  },
+  {
+    "place_id": "crZgUCo4pl_fw0hLsgT-Z2DC-mW2NJlYb98HSTrRGnc1VwnV0tEGr5WCdS7ZInYSBUoZ2TLdDldVkwEBktQOd_lLBK3o",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Vĩnh Hy",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 0.352
+  },
+  {
+    "place_id": "YbvBhVIntEtgw3J6tDiB1W9dfsk-dSKnSb0BINPpPmYe2wSuFbhCJ-BSlXCS2doaBUqZQKrdMldVkwEBDtWSd_lLBKwM",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Vĩnh Hy",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 0.494
+  },
+  {
+    "place_id": "YddGG01QxbxixrM9d0mAsWXatwCCATIS8f_9NTrFqg8RMy10xvk2Qh2ChLi2zc4OEZZhVWrJJo9BXkC9FsGGY-1fELgY",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Vĩnh Hy",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 0.485
+  },
+  {
+    "place_id": "hH8ik5tYabqxTFJ5qAeXmWbfTlaaVofGfYFoBauUVvJ6q0Y7qoODnnxWqj-3abLQeao9NkJWud1KNqD0CqHSXwkmBTRWpV6Hkf7tNWZ1rm_J-gV4NrQ2Lm3ypViabDODb",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Vĩnh Hy",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 0.788
+  },
+  {
+    "place_id": "j5MUQs-fa2yfyFVCjnBt83HID3iPh0JYa6N_AbzQ3g8hoylFNikKD822VVhmJbqP8XoNBTLlskcllriEzvEW91XLKdBG-RJ_2a69ZTY9_gOZqlTZKuRmPvWi9GTKPGPSP",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Vĩnh Hy",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 0.458
+  },
+  {
+    "place_id": "oHaVW3CyYnZsi30op1uSzXOiVyegBrDXbqE4DbsEmdtsrmEylwed1JqgK2nVYOFf-rl7FqJZkj9Uyi19XlXKSkG-jPVaknW3PdrJEUJKekvt3dVcEpASCkr6IXy-SBenS",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Cam Ranh",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 1.265
+  },
+  {
+    "place_id": "YIWqRpubUpxxgnNcrFfhmHqVINkqyaeTcS1aFG6sMl9t_AFVdqmqY3Uu3PSqeD7Xwebp_WKUOl5NgqXxZqJRQwWepXl6pm3nff7tNWbKXa_J-gV4NrQ2Lm3ypViabDODb",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Cam Ranh",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 1.46
+  },
+  {
+    "place_id": "bn2hv4WhQG80jkA8ZHONy77KV0iLQai1NWvbKDqRioMRqUFgyvHyey2-tS0uIG6_kcb9iC7hpq4pEvkQtvWyj7WrLKkq8QYHPaa1bT419jeRol0gbuxudjWq_gjCNGkDN",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Cam Ranh",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 1.46
+  },
+  {
+    "place_id": "eCbDqWeYrdN6t2guqnl5wkqqa16Um7CZSt01I3p0k8ZKgWwesmNqhnEyCQlmqeaXwTIQ9FKh7tZNNgSJnq3--Vnq6_RulfJ8Uf7tNWZtrm_J-gV63rQ2Lm3wNVqmbDODb",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Cam Ranh",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 0.917
+  },
+  {
+    "place_id": "i5TSlVxBeh2KzFELuXSL93XMfBBvRpvUuKd7BWxoh0aOp8xJdYRGVbYyUs5a7h4f4vRJFSGFpl824qiU3dmi50brOcBVvQJvyi6tdSW6Di3u9kU4dbOKbi4u5RjZvHPDL",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Cam Ranh",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 1.13
+  },
+  {
+    "place_id": "fNprDlvYqqhx3EEiqVW23nyAYKpfVbHQeatUnZ82nOd8l1Udqg6BtE6bb1ume76Lf9xOF5BnsaZIgUEkmFSHnX3ePhqYU5DAfLhOIZhoKmPF9gl1arg6Ien-qVSWYmOMP",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Cam Ranh",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 1.927
+  },
+  {
+    "place_id": "Qu9CdZSmQgJDmkobp17v6361OfFGVWZTuLbZvfZRZkNab0FkvvXYlk6anQRqSZqryc9BZEpN1A9NEi00InAG-y2m2cFekWYyRbLRwnJRklFZxjlH9ogK4lHOEWSl2lKbU",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Cam Ranh",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 4.223
+  },
+  {
+    "place_id": "mZu1pFx8nTP9yuUwvvHS303fTWDirp5bdd7Q7FmuTu5Brt24upHZx3YqkchWTXnHSRSyajJBecvNzC5UpvwGFkWhYigOrArvmcVxDV5Vllfxwj1ADowOFlXKnWCiVAu7V",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Cam Ranh",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 8.919
+  },
+  {
+    "place_id": "xAuiE4RgSbptwF0-tUmqwmCcf8EOBSK3MZbcqR4N3gPtSnUkBthL_h2C1l6iMZ2OtYx9SwMZ7rYRUnV04tEibgWHCIgaET7bcYKRSRox0hO1hnkESsj2UOWa2ixKEhElj",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Cam Ranh",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 19.334
+  },
+  {
+    "place_id": "nNzl3nFHfG5-h6wdcW2N2GDZrjIOtfu3-SYZTWZlisNZ32XwbtXGS4WO8WxGpUqCyfNpQXa59nnqHvzQ5r1SCfEi-RFqjlpJUer5IXJ7pnvd7hFsIqAhTJ3msjp6ekQkj",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Cam Ranh",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 1.452
+  },
+  {
+    "place_id": "MGCJs20h6aFZ92b4iqFRK1H9R4JGub1KedT-HLq5TZPZh2YRcRVafm0iznNtj4EpsWLyPSK2bWs-s2odZfq4x5K9-hxk",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Cam Ranh",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 3.701
+  },
+  {
+    "place_id": "vJxZgC6tUUh9emh_qIdSmtJl1eBKuIqWeddtSLq5Ssc_gr2isAG6ueOqfZLVgrL-bSLxKRWxWj89-2jBar36H5EjbMRk",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Cam Ranh",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 1.825
+  },
+  {
+    "place_id": "eYerrEN_nVB_rWYztku73XyEejKaYrPiTYVbHax_7uR8sZHUmklGgcnzb4T0kCKPNdNmv5lNX4tp3h1sToG2F2HmDUF-jbpHjfbFLX1BtnfR4vZ0LWAuNnXqvUCCdCubd",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Cam Ranh",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 1.229
+  },
+  {
+    "place_id": "TAtsUHuwCmFitkkAnKzn2nXaczutUGYCYeINQOqFn4pl8hVUnqVGTmZSFewKhVqJ49786KH4lsZ2uhlmaeV-u722FewquC4TVeLxKXpyTbPV5hlkKqpyMnHuuUSGcC-fc",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Cam Ranh",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 0.256
+  },
+  {
+    "place_id": "m0debmT0m0Zak6E-QoOQaXW4jA9ejoSJWqm1JHdkm_F2q7LVJe3SxaW-nuQa98bUebLq9SXB6rYxhq4xIVqf1wHV5uRVdqaLDMquLb057b-KLkb0dRh1Ji2y5izZGHPDL",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Cam Ranh",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 1.985
+  },
+  {
+    "place_id": "ubq-l7YQyi49bp1ZIuUaH92q7ViSNeYSKXJJeEEYek4N1p41Je3SDj2yUQiuLHYdvahxaq7tG4KZdHXAyjEKl6VmUcCW-QbnPb6tdSYt7i-JukU4dvR2bi2y5RmmLNvDL",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Cam Ranh",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 1.835
+  },
+  {
+    "place_id": "HjliwKqAVkNNmVJkthe63w6geyezcI-Daax7NLZxiIRQny4Fsk2tg4-OVCYipFmUfjJ5S9IZg_8VQsEknsk2LyVa8WTizS4D8ZKBWQoBwgOllmkUWYraQrGeyTYAWF_s9",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Cam Ranh",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 2.763
+  },
+  {
+    "place_id": "a4xNnKRUhT1tpX9Frnuo5lKlUaquTiTEVJtsQLYT-_tltyNGixKChm6kWQuMSb3NZqdgR4Irpt1mnFMiuk6-xhO2UgS3e4uFYLdSRoR0hO18hnkESshKUhGO2STmEE__E",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Cam Ranh",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 1.211
+  },
+  {
+    "place_id": "kptmpHBZcjISpjCLVXvul7hwRac7ZWrTtqhRvht7nO1EjW-RUkm2lnC4Ur8uZOvmfaScdl69pmNzi-eqCmu6kGq0b6lWOZouUcLRClAJklP1xjlGiKQKElHOmWZQtA-_U",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Nha Trang",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 3.378
+  },
+  {
+    "place_id": "eq6a7HEduevh0qqgOR0G42neQeU6sebrCapJPOI9HjvRvzF8Tj4UegliSVwWhpJbadJBuTIx6-dNQtmMKi2WC-WiEcTW5bYL9a6pcSIoziuNvkE96vByaim24RzeKHfHK",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Nha Trang",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 14.583
+  },
+  {
+    "place_id": "o1ifdFS9R6Z4nVg8maCCrEGxVBPaXHOTQaI-EZCNcu5BdWo0o1id0Y5cbCSiXa_5nn5mBT5RddJWRjlwKo12sk3egNxC7cJHiKLGjdUdhkfhTi5EHpweBkXajXCyRBurR",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Nha Trang",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 11.297
+  },
+  {
+    "place_id": "xEutloAa879crSqgvG-E5FwTXry_fIP-cpVFNYp8lI5avFUju0xqHaMqESQK7Gf-SXWZZCr1HQexrk5xIjEW-j22uYxV8G7r4aDVarIxujOVpTkkaunycjGu-QTGMG_fM",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Nha Trang",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 1.135
+  },
+  {
+    "place_id": "UHp5riT02o7923RALG2dnmOSr1hHHUdqdSribHrRylbB6sUgirGzU23-_bROYC7_0Ya9yG6hUu1CxfJo9rX6zVK7bOlqsUZF_eb1LX53fnW14h1gLqwuNnXqvUCCdCubd",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Nha Trang",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 0.493
+  },
+  {
+    "place_id": "ILDfmbzeePBwe2koqlSrfWdD3ppUVZ9cTpm1GkR2tNB-TLomqGiKkXt2q1qcD7vflnaqH6xQZZ6_UN85qXLq3-X4-uV6oVZXbfU-DW5lpmfB8XKsPrw-JmX5UtSSZDuLZ",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Nha Trang",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 3.768
+  },
+  {
+    "place_id": "f4WuPdqVsZ15cjcLqG6u6WGtQAabcp6eStszOa8IhZ59g5IEtm1U4nm8gV9Qb-bhf4e2LG5ip8Rg2mokrVCaHr3uuSBJ5QJ2r1L1LX3ltnfR4h1gLqwuNnXqvUCCdCubd",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Nha Trang",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 1.037
+  },
+  {
+    "place_id": "Z6C_LKOJcRlGtmrekHKNOGWlMJKkaFsJdHS4laWPQypGZm3QvWmdDWu2Q569Zo6VcdFhlLp3li9_kVPStGTpEmjTeZOgdrNUcrZA_5ZmlgCZjFOWoABzK4QakW9aWAe0v",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Nha Trang",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 2.677
+  },
+  {
+    "place_id": "4GKsg53WBq2zSFYDAVImrIDbSpeeUlyTeYVswq9Sh3J1-r0I_rvaEbUm-NRu0bbbUfVK-kLVSMtlOOTm9rHCTe8aFSRGZU6VNe79JXZ9vn_Z6hVoJqQmPn3itUiKfCOTf",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Nha Trang",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 2.732
+  },
+  {
+    "place_id": "joKTkJIMYCtFjVuiX192Dp7WoXCaUW9HdIhhX89fUivtzok8yo51g22-cahy5ibvZcLM0P7hfsNRDoTQLoX2ey0CIRByUXqDtdrJEUKhivvt3klcEpASIknWgXy-SBenS",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Nha Trang",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 7.054
+  },
+  {
+    "place_id": "hI5vcM2-lJR1tVkzd6a5m3KmPhdZld-fcLU6GmaRlN11p3xQAKWHdnXSczqVvZRkfdBvLl-lrpdFuGMVWaGYyXSOb1WczOrZlcLRCVmSiKf2UjlECApRxlC2mWXMDpu_U",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Nha Trang",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 2.764
+  },
+  {
+    "place_id": "VxHvZVGmQ0tiwWiIrksG_W7DXam6j6FMep5OQ7Lem-e1q1I-UVqH3oBK3cCOsdZ-AeYlwA4FN_MFjPiGmrmSLSnonghG2S7UtY6dRRYerh-5id0IRsZ2Xh2C1SjqHEPzH",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Nha Trang",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 5.077
+  },
+  {
+    "place_id": "PRFhcA6R37JpytHEav2q7kFynQjiLZeb8RJNlG6hehpB80G1RogG4lEOMfRWiApXVaI9ICqV3xYl8qWYzo1in3WilADGlTK_RcbVDV5Uslfxwj7llowOFlXJQpyiVAp3u",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Nha Trang",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 5.045
+  },
+  {
+    "place_id": "H6R3wCyKWTFakoceoWdzB2-4rku2d5uLYc17SaFDpcFZzC4uo3itw23O4QQyNRYTMdbgfgKJ_gGpvqWe60TqTaG3OXY66RKb2bKheSoh4iOFtkk0evmyYiB66RTWIb_PI",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Nha Trang",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 3.762
+  },
+  {
+    "place_id": "iUWSTWyHbKZ4RZQ3dpFBim6Yezy6RYCSWtJdMqK6qfZv-0UJHqO64ViEVgW4je6j7aoR_ColZkItoulURv0KWzmKQVSWPe6j_bIgxXoh4kuFtmEoevh66iG_zRTWIH6TI",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Nha Trang",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 0.78
+  },
+  {
+    "place_id": "HUfOgmt1iHlYkHEFo2iswm26gkm0ZZlbY0fPS6NBp8O4iaYsW26w63oszkiPoTPOd7p9hqB1OIVtq2UcjGrTkW_MXy64RqT0bqpcSIp6iuNvkE8cvBy6aim24RzeKHfHK",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Nha Trang",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 0.933
+  },
+  {
+    "place_id": "eE9vkwkijzm-TzkAr3yX969hTVisUoftJhklvJpmt4J2vY5cwVqiXRqxOxR2oCpDXs6xKGa5U7P-Afm9bn1YmnL17cL6pCAbrv3pJXZ9vn_aFeFp9qQmPn617UgmfCOTf",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Nha Trang",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 0.562
+  },
+  {
+    "place_id": "t1OpXR6Ef9l6h1MnepFS4KzaYjl7pJXXeq15HFNXnsZJ2bQncQmsnHiuaV-bCYabYNp5rC9Tgt58llO3rW7lvnfHbVu0CJ7XenxIXJ6-nvd7brIIqIAiOnnlbrCOeCeXe",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Nha Trang",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 0.68
+  },
+  {
+    "place_id": "o6G3rCg_U_dwo2FcHFyekXTVfgi7W6vweKBqN6xiXNR1spkolAU72W-yXBCmBo2Tdr11c3YekZJHiLsGlwWZmW-LRJ6QYTWWdbFHjZFhkfh0i1QHpweBTkXajXCyRBurR",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Nha Trang",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 0.093
+  },
+  {
+    "place_id": "S44drE5dJ623gVd8lnsBeviBZW5jfKTDroCsU0NSrP61gF9PeGyknJuicTN8Q4Lhq75PAGNShveY2FNaTgu7m5myWFl6cbj8kb5IXJ5usveonIlsIeQiEnp6sUyN6CeXe",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Nha Trang",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 1.048
+  },
+  {
+    "place_id": "maQzYrWR2T-rfGkUeFSWmavdIJGzU3t2cKhU-KSjaLtx9ugAgnA24mnmGPxiuDoWbfoB-FrMOmZpPqVQ3nw2RnmeDTD2YaX3_hblPW5lpffB8g1wPrw-Jln6rVCSZDpni",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Nha Trang",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 0.675
+  },
+  {
+    "place_id": "ym2CXHR36ihRjzVMKi2uZw227REe4H_H5d7YKT7R6-dBcql82oXiFi7iVQE5ue6z9aM9lMqG7lm6NziQEihyKaWvPM32FaoyJbqo-SPR6iuOmb08cvByaipC4RzeKHfHK",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Nha Trang",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 0.693
+  },
+  {
+    "place_id": "hzOdpmURh595nk6rhkqbhWE4dJ21tZfdVT5Sna1KqflgPUoGrHf03meeXj6wWov0Vo9wBYZni6djhFoesE21wBW2ZWiqAdIjwY0qnRYd3n2PuUUIRsRGXYmC1SjqHEPzH",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Nha Trang",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 0.244
+  },
+  {
+    "place_id": "4nVAbqiNhHR2lHAzVkaMiqdpiy9roaXOk05sOR6Dk712p1YOj72x_2y4bDkc7irLDbLdwBWS2rs1aklIER7WX6mmUJQ0di6lvMqtd23u9i29JkU4dHYubi2y5RjYcufDL",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Nha Trang",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 4.022
+  },
+  {
+    "place_id": "m7m5nmWnUGZIgZYss3t2fZyqgh2eVIlnSLurNnuRiUxkuqdbduOjnGTcahmuU6cgfLrVM5q9ov1tzqGJanmvn0mdUuwerVbDRfURPW5lpmfB8g1wPrw-JmX6rVCSZDuLZ",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Nha Trang",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 0.17
+  },
+  {
+    "place_id": "hLGxrFxV_s8Rh-Cmwtmeb93CzXhhObICAVMWFJy0Wm4tjnUoaqHOfgH-yJT-0FPj_YZlwMox8Z9qwxHQMuU5-ymWwViO1XoPEZ6NVQYNzg-pmmUYVtRU6g2SxTpODFD7D",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Nha Trang",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 4.809
+  },
+  {
+    "place_id": "XFN1F46RIHBPn0Yeoltz7nuweZ6Q6lTreLNqXJFcldNw1UQquHKR62-OWCiWmbdydTqNcI9X3mdZBlkgNuwSRzmyzab2hXImUdVJHsZFhkfh0i1QHpweBkXajXCyRBurR",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Nha Trang",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 4.794
+  },
+  {
+    "place_id": "qo5ZoqhRAXZpi28skkmTlXSMUTCUm1_RardzJi26jJBpuEm-EWuu5kSmezKLZq3cc6pvGpV7sdKcjUO0bcFiIRamLOhL1ArbEcLh2VpRClP1xtGQCogKElHOmWSmUA-_U",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Nha Trang",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 2.009
+  },
+  {
+    "place_id": "x46HZUyxF1xWnysYxRT6Zb_HWC5mYp2AYI-JB1hzs6tgsMg69nOzqGTEX0Zjg7hhYZlULINwkYc4sEhn8mC7qzWyVELJTKyBZaFXQ-itcbdkDm0QXgYGRgWazTDzBFvqz",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Nha Trang",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 1.202
+  },
+  {
+    "place_id": "FGBJsr3DQFljmmwAs3CQxX3EbC6wY_DjVJt_RIRhrctqxFoGqGyx-mOZWoyPrwDHYXFNhDpOg8FhoouzJFCmfmlWjgUe-SY_0Z6NVQYNzg-pmmUYVtWeTYRWxTj6Dg_hk",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Nha Trang",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 2.749
+  },
+  {
+    "place_id": "QqNKQm345oBzvO1FplLwl1-jeA6xbb3kWZV8CaV9g_Zxl2AqpUKLNnKta9C5Uqm9eK5lAUpGh7hllnQ7v3-HvWqXdwClGu_ua693ZTY9_j-ZqlUoZuRmfj2i9QjKPGPTP",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Nha Trang",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 2.681
+  },
+  {
+    "place_id": "N590c3JUUmumj3dXu3OU8HXWPjC5c4z7d7xFUqVZnORBoGsVkCmfknGymFqWVbZOerPIL6BzkMBHiTqillOT2Xmxf7yRXJz4dAZGsF1gkPl1ipAGVQaAkHeiXSS2QB-vQ",
+    "corridor_id": "hcm_nhatrang",
+    "region": "Nha Trang",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 3.642
+  },
+  {
+    "place_id": "S8BMtoY7doAZWQVyYtkyawVZDW5-0SvXgYEB2pbUSiu5sNCiZgxH1wFcrKKaxE4aBUAtQtodk_fV6P0MEsGK08RMyS6axiXvvYkRQnIaoho5jEENksLSW72EQS6qGEf3G",
+    "corridor_id": "hcm_vungtau",
+    "region": "Long Thành",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 12.6
+  },
+  {
+    "place_id": "QsBcXU65lDZOu11stXm5-UbNDVK-eq6nBIosaqEfgM0Jt1Jso7Hvw0jmEUl2geajiFZclWqBqg_E0uEZvuTKL9UCnf2-LTYvOSau5bl17i-IdaYuDvZGbbIsdRm-LHPDL",
+    "corridor_id": "hcm_vungtau",
+    "region": "Long Thành",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 2.667
+  },
+  {
+    "place_id": "TOGoavqSu0xgpU8JkxxrzFiWLxa7txyJWUS4BoxAr_VZdU5QxvlSV0HSWQDi-VKfzb5F6MLtAp6Vo6VyBujCFDWOTcUWiqIrCbYZtS4l5qeBfiWwfvx-ZiW67RDSJHvLJ",
+    "corridor_id": "hcm_vungtau",
+    "region": "Long Thành",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 0.649
+  },
+  {
+    "place_id": "QY-PGqcsrSJovyYauX-gaHCUhBeKY7z4W8pRKL4ZlI9sg0UVvnyS82iQVTCnfvfwbpZ_Pb9zttVxy3tuvAOLxWq_WUG6UYzLaKx0aTow1jOVplkl8uhqcjGu-QTGMG_fM",
+    "corridor_id": "hcm_vungtau",
+    "region": "Long Thành",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 0.649
+  },
+  {
+    "place_id": "uGbYtd96sU-0qlKUpcWiYm5CrQl2XVCHemN9Fnr13G9F_tE0nqWmL3n6AZFudDrrxZKp3Hq1Rvp95q1E4qHu2-H98P1-pVJTa3nxOWphomPF9gl0Org6IVX-qmCWYD-NV",
+    "corridor_id": "hcm_vungtau",
+    "region": "Long Thành",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 12.085
+  },
+  {
+    "place_id": "SaloSooZyJVmgEI2vH_JjHGPVT6JQ6qPQshYDKZgosZSh1prvW2cozDJf2m-fqPmc61gCbpGvYhuvEYvv2yh72jJKEi-Q4PNa69ZTY39_j-ZqlUoZuRmfj2i9QjKPGPTP",
+    "corridor_id": "hcm_vungtau",
+    "region": "Long Thành",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 13.291
+  },
+  {
+    "place_id": "R3NYUc5JvmmBviGpWoXGw-UCNRxagvp2QKwZHdbu-oPMy1ltTngel5UWNaTWXX6jNc6J2NpRb4cpwokINrJrpBHKuYQm76O3udrJEUJJikvt3iFcEpASCknWgXy-SBenS",
+    "corridor_id": "hcm_vungtau",
+    "region": "Long Thành",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 13.545
+  },
+  {
+    "place_id": "W6bWTqCUzPdxQVUPgm-Pyl3JeyG-GKr-ZpVVObJRnMRtyHxOi2OijHGt1BKJR4BVaJMqT7xjhO5bykUsvH5u8l2SXTWKkG7MaKxaGox8jOVpl0kkauhqEg2u-vjFBG5yM",
+    "corridor_id": "hcm_vungtau",
+    "region": "Long Thành",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 0.634
+  },
+  {
+    "place_id": "gqOOSVtJuIhoq3Etj0OG6_m_OQw6MeqTNbalfJ6NDitp3uFxIox2w826rUwiMHIb2XJRTaKYVlkfxoPQzbleabkeVXHqNaK-5bqpcSIp6iuNvkE8cvByaim24RzeFHYrK",
+    "corridor_id": "hcm_vungtau",
+    "region": "Long Thành",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 0.652
+  },
+  {
+    "place_id": "pdmkQc21g7R4tUoEs02m5FVmQUa3ppzdYHQiBLlJmMZgnFE_shCIqGBgXRuMSaK272MuCr8llqot5mlUCrXe1hGVJp0CuZPv2YH89UoR0hO1hnkYSshKUhGO2STmEE__E",
+    "corridor_id": "hcm_vungtau",
+    "region": "Long Thành",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 1.151
+  },
+  {
+    "place_id": "q7llA4VKWhFiw4gqtyFC3Varm2W0CIiCZolJZbJOl4V5nlFFuWaXg3meUUOBZbneYKBZJPmNkj7VRtk5BwxGipGedcEaCTfXMY6dRRYePh3dinUIRse6Xh2C1SjqHEPzH",
+    "corridor_id": "hcm_vungtau",
+    "region": "Long Thành",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 1.423
+  },
+  {
+    "place_id": "RpJDk-Fab6Wci25XlFpK76myvSekX07XRbGPUKBzZJF1jZg2lVFhKkXWMcVKSrVm_QviMKpteoZZtoHcMPXN22qKNl1atcEXDd7OTUZNjVvp2iYMFKgVek3Sh6KUuBF7T",
+    "corridor_id": "hcm_vungtau",
+    "region": "Long Thành",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 0.634
+  },
+  {
+    "place_id": "RnKUha1YyYhkyVQ3NECjvGmVdUrLQaTFbEC-Top-ifJbI28Iv0Cd8VuCGyKKoZLPakBbArOrpI1dlFQxvWmSiEG_Kw_LaIXVaY11bT419jeRol0gbuxudjWq_QDCNGvbN",
+    "corridor_id": "hcm_vungtau",
+    "region": "Long Thành",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 6.061
+  },
+  {
+    "place_id": "skOUaYaBaohsyX0R_WmSjlNqeTfMG_G_rHJTEPRFtL1zvyQr8n-eu3PKdQ-Nfa-kZ8lhDfkYoL5wolM61G-euFyQdgHGGp6Oaq5YTOd-jrg23lEtrjhiejhi8QzPOGfW8",
+    "corridor_id": "hcm_vungtau",
+    "region": "Long Thành",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 7.097
+  },
+  {
+    "place_id": "uV0mJZ_dl492rjk_qFPg9n6RZx-ufJP3Tqw0WphVn31JgDEkr517feCRaFKebH7rSa9OLqlsnJ9NgEWzrX652nVYZLyYUrH9e79JXZ9vkJ96hVoJqQn2nJ3itUiKfCOTf",
+    "corridor_id": "hcm_vungtau",
+    "region": "Long Thành",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 13.085
+  },
+  {
+    "place_id": "IaCNeq-7wOZ02UQnrFHCz23mFZVqYUbTVfK4zXppumZIkhFBLsQt_jRivZguu4m7fetlLeaNitJ0ShERNrVGCmHjbOx-dVpXFeb1LX51tUPR4r50LhwuVWHqrUCCdCp3d",
+    "corridor_id": "hcm_vungtau",
+    "region": "Long Thành",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 0.361
+  },
+  {
+    "place_id": "c1lCobW9Nhlmo6xtvH5L8YC-RhOmb3KNg5ZgTaZwg81oymsqpRj0ilqsZkltvL3LcpBnSbGHf0NYl1IOpse1-2u8dE6JfaHwa369ZTY9_j-ZqlUoZuRmfj2hCvTKPGPTP",
+    "corridor_id": "hcm_vungtau",
+    "region": "Long Thành",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 0.48
+  },
+  {
+    "place_id": "shgRU_jZrl1JkLRArVTl4XS_dlufU57kd7xlL55Tmtx_2kslt3ysrHmBZXrEUqB8L9pTeSeYln9OgUeWkQsCmWO8ZsGeU4aber5IXJ5unvd7hFsIqAiOnnmsUyOeICeXe",
+    "corridor_id": "hcm_vungtau",
+    "region": "Long Thành",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 0.76
+  },
+  {
+    "place_id": "b42z1IwaYjRkrHZMp3Kj71usWC2nR5XNXZJlSb8a8vJsvipPixuF7GmVdimMR7TNb66CxEBEIk5alYsrrxq3v12-Ww3PcqG-aYJb1T419reRol0gbu2mdjWq_QIWNG_Yw",
+    "corridor_id": "hcm_vungtau",
+    "region": "Long Thành",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 1.964
+  },
+  {
+    "place_id": "ap9-4rNkeeL5IgVxaqJZSw3-pU16pu-LGeKt2JaRr69JUhn1bqw2RkU7eTyinU6ecZ6hAAp95mfB7h1xYtWe38maeTCbeRJXmfblPW5lpmfB8g1wPrw8gmX6rVImZDiTZ",
+    "corridor_id": "hcm_vungtau",
+    "region": "Long Thành",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 1.286
+  },
+  {
+    "place_id": "jq2sZZgnoDFPsnErtHyFm2CGV5aZU3oajrxLnKBxT-RjvQlirGGR9mC-XAegfqThea9LXKhvuJl0vmVdU2zg1IWC8mQBDUrfWer5IXJ5unvd7hFsIqAiOnnmsU3yeI-Xe",
+    "corridor_id": "hcm_vungtau",
+    "region": "Long Thành",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 1.122
+  },
+  {
+    "place_id": "q1o35uJk8YN731C1pHiBlmlbQKivacmrfodAK6xVq-Nzh2IcmFS74H6XQBiqeJX7SYB2NrAOIJ5lqVTqs2l9xjSGRBaeeWSbfZFPW5lpmbl88LFwPrw-JmX6rVCSZDuLZ",
+    "corridor_id": "hcm_vungtau",
+    "region": "Long Thành",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 3.237
+  },
+  {
+    "place_id": "ugACcp6IcaRwdG0NzKealy9mW3KXdIrUI6c9GaB0lup2j0BSk3Ks0QLSWyOhW5beRI5_G6Zqs5NopGJQkFy_lXG6QTxaQabiVcrZAVJZmlv-ZjFMAoABzloakWyuWAe3W",
+    "corridor_id": "hcm_vungtau",
+    "region": "Phú Mỹ",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 11.684
+  },
+  {
+    "place_id": "TEObDoFMgvplsisXtHKO9X2xXBqHbpmCVscvJbDMUmYJhn0gYqnGJnWSeJwWwc8P9Y5tyOLJju9h8xnYwsX6zyGeyVK2GXLfGZUwhoYFxgehkV2UXtxeRgUSzZjyBFvrB",
+    "corridor_id": "hcm_vungtau",
+    "region": "Phú Mỹ",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 10.427
+  },
+  {
+    "place_id": "ok1rcY5oGndelsQDpWOqXWu8j6Cyc59_ZU_FyaVHoSpuyNYqp122RTWvyHy7G4B7hLwOPqZzhL7VrYoaY2xoWZfK8ii-QGlaaKzlToyDfElplowau0oycQWu-zDGMG_dB",
+    "corridor_id": "hcm_vungtau",
+    "region": "Phú Mỹ",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 3.524
+  },
+  {
+    "place_id": "OnFkZWaUtXr5qjStdlWeIlnKOWSBwQYTOpo4CLkZZuupztWR2phXn7nWkZ06_Y5jnRbR0FpWbSZdwjJgNo0mm0n6KZzmTQozjcLRkVpRRlP1xjrgCoqaElHMCAymUWe_U",
+    "corridor_id": "hcm_vungtau",
+    "region": "Phú Mỹ",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 3.075
+  },
+  {
+    "place_id": "m0S0cLVRGnZZo6dqqnu660qmpBJvApTjQnuoKy10mNCcQbSlDwOUaJZd0BKlZbWURUGOdqcXjPJDbKZ3pHOaY6kV7tDuie5jMcEKOVpRklP1xUaYCogKElHNZuCmUA-_U",
+    "corridor_id": "hcm_vungtau",
+    "region": "Phú Mỹ",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 12.945
+  },
+  {
+    "place_id": "b726BINJ8Gt1kmQxvkKL1Gq7Tj65H6nOd7ghFKIdgMJ1t3gyjh6H1l26QSuOHPjjb6tCD7u5i4xrRpJOp4yLiXZAJGl7GT4fWb6tddIt7i-JukU4dvR2Ei2y5RjaLHJvL",
+    "corridor_id": "hcm_vungtau",
+    "region": "Phú Mỹ",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 1.395
+  },
+  {
+    "place_id": "3nyfXtjeriF8uGM_snqU5GaoTSyXd57ced5NB6J7lHpxqm8enfi1DnKGXVmdRYjISKpRmFVq4927fa4kZHmYm06pMhmzeYicfLhKOWphomPF9gl0Org6IqrR_VZCYD-Ml",
+    "corridor_id": "hcm_vungtau",
+    "region": "Phú Mỹ",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 3.044
+  },
+  {
+    "place_id": "bEyCpJFvhfNd1rmoDs2y_3WTLJzedf7jtb5QroaREq4htMkCTiBhAjGnIdjWIGrCPc71EIzRHko5oylC8Km6J1HG8I0mkcp3maa1bT419jeRol0gbuxudjWq_QDCNGvbN",
+    "corridor_id": "hcm_vungtau",
+    "region": "Phú Mỹ",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 6.668
+  },
+  {
+    "place_id": "k5Cc0FaV1Z95vK4QNgV040GPog9ybIuQQKEFH11ZtuxAsacoa02MyUCIpz1jTb7qdoiiKUVZovBxsb4UaFx0-SJiKu1W8c3qj20awUlVgkPl1iqYGXQaAKXeikJBdB-st",
+    "corridor_id": "hcm_vungtau",
+    "region": "Phú Mỹ",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 12.582
+  },
+  {
+    "place_id": "V-OS1qAPm6dAojZ0sUCY-HOgQmCjKYhdboniYJY_n3JGoElZmBK8p3rvXQUGFo7YQaNFW6FUgPB3j2BZkAmxk3GyfwemUpzkdLBGYJAGkPl1ilUGpi2AkHeSiXQeQKevQ",
+    "corridor_id": "hcm_vungtau",
+    "region": "Phú Mỹ",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 6.553
+  },
+  {
+    "place_id": "NL7k6uIgci1ZvuCEdvniTp3f_VhCNZIi7XM0lL7kek4hrlUJvoHuX9BKqRkYyefD3aZFvoHh0sdJ2zHwEu4OMRm24Xiu9wovMb6tdSYt7i4RukU4dvWnim2y5RjaLHfDL",
+    "corridor_id": "hcm_vungtau",
+    "region": "Phú Mỹ",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 9.103
+  },
+  {
+    "place_id": "i8KnhKu7vjZvaSEdk7iN_3d4VhCIZLmIXM0lL5MeoIhrlUISl3ug9G-rTjnwebj3aZF4OrF0u0Z20nwEjEZvzL0yXiu4VovMb21dSYt7veJukU6Dmx2LH7WxGuYvwHLnL",
+    "corridor_id": "hcm_vungtau",
+    "region": "Phú Mỹ",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 13.745
+  },
+  {
+    "place_id": "mbBnfqOlLOpSr2w2qWGYhn2bSoyETgeBOqFWUr1sk_mToH9BvXy561OvVgCpFmH8ZLFWQbK9FcoRptXhAhHH9yE6hfR2xT6qLXmdVQYNzg8ujZkYVtRWTg2SxTj6DFPjD",
+    "corridor_id": "hcm_vungtau",
+    "region": "Phú Mỹ",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 1.397
+  },
+  {
+    "place_id": "YsaPsDmIjENgmW-CA3OTxn7Hby2zYPPgV5h8R4dirqxpyFkFq2-Mx2qjJmSFTL7EJ5ClOYrBjgLJioSonwkpNsVagWkS9Spz3ZKBWQoBwgOllmkUWthaQgGeyTT2AF_vA",
+    "corridor_id": "hcm_vungtau",
+    "region": "Phú Mỹ",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 4.849
+  },
+  {
+    "place_id": "ryZ3v0VPOYZ7tWZDryyowVeld4liWyHcu6p2qHtfP4Jhukq8tl80hme3EaqOKLysYgMQp-RkjvFkn2G0EECk3lC2S7OvUILOYqZ2RIZDhAu9jnBAQsEuWhmG0ETuGS_3G",
+    "corridor_id": "hcm_vungtau",
+    "region": "Phú Mỹ",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 12.09
+  },
+  {
+    "place_id": "T3KJbb5iJ9W32pVNoiR2rinfMegqPH6fLgZelF7tEq2nWXLkyiGuFz2uqU02MQoX7bZdMCbt7-oZoz0RLtGswkVmXR9S4RQaObalfS4l5iURsk-Afa7-ZTG67RDQfHvLJ",
+    "corridor_id": "hcm_vungtau",
+    "region": "Phú Mỹ",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 6.291
+  },
+  {
+    "place_id": "4a5uv2BToIDtvkgmYFOu1o6iWwhMCJn8vCdXgLJvWseCllMbYEOgT5LiTBINICLeRxoRqEHwKmLywvmZbf1Kr3KS-fAJ6ZZ7Bnr5SXHtuqPeOhFsIeQienuWsUyN6Caze",
+    "corridor_id": "hcm_vungtau",
+    "region": "Phú Mỹ",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 3.53
+  },
+  {
+    "place_id": "PtZcDy0_1l9G1ksRkG6R7W_WZgqRXIG9dc5hH6Jynb12nk91lFzU7VOdmWyjWp1MQI9zo1Lijdd7sHIooTlujy2zUaqegWoHodbFHU5Fhkfh0i1QHpweBkXajXCyRBurR",
+    "corridor_id": "hcm_vungtau",
+    "region": "Phú Mỹ",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 4.538
+  },
+  {
+    "place_id": "Z5wv53Wma4xCpG86cZu_1Ha4czuTsi3rRI1SWaV2FO11uLp7qVjv6HONQleSZKrEfdBaUqVe69N-jkoaqXCM0WSKWVaqdJjqdrRCVpRwlP1kjlECoOgKElHOmWSmUA-_U",
+    "corridor_id": "hcm_vungtau",
+    "region": "Phú Mỹ",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 0.514
+  },
+  {
+    "place_id": "0Jp7RCgr1lFLvHajVV-K1Gq7c53aXqGXoJaVPBdhi-1fgm-gNATVX-60da8dYdZlRLUtCrC5ti5JLjXeiEF7UlzSadpJQWbLKRJJ3kgRiiPtXgnWkLwSgkl_pdnAFkr7S",
+    "corridor_id": "hcm_vungtau",
+    "region": "Phú Mỹ",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 0.353
+  },
+  {
+    "place_id": "5rR-ctl6lVB_gnoBsXm_1FC0WDqhVpWYd7FyOZ0Ju9pMvUdfrWyzzUuuJESHrb6PueawCBpp_ncJ8k1A9twinr0yhSCTjUIG3eb1LX51tnfR4h1gLqwt5nY2vkiCdClDd",
+    "corridor_id": "hcm_vungtau",
+    "region": "Phú Mỹ",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 3.163
+  },
+  {
+    "place_id": "ypN4h2qvf6NRiyQNtRSF5mrHcTh1hc4w6sK94gLVyizdTYYwGqpwtgGpOrkSySI_3VZ1RQIVj_GfGs0oksU6IU1W_WjuwSIP_Z6NVQYNzr-pmg0YVtRWZg2SxTj6DFPjD",
+    "corridor_id": "hcm_vungtau",
+    "region": "Phú Mỹ",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 2.38
+  },
+  {
+    "place_id": "cb2ZXI6whupgslsFrnye_3SAcStTU4aWT5CtWkR9fJxOkTVcmJq9w35sehq0bKDpQ9l7J6NTrP5-h3kCvAio_HmGbSe0YY7Wer5IXJ5unvd7hFsIqIAiOnnmsUyOeCeXe",
+    "corridor_id": "hcm_vungtau",
+    "region": "Phú Mỹ",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 1.522
+  },
+  {
+    "place_id": "gguQ49XxqzN2uUCmo1dPuFpHkqa0aOGGXH15DKB487h0kmUvjkegrFtuQySgebqCYOhHBL1D_bhgk3E-unrq9W-ScgWgH-uKbqpcSIp645pvk6E8cvBxoHW24RzeKisqF",
+    "corridor_id": "hcm_vungtau",
+    "region": "Bà Rịa",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 4.79
+  },
+  {
+    "place_id": "mlcju30UJyZN3UAam7aa5mRlbXiaAYMrFfrZq3al5lt1930RYn1eW5kveUzqba5bpS1eEkqx5hllwVDTcqVCowGffYQSrUYrjfrpMWJpqmvOogF-VfgwMmn-oV4qsDeHa",
+    "corridor_id": "hcm_vungtau",
+    "region": "Bà Rịa",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 4.455
+  },
+  {
+    "place_id": "kb1LUGoT5FRhrq9YV0CF9FCxTRyjf3mSr4duG7dv9rRjhXI4t1CZwkyhJH-olbtud7wfUKr_lep3hGYprW2v_XixZRK3COL8eYVLX51tnfRH4h1gLqwuNnXqvUCCdCubd",
+    "corridor_id": "hcm_vungtau",
+    "region": "Bà Rịa",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 16.784
+  },
+  {
+    "place_id": "onV1c-pcuNHrbHY1omC0vUeSaii6fpG9dI5cF7gG7vh7iGoUkQbuknCfSBW7cqPMc4T9EHp5ht9Yoslx7u36z1wawUFWnB7PxNrFHU5Fhkfh0i1QHpweBmXajcyyRXOqR",
+    "corridor_id": "hcm_vungtau",
+    "region": "Bà Rịa",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 9.013
+  },
+  {
+    "place_id": "S3qErNidRydj2np7q2yjWTmBkRqfVGDnsnThLLdvlsISHU60brX2wfHhxcT6Z6b9TeoRHBalSguFPvGUHtGGW_EmEaSaYQ7z4lr5IXJ5unnr3hFsIqAiOnnmsUyOeCeXe",
+    "corridor_id": "hcm_vungtau",
+    "region": "Bà Rịa",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 10.527
+  },
+  {
+    "place_id": "ok1rcY5oGndelsQDpWOqXWu8j6Cyc59_ZU_FyaVHoSpuyNYqp122RTWvyHy7G4B7hLwOPqZzhL7VrYoaY2xoWZfK8ii-QGlaaKzlToyDfElplowau0oycQWu-zDGMG_dB",
+    "corridor_id": "hcm_vungtau",
+    "region": "Bà Rịa",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 14.578
+  },
+  {
+    "place_id": "KrkRY4NiBWUq2bk6nuk6UzFcFQrSwSpuFVwcomIZki_hXIoidtU4-x2V8i0q2ZQi1S3CPmO9Lh4lRHIK2tUu6hWEGIaetZof0Y0VRnYd3h-5iEUK1sRGXh2A6SquHEPzH",
+    "corridor_id": "hcm_vungtau",
+    "region": "Bà Rịa",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 19.176
+  },
+  {
+    "place_id": "d5OM8nG4OQVBipMzknJN-3qhoVW5cV4qetef1nGkVgVt1L0nWWM19aGwjFBFYVVrVorC6F66bfFhunIkck9tokUOy6BK6Yb-Xd0WzUZNjVvp2iYMFpQVek3Sh6C6TBF7T",
+    "corridor_id": "hcm_vungtau",
+    "region": "Bà Rịa",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 0.885
+  },
+  {
+    "place_id": "hXZLE3a5OquplqbUmqVPr0mRcqDmoUInwSLlAHa96fcO3llAZq1S5_3tPDjScZZkgdt5M5ZhUkZFztUAHr2ta6366dgCqeKPEfblPW5lpmfB8g1wPrw-JmX6rVCSZDuLZ",
+    "corridor_id": "hcm_vungtau",
+    "region": "Bà Rịa",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 0.885
+  },
+  {
+    "place_id": "satInLMgUOZghVAktG3u9UuFchmub6_vd4JyG5FtnCRg21fYqgjjW2OHaim2bJX8S6xhELR_r8R8oUdanQHmV9Hy-UCWdUL_Zeb1LX3ltnfSdh5J_eAuVWHqvjQudCp3d",
+    "corridor_id": "hcm_vungtau",
+    "region": "Bà Rịa",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 1.443
+  },
+  {
+    "place_id": "sU9Isn02mD5muno_q2Oq73GrahghaZfrtGRkn19UuptVlqkGs2iA-E2CQpB8aJRes6hR53l455xxu38Bq1W24k6kdx6eRZzQqrhOWnxomPGYgKl0Org6ImH-qVSWYD-PY",
+    "corridor_id": "hcm_vungtau",
+    "region": "Bà Rịa",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 3.601
+  },
+  {
+    "place_id": "bEyCpJFvhfNd1rmoDs2y_3WTLJzedf7jtb5QroaREq4htMkCTiBhAjGnIdjWIGrCPc71EIzRHko5oylC8Km6J1HG8I0mkcp3maa1bT419jeRol0gbuxudjWq_QDCNGvbN",
+    "corridor_id": "hcm_vungtau",
+    "region": "Bà Rịa",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 11.738
+  },
+  {
+    "place_id": "k5Cc0FaV1Z95vK4QNgV040GPog9ybIuQQKEFH11ZtuxAsacoa02MyUCIpz1jTb7qdoiiKUVZovBxsb4UaFx0-SJiKu1W8c3qj20awUlVgkPl1iqYGXQaAKXeikJBdB-st",
+    "corridor_id": "hcm_vungtau",
+    "region": "Bà Rịa",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 7.906
+  },
+  {
+    "place_id": "b726BINJ8Gt1kmQxvkKL1Gq7Tj65H6nOd7ghFKIdgMJ1t3gyjh6H1l26QSuOHPjjb6tCD7u5i4xrRpJOp4yLiXZAJGl7GT4fWb6tddIt7i-JukU4dvR2Ei2y5RjaLHJvL",
+    "corridor_id": "hcm_vungtau",
+    "region": "Bà Rịa",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 15.919
+  },
+  {
+    "place_id": "OE9FiYGBf5JXrX0BqHC7xGaiWDurSGWkYZhILrd-ycqOsHo1tlxDQxImhdgKwcJHgYLKtTLBh8sljbgGivEuogWWxdjmzbqPFZaFXQ6txgehkm0QXY7eRgWazTDwXFvrB",
+    "corridor_id": "hcm_vungtau",
+    "region": "Bà Rịa",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 15.779
+  },
+  {
+    "place_id": "NL7k6uIgci1ZvuCEdvniTp3f_VhCNZIi7XM0lL7kek4hrlUJvoHuX9BKqRkYyefD3aZFvoHh0sdJ2zHwEu4OMRm24Xiu9wovMb6tdSYt7i4RukU4dvWnim2y5RjaLHfDL",
+    "corridor_id": "hcm_vungtau",
+    "region": "Bà Rịa",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 8.166
+  },
+  {
+    "place_id": "U0ufQnhk7xAFWpyAZtmWO7rRLtkFWdp70tVRPP4B2-YRQtl8psRCNwGycYiCxE_XOU7VXP7dNluZhmXYAho6nT2ekaR-whYqJYqZQRIZ28oZjnKoQsBCWhmFDtDuGEf3G",
+    "corridor_id": "hcm_vungtau",
+    "region": "Bà Rịa",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 9.798
+  },
+  {
+    "place_id": "vlGTY1dYqnt52GnN-ta6y5nXYRlAdobrFYYVVWKlQgPxKsEklsEGf13iZUSevc7nXYK97Hpoll5x72VpjtRx41b6EczisfXufeLxKXpxsnPWUhlkKqgqMeZyuUSGcC-fc",
+    "corridor_id": "hcm_vungtau",
+    "region": "Bà Rịa",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 1.17
+  },
+  {
+    "place_id": "aJKsbjFBgow-e79qpW62iSwi0rmaNfarWK3u-XYtsj4woY5Nduxuijjcqk1yyfvfyI0FrXot_n8cCg25bjZBW0zVArA65QaLLTlqWaYx8jIQaSb6-axqc5bpBoGiMG_fM",
+    "corridor_id": "hcm_vungtau",
+    "region": "Bà Rịa",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 2.875
+  },
+  {
+    "place_id": "AxFyWHGPljbtomnq5vGWN_UMsQOamZ5nnf4p6E5Rlu9BY02hTogDqzV-pQC53pOaQdJssR3d1nZlFtRVRknTh4nykP1C-derdcbVDlZVllfxXj1BwowOFlaenWChyAu7V",
+    "corridor_id": "hcm_vungtau",
+    "region": "Bà Rịa",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 1.056
+  },
+  {
+    "place_id": "0AaQXYpjYIxuolkviV2MknaRYySSivIDKQl1FKrqKvu53sV0Ru2Dj7nCKazW5YpzVbKM6U61vgMB2o3IslmuYmG6ifx-6n3L4dLBGUpDIkF11iin5pgaAdFWiBi2QB-t3",
+    "corridor_id": "hcm_vungtau",
+    "region": "Bà Rịa",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 0.307
+  },
+  {
+    "place_id": "W7a_blpdp4tyrncrhH6-v2W_Igz7fa7_aL1wS4NApo9wQYISjHyU1mhZRk6xfvf4Na5ScYpFoNG-qncaDBu_iaaVYw02lGIzqaKxaTox8jOVplkkauhqcjGu-QTGMG_fM",
+    "corridor_id": "hcm_vungtau",
+    "region": "Bà Rịa",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 2.017
+  },
+  {
+    "place_id": "llCRGVrqaa9J_4arBqt7hn3EYrCqo1WHZPlEWKmra4dI3EwasqNrfaplPzyz4njfZ5tMLa-wVKVw0GIgnLtoh07GVBiYmWm5ffLBPW1SZD4N8mZkPXIkOq37ZVCSZ4nu1",
+    "corridor_id": "hcm_vungtau",
+    "region": "Bà Rịa",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 1.495
+  },
+  {
+    "place_id": "eyAko7d9tT2JaG4rsJZ7LnH-qNzmYub_Dc7tukZ55qz5Iq3aZmg6u32eDbj6oaYXmfoNMI6sNlppn32kWsFCj7nDeZV6fVZqbfblPW5lpe_B8g1xUr5kPmX6rD1SZDuLZ",
+    "corridor_id": "hcm_vungtau",
+    "region": "Bà Rịa",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 0.81
+  },
+  {
+    "place_id": "nLNjUhL_sbZtwkk1t3SEh3rDXkGCSKGEU88NZB61rqc1jYFE7qHWU3aiMazuLEmS1eO1rAqZNooNJt2UktGeq5E3CPSO1SIjGYKRDtkZ0hO1hnkGEshJmhGO2STmElBPE",
+    "corridor_id": "hcm_vungtau",
+    "region": "Bà Rịa",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 3.04
+  },
+  {
+    "place_id": "f9SGkUl7b2KArYZccEmHJ5ZeenhFCbex6nH2qEDGHh8B5Uq4qaJBg6E-FrgNvk4PjeCaZh2RglNZIH6kwSm-Ts073qSBJfr6ve7-fXVpvn_Z6hakJUgmPn3itnyJSCOTf",
+    "corridor_id": "hcm_vungtau",
+    "region": "Bà Rịa",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 17.519
+  },
+  {
+    "place_id": "YbEVyFKBw2cpr3g2s2KAZlOabC2pY7k6fZxO-oJOjABkr2wfhmyqyGbEVgaFYfDxfaCLR6l8g0qxnNoyY2KtxKiZRiW-TpDFZ6NVQYNzg-pmmUYVtRWTFjGSxTj6DFIP4",
+    "corridor_id": "hcm_vungtau",
+    "region": "Bà Rịa",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 8.741
+  },
+  {
+    "place_id": "CaqXSNhIU4N8gEVcqUmXJ5VatQhytdlL0C6y5Ma9iRsdTvHgJrnih5m2zQV2hT-ThbIB4MJiQl00mgUWMsxHUrVKeUh3Ae7GRb79JXZ99n_Z6hVoJqXiPnwitUiKfe-Tf",
+    "corridor_id": "hcm_vungtau",
+    "region": "Bà Rịa",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 1.873
+  },
+  {
+    "place_id": "hzFT2JmIst6x8vmZbfKjh2WAnspAJVZ6de1MiEd58hZx3ompYkX6Y6U_bQzugUqycToRpX7d-4cdOeksvrgme4b1MZTCtVIL1er5IXJ5unvd7hFMIqAiOnnmsWyOWCeWe",
+    "corridor_id": "hcm_vungtau",
+    "region": "Bà Rịa",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 1.01
+  },
+  {
+    "place_id": "4raEVmFOfJlTo38MhXCYy7GwOiWvcq2HsH0tHJqMc4BTnHg_qKqLZ-idVga9bJNhVbJkA7JKrd5FmnC0ys0n9TmeayDGGTqFkZ4tVQYNzg6Nm6mEVtUaTg2SxFT6DFPjD",
+    "corridor_id": "hcm_vungtau",
+    "region": "Bà Rịa",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 0.31
+  },
+  {
+    "place_id": "iynQVpt3aapCjUJXlXSM7nGNexqVZueXaXBJG6FZjMuMWXIhOnGuYpXE6MjHddqbqpopJF3BmmJaT0W8lqWW21mqLby2nZ5DQcLRCJpRklP1xjlG4ogKElHMCWaaUA-_U",
+    "corridor_id": "hcm_vungtau",
+    "region": "Bà Rịa",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 0.305
+  },
+  {
+    "place_id": "YnOb-cbxOupnmms-tE9EgGmNUhiqcfzEU51eA7MUj8Nnsk1FsnKAYWWwbCaDy04VfsSlGr5zdP9mxHAVsq-msWZKRQ2GmfyFLZ6NVQYNzg4RmmUaMtRUVg2SxTpODFPjD",
+    "corridor_id": "hcm_vungtau",
+    "region": "Bà Rịa",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 0.916
+  },
+  {
+    "place_id": "g4QxaE6KkndbyKAzbry2VW2-xT0ZbPfTXUHIEr9_0jMRoIkG-KH-Lx12_K6e8Y6nFZqxFF7xHrtZavF5JjXzz_nCwUTCmGp_KaKxaTox8jOVplkkauhqcjDW-QWuMG_fM",
+    "corridor_id": "hcm_vungtau",
+    "region": "Bà Rịa",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 10.346
+  },
+  {
+    "place_id": "UHwwhZw6CnmH-TXJZmm6VmYJgdVCvsYGefWMQf5xmnfW-ejuErH673dthehiobeOcrCRTfZp9keJbd3IZo5J-9JXvSD2rs-KFvXhLX51tnfSHelgLqwuNna95UCCdCubd",
+    "corridor_id": "hcm_vungtau",
+    "region": "Bà Rịa",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 19.771
+  },
+  {
+    "place_id": "ryZ3v0VPOYZ7tWZDryyowVeld4liWyHcu6p2qHtfP4Jhukq8tl80hme3EaqOKLysYgMQp-RkjvFkn2G0EECk3lC2S7OvUILOYqZ2RIZDhAu9jnBAQsEuWhmG0ETuGS_3G",
+    "corridor_id": "hcm_vungtau",
+    "region": "Bà Rịa",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 5.175
+  },
+  {
+    "place_id": "MchNYoNGV8hixnc9t0mEhVCazWmWAF4D_I7J3f7FOrrF9gUVps02zxZiad0Sic1KEs6NVL7JJkNBhxUVGsGGY-1fELgY",
+    "corridor_id": "hcm_vungtau",
+    "region": "Long Sơn",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 1.747
+  },
+  {
+    "place_id": "OReYVWJRQqxhjkNzh3JkyLKI-3N9YEGyh98CVqkVgPJgmEZ7hRf_yFajBV2zYLrhYp4yRalkrt1_sjougEz-gmazCL4-GFVb3ZKCMRYBwgOllmhZNtqyQgGcWPU2AsvvA",
+    "corridor_id": "hcm_vungtau",
+    "region": "Long Sơn",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 3.877
+  },
+  {
+    "place_id": "WgVvlW-9rQ-5laIVd3iX4muSjk5WR_jRas6iFCVr8OBalIqDTnmEDmGTuPIhRrn8XM-MD73N4pflcMrinXmv4zV2RukxdQq3Wb6uLSWlOi-JuuZEdRh2bi2x7izZGHPDL",
+    "corridor_id": "hcm_vungtau",
+    "region": "Long Sơn",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 1.085
+  },
+  {
+    "place_id": "P5ioSapOfVokVd5mqGuI4RdSpCGoUuvQZkWoea1oovA9UKbl_qVO2-SAyenyuub6aXGupcZl4tsE3f4ZOmWlV-jiiuJCYVW98l06CmJho0fEOXap_rg6ImCVVtHyYD-PY",
+    "corridor_id": "hcm_vungtau",
+    "region": "Long Sơn",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 3.477
+  },
+  {
+    "place_id": "BJNeoqGg6mN5jWRQrXGp9UGJRlGjB4CQda9KJ7lzvZx0sko2lGHx7G4qfNWtTrXOdA05BaFz6NVtcW9Xur-PyncEex2lm4sVEd7NFUZP4k_p2iV4Fv3eDkwWlVi6hdOjT",
+    "corridor_id": "hcm_vungtau",
+    "region": "Long Sơn",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 7.115
+  },
+  {
+    "place_id": "qrVMq5GpfZllqFcZ4lC7-a67XFtIaYHAfahUGaRUhdt9tT8irw2V436BYjZ7qb_EfrgzF0R4q9Bkh0gft2qwnni6Yl2zeebrfblPW5lpmfB8IFyDrw-JmZYPVCSLZDn7Z",
+    "corridor_id": "hcm_vungtau",
+    "region": "Long Sơn",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 1.599
+  },
+  {
+    "place_id": "afulQ53ruDJv1jVVp2UCvcGyNRxaT1O1YeItLILtjmsh2oXaaoXG8F32gQu5fX7ORK4iUdqBeju0JsGkLS22a8EWIZSqUT7C-dvREUJJikrJ3iFcEpASCknWgXy-SBenS",
+    "corridor_id": "hcm_vungtau",
+    "region": "Long Sơn",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 13.843
+  },
+  {
+    "place_id": "XKxuHeFut6pZglH1JtGiw7FiFX0i6HpCJbJlTPqBqpOhHq1MvjXim9W31U060aanXbbsgHKNqgvF0pnZOuDPMuGi5Yh3TbpK8BKpcSIp6iuNvkE8cvByaike4bTeKHfHK",
+    "corridor_id": "hcm_vungtau",
+    "region": "Long Sơn",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 13.51
+  },
+  {
+    "place_id": "g4QxaE6KkndbyKAzbry2VW2-xT0ZbPfTXUHIEr9_0jMRoIkG-KH-Lx12_K6e8Y6nFZqxFF7xHrtZavF5JjXzz_nCwUTCmGp_KaKxaTox8jOVplkkauhqcjDW-QWuMG_fM",
+    "corridor_id": "hcm_vungtau",
+    "region": "Long Sơn",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 1.075
+  },
+  {
+    "place_id": "p055qydoMJdYkUyluEJK02v2Q7m5b_LWabtmNbR7-8Jell5-7Sx2BzluWXLe_ebf-d4FQEo9pbbiJ4ExIjnZ3hnTOXDaPROKFbalUS4lfieBsk0wfvx-ZiW67RDSJHvLJ",
+    "corridor_id": "hcm_vungtau",
+    "region": "Long Sơn",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 5.117
+  },
+  {
+    "place_id": "V2VgmxIRqxFmpEoRrng-hWWdcK6td0blUaRSP61mqfNKtXkisbW980KmIEBoubn-Y8NeILTB8lIJ5tGAGuXSlzm2kaAmuTfj9Y6dRRYePh3dinUIRse6Xh2CISjqHELXH",
+    "corridor_id": "hcm_vungtau",
+    "region": "Long Sơn",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 7.275
+  },
+  {
+    "place_id": "qWe7BWoB-YdUnWphr2eejTC2THtIt5WAVKeCKkhQlYp4pnk8u3r_v3i0fkezZbv6YrRQR7N0o4JvpX5Ggnf7znunWBu3SazNYaVTR4V1hexgn0ATsxOVhWK3SD9iFEv7F",
+    "corridor_id": "hcm_vungtau",
+    "region": "Long Sơn",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 2.185
+  },
+  {
+    "place_id": "E1-kQqemdFt302IooliNxUJ0TDJPpOb3fF_QJFimkfdH03IhoF-J6-qLRGumPZpaRjbZAOqdcNMWF0FBwaqWN7lPRO0I",
+    "corridor_id": "hcm_vungtau",
+    "region": "Suối Nghệ",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 19.9
+  },
+  {
+    "place_id": "VPa8cXLfjLpqq1gWoV-0p0e0U1SeZo6lpKcwFnJbitTPjkMtoAKaxi-6Q0eodbB0Lrc8GKbLuHdriEcQW2WWkXe1vQ3JtdunkUplAcpZmtv9zllMAoACGlnGkWyuWAe3W",
+    "corridor_id": "hcm_vungtau",
+    "region": "Suối Nghệ",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 1.44
+  },
+  {
+    "place_id": "YCexmotHRF9sjFe-oiuScHgJfbGh84qQQ1-cVpV2luZxSHBQlDm87niIQhK4YKzld6B9K9VfsPJyr3UOpASC8HWKnVC4bWHadrKCUJJikUvt3iFcEpASCknWgXy-SBenS",
+    "corridor_id": "hcm_vungtau",
+    "region": "Suối Nghệ",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 7.138
+  },
+  {
+    "place_id": "r0JevVlzUmBel2A6pW2UikK8cQuIh59CRq1tILFan_Vya41NsXC156xr3RUmxf7HwaL5aTbl-qYhlr4BMiH10xHGtNvG9Q6bHa68RTY9_j-ZqlaMZuRmfj2hKvTKPGPTP",
+    "corridor_id": "hcm_vungtau",
+    "region": "Suối Nghệ",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 1.442
+  },
+  {
+    "place_id": "3lSuK3CJ8h51xqUGAkKq2X3xVYKtb3rHQeZ82gR1rnOdOqlWCGw6I5E6yQdwXa77af6ZOgSRnl5hID0F9GlSxnaiYPrhaU5DAfJhOglVomPF9XQ6qJQ6ImHqYVbQhf-PY",
+    "corridor_id": "hcm_vungtau",
+    "region": "Suối Nghệ",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 7.34
+  },
+  {
+    "place_id": "vYqk8mzyRIpsy5VPsH1U3XC8v067f1VTlapO_P7hBdm9nk68IjL9iQHOSgRGCvveFXWn-ImIaNO-UcSBQoX0j0nCn9gKSbVuPaa2NT419SORol50buxtAjWq_9jCNGkDN",
+    "corridor_id": "hcm_vungtau",
+    "region": "Suối Nghệ",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 2.253
+  },
+  {
+    "place_id": "NkNrbax4D72PlXGAv3AAjmu9YIyjo6H8WW8kArKxj_VpkUYKv0KP83O-WgGxGrHnXZApGaZth5RYyUYLvUPGjGiRdCl3CfqHIa6-JTVl_j-ZqlUoZuRmfj2i9QjKPGPTP",
+    "corridor_id": "hcm_vungtau",
+    "region": "Suối Nghệ",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 3.3
+  },
+  {
+    "place_id": "JYgsnviVb3TqoUQNkQZ4c43XTfjag13Fd771qN6xhQZSdjlgqpFx196-iOyiUW1L6mbI3bJdgkLyji1RSu1124omIdgejBnWjkbFHU9hhdJGBi1Rcpwd2keqjB1yRBnXR",
+    "corridor_id": "hcm_vungtau",
+    "region": "Suối Nghệ",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 2.337
+  },
+  {
+    "place_id": "QHxjOzlMrk_5WK5EghaggXHHYgGEFKzAV5xmEsBxPoN15snywg2O43X6bZkS8X6TwR5yKT79w8WMCxGDfs1Ka_mCcZg2zTv2FVKJnQIJygutHmGUUtBSSgk-NZj-CFbDC",
+    "corridor_id": "hcm_vungtau",
+    "region": "Suối Nghệ",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 0.554
+  },
+  {
+    "place_id": "QHxjOzlMrk_5WK5EghaggXHHYgGEFKzAV5xmEsBxPoN15snywg2O43X6bZkS8X6TwR5yKT79w8WMCxGDfs1Ka_mCcZg2zTv2FVKJnQIJygutHmGUUtBSSgk-NZj-CFbDC",
+    "corridor_id": "hcm_vungtau",
+    "region": "Suối Nghệ",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 0.554
+  },
+  {
+    "place_id": "vYqk8mzyRIpsy5VPsH1U3XC8v067f1VTlapO_P7hBdm9nk68IjL9iQHOSgRGCvveFXWn-ImIaNO-UcSBQoX0j0nCn9gKSbVuPaa2NT419SORol50buxtAjWq_9jCNGkDN",
+    "corridor_id": "hcm_vungtau",
+    "region": "Suối Nghệ",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 2.253
+  },
+  {
+    "place_id": "jrOJswGnTMh9sE8Btkij4VCjRDiycZnYZbAnQ7xMncNlrVQ6t2Vj6hWZVDD6AjWVMZqArD7Fgr9x8n1AHqHKBhmCiekWrYf7zZaFXQ4Fxgehkm0QXtxeRgWazTDyBFvrB",
+    "corridor_id": "hcm_vungtau",
+    "region": "Suối Nghệ",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 2.843
+  },
+  {
+    "place_id": "dlpG6P4XtRhrmFkXoF6m90a1UnWku4_Oc1UxZ6qmi9Vzj0KfoQObLHC3Qe2Wc7HKWrZaGadwud5qiT0RvmQukRHa0bJe9d1Olc7dBVeVnl5dyjVIBoQGHl3ClWiqXAOzX",
+    "corridor_id": "hcm_vungtau",
+    "region": "Suối Nghệ",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 2.845
+  },
+  {
+    "place_id": "mk9IYIpbRkFulaYWo4KoaTNHtm24w4KPLaZlR6MerM1bqi5QuoV7iHa2ekyPo7T5brtlEY1oitVohEcqoGuw9B-2XzOgR5bObqpcSIp6buOKkE8cvBx6vim24RzeKHfHK",
+    "corridor_id": "hcm_vungtau",
+    "region": "Suối Nghệ",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 7.592
+  },
+  {
+    "place_id": "tVBldypJj3V6iV61Y2SEwQTCcK1WE6H1bZ4-Xrlal89mw0pFgDKp-3qJaAi5dovdq1BAhRLeIaOWYwU4nt4-b-VaZVhGBZZ_HY6dRRYd3h-5inUIRsRGXh2C1SjqHEPzH",
+    "corridor_id": "hcm_vungtau",
+    "region": "Suối Nghệ",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 1.619
+  },
+  {
+    "place_id": "VKok4TKskXTWVFQwf6COTZ9Qrx9YrpJN4n69HZyVgVBmTYI4r9qRY_VvWCK0k6N4mVFqC5iCnUufHUVAGr6yge-58Oxy3vZ159G1LX52HnXidC1gLq6-Net0KUCCdseZ5",
+    "corridor_id": "hcm_vungtau",
+    "region": "Suối Nghệ",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 1.637
+  },
+  {
+    "place_id": "W0yFfnisnMVZu2FzsGW0-ExXuzqwUILaSk9yXpUNqJJ7qT1Y5QyS5U2EZiOsD6PTeLk1GpxTuMNNgnU8pA2g2EqpthqpZZWbfkyM6WKiamvN_gF8MagyKmn2oVyeaDeHa",
+    "corridor_id": "hcm_vungtau",
+    "region": "Suối Nghệ",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 0.881
+  },
+  {
+    "place_id": "SHQB_tGXvy9EnnKkd7yWjzw2f1B0oaTTf7pbANK9mvdoXFMiZlu4z0GJoSdQDq5nQdLVfEl2Wid5rjHkZAL-3lEaJbRdklu2ScrZAVGaglv9zjFMAAJaGlnGkWysBpO3W",
+    "corridor_id": "hcm_vungtau",
+    "region": "Vũng Tàu",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 15.521
+  },
+  {
+    "place_id": "TEObDoFMgvplsisXtHKO9X2xXBqHbpmCVscvJbDMUmYJhn0gYqnGJnWSeJwWwc8P9Y5tyOLJju9h8xnYwsX6zyGeyVK2GXLfGZUwhoYFxgehkV2UXtxeRgUSzZjyBFvrB",
+    "corridor_id": "hcm_vungtau",
+    "region": "Vũng Tàu",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 18.307
+  },
+  {
+    "place_id": "qP1LQIarNCZZqC8WuWqB4Vm5W066eZH7d5BAgY959jBfuVCLvh-Bz1mXUC--HPrBWLpcD7gwbemZa3lCiZZupWiKZkS_HoVN5bakQX4l5ieBsk0y7vx8fiW67RJmJHvLJ",
+    "corridor_id": "hcm_vungtau",
+    "region": "Vũng Tàu",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 19.422
+  },
+  {
+    "place_id": "m0S0cLVRGnZZo6dqqnu660qmpBJvApTjQnuoKy10mNCcQbSlDwOUaJZd0BKlZbWURUGOdqcXjPJDbKZ3pHOaY6kV7tDuie5jMcEKOVpRklP1xUaYCogKElHNZuCmUA-_U",
+    "corridor_id": "hcm_vungtau",
+    "region": "Vũng Tàu",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 16.758
+  },
+  {
+    "place_id": "vp2FvJF9vyhqyn4S9lCL_mmvejSNGPLPcTRQQGlGt7G8Eyf13cHyd1HChSA-LUKyOZMpiDqcbofpzo1A5vWyT11-XdQK7b53Faa1bT40ZjeRol0gbuxuCjWq_QDCNGp3N",
+    "corridor_id": "hcm_vungtau",
+    "region": "Vũng Tàu",
+    "query_category": "trạm dừng chân",
+    "distance_to_discovery_center_km": 1.341
+  },
+  {
+    "place_id": "pmLjdmG2SHVSwVw6tRC_zGS3fjRnPP7aVMGKg2UbK81hm4UhrnaB3GeFUECyEreCp3tfQ7t3-u1suX0Ir0yjSGebwQWyjatIYaVTR4VyheypY9EATsxOVhbe3SDifEv7F",
+    "corridor_id": "hcm_vungtau",
+    "region": "Vũng Tàu",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 0.994
+  },
+  {
+    "place_id": "pGEoC8NHVBKbqUxIr3qrgIpi9CjyDdVLs9rR1VLhOloBst31BwI2oEWKyIxyyhIXVeJ9YGrUQmfxsuXYjs2e3zXi1XGe1Ib_BYaVTTIV1hexgn0ATsxOVhWK3SDiFEv7F",
+    "corridor_id": "hcm_vungtau",
+    "region": "Vũng Tàu",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 2.17
+  },
+  {
+    "place_id": "OE9FiYGBf5JXrX0BqHC7xGaiWDurSGWkYZhILrd-ycqOsHo1tlxDQxImhdgKwcJHgYLKtTLBh8sljbgGivEuogWWxdjmzbqPFZaFXQ6txgehkm0QXY7eRgWazTDwXFvrB",
+    "corridor_id": "hcm_vungtau",
+    "region": "Vũng Tàu",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 3.637
+  },
+  {
+    "place_id": "mhSwguO0Fxlnm3k3smOBgFKwbSyoYrj7fJ1PAYOujcllZm0eh42uT21kxIq1q7AMYJxbbYJfnspoo206tHGg61PEKEezYoGBZqEJUQGCCgjtnmEfrchSSFGWwTz-CFfnC",
+    "corridor_id": "hcm_vungtau",
+    "region": "Vũng Tàu",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 4.33
+  },
+  {
+    "place_id": "jJBasF5ERrNqxU5nsHODgDLEsX1ZT6aDVMFSFAKpsr8pkrk48snKvxWGgVjmGFaHqfzpssYtKpbZiBUphhCOt42TFJGCyT4_BZ6NVQYNzg-pmmUYVtRWTg2SxTj6DFPjD",
+    "corridor_id": "hcm_vungtau",
+    "region": "Vũng Tàu",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 2.17
+  },
+  {
+    "place_id": "U0ufQnhk7xAFWpyAZtmWO7rRLtkFWdp70tVRPP4B2-YRQtl8psRCNwGycYiCxE_XOU7VXP7dNluZhmXYAho6nT2ekaR-whYqJYqZQRIZ28oZjnKoQsBCWhmFDtDuGEf3G",
+    "corridor_id": "hcm_vungtau",
+    "region": "Vũng Tàu",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 17.705
+  },
+  {
+    "place_id": "d5OM8nG4OQVBipMzknJN-3qhoVW5cV4qetef1nGkVgVt1L0nWWM19aGwjFBFYVVrVorC6F66bfFhunIkck9tokUOy6BK6Yb-Xd0WzUZNjVvp2iYMFpQVek3Sh6C6TBF7T",
+    "corridor_id": "hcm_vungtau",
+    "region": "Vũng Tàu",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 18.54
+  },
+  {
+    "place_id": "sU9Isn02mD5muno_q2Oq73GrahghaZfrtGRkn19UuptVlqkGs2iA-E2CQpB8aJRes6hR53l455xxu38Bq1W24k6kdx6eRZzQqrhOWnxomPGYgKl0Org6ImH-qVSWYD-PY",
+    "corridor_id": "hcm_vungtau",
+    "region": "Vũng Tàu",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 17.768
+  },
+  {
+    "place_id": "hXZLE3a5OquplqbUmqVPr0mRcqDmoUInwSLlAHa96fcO3llAZq1S5_3tPDjScZZkgdt5M5ZhUkZFztUAHr2ta6366dgCqeKPEfblPW5lpmfB8g1wPrw-JmX6rVCSZDuLZ",
+    "corridor_id": "hcm_vungtau",
+    "region": "Vũng Tàu",
+    "query_category": "trạm sạc",
+    "distance_to_discovery_center_km": 18.54
+  },
+  {
+    "place_id": "HpiSbHuSiod2akVpoatFoWp3f0mieJTqXqtdMKJppvx2uk0tvmeyyjGXc3a7urbxScxRL2i7m41Yu28Jth6qwWKrZwahQvfybEWoSoh44pOFtiIAevh5eTW-6iDWIH_PI",
+    "corridor_id": "hcm_vungtau",
+    "region": "Vũng Tàu",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 1.9
+  },
+  {
+    "place_id": "YmF-qEuVWQxNlEQVqVDh5XC7tl-bV5rgc3K4K5pXI9io3k-ee3gh8bOFfTycVqT8fd5XHJ17kt1KhX54sA8GxVe4Q5qqV4KfZ7pMkppqmlh_gF_zrAyMKmn2oVyeaDeHa",
+    "corridor_id": "hcm_vungtau",
+    "region": "Vũng Tàu",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 0.676
+  },
+  {
+    "place_id": "SlkcayW-qqZNoEkAlFeulE2DeynDbe6-TdhgEp1jfn9hoHMZmuaZonqDNhyvVuKcYdhSUa99wZdhhCWuWkHXkHa8eGKycQZ-cZ7ywXpxs9Yx5eIYKqgqc53uuUSGcC9yT",
+    "corridor_id": "hcm_vungtau",
+    "region": "Vũng Tàu",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 1.081
+  },
+  {
+    "place_id": "f9SGkUl7b2KArYZccEmHJ5ZeenhFCbex6nH2qEDGHh8B5Uq4qaJBg6E-FrgNvk4PjeCaZh2RglNZIH6kwSm-Ts073qSBJfr6ve7-fXVpvn_Z6hakJUgmPn3itnyJSCOTf",
+    "corridor_id": "hcm_vungtau",
+    "region": "Vũng Tàu",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 1.909
+  },
+  {
+    "place_id": "v4NoWECBQFvkvoITpxtEatSTNKuzbm9axMk8C4yFflyKvCspvGmjavGTWDZ-i51w7aFIMYpEnVzSr1wbu2yvW8u1UIzK9fo1pQK3kT419jVuNl0gbuxudas2_QDCFGvaN",
+    "corridor_id": "hcm_vungtau",
+    "region": "Vũng Tàu",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 4.275
+  },
+  {
+    "place_id": "AS_MpJZncUdB0UwWl2mW6mjRYQ2WW4bJmbQpmGKV1ctGa00hUk3Sa3p7Tahu8W5px5YhYVaB1ilt8t9AqpVykOGvTbQinXYbvcrZAVJZmlv9zjFMAunKGlgCgWyukce3W",
+    "corridor_id": "hcm_vungtau",
+    "region": "Vũng Tàu",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 5.196
+  },
+  {
+    "place_id": "SRN3v6Czm0RQRe_UkmyTZG3UzAiTXoNjd7_UHaBwn0101uGcll6fUUSJ4Em5Yp9dQo3VUKFwjz15sskvpVmhaG5xKuqi1oMNd1j6UZNjk1Z2ViZMFpQWDXnSh0y6TBOhe",
+    "corridor_id": "hcm_vungtau",
+    "region": "Vũng Tàu",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 6.352
+  },
+  {
+    "place_id": "gnjnpgt73CWydmuMon5f-k6GSV6sCLCffo9FKLZ6oP58vUU5m27j3kyvVV-vUbrBe602CrV859pisGBYrguAxXivdBKqC4T3eLxKXpxsk_V5hlkKqq5RnHuunJQKnGFEh",
+    "corridor_id": "hcm_vungtau",
+    "region": "Vũng Tàu",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 6.946
+  },
+  {
+    "place_id": "qPiYXH1kHyJktSCWsnZ2tXnDB7ueUL9UToeBP55rmlx7mUyRrHCVINxoP9Cna6vnfYdEGp56lZtk3GIopLGi722eGYiuqap3dfblPW5lpmfB8g1wPrw-JmaurVCR-DuLZ",
+    "corridor_id": "hcm_vungtau",
+    "region": "Vũng Tàu",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 0.26
+  },
+  {
+    "place_id": "Enl3qnpLZjtQqmIGr3q8w4mlXzyshmHOo09PKbCflcA1Xt30ysVuO8me1LD20EfXySpxbIIBUhvW0tn0Yb1ua7ri3LUGHZvnPYqZQRIZ2hu9jnEOOsBCWEGQ_S7SGYf3G",
+    "corridor_id": "hcm_vungtau",
+    "region": "Vũng Tàu",
+    "query_category": "nhà hàng",
+    "distance_to_discovery_center_km": 0.972
+  },
+  {
+    "place_id": "WqBksVCyvRfosLBHXUqcx1CeCs0VwTPOyZpnmRi4UjIBqo4Uyjxdvgmeh8wVRSbqEfp6wQypyj4V9OYaZVWKfgmmsvjxWFq7rZD-AQkVwgOllYrYWTYiQmmcWgD1NgPvA",
+    "corridor_id": "hcm_vungtau",
+    "region": "Vũng Tàu",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 1.675
+  },
+  {
+    "place_id": "KpEgs8hE-JNtoVQuoVvjnmygfjGgWNqBQLFIFadyv8tTHKFh1lAaNmbERYnW4XaOjQYtzXJJm7rhBslBxoQaR7kOIaj-iW436dbFHU5Fhkfh0i1QHvQeBkXanXCyjBurR",
+    "corridor_id": "hcm_vungtau",
+    "region": "Vũng Tàu",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 1.336
+  },
+  {
+    "place_id": "pIgoR1qnanVQXU1HLomL0KdRbSnFSjuTxUQNnfZe0m_8lADlqktHk4yxeTmmqia2TmGVGl6eO15I9VJh-kaZ1lSsBQnOpt7n8VWdBcpeNl_4BAVJwoaWHlyoApXNan-y7",
+    "corridor_id": "hcm_vungtau",
+    "region": "Vũng Tàu",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 1.15
+  },
+  {
+    "place_id": "YqZvRILzo5dzlDJ-jECRj2uFOVi_QL9vX9c3QKGXpxtqnQxQrH3-0H1OhNiekf4HIcb5OdrBpnd1yvjF-izSF1XO_a1unApHlaa1PSI19jeRolxtAuxudjWq_MECNGvbN",
+    "corridor_id": "hcm_vungtau",
+    "region": "Vũng Tàu",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 1.917
+  },
+  {
+    "place_id": "_PVtjq4Lp8tclHUBp2GoxmmGX02BcbC-Z419T51Fo8dfyihspSi072mXaX67fvCPcr9A2SIlDgvFulm4KsGGgaue8Wy6WGTdkarhY8Y5-TOdrlEsYuBiijmmeQzOOGbzO",
+    "corridor_id": "hcm_vungtau",
+    "region": "Vũng Tàu",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 1.159
+  },
+  {
+    "place_id": "g4QxaE6KkndbyKAzbry2VW2-xT0ZbPfTXUHIEr9_0jMRoIkG-KH-Lx12_K6e8Y6nFZqxFF7xHrtZavF5JjXzz_nCwUTCmGp_KaKxaTox8jOVplkkauhqcjDW-QWuMG_fM",
+    "corridor_id": "hcm_vungtau",
+    "region": "Vũng Tàu",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 12.02
+  },
+  {
+    "place_id": "sAGBrXL7iWVrmGlGtoJNc2CPUDyoxv4WURpcn7HBjXBlsE9HTDMOBF2WwsARI86dxfMazGGX9mUh2xrwXZISkcY6bRw-GxGRx_qFXQ4HogRdkm0QXt4GRFmY4TLOBwfpj",
+    "corridor_id": "hcm_vungtau",
+    "region": "Vũng Tàu",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 1.469
+  },
+  {
+    "place_id": "QaTlmLtvLrlF5HWYj2AXlnanWxWpZ5-lao1sFKZc381AiGdRqUqxWkG7ylWnZaVBc7ZeOpZdmJVBq04vvkql932PUiibRXb7Rc7dBVZdnl_5yjVIBoQGHl3ClWiqXAOzX",
+    "corridor_id": "hcm_vungtau",
+    "region": "Vũng Tàu",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 1.576
+  },
+  {
+    "place_id": "tf7Dt7TFt7VSn34wsxL2xVVIpCqzdbfAbEgjPBNOpM1VnXVCYUikzri3cgB4aqD9Mb41MHrVOp6VT31dAhHX693m5WDmvE5bDYaVTR4V1hexgPECfsxOpZ2KVSDiKhYUS",
+    "corridor_id": "hcm_vungtau",
+    "region": "Vũng Tàu",
+    "query_category": "du lịch",
+    "distance_to_discovery_center_km": 0.813
+  }
+]

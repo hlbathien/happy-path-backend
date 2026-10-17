@@ -1,0 +1,48 @@
+{
+  "unique_goong_places": 499,
+  "place_assessments": {
+    "excluded_geographic_entity": 7,
+    "excluded_transport_service": 45,
+    "needs_type_verification": 196,
+    "venue_type_supported": 251
+  },
+  "places_by_corridor": {
+    "hcm_dalat": 194,
+    "hcm_nhatrang": 181,
+    "hcm_vungtau": 124
+  },
+  "discovery_regions_by_corridor": {
+    "hcm_dalat": 6,
+    "hcm_nhatrang": 9,
+    "hcm_vungtau": 6
+  },
+  "review_venues_by_corridor": {
+    "hcm_dalat": 43,
+    "hcm_nhatrang": 67,
+    "hcm_vungtau": 28
+  },
+  "review_source_scope": {
+    "coordinate_in_discovery_region": 55,
+    "outside_discovery_regions": 1,
+    "outside_drivable_corridor": 4,
+    "province_group_only": 78
+  },
+  "review_sources_with_coordinates": 56,
+  "review_rows": 1998,
+  "dated_text_reviews": 434,
+  "dated_rated_text_reviews": 434,
+  "dated_rated_text_reviews_by_corridor": {
+    "hcm_dalat": 126,
+    "hcm_nhatrang": 209,
+    "hcm_vungtau": 99
+  },
+  "native_rating_scales": {
+    "5.0": 1682,
+    "10.0": 316
+  },
+  "recent_90d_rated_text_reviews": 0,
+  "successful_pages": 157,
+  "youtube_videos": 10,
+  "youtube_comments": 542,
+  "production_pois_promoted": 0
+}
