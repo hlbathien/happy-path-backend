@@ -197,7 +197,8 @@ class TestHappyPathFreezeSpecV3E2E(unittest.TestCase):
                         # Verify stop is genuinely open at service_start_clock
                         srv_min = _clock_to_min(s["service_start_clock"])
                         self.assertGreaterEqual(srv_min, poi.open_minute, f"Visited {poi.poi_id} before open at {dep_iso}")
-                        self.assertLessEqual(srv_min + poi.dwell_minutes, poi.close_minute, f"Visited {poi.poi_id} after close at {dep_iso}")
+                        if not poi.is_24h:
+                            self.assertLessEqual(srv_min + poi.dwell_minutes, poi.close_minute, f"Visited {poi.poi_id} after close at {dep_iso}")
                         self.assertEqual(srv_min, (_clock_to_min(s["arrival_clock"]) + s["wait_minutes"]) % 1440)
                         self.assertEqual(_clock_to_min(s["departure_clock"]), (srv_min + poi.dwell_minutes) % 1440)
                         self.assertGreaterEqual(s["wait_minutes"], 0)
@@ -310,6 +311,10 @@ class TestHappyPathFreezeSpecV3E2E(unittest.TestCase):
                                 self.assertTrue(all(s.branch_id == "MAIN_SPINE" for s in c.stops))
                             if c.active_branch_id != "MAIN_SPINE":
                                 b_meta = branches_map[c.active_branch_id]
+                                points = decode_polyline(c.encoded_polyline)
+                                for lat, lng, km in registry.corridors['hcm_dalat'].spine_waypoints:
+                                    if b_meta.diverge_km < km < b_meta.merge_km:
+                                        self.assertNotIn((lat, lng), points, 'Rendered branch re-enters excluded main spine')
                                 for s in c.stops:
                                     self.assertIn(s.branch_id, ("MAIN_SPINE", c.active_branch_id))
                                     if s.branch_id == "MAIN_SPINE":
@@ -396,7 +401,8 @@ class TestHappyPathFreezeSpecV3E2E(unittest.TestCase):
                         poi = registry.pois_by_id[stop["poi_id"]]
                         service = _clock_to_min(stop["service_start_clock"])
                         self.assertGreaterEqual(service, poi.open_minute)
-                        self.assertLessEqual(service + poi.dwell_minutes, poi.close_minute)
+                        if not poi.is_24h:
+                            self.assertLessEqual(service + poi.dwell_minutes, poi.close_minute)
 
         # Check service overlap, including intervals starting before 11:00.
         for hour in range(8, 14):
@@ -450,28 +456,31 @@ class TestHappyPathFreezeSpecV3E2E(unittest.TestCase):
             without_co = plan("Nha Trang", "09:30")
         self.assertNotEqual(iconic_ids(with_co), iconic_ids(without_co))
 
-        with_anchor = plan("Da Lat", "04:15")
+        with_anchor = plan("Da Lat", "05:00")
         candidates = {c["candidate_id"]: c for c in with_anchor["candidates"]}
         for archetype in ("P2_ICONIC", "P3_SCENIC"):
             self.assertIn(archetype, candidates)
             candidate = candidates[archetype]
-            self.assertTrue(510 <= (255 + candidate["total_duration_minutes"]) % 1440 <= 840)
+            self.assertTrue(510 <= (300 + candidate["total_duration_minutes"]) % 1440 <= 840)
             self.assertTrue(any(s["is_arrival_anchor"] for s in candidate["stops"]))
+        # Overnight departures are outside the scoped 05:00-11:00 preference.
+        overnight = plan('Da Lat', '04:15')
         with patch.dict(registry.pois_by_corridor, {"hcm_dalat": [
             replace(p, is_arrival_anchor=False) for p in registry.pois_by_corridor["hcm_dalat"]
         ]}):
             without_anchor = plan("Da Lat", "04:15")
-        self.assertNotEqual(iconic_ids(with_anchor), iconic_ids(without_anchor))
+        self.assertEqual(iconic_ids(overnight), iconic_ids(without_anchor))
 
     def test_ticket_05_nhatrang_96run_ev_charger_interchange_and_branch_tolls(self):
         registry: CorridorRegistry = app.state.registry
         expected_tolls = {
-            "hcm_nhatrang": {"MAIN_SPINE": 309000, "BRANCH_VINHHY_DT702": 284000,
-                             "BRANCH_BAUTRANG_COAST": 244000},
-            "hcm_dalat": {"MAIN_SPINE": 136000, "BRANCH_BAOLOC_LOOP": 136000,
-                          "BRANCH_QL28B_DAININH": 261000},
-            "hcm_vungtau": {"MAIN_SPINE": 81000, "BRANCH_LONGSON_ISLAND": 66000,
-                            "BRANCH_SUOINGHE_LOOP": 66000},
+            # Explicit sums of branch-bound imported plazas, not legacy flat deltas.
+            "hcm_nhatrang": {"MAIN_SPINE": 309000, "BRANCH_VINHHY_DT702": 309000,
+                             "BRANCH_BAUTRANG_COAST": 274000},
+            "hcm_dalat": {"MAIN_SPINE": 169000, "BRANCH_BAOLOC_LOOP": 169000,
+                          "BRANCH_QL28B_DAININH": 265000},
+            "hcm_vungtau": {"MAIN_SPINE": 41000, "BRANCH_LONGSON_ISLAND": 41000,
+                            "BRANCH_SUOINGHE_LOOP": 41000},
         }
         coastal_bounds = {"BRANCH_BAUTRANG_COAST": (180.0, 395.0),
                           "BRANCH_VINHHY_DT702": (325.0, 395.0)}
@@ -517,7 +526,8 @@ class TestHappyPathFreezeSpecV3E2E(unittest.TestCase):
                                     poi = registry.pois_by_id[stop["poi_id"]]
                                     service = _clock_to_min(stop["service_start_clock"])
                                     self.assertGreaterEqual(service, poi.open_minute)
-                                    self.assertLessEqual(service + stop["dwell_minutes"], poi.close_minute)
+                                    if not poi.is_24h:
+                                        self.assertLessEqual(service + stop["dwell_minutes"], poi.close_minute)
                                     self.assertEqual(service, (_clock_to_min(stop["arrival_clock"]) + stop["wait_minutes"]) % 1440)
                                     self.assertIn(stop["branch_id"], ("MAIN_SPINE", branch))
                                     if bounds and stop["branch_id"] == "MAIN_SPINE":
@@ -540,15 +550,14 @@ class TestHappyPathFreezeSpecV3E2E(unittest.TestCase):
                     for candidate in branch_candidates:
                         self.assertEqual(candidate.estimated_vetc_toll_vnd, expected)
 
-        # Sparse direct routes must use the same authoritative branch toll,
-        # not a distance-proportional estimate.
+        # [400,420] crosses only the 50,000 VND Suoi Dau plaza at km402.
         _, _, direct = solve_pareto_portfolio(
             registry, registry.corridors["hcm_nhatrang"], "outbound", "09:00",
             active_start_km=400.0, active_end_km=420.0,
         )
         self.assertTrue(direct)
         self.assertEqual(direct[0].stops, [])
-        self.assertEqual(direct[0].estimated_vetc_toll_vnd, 309000)
+        self.assertEqual(direct[0].estimated_vetc_toll_vnd, 50000)
 
     def test_ticket_06_piecewise_projection_custom_pin_polyline_and_sparse_slices(self):
         # Piecewise projection and exact offline endpoints, not the canonical HCMC origin.
@@ -721,7 +730,8 @@ class TestHappyPathFreezeSpecV3E2E(unittest.TestCase):
                 poi = app.state.registry.pois_by_id[stop["poi_id"]]
                 service = _clock_to_min(stop["service_start_clock"])
                 self.assertGreaterEqual(service, poi.open_minute)
-                self.assertLessEqual(service + stop["dwell_minutes"], poi.close_minute)
+                if not poi.is_24h:
+                    self.assertLessEqual(service + stop["dwell_minutes"], poi.close_minute)
 
         # 6. Malformed action parameters must return HTTP 422
         for bad_mut in [
@@ -817,7 +827,7 @@ class TestHappyPathFreezeSpecV3E2E(unittest.TestCase):
             port = server.sockets[0].getsockname()[1]
             goong = GoongClient(api_key="ticket08-test-key", base_url=f"http://127.0.0.1:{port}")
             persistent_client = goong._get_client()
-            before = [c.model_dump() for c in cands]
+            before = [c.model_dump(exclude={'warnings'}) for c in cands]
             try:
                 async with server:
                     t0 = time.monotonic()
@@ -825,7 +835,8 @@ class TestHappyPathFreezeSpecV3E2E(unittest.TestCase):
                     elapsed = time.monotonic() - t0
                     self.assertLess(elapsed, 0.34, f"Parallel socket timeout exceeded budget: {elapsed:.3f}s")
                     self.assertEqual(len(requests), 3)
-                    self.assertEqual([c.model_dump() for c in cands], before)
+                    self.assertEqual([c.model_dump(exclude={'warnings'}) for c in cands], before)
+                    self.assertTrue(all(any('GOONG_UNAVAILABLE' in w for w in c.warnings) for c in cands))
                     self.assertIs(goong._get_client(), persistent_client)
             finally:
                 await goong.aclose()
@@ -872,7 +883,9 @@ class TestHappyPathFreezeSpecV3E2E(unittest.TestCase):
                     for stop, leg in zip(candidate.stops, minutes):
                         clock += max(5, leg)
                         self.assertEqual(_clock_to_min(stop.arrival_clock), clock % 1440)
-                        clock += stop.wait_minutes
+                        expected_wait = 0 if stop.is_24h else max(0, stop.open_minute - clock % 1440)
+                        self.assertEqual(stop.wait_minutes, expected_wait)
+                        clock += expected_wait
                         self.assertEqual(_clock_to_min(stop.service_start_clock), clock % 1440)
                         clock += stop.dwell_minutes
                         self.assertEqual(_clock_to_min(stop.departure_clock), clock % 1440)
@@ -897,7 +910,8 @@ class TestHappyPathFreezeSpecV3E2E(unittest.TestCase):
                         goong = GoongClient(api_key="ticket08-test-key")
                         with patch.object(goong, "_client", client):
                             await goong.decorate_candidate_polyline(orig, dest, candidate)
-                    self.assertEqual(candidate, baseline)
+                    self.assertEqual(candidate.model_dump(exclude={'warnings'}), baseline.model_dump(exclude={'warnings'}))
+                    self.assertTrue(any('GOONG_UNAVAILABLE' in w for w in candidate.warnings))
 
         asyncio.run(congestion_gate())
 

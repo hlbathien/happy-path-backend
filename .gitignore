@@ -70,7 +70,4 @@ Desktop.ini
 # Agent & local scratch / internal state
 .pi/
 .jev-fabric-native/
-.scratch/*
-!.scratch/happy-path-autopilot/
-.scratch/happy-path-autopilot/*
-!.scratch/happy-path-autopilot/issues/
+.scratch/

@@ -1,0 +1,47 @@
+{
+  "otosaigon_threads": [
+    {
+      "thread_id": "10041885",
+      "title": "VinFast VF 5, Đà Lạt và những chuyến đi: Chia sẻ cung đường và trạm sạc cho xe điện",
+      "url": "https://www.otosaigon.com/threads/vinfast-vf-5-da-lat-va-nhung-chuyen-di-chia-se-cung-duong-va-tram-sac-cho-xe-dien.10041885/",
+      "telemetry": {
+        "highway_90kmh_pct_per_km": 0.4,
+        "mountain_pass_uphill_pct_per_km": 0.85,
+        "downhill_regen_max_soc_pct": 90,
+        "safe_reserve_floor_pct": 30
+      }
+    },
+    {
+      "thread_id": "10011851",
+      "title": "Trải nghiệm đèo Đại Ninh QL28B và đèo Gia Bắc QL28",
+      "url": "https://www.otosaigon.com/threads/trai-nghiem-deo-dai-ninh-ql28b-va-deo-gia-bac-ql28-thang-12-2023.10011851/"
+    },
+    {
+      "thread_id": "9075419",
+      "title": "Review chi tiết TP.HCM - Đà Lạt bằng cao tốc Dầu Giây - Phan Thiết qua QL28 và QL28B",
+      "url": "https://www.otosaigon.com/threads/review-chi-tiet-tp-hcm-da-lat-bang-cao-toc-dau-giay-phan-thiet-qua-ql28-va-ql28b.9075419/"
+    },
+    {
+      "thread_id": "8980746",
+      "title": "Tư vấn trạm dừng ăn sáng trên đường Sài Gòn - Vũng Tàu",
+      "url": "https://www.otosaigon.com/threads/tu-van-tram-dung-an-sang-tren-duong-sai-gon-vung-tau.8980746/"
+    },
+    {
+      "thread_id": "8981106",
+      "title": "Điểm dừng chân trên đường đi Vũng Tàu nào ổn",
+      "url": "https://www.otosaigon.com/threads/diem-dung-chan-tren-duong-di-vung-tau-nao-on.8981106/"
+    },
+    {
+      "thread_id": "8942888",
+      "title": "Thỏa đam mê với cung ven biển nhất nhì Việt Nam (Bàu Trắng - Mũi Dinh - Vĩnh Hy)",
+      "url": "https://www.otosaigon.com/threads/thoa-dam-me-voi-cung-ven-bien-nhat-nhi-viet-nam.8942888/"
+    }
+  ],
+  "ev_station_directories_2026": [
+    "https://oto360.net/tram-sac-vinfast-tai-lam-dong",
+    "https://oto360.net/tram-sac-vinfast-dong-nai",
+    "https://evcs.vn/tim-tram-sac-tai-da-huoai-lam-dong.html",
+    "https://evcs.vn/tim-tram-sac-tai-thong-nhat-dong-nai.html",
+    "https://www.bridgestone.com.vn/vi/thong-tin-huu-ich/tu-van-cho-nguoi-lai/tram-thu-phi"
+  ]
+}

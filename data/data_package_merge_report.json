@@ -1,0 +1,868 @@
+{
+  "archive": "happy-path-data-package.zip",
+  "archive_sha256": "b8f966b5a74892f0603a3ea9595697e522c125a0be867d6afff7e7f24c240f53",
+  "checked_at": "2026-10-17T04:53:22.257685+00:00",
+  "imported_observations": 84,
+  "union_observations": 88,
+  "catalog_union_pois": 48,
+  "catalog_union_directed_pairs": 36,
+  "active_database_counts": {
+    "pois": 25,
+    "poi_verifications": 0,
+    "poi_review_evidence": 0,
+    "trip_sessions": 340,
+    "toll_plazas": 13
+  },
+  "promoted": 0,
+  "session_rows_preserved": 340,
+  "reason_counts": {
+    "REVIEW_SOURCE_MISMATCH": 43,
+    "INVALID_REVIEW_EVIDENCE": 4,
+    "SHILL_TRAP_VETO": 1,
+    "COMMUNE_MISMATCH": 12,
+    "SENTIMENT_DRIFT_DECAY": 24
+  },
+  "outcomes": [
+    {
+      "candidate_id": "cand_dl_tram_sac_ev_long_thanh_km42",
+      "poi_id": "dl_tram_sac_ev_long_thanh_km42",
+      "package_claimed_accepted": true,
+      "promoted": false,
+      "reason": "REVIEW_SOURCE_MISMATCH: claimed review channel does not match its source URL"
+    },
+    {
+      "candidate_id": "cand_dl_tram_dung_phuc_loc_gia_kiem",
+      "poi_id": "dl_tram_dung_phuc_loc_gia_kiem",
+      "package_claimed_accepted": true,
+      "promoted": false,
+      "reason": "INVALID_REVIEW_EVIDENCE: invalid text, date, rating or source URL"
+    },
+    {
+      "candidate_id": "cand_dl_diem_dung_canh_thao_nguyen_la_nga",
+      "poi_id": "dl_diem_dung_canh_thao_nguyen_la_nga",
+      "package_claimed_accepted": true,
+      "promoted": false,
+      "reason": "REVIEW_SOURCE_MISMATCH: claimed review channel does not match its source URL"
+    },
+    {
+      "candidate_id": "cand_dl_tram_dung_hung_thinh_dinh_quan",
+      "poi_id": "dl_tram_dung_hung_thinh_dinh_quan",
+      "package_claimed_accepted": true,
+      "promoted": false,
+      "reason": "REVIEW_SOURCE_MISMATCH: claimed review channel does not match its source URL"
+    },
+    {
+      "candidate_id": "cand_dl_tram_sac_ev_ham_tan_ql28b",
+      "poi_id": "dl_tram_sac_ev_ham_tan_ql28b",
+      "package_claimed_accepted": true,
+      "promoted": false,
+      "reason": "REVIEW_SOURCE_MISMATCH: claimed review channel does not match its source URL"
+    },
+    {
+      "candidate_id": "cand_dl_tram_dung_phuong_trang_madagui",
+      "poi_id": "dl_tram_dung_phuong_trang_madagui",
+      "package_claimed_accepted": true,
+      "promoted": false,
+      "reason": "REVIEW_SOURCE_MISMATCH: claimed review channel does not match its source URL"
+    },
+    {
+      "candidate_id": "cand_dl_com_nieu_thuan_thanh_bao_loc",
+      "poi_id": "dl_com_nieu_thuan_thanh_bao_loc",
+      "package_claimed_accepted": true,
+      "promoted": false,
+      "reason": "REVIEW_SOURCE_MISMATCH: claimed review channel does not match its source URL"
+    },
+    {
+      "candidate_id": "cand_dl_tram_dung_tam_chau_bao_loc",
+      "poi_id": "dl_tram_dung_tam_chau_bao_loc",
+      "package_claimed_accepted": true,
+      "promoted": false,
+      "reason": "REVIEW_SOURCE_MISMATCH: claimed review channel does not match its source URL"
+    },
+    {
+      "candidate_id": "cand_dl_thac_dambri",
+      "poi_id": "dl_thac_dambri",
+      "package_claimed_accepted": true,
+      "promoted": false,
+      "reason": "REVIEW_SOURCE_MISMATCH: claimed review channel does not match its source URL"
+    },
+    {
+      "candidate_id": "cand_dl_doi_che_tam_chau",
+      "poi_id": "dl_doi_che_tam_chau",
+      "package_claimed_accepted": true,
+      "promoted": false,
+      "reason": "REVIEW_SOURCE_MISMATCH: claimed review channel does not match its source URL"
+    },
+    {
+      "candidate_id": "cand_dl_deo_dai_ninh_panorama",
+      "poi_id": "dl_deo_dai_ninh_panorama",
+      "package_claimed_accepted": true,
+      "promoted": false,
+      "reason": "REVIEW_SOURCE_MISMATCH: claimed review channel does not match its source URL"
+    },
+    {
+      "candidate_id": "cand_dl_tram_dung_dai_nam_viet_di_linh",
+      "poi_id": "dl_tram_dung_dai_nam_viet_di_linh",
+      "package_claimed_accepted": true,
+      "promoted": false,
+      "reason": "REVIEW_SOURCE_MISMATCH: claimed review channel does not match its source URL"
+    },
+    {
+      "candidate_id": "cand_dl_thac_pongour_duc_trong",
+      "poi_id": "dl_thac_pongour_duc_trong",
+      "package_claimed_accepted": true,
+      "promoted": false,
+      "reason": "REVIEW_SOURCE_MISMATCH: claimed review channel does not match its source URL"
+    },
+    {
+      "candidate_id": "cand_dl_chua_linh_an_nam_ban",
+      "poi_id": "dl_chua_linh_an_nam_ban",
+      "package_claimed_accepted": true,
+      "promoted": false,
+      "reason": "REVIEW_SOURCE_MISMATCH: claimed review channel does not match its source URL"
+    },
+    {
+      "candidate_id": "cand_dl_cafe_ulani_suoi_mo_trap",
+      "poi_id": "dl_cafe_ulani_suoi_mo_trap",
+      "package_claimed_accepted": true,
+      "promoted": false,
+      "reason": "REVIEW_SOURCE_MISMATCH: claimed review channel does not match its source URL"
+    },
+    {
+      "candidate_id": "cand_dl_thac_datanla_alpine_anchor",
+      "poi_id": "dl_thac_datanla_alpine_anchor",
+      "package_claimed_accepted": true,
+      "promoted": false,
+      "reason": "REVIEW_SOURCE_MISMATCH: claimed review channel does not match its source URL"
+    },
+    {
+      "candidate_id": "cand_nt_tram_dung_cao_toc_long_thanh_km42",
+      "poi_id": "nt_tram_dung_cao_toc_long_thanh_km42",
+      "package_claimed_accepted": true,
+      "promoted": false,
+      "reason": "REVIEW_SOURCE_MISMATCH: claimed review channel does not match its source URL"
+    },
+    {
+      "candidate_id": "cand_nt_tram_dung_dai_phu_dt765_xuan_loc",
+      "poi_id": "nt_tram_dung_dai_phu_dt765_xuan_loc",
+      "package_claimed_accepted": true,
+      "promoted": false,
+      "reason": "REVIEW_SOURCE_MISMATCH: claimed review channel does not match its source URL"
+    },
+    {
+      "candidate_id": "cand_nt_tram_sac_ev_ham_tan_km135",
+      "poi_id": "nt_tram_sac_ev_ham_tan_km135",
+      "package_claimed_accepted": true,
+      "promoted": false,
+      "reason": "REVIEW_SOURCE_MISMATCH: claimed review channel does not match its source URL"
+    },
+    {
+      "candidate_id": "cand_nt_tram_nui_xa_tho_ttc",
+      "poi_id": "nt_tram_nui_xa_tho_ttc",
+      "package_claimed_accepted": true,
+      "promoted": false,
+      "reason": "INVALID_REVIEW_EVIDENCE: invalid text, date, rating or source URL"
+    },
+    {
+      "candidate_id": "cand_nt_doi_cat_bau_trang",
+      "poi_id": "nt_doi_cat_bau_trang",
+      "package_claimed_accepted": true,
+      "promoted": false,
+      "reason": "REVIEW_SOURCE_MISMATCH: claimed review channel does not match its source URL"
+    },
+    {
+      "candidate_id": "cand_nt_tram_dung_deo_ca_km113",
+      "poi_id": "nt_tram_dung_deo_ca_km113",
+      "package_claimed_accepted": true,
+      "promoted": false,
+      "reason": "REVIEW_SOURCE_MISMATCH: claimed review channel does not match its source URL"
+    },
+    {
+      "candidate_id": "cand_nt_tram_dung_ca_na_ev_km310",
+      "poi_id": "nt_tram_dung_ca_na_ev_km310",
+      "package_claimed_accepted": true,
+      "promoted": false,
+      "reason": "INVALID_REVIEW_EVIDENCE: invalid text, date, rating or source URL"
+    },
+    {
+      "candidate_id": "cand_nt_mui_dinh_tanyoli_coastal",
+      "poi_id": "nt_mui_dinh_tanyoli_coastal",
+      "package_claimed_accepted": true,
+      "promoted": false,
+      "reason": "REVIEW_SOURCE_MISMATCH: claimed review channel does not match its source URL"
+    },
+    {
+      "candidate_id": "cand_nt_phan_rang_culinary_ql27",
+      "poi_id": "nt_phan_rang_culinary_ql27",
+      "package_claimed_accepted": true,
+      "promoted": false,
+      "reason": "REVIEW_SOURCE_MISMATCH: claimed review channel does not match its source URL"
+    },
+    {
+      "candidate_id": "cand_nt_canh_dong_dien_gio_dam_nai",
+      "poi_id": "nt_canh_dong_dien_gio_dam_nai",
+      "package_claimed_accepted": true,
+      "promoted": false,
+      "reason": "REVIEW_SOURCE_MISMATCH: claimed review channel does not match its source URL"
+    },
+    {
+      "candidate_id": "cand_nt_hang_rai_vuon_nho_thai_an",
+      "poi_id": "nt_hang_rai_vuon_nho_thai_an",
+      "package_claimed_accepted": true,
+      "promoted": false,
+      "reason": "REVIEW_SOURCE_MISMATCH: claimed review channel does not match its source URL"
+    },
+    {
+      "candidate_id": "cand_nt_cong_vien_da_ninh_thuan",
+      "poi_id": "nt_cong_vien_da_ninh_thuan",
+      "package_claimed_accepted": true,
+      "promoted": false,
+      "reason": "REVIEW_SOURCE_MISMATCH: claimed review channel does not match its source URL"
+    },
+    {
+      "candidate_id": "cand_nt_vinh_vinh_hy_overlook",
+      "poi_id": "nt_vinh_vinh_hy_overlook",
+      "package_claimed_accepted": true,
+      "promoted": false,
+      "reason": "REVIEW_SOURCE_MISMATCH: claimed review channel does not match its source URL"
+    },
+    {
+      "candidate_id": "cand_nt_dong_cuu_suoi_tien_cam_ranh",
+      "poi_id": "nt_dong_cuu_suoi_tien_cam_ranh",
+      "package_claimed_accepted": true,
+      "promoted": false,
+      "reason": "REVIEW_SOURCE_MISMATCH: claimed review channel does not match its source URL"
+    },
+    {
+      "candidate_id": "cand_vt_bo_sua_long_thanh_outbound",
+      "poi_id": "vt_bo_sua_long_thanh_outbound",
+      "package_claimed_accepted": true,
+      "promoted": false,
+      "reason": "REVIEW_SOURCE_MISMATCH: claimed review channel does not match its source URL"
+    },
+    {
+      "candidate_id": "cand_vt_bo_sua_long_thanh_inbound",
+      "poi_id": "vt_bo_sua_long_thanh_inbound",
+      "package_claimed_accepted": true,
+      "promoted": false,
+      "reason": "REVIEW_SOURCE_MISMATCH: claimed review channel does not match its source URL"
+    },
+    {
+      "candidate_id": "cand_vt_tram_dung_hoa_mai_long_thanh",
+      "poi_id": "vt_tram_dung_hoa_mai_long_thanh",
+      "package_claimed_accepted": true,
+      "promoted": false,
+      "reason": "REVIEW_SOURCE_MISMATCH: claimed review channel does not match its source URL"
+    },
+    {
+      "candidate_id": "cand_vt_tram_dung_banh_viet_70_inbound",
+      "poi_id": "vt_tram_dung_banh_viet_70_inbound",
+      "package_claimed_accepted": true,
+      "promoted": false,
+      "reason": "REVIEW_SOURCE_MISMATCH: claimed review channel does not match its source URL"
+    },
+    {
+      "candidate_id": "cand_vt_chua_dai_tong_lam",
+      "poi_id": "vt_chua_dai_tong_lam",
+      "package_claimed_accepted": true,
+      "promoted": false,
+      "reason": "REVIEW_SOURCE_MISMATCH: claimed review channel does not match its source URL"
+    },
+    {
+      "candidate_id": "cand_vt_binon_cacao_park_chau_duc",
+      "poi_id": "vt_binon_cacao_park_chau_duc",
+      "package_claimed_accepted": true,
+      "promoted": false,
+      "reason": "REVIEW_SOURCE_MISMATCH: claimed review channel does not match its source URL"
+    },
+    {
+      "candidate_id": "cand_vt_doi_cuu_suoi_nghe",
+      "poi_id": "vt_doi_cuu_suoi_nghe",
+      "package_claimed_accepted": true,
+      "promoted": false,
+      "reason": "SHILL_TRAP_VETO: 1/5 low reviews match disillusionment tokens"
+    },
+    {
+      "candidate_id": "cand_vt_nha_lon_long_son",
+      "poi_id": "vt_nha_lon_long_son",
+      "package_claimed_accepted": true,
+      "promoted": false,
+      "reason": "REVIEW_SOURCE_MISMATCH: claimed review channel does not match its source URL"
+    },
+    {
+      "candidate_id": "cand_vt_lang_be_hau_long_son",
+      "poi_id": "vt_lang_be_hau_long_son",
+      "package_claimed_accepted": true,
+      "promoted": false,
+      "reason": "REVIEW_SOURCE_MISMATCH: claimed review channel does not match its source URL"
+    },
+    {
+      "candidate_id": "cand_vt_banh_canh_long_huong_ba_ria",
+      "poi_id": "vt_banh_canh_long_huong_ba_ria",
+      "package_claimed_accepted": true,
+      "promoted": false,
+      "reason": "REVIEW_SOURCE_MISMATCH: claimed review channel does not match its source URL"
+    },
+    {
+      "candidate_id": "cand_vt_banh_khot_bai_sau",
+      "poi_id": "vt_banh_khot_bai_sau",
+      "package_claimed_accepted": true,
+      "promoted": false,
+      "reason": "REVIEW_SOURCE_MISMATCH: claimed review channel does not match its source URL"
+    },
+    {
+      "candidate_id": "cand_vt_mui_nghinh_phong",
+      "poi_id": "vt_mui_nghinh_phong",
+      "package_claimed_accepted": true,
+      "promoted": false,
+      "reason": "INVALID_REVIEW_EVIDENCE: invalid text, date, rating or source URL"
+    },
+    {
+      "candidate_id": "cand_dl_homonym_phuc_loc_cai_be",
+      "poi_id": "live_hcm_dalat_bfa33f42894c947b",
+      "package_claimed_accepted": false,
+      "promoted": false,
+      "reason": "COMMUNE_MISMATCH: Goong commune differs from expected commune"
+    },
+    {
+      "candidate_id": "cand_dl_homonym_phuc_loc_tho_ql14",
+      "poi_id": "live_hcm_dalat_2668815f2895280f",
+      "package_claimed_accepted": false,
+      "promoted": false,
+      "reason": "COMMUNE_MISMATCH: Goong commune differs from expected commune"
+    },
+    {
+      "candidate_id": "cand_dl_homonym_com_ga_hai_cam_ly",
+      "poi_id": "live_hcm_dalat_7067ac698daa38de",
+      "package_claimed_accepted": false,
+      "promoted": false,
+      "reason": "COMMUNE_MISMATCH: Goong commune differs from expected commune"
+    },
+    {
+      "candidate_id": "cand_dl_homonym_chua_tay_tang_binh_duong",
+      "poi_id": "live_hcm_dalat_38ff61e11f7ddf03",
+      "package_claimed_accepted": false,
+      "promoted": false,
+      "reason": "COMMUNE_MISMATCH: Goong commune differs from expected commune"
+    },
+    {
+      "candidate_id": "cand_nt_homonym_suoi_tien_theme_park_hcm",
+      "poi_id": "live_hcm_nhatrang_d32b0dd0af9e3ddd",
+      "package_claimed_accepted": false,
+      "promoted": false,
+      "reason": "COMMUNE_MISMATCH: Goong commune differs from expected commune"
+    },
+    {
+      "candidate_id": "cand_nt_homonym_hai_dang_dai_lanh_phu_yen",
+      "poi_id": "live_hcm_nhatrang_2fc7c3a1e36a93fa",
+      "package_claimed_accepted": false,
+      "promoted": false,
+      "reason": "COMMUNE_MISMATCH: Goong commune differs from expected commune"
+    },
+    {
+      "candidate_id": "cand_nt_homonym_nha_nghi_hai_dang_tanh_linh",
+      "poi_id": "live_hcm_nhatrang_f1a69bd5ca103eee",
+      "package_claimed_accepted": false,
+      "promoted": false,
+      "reason": "COMMUNE_MISMATCH: Goong commune differs from expected commune"
+    },
+    {
+      "candidate_id": "cand_vt_homonym_co_ba_phu_my_hung_q7",
+      "poi_id": "live_hcm_vungtau_f69b30c42dd33725",
+      "package_claimed_accepted": false,
+      "promoted": false,
+      "reason": "COMMUNE_MISMATCH: Goong commune differs from expected commune"
+    },
+    {
+      "candidate_id": "cand_vt_homonym_binon_cacao_boutique_q1",
+      "poi_id": "live_hcm_vungtau_8bacaaa2e55227ea",
+      "package_claimed_accepted": false,
+      "promoted": false,
+      "reason": "COMMUNE_MISMATCH: Goong commune differs from expected commune"
+    },
+    {
+      "candidate_id": "cand_vt_homonym_bo_sua_xuan_hoa_ql1a",
+      "poi_id": "live_hcm_vungtau_de0f21bf857299de",
+      "package_claimed_accepted": false,
+      "promoted": false,
+      "reason": "COMMUNE_MISMATCH: Goong commune differs from expected commune"
+    },
+    {
+      "candidate_id": "cand_dl_decay_canh_thao_nguyen_xuan_loc",
+      "poi_id": "live_hcm_dalat_df9f1067e2d10a60",
+      "package_claimed_accepted": false,
+      "promoted": false,
+      "reason": "SENTIMENT_DRIFT_DECAY: trailing 90d rating dropped >= 0.4 stars"
+    },
+    {
+      "candidate_id": "cand_dl_decay_dai_phu_expressway_exit",
+      "poi_id": "live_hcm_dalat_6dde4b1efe79e2ec",
+      "package_claimed_accepted": false,
+      "promoted": false,
+      "reason": "SENTIMENT_DRIFT_DECAY: trailing 90d rating dropped >= 0.4 stars"
+    },
+    {
+      "candidate_id": "cand_dl_decay_madagui_futa_buslines",
+      "poi_id": "live_hcm_dalat_6410d4d171c2f0d3",
+      "package_claimed_accepted": false,
+      "promoted": false,
+      "reason": "SENTIMENT_DRIFT_DECAY: trailing 90d rating dropped >= 0.4 stars"
+    },
+    {
+      "candidate_id": "cand_dl_decay_tan_nien_thong_nhat",
+      "poi_id": "live_hcm_dalat_55278f525870051c",
+      "package_claimed_accepted": false,
+      "promoted": false,
+      "reason": "SENTIMENT_DRIFT_DECAY: trailing 90d rating dropped >= 0.4 stars"
+    },
+    {
+      "candidate_id": "cand_nt_decay_hung_thinh_3_xuan_loc",
+      "poi_id": "live_hcm_nhatrang_5906db042dd3a69d",
+      "package_claimed_accepted": false,
+      "promoted": false,
+      "reason": "SENTIMENT_DRIFT_DECAY: trailing 90d rating dropped >= 0.4 stars"
+    },
+    {
+      "candidate_id": "cand_nt_decay_nui_chua_chan_rest_stop",
+      "poi_id": "live_hcm_nhatrang_8497a45e5bf7f8a3",
+      "package_claimed_accepted": false,
+      "promoted": false,
+      "reason": "SENTIMENT_DRIFT_DECAY: trailing 90d rating dropped >= 0.4 stars"
+    },
+    {
+      "candidate_id": "cand_nt_decay_minh_phat_2_ham_tan",
+      "poi_id": "live_hcm_nhatrang_75acddd7fd1d6fe8",
+      "package_claimed_accepted": false,
+      "promoted": false,
+      "reason": "SENTIMENT_DRIFT_DECAY: trailing 90d rating dropped >= 0.4 stars"
+    },
+    {
+      "candidate_id": "cand_vt_decay_bo_sua_long_thanh_a2",
+      "poi_id": "live_hcm_vungtau_7ae201986377721d",
+      "package_claimed_accepted": false,
+      "promoted": false,
+      "reason": "SENTIMENT_DRIFT_DECAY: trailing 90d rating dropped >= 0.4 stars"
+    },
+    {
+      "candidate_id": "cand_vt_decay_banh_khot_goc_vu_sua",
+      "poi_id": "live_hcm_vungtau_77c204a76733b64e",
+      "package_claimed_accepted": false,
+      "promoted": false,
+      "reason": "SENTIMENT_DRIFT_DECAY: trailing 90d rating dropped >= 0.4 stars"
+    },
+    {
+      "candidate_id": "cand_vt_decay_hai_san_thanh_phat_1",
+      "poi_id": "live_hcm_vungtau_65aaac92e0f0a3ce",
+      "package_claimed_accepted": false,
+      "promoted": false,
+      "reason": "SENTIMENT_DRIFT_DECAY: trailing 90d rating dropped >= 0.4 stars"
+    },
+    {
+      "candidate_id": "cand_dl_shill_tram_sac_xuan_que_5star",
+      "poi_id": "live_hcm_dalat_88c67e21bebb34ef",
+      "package_claimed_accepted": false,
+      "promoted": false,
+      "reason": "SENTIMENT_DRIFT_DECAY: trailing 90d rating dropped >= 0.4 stars"
+    },
+    {
+      "candidate_id": "cand_dl_shill_nha_hang_dai_ninh_song_trang",
+      "poi_id": "live_hcm_dalat_ec60a337bbc64e25",
+      "package_claimed_accepted": false,
+      "promoted": false,
+      "reason": "SENTIMENT_DRIFT_DECAY: trailing 90d rating dropped >= 0.4 stars"
+    },
+    {
+      "candidate_id": "cand_dl_shill_mut_dac_san_phuong_lan",
+      "poi_id": "live_hcm_dalat_79b4833b62651018",
+      "package_claimed_accepted": false,
+      "promoted": false,
+      "reason": "SENTIMENT_DRIFT_DECAY: trailing 90d rating dropped >= 0.4 stars"
+    },
+    {
+      "candidate_id": "cand_dl_shill_tram_dung_ngoc_anh_deo_dai_ninh",
+      "poi_id": "live_hcm_dalat_b470f189d3b004f6",
+      "package_claimed_accepted": false,
+      "promoted": false,
+      "reason": "SENTIMENT_DRIFT_DECAY: trailing 90d rating dropped >= 0.4 stars"
+    },
+    {
+      "candidate_id": "cand_nt_shill_tram_dung_km47_unbuilt",
+      "poi_id": "live_hcm_nhatrang_160610964bdb7122",
+      "package_claimed_accepted": false,
+      "promoted": false,
+      "reason": "SENTIMENT_DRIFT_DECAY: trailing 90d rating dropped >= 0.4 stars"
+    },
+    {
+      "candidate_id": "cand_nt_shill_tram_dung_km36_tan_lap",
+      "poi_id": "live_hcm_nhatrang_efcfc2fb7faf084c",
+      "package_claimed_accepted": false,
+      "promoted": false,
+      "reason": "SENTIMENT_DRIFT_DECAY: trailing 90d rating dropped >= 0.4 stars"
+    },
+    {
+      "candidate_id": "cand_nt_shill_vuon_nho_ngoc_nga_thai_an",
+      "poi_id": "live_hcm_nhatrang_6048926ed0b73e5d",
+      "package_claimed_accepted": false,
+      "promoted": false,
+      "reason": "SENTIMENT_DRIFT_DECAY: trailing 90d rating dropped >= 0.4 stars"
+    },
+    {
+      "candidate_id": "cand_vt_shill_tram_dung_long_thanh_sp",
+      "poi_id": "live_hcm_vungtau_11209b76d52937dc",
+      "package_claimed_accepted": false,
+      "promoted": false,
+      "reason": "SENTIMENT_DRIFT_DECAY: trailing 90d rating dropped >= 0.4 stars"
+    },
+    {
+      "candidate_id": "cand_vt_shill_hai_san_bien_dong_88_bai_sau",
+      "poi_id": "live_hcm_vungtau_8f4f1d80b558e979",
+      "package_claimed_accepted": false,
+      "promoted": false,
+      "reason": "SENTIMENT_DRIFT_DECAY: trailing 90d rating dropped >= 0.4 stars"
+    },
+    {
+      "candidate_id": "cand_vt_shill_doi_cuu_nghe_an_clone",
+      "poi_id": "live_hcm_vungtau_2c4bad384bfc833b",
+      "package_claimed_accepted": false,
+      "promoted": false,
+      "reason": "SENTIMENT_DRIFT_DECAY: trailing 90d rating dropped >= 0.4 stars"
+    },
+    {
+      "candidate_id": "cand_dl_tram_sac_vinfast_madagui_pvoil",
+      "poi_id": "dl_tram_sac_vinfast_madagui_pvoil",
+      "package_claimed_accepted": true,
+      "promoted": false,
+      "reason": "REVIEW_SOURCE_MISMATCH: claimed review channel does not match its source URL"
+    },
+    {
+      "candidate_id": "cand_dl_tram_sac_vinfast_duc_trong_180kw",
+      "poi_id": "dl_tram_sac_vinfast_duc_trong_180kw",
+      "package_claimed_accepted": true,
+      "promoted": false,
+      "reason": "REVIEW_SOURCE_MISMATCH: claimed review channel does not match its source URL"
+    },
+    {
+      "candidate_id": "cand_nt_tram_sac_vinfast_ham_kiem_queen",
+      "poi_id": "nt_tram_sac_vinfast_ham_kiem_queen",
+      "package_claimed_accepted": true,
+      "promoted": false,
+      "reason": "REVIEW_SOURCE_MISMATCH: claimed review channel does not match its source URL"
+    },
+    {
+      "candidate_id": "cand_nt_tram_sac_vinfast_tan_minh_ql1a",
+      "poi_id": "nt_tram_sac_vinfast_tan_minh_ql1a",
+      "package_claimed_accepted": true,
+      "promoted": false,
+      "reason": "REVIEW_SOURCE_MISMATCH: claimed review channel does not match its source URL"
+    },
+    {
+      "candidate_id": "cand_vt_tram_sac_vinfast_long_thanh_742",
+      "poi_id": "vt_tram_sac_vinfast_long_thanh_742",
+      "package_claimed_accepted": true,
+      "promoted": false,
+      "reason": "REVIEW_SOURCE_MISMATCH: claimed review channel does not match its source URL"
+    },
+    {
+      "candidate_id": "cand_vt_tram_sac_vinfast_pham_hung_ba_ria",
+      "poi_id": "vt_tram_sac_vinfast_pham_hung_ba_ria",
+      "package_claimed_accepted": true,
+      "promoted": false,
+      "reason": "REVIEW_SOURCE_MISMATCH: claimed review channel does not match its source URL"
+    },
+    {
+      "candidate_id": "cand_nt_homonym_vinfast_hiep_binh_hcm",
+      "poi_id": "live_hcm_nhatrang_f858a5640a2471c8",
+      "package_claimed_accepted": false,
+      "promoted": false,
+      "reason": "COMMUNE_MISMATCH: Goong commune differs from expected commune"
+    },
+    {
+      "candidate_id": "cand_nt_homonym_vinfast_tam_binh_thu_duc",
+      "poi_id": "live_hcm_nhatrang_efc4d59451de05cd",
+      "package_claimed_accepted": false,
+      "promoted": false,
+      "reason": "COMMUNE_MISMATCH: Goong commune differs from expected commune"
+    },
+    {
+      "candidate_id": "cand_dl_decay_vinfast_duc_duy_dai_lao",
+      "poi_id": "live_hcm_dalat_ced56331bcd621b4",
+      "package_claimed_accepted": false,
+      "promoted": false,
+      "reason": "SENTIMENT_DRIFT_DECAY: trailing 90d rating dropped >= 0.4 stars"
+    },
+    {
+      "candidate_id": "cand_vt_decay_vinfast_tan_phuoc_ql51_curfew",
+      "poi_id": "live_hcm_vungtau_03589a173b9b66f1",
+      "package_claimed_accepted": false,
+      "promoted": false,
+      "reason": "SENTIMENT_DRIFT_DECAY: trailing 90d rating dropped >= 0.4 stars"
+    },
+    {
+      "candidate_id": "cand_dl_shill_vinfast_sandal_star_km270",
+      "poi_id": "live_hcm_dalat_be6c7cf5bd3010fe",
+      "package_claimed_accepted": false,
+      "promoted": false,
+      "reason": "SENTIMENT_DRIFT_DECAY: trailing 90d rating dropped >= 0.4 stars"
+    },
+    {
+      "candidate_id": "cand_vt_shill_vinfast_go_baria_closed",
+      "poi_id": "live_hcm_vungtau_8ba99b4d1df76589",
+      "package_claimed_accepted": false,
+      "promoted": false,
+      "reason": "SENTIMENT_DRIFT_DECAY: trailing 90d rating dropped >= 0.4 stars"
+    }
+  ],
+  "package_evidence_issues": {
+    "fewer_than_10_actual_recent_reviews": [
+      "cand_dl_tram_sac_ev_long_thanh_km42",
+      "cand_dl_tram_dung_phuc_loc_gia_kiem",
+      "cand_dl_diem_dung_canh_thao_nguyen_la_nga",
+      "cand_dl_tram_dung_hung_thinh_dinh_quan",
+      "cand_dl_tram_sac_ev_ham_tan_ql28b",
+      "cand_dl_tram_dung_phuong_trang_madagui",
+      "cand_dl_com_nieu_thuan_thanh_bao_loc",
+      "cand_dl_tram_dung_tam_chau_bao_loc",
+      "cand_dl_thac_dambri",
+      "cand_dl_doi_che_tam_chau",
+      "cand_dl_deo_dai_ninh_panorama",
+      "cand_dl_tram_dung_dai_nam_viet_di_linh",
+      "cand_dl_thac_pongour_duc_trong",
+      "cand_dl_chua_linh_an_nam_ban",
+      "cand_dl_cafe_ulani_suoi_mo_trap",
+      "cand_dl_thac_datanla_alpine_anchor",
+      "cand_nt_tram_dung_cao_toc_long_thanh_km42",
+      "cand_nt_tram_dung_dai_phu_dt765_xuan_loc",
+      "cand_nt_tram_sac_ev_ham_tan_km135",
+      "cand_nt_tram_nui_xa_tho_ttc",
+      "cand_nt_doi_cat_bau_trang",
+      "cand_nt_tram_dung_deo_ca_km113",
+      "cand_nt_tram_dung_ca_na_ev_km310",
+      "cand_nt_mui_dinh_tanyoli_coastal",
+      "cand_nt_phan_rang_culinary_ql27",
+      "cand_nt_canh_dong_dien_gio_dam_nai",
+      "cand_nt_hang_rai_vuon_nho_thai_an",
+      "cand_nt_cong_vien_da_ninh_thuan",
+      "cand_nt_vinh_vinh_hy_overlook",
+      "cand_nt_dong_cuu_suoi_tien_cam_ranh",
+      "cand_vt_bo_sua_long_thanh_outbound",
+      "cand_vt_bo_sua_long_thanh_inbound",
+      "cand_vt_tram_dung_hoa_mai_long_thanh",
+      "cand_vt_tram_dung_banh_viet_70_inbound",
+      "cand_vt_chua_dai_tong_lam",
+      "cand_vt_binon_cacao_park_chau_duc",
+      "cand_vt_doi_cuu_suoi_nghe",
+      "cand_vt_nha_lon_long_son",
+      "cand_vt_lang_be_hau_long_son",
+      "cand_vt_banh_canh_long_huong_ba_ria",
+      "cand_vt_banh_khot_bai_sau",
+      "cand_vt_mui_nghinh_phong",
+      "cand_dl_homonym_phuc_loc_cai_be",
+      "cand_dl_homonym_phuc_loc_tho_ql14",
+      "cand_dl_homonym_com_ga_hai_cam_ly",
+      "cand_dl_homonym_chua_tay_tang_binh_duong",
+      "cand_nt_homonym_suoi_tien_theme_park_hcm",
+      "cand_nt_homonym_hai_dang_dai_lanh_phu_yen",
+      "cand_nt_homonym_nha_nghi_hai_dang_tanh_linh",
+      "cand_vt_homonym_co_ba_phu_my_hung_q7",
+      "cand_vt_homonym_binon_cacao_boutique_q1",
+      "cand_vt_homonym_bo_sua_xuan_hoa_ql1a",
+      "cand_dl_decay_canh_thao_nguyen_xuan_loc",
+      "cand_dl_decay_dai_phu_expressway_exit",
+      "cand_dl_decay_madagui_futa_buslines",
+      "cand_dl_decay_tan_nien_thong_nhat",
+      "cand_nt_decay_hung_thinh_3_xuan_loc",
+      "cand_nt_decay_nui_chua_chan_rest_stop",
+      "cand_nt_decay_minh_phat_2_ham_tan",
+      "cand_vt_decay_bo_sua_long_thanh_a2",
+      "cand_vt_decay_banh_khot_goc_vu_sua",
+      "cand_vt_decay_hai_san_thanh_phat_1",
+      "cand_dl_shill_tram_sac_xuan_que_5star",
+      "cand_dl_shill_nha_hang_dai_ninh_song_trang",
+      "cand_dl_shill_mut_dac_san_phuong_lan",
+      "cand_dl_shill_tram_dung_ngoc_anh_deo_dai_ninh",
+      "cand_nt_shill_tram_dung_km47_unbuilt",
+      "cand_nt_shill_tram_dung_km36_tan_lap",
+      "cand_nt_shill_vuon_nho_ngoc_nga_thai_an",
+      "cand_vt_shill_tram_dung_long_thanh_sp",
+      "cand_vt_shill_hai_san_bien_dong_88_bai_sau",
+      "cand_vt_shill_doi_cuu_nghe_an_clone",
+      "cand_dl_tram_sac_vinfast_madagui_pvoil",
+      "cand_dl_tram_sac_vinfast_duc_trong_180kw",
+      "cand_nt_tram_sac_vinfast_ham_kiem_queen",
+      "cand_nt_tram_sac_vinfast_tan_minh_ql1a",
+      "cand_vt_tram_sac_vinfast_long_thanh_742",
+      "cand_vt_tram_sac_vinfast_pham_hung_ba_ria",
+      "cand_nt_homonym_vinfast_hiep_binh_hcm",
+      "cand_nt_homonym_vinfast_tam_binh_thu_duc",
+      "cand_dl_decay_vinfast_duc_duy_dai_lao",
+      "cand_vt_decay_vinfast_tan_phuoc_ql51_curfew",
+      "cand_dl_shill_vinfast_sandal_star_km270",
+      "cand_vt_shill_vinfast_go_baria_closed"
+    ],
+    "low_samples_contain_3_plus_stars": [
+      "cand_dl_tram_sac_ev_long_thanh_km42",
+      "cand_dl_tram_dung_phuc_loc_gia_kiem",
+      "cand_dl_diem_dung_canh_thao_nguyen_la_nga",
+      "cand_dl_tram_dung_hung_thinh_dinh_quan",
+      "cand_dl_tram_sac_ev_ham_tan_ql28b",
+      "cand_dl_tram_dung_phuong_trang_madagui",
+      "cand_dl_com_nieu_thuan_thanh_bao_loc",
+      "cand_dl_tram_dung_tam_chau_bao_loc",
+      "cand_dl_thac_dambri",
+      "cand_dl_doi_che_tam_chau",
+      "cand_dl_deo_dai_ninh_panorama",
+      "cand_dl_tram_dung_dai_nam_viet_di_linh",
+      "cand_dl_thac_pongour_duc_trong",
+      "cand_dl_chua_linh_an_nam_ban",
+      "cand_dl_cafe_ulani_suoi_mo_trap",
+      "cand_dl_thac_datanla_alpine_anchor",
+      "cand_nt_tram_dung_cao_toc_long_thanh_km42",
+      "cand_nt_tram_dung_dai_phu_dt765_xuan_loc",
+      "cand_nt_tram_sac_ev_ham_tan_km135",
+      "cand_nt_tram_nui_xa_tho_ttc",
+      "cand_nt_doi_cat_bau_trang",
+      "cand_nt_tram_dung_deo_ca_km113",
+      "cand_nt_tram_dung_ca_na_ev_km310",
+      "cand_nt_mui_dinh_tanyoli_coastal",
+      "cand_nt_phan_rang_culinary_ql27",
+      "cand_nt_canh_dong_dien_gio_dam_nai",
+      "cand_nt_hang_rai_vuon_nho_thai_an",
+      "cand_nt_cong_vien_da_ninh_thuan",
+      "cand_nt_vinh_vinh_hy_overlook",
+      "cand_nt_dong_cuu_suoi_tien_cam_ranh",
+      "cand_vt_bo_sua_long_thanh_outbound",
+      "cand_vt_bo_sua_long_thanh_inbound",
+      "cand_vt_tram_dung_hoa_mai_long_thanh",
+      "cand_vt_tram_dung_banh_viet_70_inbound",
+      "cand_vt_chua_dai_tong_lam",
+      "cand_vt_binon_cacao_park_chau_duc",
+      "cand_vt_doi_cuu_suoi_nghe",
+      "cand_vt_nha_lon_long_son",
+      "cand_vt_lang_be_hau_long_son",
+      "cand_vt_banh_canh_long_huong_ba_ria",
+      "cand_vt_banh_khot_bai_sau",
+      "cand_vt_mui_nghinh_phong",
+      "cand_dl_homonym_phuc_loc_cai_be",
+      "cand_dl_homonym_phuc_loc_tho_ql14",
+      "cand_dl_homonym_com_ga_hai_cam_ly",
+      "cand_dl_homonym_chua_tay_tang_binh_duong",
+      "cand_nt_homonym_suoi_tien_theme_park_hcm",
+      "cand_nt_homonym_hai_dang_dai_lanh_phu_yen",
+      "cand_nt_homonym_nha_nghi_hai_dang_tanh_linh",
+      "cand_vt_homonym_co_ba_phu_my_hung_q7",
+      "cand_vt_homonym_binon_cacao_boutique_q1",
+      "cand_vt_homonym_bo_sua_xuan_hoa_ql1a",
+      "cand_dl_tram_sac_vinfast_madagui_pvoil",
+      "cand_dl_tram_sac_vinfast_duc_trong_180kw",
+      "cand_nt_tram_sac_vinfast_ham_kiem_queen",
+      "cand_nt_tram_sac_vinfast_tan_minh_ql1a",
+      "cand_vt_tram_sac_vinfast_long_thanh_742",
+      "cand_vt_tram_sac_vinfast_pham_hung_ba_ria",
+      "cand_nt_homonym_vinfast_hiep_binh_hcm",
+      "cand_nt_homonym_vinfast_tam_binh_thu_duc"
+    ],
+    "claimed_trailing_rating_differs_from_supplied_sample": [
+      "cand_dl_tram_sac_ev_long_thanh_km42",
+      "cand_dl_tram_dung_phuc_loc_gia_kiem",
+      "cand_dl_diem_dung_canh_thao_nguyen_la_nga",
+      "cand_dl_tram_sac_ev_ham_tan_ql28b",
+      "cand_dl_com_nieu_thuan_thanh_bao_loc",
+      "cand_dl_tram_dung_tam_chau_bao_loc",
+      "cand_dl_chua_linh_an_nam_ban",
+      "cand_dl_thac_datanla_alpine_anchor",
+      "cand_nt_tram_dung_cao_toc_long_thanh_km42",
+      "cand_nt_tram_dung_dai_phu_dt765_xuan_loc",
+      "cand_nt_tram_sac_ev_ham_tan_km135",
+      "cand_nt_tram_nui_xa_tho_ttc",
+      "cand_nt_tram_dung_deo_ca_km113",
+      "cand_nt_phan_rang_culinary_ql27",
+      "cand_nt_hang_rai_vuon_nho_thai_an",
+      "cand_nt_vinh_vinh_hy_overlook",
+      "cand_nt_dong_cuu_suoi_tien_cam_ranh",
+      "cand_vt_tram_dung_hoa_mai_long_thanh",
+      "cand_vt_chua_dai_tong_lam",
+      "cand_vt_binon_cacao_park_chau_duc",
+      "cand_vt_nha_lon_long_son",
+      "cand_vt_banh_canh_long_huong_ba_ria",
+      "cand_vt_banh_khot_bai_sau",
+      "cand_vt_mui_nghinh_phong",
+      "cand_dl_homonym_phuc_loc_cai_be",
+      "cand_dl_homonym_phuc_loc_tho_ql14",
+      "cand_dl_homonym_com_ga_hai_cam_ly",
+      "cand_dl_homonym_chua_tay_tang_binh_duong",
+      "cand_nt_homonym_suoi_tien_theme_park_hcm",
+      "cand_nt_homonym_hai_dang_dai_lanh_phu_yen",
+      "cand_nt_homonym_nha_nghi_hai_dang_tanh_linh",
+      "cand_vt_homonym_binon_cacao_boutique_q1",
+      "cand_vt_homonym_bo_sua_xuan_hoa_ql1a",
+      "cand_dl_decay_canh_thao_nguyen_xuan_loc",
+      "cand_dl_decay_dai_phu_expressway_exit",
+      "cand_dl_decay_madagui_futa_buslines",
+      "cand_dl_decay_tan_nien_thong_nhat",
+      "cand_nt_decay_hung_thinh_3_xuan_loc",
+      "cand_nt_decay_nui_chua_chan_rest_stop",
+      "cand_nt_decay_minh_phat_2_ham_tan",
+      "cand_vt_decay_bo_sua_long_thanh_a2",
+      "cand_vt_decay_banh_khot_goc_vu_sua",
+      "cand_vt_decay_hai_san_thanh_phat_1",
+      "cand_dl_shill_tram_sac_xuan_que_5star",
+      "cand_dl_shill_nha_hang_dai_ninh_song_trang",
+      "cand_dl_shill_mut_dac_san_phuong_lan",
+      "cand_dl_shill_tram_dung_ngoc_anh_deo_dai_ninh",
+      "cand_nt_shill_tram_dung_km47_unbuilt",
+      "cand_nt_shill_tram_dung_km36_tan_lap",
+      "cand_nt_shill_vuon_nho_ngoc_nga_thai_an",
+      "cand_vt_shill_tram_dung_long_thanh_sp",
+      "cand_vt_shill_hai_san_bien_dong_88_bai_sau",
+      "cand_vt_shill_doi_cuu_nghe_an_clone",
+      "cand_dl_tram_sac_vinfast_madagui_pvoil",
+      "cand_nt_tram_sac_vinfast_tan_minh_ql1a",
+      "cand_vt_tram_sac_vinfast_long_thanh_742",
+      "cand_nt_homonym_vinfast_hiep_binh_hcm",
+      "cand_nt_homonym_vinfast_tam_binh_thu_duc",
+      "cand_dl_decay_vinfast_duc_duy_dai_lao",
+      "cand_vt_decay_vinfast_tan_phuoc_ql51_curfew",
+      "cand_vt_shill_vinfast_go_baria_closed"
+    ],
+    "google_maps_reviews_link_to_youtube": [
+      "cand_dl_tram_sac_ev_long_thanh_km42",
+      "cand_dl_tram_sac_ev_ham_tan_ql28b",
+      "cand_dl_deo_dai_ninh_panorama",
+      "cand_nt_tram_dung_cao_toc_long_thanh_km42",
+      "cand_nt_tram_dung_dai_phu_dt765_xuan_loc",
+      "cand_nt_tram_dung_deo_ca_km113",
+      "cand_nt_vinh_vinh_hy_overlook",
+      "cand_vt_bo_sua_long_thanh_outbound",
+      "cand_vt_banh_canh_long_huong_ba_ria",
+      "cand_dl_shill_tram_sac_xuan_que_5star",
+      "cand_dl_shill_tram_dung_ngoc_anh_deo_dai_ninh",
+      "cand_nt_shill_tram_dung_km47_unbuilt",
+      "cand_nt_shill_tram_dung_km36_tan_lap"
+    ]
+  },
+  "missing_branch_geometry": [
+    {
+      "corridor_id": "hcm_nhatrang",
+      "branch_id": "BRANCH_VINHHY_DT702"
+    },
+    {
+      "corridor_id": "hcm_vungtau",
+      "branch_id": "BRANCH_SUOINGHE_LOOP"
+    }
+  ],
+  "unbound_toll_plazas": [
+    {
+      "plaza_id": "tp_nt_ca_na_ql1a",
+      "branch_id": "BRANCH_CANA_VINHHY",
+      "name_vi": "Trạm thu phí BOT Cà Ná - Ninh Thuận QL1A",
+      "corridor_km": 312.0,
+      "lat": 11.339,
+      "lng": 108.889,
+      "fee_vnd": 40000,
+      "operator": "VETC",
+      "source_url": "https://www.bridgestone.com.vn/vi/thong-tin-huu-ich/tu-van-cho-nguoi-lai/tram-thu-phi"
+    }
+  ],
+  "ticket_09_status": "BLOCKED_ON_VERIFIED_EXTERNAL_EVIDENCE",
+  "note": "Lossless scrubbed intake union, not automatic certification. Packaged code/DB was not installed; configured road controls/tariffs remain unverified estimates."
+}

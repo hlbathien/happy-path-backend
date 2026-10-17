@@ -89,6 +89,14 @@ class PlannedStop(BaseModel):
     scenic_score: float
     tradeoff_note_vi: str
     source_url: str
+    open_minute: int
+    close_minute: int
+    is_24h: bool
+    midday_sun_trap: bool
+    is_locked: bool = False
+    ev_max_kw: int = 0
+    ev_stall_count: int = 0
+    ev_connector_type: str = 'NONE'
 
 class ParetoCandidate(BaseModel):
     candidate_id: CandidateArchetype
@@ -111,6 +119,7 @@ class ParetoCandidate(BaseModel):
     encoded_polyline: str
     stops: List[PlannedStop]
     warnings: List[str] = Field(default_factory=list)
+    max_wait_minutes: int = 30
 
 class PlanResponse(BaseModel):
     session_id: str

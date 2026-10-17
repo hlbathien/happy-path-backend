@@ -1,20 +1,20 @@
 import asyncio
+import math
 from typing import List, Optional
 import httpx
 from happy_path.config import GOONG_API_KEY, GOONG_BASE_URL, GOONG_TIMEOUT_SEC
-from happy_path.core.solver import fmt_clock, parse_departure_minute_and_bucket
+from happy_path.core.solver import (
+    dominates, fmt_clock, overlaps_midday, parse_departure_minute_and_bucket, service_wait_minutes,
+)
 from happy_path.schemas.itinerary import Coordinate, ParetoCandidate
 
+
+class InfeasibleLiveSchedule(Exception):
+    """The actual provider legs make this candidate physically infeasible."""
+
+
 class GoongClient:
-    """
-    High-Concurrency Async Goong REST API V2 Client (Freeze-Spec F8.1 – F8.4):
-    - Reuses a persistent httpx.AsyncClient to eliminate per-call TLS/socket construction overhead.
-    - Decorates full candidate portfolios concurrently via asyncio.gather inside an outer
-      asyncio.wait_for(..., timeout=0.280) wall-clock budget so 3 slow calls always finish < 350ms.
-    - Propagates live leg durations into each stop's arrival_clock, service_start_clock, departure_clock,
-      total_drive_minutes, total_duration_minutes, and tradeoff_summary_vi.
-    - Guards against null or empty overview_polyline.points.
-    """
+    """Persistent, parallel, budget-bounded decoration of the final physical schedule."""
     def __init__(self, api_key: str = GOONG_API_KEY, base_url: str = GOONG_BASE_URL, timeout_sec: float = GOONG_TIMEOUT_SEC):
         self.api_key = api_key
         self.base_url = base_url
@@ -31,102 +31,108 @@ class GoongClient:
             await self._client.aclose()
 
     async def decorate_candidate_polyline(
-        self,
-        origin: Coordinate,
-        dest: Coordinate,
-        candidate: ParetoCandidate,
-        vehicle: str = "car",
-        departure_iso: str = "2026-10-16T06:00:00+07:00",
+        self, origin: Coordinate, dest: Coordinate, candidate: ParetoCandidate,
+        vehicle: str = 'car', departure_iso: str = '2026-10-16T06:00:00+07:00',
     ) -> ParetoCandidate:
         if not self.api_key:
             return candidate
-        waypoints = [
-            f"{s.coordinates.lat:.6f},{s.coordinates.lng:.6f}" for s in candidate.stops
-        ] + [dest.to_goong_str()]
-        params = {
-            "origin": origin.to_goong_str(),
-            "destination": ";".join(waypoints),
-            "vehicle": vehicle,
-            "api_key": self.api_key,
-        }
+        waypoints = [s.coordinates.to_goong_str() for s in candidate.stops] + [dest.to_goong_str()]
+        params = {'origin': origin.to_goong_str(), 'destination': ';'.join(waypoints),
+                  'vehicle': vehicle, 'api_key': self.api_key}
         try:
-            client = self._get_client()
-            resp = await asyncio.wait_for(
-                client.get(f"{self.base_url}/direction", params=params),
-                timeout=self.timeout_sec,
+            response = await asyncio.wait_for(
+                self._get_client().get(f'{self.base_url}/direction', params=params), timeout=self.timeout_sec,
             )
-            if resp.status_code == 200:
-                data = resp.json()
-                routes: List[dict] = data.get("routes") or []
-                if routes:
-                    r0 = routes[0]
-                    ov = r0.get("overview_polyline")
-                    if isinstance(ov, dict):
-                        pts = ov.get("points")
-                        if isinstance(pts, str) and len(pts.strip()) > 0:
-                            candidate.encoded_polyline = pts.strip()
+            response.raise_for_status()
+            routes = response.json().get('routes') or []
+            if not routes:
+                raise ValueError('no route')
+            route = routes[0]
+            legs = route.get('legs') or []
+            seconds = [float((leg.get('duration') or {}).get('value', 0)) for leg in legs]
+            if len(seconds) != len(candidate.stops) + 1 or any(not math.isfinite(s) or s <= 0 for s in seconds):
+                raise ValueError('incomplete live legs')
+        except (httpx.HTTPError, asyncio.TimeoutError, ValueError, TypeError, AttributeError):
+            candidate.warnings.append('GOONG_UNAVAILABLE: Không có dữ liệu hành trình trực tiếp hợp lệ; giữ ước tính ngoại tuyến.')
+            return candidate
 
-                    legs = r0.get("legs") or []
-                    leg_secs = [int((leg.get("duration") or {}).get("value", 0)) for leg in legs]
-                    # Only complete, positive live legs can define a stop schedule.
-                    if len(leg_secs) == len(candidate.stops) + 1 and all(s > 0 for s in leg_secs):
-                        per_leg_mins = [max(5, s // 60) for s in leg_secs]
-                        live_mins = sum(per_leg_mins)
-                        baseline_drive = candidate.total_drive_minutes
-                        if sum(leg_secs) / 60 > baseline_drive * 1.35:
-                            # Preserve opening-hour wait buffers and use the same leg
-                            # minutes for both stop clocks and portfolio totals.
-                            dep_min, _, _ = parse_departure_minute_and_bucket(departure_iso)
-                            curr_min = dep_min
+        # Stage all clocks first. Never leave a partially decorated or invalid candidate behind.
+        staged = candidate.model_copy(deep=True)
+        minutes = [max(5, math.ceil(s / 60)) for s in seconds]
+        clock, _, _ = parse_departure_minute_and_bucket(departure_iso)
+        total_wait = 0
+        for stop, leg in zip(staged.stops, minutes):
+            arrival = clock + leg
+            wait = service_wait_minutes(arrival, stop.open_minute, stop.close_minute,
+                                        stop.dwell_minutes, stop.is_24h, staged.max_wait_minutes)
+            if wait is None:
+                raise InfeasibleLiveSchedule(f'LIVE_OPERATING_WINDOW: {stop.poi_id}')
+            service = arrival + wait
+            if stop.midday_sun_trap and overlaps_midday(service, stop.dwell_minutes):
+                if not stop.is_locked:
+                    raise InfeasibleLiveSchedule(f'LIVE_UV_WINDOW: {stop.poi_id}')
+                if not any('UV_LOCK_OVERRIDE_WARNING' in w for w in staged.warnings):
+                    staged.warnings.append('UV_LOCK_OVERRIDE_WARNING: Điểm dừng khóa cố định nằm trong khung giờ nắng gắt 11:00-14:30.')
+            clock = service + stop.dwell_minutes
+            stop.arrival_clock = fmt_clock(arrival)
+            stop.service_start_clock = fmt_clock(service)
+            stop.departure_clock = fmt_clock(clock)
+            stop.wait_minutes = wait
+            total_wait += wait
 
-                            for idx, stop in enumerate(candidate.stops):
-                                leg_m = per_leg_mins[idx]
-                                arr_m = curr_min + leg_m
-                                srv_m = arr_m + stop.wait_minutes
-                                dep_m = srv_m + stop.dwell_minutes
-                                stop.arrival_clock = fmt_clock(arr_m)
-                                stop.service_start_clock = fmt_clock(srv_m)
-                                stop.departure_clock = fmt_clock(dep_m)
-                                curr_min = dep_m
-
-                            candidate.total_drive_minutes = live_mins
-                            candidate.total_duration_minutes = (
-                                live_mins + candidate.total_dwell_minutes + candidate.total_wait_minutes
-                            )
-                            stop_names = " -> ".join(s.name_vi for s in candidate.stops)
-                            candidate.tradeoff_summary_vi = (
-                                f"{candidate.label} [{candidate.active_branch_id}]: {len(candidate.stops)} điểm dừng ({stop_names}), "
-                                f"lái xe {live_mins} phút (Goong Live), lệch tuyến +{candidate.total_detour_minutes} phút, "
-                                f"phí VETC ~{candidate.estimated_vetc_toll_vnd:,}đ."
-                            )
-                            candidate.warnings.append(
-                                f"Cảnh báo kẹt xe/sự cố trực tiếp từ Goong: Thời gian lái thực tế tăng lên {live_mins} phút (>1.35x chuẩn)."
-                            )
-        except Exception:
-            pass
+        live_drive = sum(minutes)
+        staged.total_drive_minutes = live_drive
+        staged.total_wait_minutes = total_wait
+        staged.total_duration_minutes = live_drive + staged.total_dwell_minutes + total_wait
+        staged.tradeoff_summary_vi = (
+            f'{staged.label} [{staged.active_branch_id}]: {len(staged.stops)} điểm dừng '
+            f'({" -> ".join(s.name_vi for s in staged.stops)}), lái xe {live_drive} phút (Goong Live), '
+            f'lệch tuyến +{staged.total_detour_minutes} phút, phí VETC ~{staged.estimated_vetc_toll_vnd:,}đ.'
+        )
+        if live_drive > candidate.total_drive_minutes * 1.35:
+            staged.warnings.append(f'Cảnh báo kẹt xe/sự cố trực tiếp từ Goong: Thời gian lái thực tế tăng lên {live_drive} phút (>1.35x chuẩn).')
+        overview = route.get('overview_polyline')
+        points = overview.get('points') if isinstance(overview, dict) else None
+        if isinstance(points, str) and points.strip():
+            # A waypoint-only provider route does not establish the selected alternative road.
+            if staged.active_branch_id == 'MAIN_SPINE':
+                staged.encoded_polyline = points.strip()
+            else:
+                staged.warnings.append('GOONG_BRANCH_GEOMETRY_UNVERIFIED: Giữ hình học nhánh cấu hình; nhà cung cấp chưa xác minh đúng nhánh.')
+        for name in ('stops', 'total_drive_minutes', 'total_wait_minutes', 'total_duration_minutes',
+                     'tradeoff_summary_vi', 'encoded_polyline', 'warnings'):
+            setattr(candidate, name, getattr(staged, name))
         return candidate
 
     async def decorate_portfolio(
-        self,
-        origin: Coordinate,
-        dest: Coordinate,
-        candidates: List[ParetoCandidate],
-        vehicle: str = "car",
-        departure_iso: str = "2026-10-16T06:00:00+07:00",
+        self, origin: Coordinate, dest: Coordinate, candidates: List[ParetoCandidate],
+        vehicle: str = 'car', departure_iso: str = '2026-10-16T06:00:00+07:00',
     ) -> List[ParetoCandidate]:
         if not self.api_key or not candidates:
             return candidates
+        # Each child owns its bounded HTTP wait; the entire portfolio also has a wall-clock ceiling.
+        tasks = [asyncio.create_task(self.decorate_candidate_polyline(origin, dest, c, vehicle, departure_iso)) for c in candidates]
         try:
-            await asyncio.wait_for(
-                asyncio.gather(
-                    *(
-                        self.decorate_candidate_polyline(origin, dest, cand, vehicle, departure_iso)
-                        for cand in candidates
-                    ),
-                    return_exceptions=True,
-                ),
-                timeout=0.280,
-            )
-        except Exception:
-            pass
+            results = await asyncio.wait_for(asyncio.gather(*tasks, return_exceptions=True), timeout=0.280)
+        except asyncio.TimeoutError:
+            results = [candidate if task.cancelled() else (task.exception() or task.result())
+                       for task, candidate in zip(tasks, candidates)]
+            for task, candidate in zip(tasks, candidates):
+                if task.cancelled():
+                    candidate.warnings.append('GOONG_UNAVAILABLE: Quá thời gian chờ trực tiếp; giữ ước tính ngoại tuyến.')
+        feasible = []
+        dropped = False
+        for result in results:
+            if isinstance(result, InfeasibleLiveSchedule):
+                dropped = True
+                continue
+            if isinstance(result, BaseException):
+                raise result
+            feasible.append(result)
+        candidates[:] = [c for c in feasible if not any(dominates(other, c) for other in feasible)]
+        for candidate in candidates:
+            if dropped:
+                candidate.warnings.append('LIVE_CANDIDATE_DROPPED: Loại phương án vi phạm giờ mở cửa hoặc giới hạn UV sau khi cập nhật giao thông.')
+            if len(candidates) < 3 and not any('PORTFOLIO_SHORTFALL' in w for w in candidate.warnings):
+                candidate.warnings.append('PORTFOLIO_SHORTFALL: Không đủ 3 phương án không bị trội sau cập nhật trực tiếp.')
         return candidates

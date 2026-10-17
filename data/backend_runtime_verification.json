@@ -1,0 +1,45 @@
+{
+  "cross_worker_cas": "stale write rejected; previous commit preserved",
+  "residual_slice_legs": {
+    "first_leg_minutes": 74,
+    "last_leg_minutes": 37
+  },
+  "midnight_24h_service": [
+    "23:55",
+    "00:15"
+  ],
+  "off_spine_access": {
+    "distance_km": 11.12,
+    "added_first_leg_minutes": 15
+  },
+  "sliced_tolls_outbound_inbound_clear": [
+    50000,
+    50000,
+    0
+  ],
+  "seed_if_missing": "configured DB byte-identical",
+  "missing_db_lifespan": "failed before serving",
+  "actual_http_plan": {
+    "status": 200,
+    "elapsed_seconds": 0.3494,
+    "candidate_count": 3,
+    "live_candidates": 0
+  },
+  "openapi_routes": "3.1.0; all requested routes registered",
+  "actual_restart_mutation": {
+    "status": 200,
+    "session_survived": true,
+    "live_decorated": false
+  },
+  "original_sessions_unchanged": 340,
+  "official_goong_probe": {
+    "configured": true,
+    "official_endpoint": "https://rsapi.goong.io/direction",
+    "stop_count": 3,
+    "http_status": 200,
+    "provider_status": null,
+    "route_count": 1,
+    "leg_count": 4,
+    "multi_stop_contract_established": true
+  }
+}

@@ -58,6 +58,8 @@ class RawScrapedCandidate:
     sampled_low_reviews: List[str]
     raw_testimonial_text: str
     poi_id: Optional[str] = None
+    candidate_id: str = ''
+    google_place_id: str = ''
     corridor_id: str = "hcm_dalat"
     branch_id: str = "MAIN_SPINE"
     goong_place_id: str = ""
@@ -69,6 +71,10 @@ class RawScrapedCandidate:
     direction_allowed: Optional[str] = None
     sedan_safe: Optional[bool] = None
     has_ev_charge: Optional[bool] = None
+    is_24h: bool = False
+    ev_max_kw: int = 0
+    ev_stall_count: int = 0
+    ev_connector_type: str = 'NONE'
     midday_sun_trap: Optional[bool] = None
     is_arrival_anchor: Optional[bool] = None
     exertion_level: Optional[str] = None
@@ -223,6 +229,13 @@ def _promotion_evidence_error(candidate: RawScrapedCandidate) -> str:
             return "INVALID_REVIEW_EVIDENCE: each review needs text, date, rating and source URL"
         if not text or not math.isfinite(rating) or not 1.0 <= rating <= 5.0 or published > today or not _public_url(source):
             return "INVALID_REVIEW_EVIDENCE: invalid text, date, rating or source URL"
+        channel = review.get('source_channel')
+        host = (urlsplit(source).hostname or '').lower()
+        channel_hosts = {'google_maps': ('google.com', 'maps.app.goo.gl'),
+                         'youtube': ('youtube.com', 'youtu.be'), 'otosaigon': ('otosaigon.com',),
+                         'facebook': ('facebook.com', 'fb.com')}
+        if channel in channel_hosts and not any(host == domain or host.endswith('.' + domain) for domain in channel_hosts[channel]):
+            return 'REVIEW_SOURCE_MISMATCH: claimed review channel does not match its source URL'
         key = (text.casefold(), published.isoformat())
         if key in seen:
             continue
@@ -261,7 +274,9 @@ def _metadata_error(candidate: RawScrapedCandidate) -> str:
         or candidate.exertion_level not in ("LOW", "MODERATE", "HIGH")
         or candidate.open_minute is None or candidate.close_minute is None or candidate.dwell_minutes is None
         or not 0 <= candidate.open_minute < candidate.close_minute <= 1440
-        or not 0 < candidate.dwell_minutes <= candidate.close_minute - candidate.open_minute):
+        or not 0 < candidate.dwell_minutes <= candidate.close_minute - candidate.open_minute
+        or candidate.is_24h and (candidate.open_minute != 0 or candidate.close_minute != 1440)):
+
         return "INVALID_POI_METADATA: verified location, operating hours and physical safety attributes required"
     return ""
 
@@ -274,11 +289,11 @@ def promote_verified_candidate_to_db(db_path: Path, candidate: RawScrapedCandida
             verdict = IngestionVerdict(False, verdict.scrubbed_text, error)
     poi_id = candidate.poi_id or f"live_{candidate.corridor_id}_{hashlib.sha256(candidate.venue_name.encode()).hexdigest()[:16]}"
     candidate.poi_id = poi_id
-    conn = sqlite3.connect(str(db_path), timeout=5.0, isolation_level=None)
+    conn = sqlite3.connect(str(db_path), timeout=15.0, isolation_level=None)
     try:
         conn.execute("PRAGMA foreign_keys = ON;")
         conn.execute("PRAGMA journal_mode = DELETE;")
-        conn.execute("PRAGMA busy_timeout = 5000;")
+        conn.execute("PRAGMA busy_timeout = 15000;")
         conn.execute("BEGIN IMMEDIATE;")
         if verdict.accepted:
             corridor = conn.execute("SELECT total_spine_km FROM corridors WHERE corridor_id=?", (candidate.corridor_id,)).fetchone()
@@ -293,6 +308,7 @@ def promote_verified_candidate_to_db(db_path: Path, candidate: RawScrapedCandida
                        "direction_allowed", "sedan_safe", "has_ev_charge", "midday_sun_trap", "is_arrival_anchor",
                        "exertion_level", "dwell_minutes", "open_minute", "close_minute", "utility_score", "scenic_score",
                        "detour_minutes", "hazard_level", "archetype_affinity", "source_url"]
+            columns += ['google_place_id', 'is_24h', 'ev_max_kw', 'ev_stall_count', 'ev_connector_type']
             columns += ["name_vi", "commune_name", "tradeoff_note_vi"]
             values = [getattr(candidate, column) for column in columns[:-3]]
             values += [scrub_pii(candidate.venue_name), scrub_pii(candidate.goong_returned_commune), verdict.scrubbed_text]

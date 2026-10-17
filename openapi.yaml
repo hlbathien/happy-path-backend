@@ -30,11 +30,7 @@ paths:
         '409':
           description: No feasible route under constraints
         '422':
-          description: Validation Error
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/HTTPValidationError'
+          description: Pin exceeds supported corridor access range
   /v1/itineraries/mutate:
     post:
       tags:
@@ -151,15 +147,6 @@ components:
       - engine
       - corridors
       title: CorridorHealthResponse
-    HTTPValidationError:
-      properties:
-        detail:
-          items:
-            $ref: '#/components/schemas/ValidationError'
-          type: array
-          title: Detail
-      type: object
-      title: HTTPValidationError
     MutateRequest:
       properties:
         session_id:
@@ -317,6 +304,10 @@ components:
             type: string
           type: array
           title: Warnings
+        max_wait_minutes:
+          type: integer
+          title: Max Wait Minutes
+          default: 30
       type: object
       required:
       - candidate_id
@@ -495,6 +486,34 @@ components:
         source_url:
           type: string
           title: Source Url
+        open_minute:
+          type: integer
+          title: Open Minute
+        close_minute:
+          type: integer
+          title: Close Minute
+        is_24h:
+          type: boolean
+          title: Is 24H
+        midday_sun_trap:
+          type: boolean
+          title: Midday Sun Trap
+        is_locked:
+          type: boolean
+          title: Is Locked
+          default: false
+        ev_max_kw:
+          type: integer
+          title: Ev Max Kw
+          default: 0
+        ev_stall_count:
+          type: integer
+          title: Ev Stall Count
+          default: 0
+        ev_connector_type:
+          type: string
+          title: Ev Connector Type
+          default: NONE
       type: object
       required:
       - stop_order
@@ -519,6 +538,10 @@ components:
       - scenic_score
       - tradeoff_note_vi
       - source_url
+      - open_minute
+      - close_minute
+      - is_24h
+      - midday_sun_trap
       title: PlannedStop
     PowertrainMode:
       type: string
@@ -526,32 +549,6 @@ components:
       - ice
       - ev
       title: PowertrainMode
-    ValidationError:
-      properties:
-        loc:
-          items:
-            anyOf:
-            - type: string
-            - type: integer
-          type: array
-          title: Location
-        msg:
-          type: string
-          title: Message
-        type:
-          type: string
-          title: Error Type
-        input:
-          title: Input
-        ctx:
-          type: object
-          title: Context
-      type: object
-      required:
-      - loc
-      - msg
-      - type
-      title: ValidationError
     VehicleMode:
       type: string
       enum:

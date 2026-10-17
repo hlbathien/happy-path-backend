@@ -1,0 +1,89 @@
+[
+  {
+    "corridor_id": "hcm_dalat",
+    "route_variant": "MAIN_SPINE_QL20_AND_BAOLOC_LOOP",
+    "distance_km": 350.0,
+    "duration_text": "8 hours, 47 minutes",
+    "waypoints": [
+      "Ho Chi Minh City",
+      "Gia Kiem, Thong Nhat, Dong Nai",
+      "Thac Dambri, Bao Loc",
+      "Duc Trong, Lam Dong",
+      "Da Lat"
+    ],
+    "source": "google_maps_tool:find_directions"
+  },
+  {
+    "corridor_id": "hcm_dalat",
+    "route_variant": "BRANCH_QL28B_DAININH_AND_TANUNG_PASS",
+    "distance_km": 410.0,
+    "duration_text": "8 hours, 27 minutes",
+    "waypoints": [
+      "Ho Chi Minh City",
+      "Xuan Que CT01",
+      "Luong Son - Phan Son QL28B",
+      "Deo Dai Ninh",
+      "Nam Ban DT725",
+      "Da Lat"
+    ],
+    "source": "google_maps_tool:find_directions"
+  },
+  {
+    "corridor_id": "hcm_nhatrang",
+    "route_variant": "MAIN_SPINE_CT01_EXPRESSWAY",
+    "distance_km": 398.0,
+    "duration_text": "5 hours, 19 minutes",
+    "waypoints": [
+      "Ho Chi Minh City",
+      "Xuan Que Km41+100",
+      "TTC Chau Thanh Km205+092",
+      "Ham Nui Vung",
+      "Suoi Dau DT3",
+      "Nha Trang"
+    ],
+    "source": "google_maps_tool:find_directions"
+  },
+  {
+    "corridor_id": "hcm_nhatrang",
+    "route_variant": "BRANCH_BAUTRANG_CANA_VINHHY_COASTAL",
+    "distance_km": 471.0,
+    "duration_text": "8 hours, 56 minutes",
+    "waypoints": [
+      "Ho Chi Minh City",
+      "Bau Trang TL716B",
+      "Ca Na QL1A",
+      "Mui Dinh DT701",
+      "Hang Rai - Vinh Hy DT702",
+      "Nha Trang"
+    ],
+    "source": "google_maps_tool:find_directions"
+  },
+  {
+    "corridor_id": "hcm_vungtau",
+    "route_variant": "MAIN_SPINE_CT29_QL51",
+    "distance_km": 96.0,
+    "duration_text": "2 hours, 28 minutes",
+    "waypoints": [
+      "Ho Chi Minh City",
+      "An Phuoc / Phuoc Thai QL51",
+      "Phu My",
+      "Cong Chao Ba Ria",
+      "Mui Nghinh Phong Vung Tau"
+    ],
+    "source": "google_maps_tool:find_directions"
+  },
+  {
+    "corridor_id": "hcm_vungtau",
+    "route_variant": "BRANCH_CHAUDUC_SUOINGHE_LONGSON",
+    "distance_km": 169.0,
+    "duration_text": "4 hours, 16 minutes",
+    "waypoints": [
+      "Ho Chi Minh City",
+      "Xa Bang Chau Duc (Binon Cacao)",
+      "Suoi Nghe Chau Duc",
+      "Dao Long Son",
+      "Vung Tau"
+    ],
+    "source": "google_maps_tool:find_directions"
+  }
+]

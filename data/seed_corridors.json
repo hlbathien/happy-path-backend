@@ -98,14 +98,92 @@
           "name_vi": "Nhánh sinh thái Thác Dambri - Bảo Lộc",
           "diverge_km": 175.0,
           "merge_km": 212.0,
-          "toll_delta_vnd": 0
+          "toll_delta_vnd": 0,
+          "real_branch_km": 68.0,
+          "branch_waypoints": [
+            {
+              "km": 170.0,
+              "lat": 11.538,
+              "lng": 107.792,
+              "label": "Ngã ba Đại Bình - Bảo Lộc"
+            },
+            {
+              "km": 182.0,
+              "lat": 11.564,
+              "lng": 107.781,
+              "label": "Đường Lý Thái Tổ - Đamb'ri"
+            },
+            {
+              "km": 195.0,
+              "lat": 11.6375,
+              "lng": 107.7393,
+              "label": "Khu du lịch Thác Đamb'ri"
+            },
+            {
+              "km": 203.0,
+              "lat": 11.612,
+              "lng": 107.778,
+              "label": "Nông trường trà Tâm Châu Lộc Tân"
+            },
+            {
+              "km": 225.0,
+              "lat": 11.551,
+              "lng": 107.874,
+              "label": "Ngã ba Lộc An - Nhập lại QL20"
+            }
+          ]
         },
         {
           "branch_id": "BRANCH_QL28B_DAININH",
           "name_vi": "Nhánh Cao tốc Vĩnh Hảo - QL28B Đèo Đại Ninh",
           "diverge_km": 55.0,
           "merge_km": 262.0,
-          "toll_delta_vnd": 125000
+          "toll_delta_vnd": 125000,
+          "real_branch_km": 212.0,
+          "branch_waypoints": [
+            {
+              "km": 55.0,
+              "lat": 10.9462,
+              "lng": 107.1815,
+              "label": "Nút giao Dầu Giây CT01"
+            },
+            {
+              "km": 95.0,
+              "lat": 10.892,
+              "lng": 107.465,
+              "label": "Nút giao Xuân Lộc CT01"
+            },
+            {
+              "km": 135.0,
+              "lat": 10.885,
+              "lng": 107.882,
+              "label": "Nút giao Ba Bàu - Phan Thiết"
+            },
+            {
+              "km": 168.0,
+              "lat": 11.198,
+              "lng": 108.352,
+              "label": "Nút giao Lương Sơn QL28B"
+            },
+            {
+              "km": 178.0,
+              "lat": 11.298,
+              "lng": 108.431,
+              "label": "Xã Phan Sơn - Chân đèo Đại Ninh"
+            },
+            {
+              "km": 212.0,
+              "lat": 11.432,
+              "lng": 108.334,
+              "label": "Cầu cạn Đèo Đại Ninh QL28B"
+            },
+            {
+              "km": 262.0,
+              "lat": 11.674,
+              "lng": 108.321,
+              "label": "Ngã ba Ninh Gia - Đức Trọng QL20"
+            }
+          ]
         }
       ],
       "co_occurrence": [
@@ -438,6 +516,63 @@
           "tradeoff_note_vi": "CẢNH BÁO: Đường đất dốc >18%, dễ cạ gầm sedan và trơn trượt khi mưa.",
           "source_url": "https://goong.io/"
         }
+      ],
+      "toll_plazas": [
+        {
+          "plaza_id": "tp_dl_long_thanh",
+          "branch_id": "MAIN_SPINE",
+          "name_vi": "Trạm thu phí Cao tốc TP.HCM - Long Thành - Dầu Giây",
+          "corridor_km": 24.0,
+          "lat": 10.7885,
+          "lng": 106.985,
+          "fee_vnd": 98000,
+          "operator": "VEC / VETC",
+          "source_url": "https://www.youtube.com/watch?v=yOBXFF4MGDI"
+        },
+        {
+          "plaza_id": "tp_dl_tan_phu_ql20",
+          "branch_id": "MAIN_SPINE",
+          "name_vi": "Trạm thu phí Tân Phú (QL20 Định Quán)",
+          "corridor_km": 122.0,
+          "lat": 11.248,
+          "lng": 107.412,
+          "fee_vnd": 35000,
+          "operator": "VETC",
+          "source_url": "https://www.bridgestone.com.vn/vi/thong-tin-huu-ich/tu-van-cho-nguoi-lai/tram-thu-phi"
+        },
+        {
+          "plaza_id": "tp_dl_lien_khuong",
+          "branch_id": "MAIN_SPINE",
+          "name_vi": "Trạm thu phí Định An - Cao tốc Liên Khương - Prenn",
+          "corridor_km": 278.0,
+          "lat": 11.758,
+          "lng": 108.378,
+          "fee_vnd": 36000,
+          "operator": "VETC",
+          "source_url": "https://www.youtube.com/watch?v=yOBXFF4MGDI"
+        },
+        {
+          "plaza_id": "tp_dl_phan_thiet_ct01",
+          "branch_id": "BRANCH_QL28B_DAININH",
+          "name_vi": "Trạm thu phí Cao tốc Dầu Giây - Phan Thiết (Km99)",
+          "corridor_km": 135.0,
+          "lat": 10.885,
+          "lng": 107.882,
+          "fee_vnd": 86000,
+          "operator": "VETC",
+          "source_url": "https://www.youtube.com/watch?v=yOBXFF4MGDI"
+        },
+        {
+          "plaza_id": "tp_dl_luong_son_ql28b",
+          "branch_id": "BRANCH_QL28B_DAININH",
+          "name_vi": "Trạm thu phí Nút giao Lương Sơn QL28B (Phan Thiết - Vĩnh Hảo)",
+          "corridor_km": 168.0,
+          "lat": 11.198,
+          "lng": 108.352,
+          "fee_vnd": 45000,
+          "operator": "VETC",
+          "source_url": "https://www.youtube.com/watch?v=yOBXFF4MGDI"
+        }
       ]
     },
     {
@@ -542,7 +677,58 @@
           "name_vi": "Nhánh Đường Biển Bàu Trắng - Mũi Dinh - Vĩnh Hy (DT716-DT702)",
           "diverge_km": 180.0,
           "merge_km": 395.0,
-          "toll_delta_vnd": -65000
+          "toll_delta_vnd": -65000,
+          "real_branch_km": 238.0,
+          "branch_waypoints": [
+            {
+              "km": 165.0,
+              "lat": 11.121,
+              "lng": 108.182,
+              "label": "Nút giao Ma Lâm / Hòa Thắng"
+            },
+            {
+              "km": 212.0,
+              "lat": 11.0609,
+              "lng": 108.4279,
+              "label": "Cung đường đôi ĐT716 Bàu Trắng"
+            },
+            {
+              "km": 255.0,
+              "lat": 11.235,
+              "lng": 108.721,
+              "label": "Phan Rí Cửa - Liên Hương"
+            },
+            {
+              "km": 310.0,
+              "lat": 11.334,
+              "lng": 108.878,
+              "label": "Eo biển Cà Ná"
+            },
+            {
+              "km": 328.0,
+              "lat": 11.381,
+              "lng": 109.008,
+              "label": "Đường ven biển ĐT701 Mũi Dinh"
+            },
+            {
+              "km": 362.0,
+              "lat": 11.652,
+              "lng": 109.175,
+              "label": "Hang Rái - Công Viên Đá Vĩnh Hải"
+            },
+            {
+              "km": 374.0,
+              "lat": 11.721,
+              "lng": 109.198,
+              "label": "Đèo Vĩnh Hy - Bình Tiên ĐT702"
+            },
+            {
+              "km": 390.0,
+              "lat": 11.838,
+              "lng": 109.142,
+              "label": "Mỹ Thanh - Cam Thịnh Đông QL1A"
+            }
+          ]
         }
       ],
       "co_occurrence": [
@@ -762,6 +948,63 @@
           "tradeoff_note_vi": "Điểm dừng ngắm toàn cảnh vịnh Vĩnh Hy mở 24/7 trên nhánh ven biển Bàu Trắng - Vĩnh Hy.",
           "source_url": "https://vqgnuichua.ninhthuan.gov.vn/"
         }
+      ],
+      "toll_plazas": [
+        {
+          "plaza_id": "tp_nt_long_thanh",
+          "branch_id": "MAIN_SPINE",
+          "name_vi": "Trạm thu phí Cao tốc TP.HCM - Long Thành - Dầu Giây",
+          "corridor_km": 24.0,
+          "lat": 10.7885,
+          "lng": 106.985,
+          "fee_vnd": 98000,
+          "operator": "VEC / VETC",
+          "source_url": "https://www.youtube.com/watch?v=glXAnpx51E8"
+        },
+        {
+          "plaza_id": "tp_nt_dau_giay_phan_thiet",
+          "branch_id": "MAIN_SPINE",
+          "name_vi": "Trạm thu phí Cao tốc Dầu Giây - Phan Thiết",
+          "corridor_km": 135.0,
+          "lat": 10.885,
+          "lng": 107.882,
+          "fee_vnd": 86000,
+          "operator": "VETC",
+          "source_url": "https://www.youtube.com/watch?v=glXAnpx51E8"
+        },
+        {
+          "plaza_id": "tp_nt_vinh_hao_cam_lam",
+          "branch_id": "MAIN_SPINE",
+          "name_vi": "Trạm thu phí Cao tốc Vĩnh Hảo - Cam Lâm (Nút giao Du Long / Phan Rang)",
+          "corridor_km": 315.0,
+          "lat": 11.452,
+          "lng": 108.885,
+          "fee_vnd": 75000,
+          "operator": "VETC",
+          "source_url": "https://www.youtube.com/watch?v=glXAnpx51E8"
+        },
+        {
+          "plaza_id": "tp_nt_cam_lam_suoi_dau",
+          "branch_id": "MAIN_SPINE",
+          "name_vi": "Trạm thu phí Cao tốc Cam Lâm - Nha Trang (Nút giao Suối Dầu ĐT3)",
+          "corridor_km": 402.0,
+          "lat": 12.142,
+          "lng": 109.092,
+          "fee_vnd": 50000,
+          "operator": "VETC",
+          "source_url": "https://www.youtube.com/watch?v=glXAnpx51E8"
+        },
+        {
+          "plaza_id": "tp_nt_cam_thinh_ql1a",
+          "branch_id": "BRANCH_BAUTRANG_COAST",
+          "name_vi": "Trạm thu phí BOT Cam Thịnh QL1A Cam Ranh",
+          "corridor_km": 388.0,
+          "lat": 11.832,
+          "lng": 109.138,
+          "fee_vnd": 40000,
+          "operator": "VETC",
+          "source_url": "https://www.bridgestone.com.vn/vi/thong-tin-huu-ich/tu-van-cho-nguoi-lai/tram-thu-phi"
+        }
       ]
     },
     {
@@ -849,7 +1092,34 @@
           "name_vi": "Nhánh Đảo Long Sơn - Cầu Gò Găng",
           "diverge_km": 62.0,
           "merge_km": 96.0,
-          "toll_delta_vnd": -15000
+          "toll_delta_vnd": -15000,
+          "real_branch_km": 24.0,
+          "branch_waypoints": [
+            {
+              "km": 68.0,
+              "lat": 10.502,
+              "lng": 107.098,
+              "label": "Ngã ba Long Sơn QL51 - Cầu Bà Nanh"
+            },
+            {
+              "km": 74.0,
+              "lat": 10.462,
+              "lng": 107.112,
+              "label": "Nhà Lớn Long Sơn - Đảo Long Sơn"
+            },
+            {
+              "km": 79.0,
+              "lat": 10.445,
+              "lng": 107.125,
+              "label": "Bến Đá - Làng Bè Hàu Long Sơn"
+            },
+            {
+              "km": 88.0,
+              "lat": 10.418,
+              "lng": 107.136,
+              "label": "Cầu Chà Và - Cầu Gò Găng vào Đường 30/4"
+            }
+          ]
         },
         {
           "branch_id": "BRANCH_SUOINGHE_LOOP",
@@ -1070,6 +1340,41 @@
           "archetype_affinity": "SCENIC",
           "tradeoff_note_vi": "Điểm ngắm biển 2 mặt Bãi Trước - Bãi Sau mở tự do 24/7, lý tưởng làm điểm neo trước giờ nhận phòng.",
           "source_url": "https://baria-vungtau.gov.vn/"
+        }
+      ],
+      "toll_plazas": [
+        {
+          "plaza_id": "tp_vt_long_thanh_ql51",
+          "branch_id": "MAIN_SPINE",
+          "name_vi": "Trạm thu phí Cao tốc TP.HCM - Long Thành (Nút giao QL51)",
+          "corridor_km": 22.0,
+          "lat": 10.785,
+          "lng": 106.968,
+          "fee_vnd": 41000,
+          "operator": "VEC / VETC",
+          "source_url": "https://www.bridgestone.com.vn/vi/thong-tin-huu-ich/tu-van-cho-nguoi-lai/tram-thu-phi"
+        },
+        {
+          "plaza_id": "tp_vt_ql51_t2_phu_my",
+          "branch_id": "MAIN_SPINE",
+          "name_vi": "Trạm kiểm soát thu phí T2 Quốc lộ 51 Phú Mỹ",
+          "corridor_km": 52.0,
+          "lat": 10.582,
+          "lng": 107.054,
+          "fee_vnd": 0,
+          "operator": "Cục Đường Bộ VN (Tạm dừng thu phí BOT QL51)",
+          "source_url": "https://www.bridgestone.com.vn/vi/thong-tin-huu-ich/tu-van-cho-nguoi-lai/tram-thu-phi"
+        },
+        {
+          "plaza_id": "tp_vt_ql51_t3_ba_ria",
+          "branch_id": "MAIN_SPINE",
+          "name_vi": "Trạm kiểm soát thu phí T3 Quốc lộ 51 Châu Pha - Bà Rịa",
+          "corridor_km": 74.0,
+          "lat": 10.512,
+          "lng": 107.125,
+          "fee_vnd": 0,
+          "operator": "Cục Đường Bộ VN (Tạm dừng thu phí BOT QL51)",
+          "source_url": "https://www.bridgestone.com.vn/vi/thong-tin-huu-ich/tu-van-cho-nguoi-lai/tram-thu-phi"
         }
       ]
     }

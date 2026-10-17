@@ -248,10 +248,10 @@ async def harvest_verified_edges(db_path: Path, key: str, base_url: str, receipt
                                 hazard = max(u["hazard"],v["hazard"]) * (1.5 if bucket == "rain_evening" else 1.0)
                                 # Matrix responses supply no route polyline. Runtime slicing/live decoration owns geometry.
                                 edges.append((corridor_id,u["node_id"],v["node_id"],bucket,max(5,math.ceil(seconds/60)),metres/1000,hazard,""))
-    conn = sqlite3.connect(registry.runtime_db_path, timeout=5,isolation_level=None)
+    conn = sqlite3.connect(registry.runtime_db_path, timeout=15,isolation_level=None)
     try:
         conn.execute("PRAGMA journal_mode=DELETE")
-        conn.execute("PRAGMA busy_timeout=5000")
+        conn.execute("PRAGMA busy_timeout=15000")
         conn.execute("BEGIN IMMEDIATE")
         conn.executemany("INSERT INTO corridor_edges VALUES (?,?,?,?,?,?,?,?) ON CONFLICT(corridor_id,from_node,to_node,time_bucket) "
                          "DO UPDATE SET drive_minutes=excluded.drive_minutes,distance_km=excluded.distance_km,"
@@ -268,7 +268,7 @@ async def harvest_verified_edges(db_path: Path, key: str, base_url: str, receipt
 
 async def _facebook(urls: List[str], receipts: Path) -> List[Dict[str, Any]]:
     from playwright.async_api import async_playwright
-    endpoint = os.getenv("BU_CDP_URL") or os.getenv("CDP_URL")
+    endpoint = os.getenv("FACEBOOK_CDP_URL") or os.getenv("BU_CDP_URL") or os.getenv("CDP_URL")
     if not endpoint:
         append_receipt(receipts, dict(engine="facebook-cdp", success=False, reason="FACEBOOK_CDP_UNAVAILABLE"))
         return []
@@ -303,7 +303,7 @@ async def collect_candidates(db_path: Path, goong_key: str, goong_base_url: str,
     from crawl4ai import AsyncWebCrawler, BrowserConfig, CacheMode, CrawlerRunConfig
 
     if targets is None:
-        with sqlite3.connect(db_path) as connection:
+        with sqlite3.connect(db_path, timeout=15) as connection:
             connection.row_factory = sqlite3.Row
             targets = [dict(row) for row in connection.execute("SELECT * FROM pois ORDER BY corridor_id,corridor_km") ]
     targets = normalize_text_fields(targets)
@@ -402,6 +402,9 @@ async def collect_candidates(db_path: Path, goong_key: str, goong_base_url: str,
                 "direction_allowed", "sedan_safe", "has_ev_charge", "midday_sun_trap", "is_arrival_anchor", "exertion_level",
                 "dwell_minutes", "open_minute", "close_minute", "utility_score", "scenic_score", "detour_minutes", "hazard_level", "archetype_affinity",
             )}
+            for key in ('is_24h', 'ev_max_kw', 'ev_stall_count', 'ev_connector_type', 'google_place_id'):
+                if key in target:
+                    values[key] = target[key]
             # Never promote seed coordinates as if they came from the live place resolver.
             values["lat"] = location.get("lat") if location else None
             values["lng"] = location.get("lng") if location else None

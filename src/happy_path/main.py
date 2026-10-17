@@ -8,7 +8,7 @@ from happy_path.core.graph import CorridorRegistry
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    if not getattr(app.state, "registry", None) and DB_PATH.exists():
+    if not getattr(app.state, "registry", None):
         app.state.registry = CorridorRegistry(DB_PATH)
     if not getattr(app.state, "goong", None):
         app.state.goong = GoongClient()
@@ -23,10 +23,6 @@ app = FastAPI(
     openapi_version="3.1.0",
     lifespan=lifespan,
 )
-
-if DB_PATH.exists():
-    app.state.registry = CorridorRegistry(DB_PATH)
-app.state.goong = GoongClient()
 
 app.add_middleware(
     CORSMiddleware,

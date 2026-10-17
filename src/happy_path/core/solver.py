@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import datetime, timedelta, timezone
 from typing import Dict, List, Optional, Set, Tuple
 from happy_path.core.graph import BranchMeta, CorridorMeta, CorridorRegistry, POINode
 from happy_path.schemas.itinerary import (
@@ -16,6 +16,8 @@ def parse_departure_minute_and_bucket(departure_iso: str) -> Tuple[int, str, str
         clock = s
     else:
         dt = datetime.fromisoformat(s.replace("Z", "+00:00"))
+        if dt.tzinfo is not None:
+            dt = dt.astimezone(timezone(timedelta(hours=7)))
         minute = dt.hour * 60 + dt.minute
         clock = f"{dt.hour:02d}:{dt.minute:02d}"
     if 270 <= minute < 420:
@@ -31,6 +33,19 @@ def parse_departure_minute_and_bucket(departure_iso: str) -> Tuple[int, str, str
 def fmt_clock(total_minutes: int) -> str:
     m = total_minutes % 1440
     return f"{m // 60:02d}:{m % 60:02d}"
+
+def service_wait_minutes(arrival: int, open_minute: int, close_minute: int, dwell: int, is_24h: bool, max_wait: int) -> Optional[int]:
+    if is_24h:
+        return 0
+    arrival_mod = arrival % 1440
+    wait = max(0, open_minute - arrival_mod)
+    if wait > max_wait or arrival_mod + wait + dwell > close_minute:
+        return None
+    return wait
+
+def overlaps_midday(service_start: int, dwell: int) -> bool:
+    return any(service_start <= day * 1440 + 870 and service_start + dwell >= day * 1440 + 660
+               for day in range(service_start // 1440, (service_start + dwell) // 1440 + 1))
 
 def _progress_km(poi: POINode, corridor: CorridorMeta, direction: str) -> float:
     if direction == "outbound":
@@ -164,7 +179,8 @@ def _enumerate_candidates_for_archetype(
                 subset_indices.append([i, j, k])
 
     scored_candidates: List[Tuple[float, ParetoCandidate]] = []
-    scale_ratio = active_span_km / max(1.0, corridor.total_spine_km)
+    origin_access = registry.access_drive_minutes(corridor, direction, origin_coord)
+    dest_access = registry.access_drive_minutes(corridor, direction, dest_coord)
 
     for idxs in subset_indices:
         seq = [sorted_pois[i] for i in idxs]
@@ -230,28 +246,18 @@ def _enumerate_candidates_for_archetype(
                 windows_ok = False
                 break
             raw_drive_m, _, haz, _ = registry.edges[edge_key]
-            drive_m = max(5, int(round(raw_drive_m * scale_ratio))) if (idx_in_seq == 0 and active_start_km > 0.0) else max(5, raw_drive_m)
+            drive_m = max(5, raw_drive_m)
+            if idx_in_seq == 0:
+                progress = _progress_km(poi, corridor, direction)
+                drive_m = max(5, round(raw_drive_m * (progress - active_start_km) / max(1.0, progress))) + origin_access
             arr_min = curr_min + drive_m
             arr_mod = arr_min % 1440
 
-            # Never visit a closed venue: compute wait_m if arriving slightly early
-            if arr_mod < poi.open_minute:
-                wait_m = poi.open_minute - arr_mod
-                if wait_m > max_wait_minutes:
-                    windows_ok = False
-                    break
-                srv_mod = poi.open_minute
-            else:
-                wait_m = 0
-                srv_mod = arr_mod
-
-            if srv_mod + poi.dwell_minutes > poi.close_minute:
+            wait_m = service_wait_minutes(arr_min, poi.open_minute, poi.close_minute, poi.dwell_minutes, poi.is_24h, max_wait_minutes)
+            if wait_m is None:
                 windows_ok = False
                 break
-
-            # Unconditional Midday UV Heat Shield: block midday_sun_trap if service overlaps [660, 870] (11:00-14:30)
-            srv_end_mod = srv_mod + poi.dwell_minutes
-            overlaps_uv = (srv_mod <= 870) and (srv_end_mod >= 660)
+            overlaps_uv = overlaps_midday(arr_min + wait_m, poi.dwell_minutes)
             if poi.midday_sun_trap and overlaps_uv:
                 if poi.poi_id not in locked_ids:
                     windows_ok = False
@@ -276,10 +282,8 @@ def _enumerate_candidates_for_archetype(
         if last_edge not in registry.edges:
             continue
         last_drive, _, last_haz, _ = registry.edges[last_edge]
-        if active_end_km < corridor.total_spine_km:
-            last_drive = max(5, int(round(last_drive * scale_ratio)))
-        else:
-            last_drive = max(5, last_drive)
+        last_progress = _progress_km(seq[-1], corridor, direction)
+        last_drive = max(5, round(last_drive * (active_end_km - last_progress) / max(1.0, corridor.total_spine_km - last_progress))) + dest_access
         total_drive += last_drive
         final_arr_mod = (curr_min + last_drive) % 1440
         max_haz = max(max_haz, last_haz)
@@ -297,7 +301,7 @@ def _enumerate_candidates_for_archetype(
         )
         checkin_anchor_bonus = (
             38.0
-            if (510 <= final_arr_mod <= 840 and any(p.is_arrival_anchor for p in seq) and archetype != CandidateArchetype.P1_EXPRESS)
+            if (300 <= dep_min <= 660 and 510 <= final_arr_mod <= 840 and any(p.is_arrival_anchor for p in seq) and archetype != CandidateArchetype.P1_EXPRESS)
             else 0.0
         )
         len_penalty = abs(len(seq) - target_len) * 10.0
@@ -343,12 +347,16 @@ def _enumerate_candidates_for_archetype(
                     scenic_score=poi.scenic_score,
                     tradeoff_note_vi=poi.tradeoff_note_vi,
                     source_url=poi.source_url,
+                    open_minute=poi.open_minute, close_minute=poi.close_minute,
+                    is_24h=poi.is_24h, midday_sun_trap=poi.midday_sun_trap,
+                    is_locked=poi.poi_id in locked_ids,
+                    ev_max_kw=poi.ev_max_kw, ev_stall_count=poi.ev_stall_count,
+                    ev_connector_type=poi.ev_connector_type,
                 )
             )
 
         b_meta = branches_map.get(active_branch)
-        toll_delta = b_meta.toll_delta_vnd if b_meta else 0
-        estimated_toll = max(0, corridor.base_vetc_toll_vnd + toll_delta)
+        estimated_toll = registry.estimate_toll(corridor, direction, active_branch, active_start_km, active_end_km)
 
         avg_util = round(sum(p.utility_score for p in seq) / len(seq), 1)
         avg_scenic = round(sum(p.scenic_score for p in seq) / len(seq), 1)
@@ -366,11 +374,15 @@ def _enumerate_candidates_for_archetype(
             active_start_km=active_start_km,
             active_end_km=active_end_km,
         )
-        warnings: List[str] = []
+        warnings: List[str] = ['OFFLINE_ROAD_MODEL: Thời gian và hình học ngoại tuyến là ước tính từ dữ liệu cấu hình, không phải xác minh đường bộ trực tiếp.']
+        if active_branch != 'MAIN_SPINE' and not b_meta.branch_waypoints:
+            warnings.append('MISSING_BRANCH_GEOMETRY: Nhánh tuyến chưa có chuỗi tọa độ đường bộ; hình vẽ chỉ nối các điểm đã biết.')
+        if origin_access or dest_access:
+            warnings.append(f'CORRIDOR_ACCESS_ESTIMATE: Cộng {origin_access}/{dest_access} phút tiếp cận/rời tuyến (45 km/h).')
         if uv_lock_override:
             warnings.append("UV_LOCK_OVERRIDE_WARNING: Điểm dừng khóa cố định nằm trong khung giờ nắng gắt 11:00-14:30.")
         if (min_stops == 1 and len(seq) == 1
-                and seq[0].open_minute == 0 and seq[0].close_minute == 1440):
+                and seq[0].is_24h):
             warnings.append("NIGHT_SAFE_REST_ROUTING: Khung giờ đặc biệt, lộ trình chỉ giữ các trạm dừng/điểm ngắm cảnh đang mở cửa 24/7.")
 
         cand = ParetoCandidate(
@@ -394,6 +406,7 @@ def _enumerate_candidates_for_archetype(
             encoded_polyline=sliced_poly,
             stops=planned_stops,
             warnings=warnings,
+            max_wait_minutes=max_wait_minutes,
         )
         scored_candidates.append((score, cand))
 
@@ -484,6 +497,7 @@ def solve_pareto_portfolio(
     require_ev_stop = powertrain == PowertrainMode.ev and active_span_km >= 180.0
     if not portfolio and not locked and active_span_km >= 10.0 and not require_ev_stop:
         direct_drive_min = max(5, int(round((active_span_km / 52.0) * 60.0)))
+        direct_drive_min += registry.access_drive_minutes(corridor, direction, orig_c) + registry.access_drive_minutes(corridor, direction, dest_c)
         sliced_poly = registry.build_sliced_polyline(
             corridor=corridor,
             direction=direction,
@@ -493,8 +507,7 @@ def solve_pareto_portfolio(
             active_start_km=active_start_km,
             active_end_km=end_km,
         )
-        main_branch = registry.branches_by_corridor[corridor.corridor_id]["MAIN_SPINE"]
-        estimated_toll = max(0, corridor.base_vetc_toll_vnd + main_branch.toll_delta_vnd)
+        estimated_toll = registry.estimate_toll(corridor, direction, 'MAIN_SPINE', active_start_km, end_km)
         portfolio.append(
             ParetoCandidate(
                 candidate_id=CandidateArchetype.P1_EXPRESS,
@@ -516,7 +529,7 @@ def solve_pareto_portfolio(
                 tradeoff_summary_vi=f"P1: Lộ trình chạy thẳng trực tiếp ({active_span_km:.1f} km), lái xe {direct_drive_min} phút.",
                 encoded_polyline=sliced_poly,
                 stops=[],
-                warnings=["SPARSE_SLICE_DIRECT_DRIVE: Đoạn tuyến ngắn hoặc ngoài giờ mở cửa, đề xuất lộ trình chạy thẳng trực tiếp."],
+                warnings=["SPARSE_SLICE_DIRECT_DRIVE: Đoạn tuyến ngắn hoặc ngoài giờ mở cửa, đề xuất lộ trình chạy thẳng trực tiếp.", "OFFLINE_ROAD_MODEL: Thời gian và hình học ngoại tuyến là ước tính từ dữ liệu cấu hình."],
             )
         )
 

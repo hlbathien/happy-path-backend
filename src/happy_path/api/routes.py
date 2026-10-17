@@ -1,8 +1,8 @@
 import sqlite3
 import uuid
 from fastapi import APIRouter, HTTPException, Request
-from happy_path.clients.goong import GoongClient
-from happy_path.core.graph import CorridorRegistry, SessionRecord
+from happy_path.clients.goong import GoongClient, InfeasibleLiveSchedule
+from happy_path.core.graph import CorridorRegistry, SessionConflict, SessionRecord
 from happy_path.core.solver import solve_pareto_portfolio
 from happy_path.schemas.itinerary import (
     Coordinate,
@@ -21,7 +21,7 @@ router = APIRouter()
 @router.post(
     "/v1/itineraries/plan",
     response_model=PlanResponse,
-    responses={400: {"description": "Invalid corridor or slice"}, 409: {"description": "No feasible route under constraints"}},
+    responses={400: {"description": "Invalid corridor or slice"}, 409: {"description": "No feasible route under constraints"}, 422: {"description": "Pin exceeds supported corridor access range"}},
     tags=["Autopilot Planner"],
 )
 async def plan_itineraries(payload: PlanRequest, request: Request) -> PlanResponse:
@@ -35,8 +35,11 @@ async def plan_itineraries(payload: PlanRequest, request: Request) -> PlanRespon
     except ValueError as exc:
         raise HTTPException(status_code=400, detail=str(exc)) from exc
 
-    start_km = registry.project_coordinate_to_progress_km(corridor, direction, payload.origin_coords, is_origin=True)
-    end_km = registry.project_coordinate_to_progress_km(corridor, direction, payload.destination_coords, is_origin=False)
+    try:
+        start_km = registry.project_coordinate_to_progress_km(corridor, direction, payload.origin_coords, is_origin=True)
+        end_km = registry.project_coordinate_to_progress_km(corridor, direction, payload.destination_coords, is_origin=False)
+    except ValueError as exc:
+        raise HTTPException(status_code=422, detail=str(exc)) from exc
     if end_km - start_km < 10.0:
         raise HTTPException(
             status_code=400,
@@ -73,6 +76,9 @@ async def plan_itineraries(payload: PlanRequest, request: Request) -> PlanRespon
     await goong.decorate_portfolio(
         orig_coord, dest_coord, candidates, payload.vehicle_mode.value, payload.departure_iso
     )
+
+    if not candidates:
+        raise HTTPException(status_code=409, detail='LIVE_SCHEDULE_INFEASIBLE: Không còn phương án an toàn sau cập nhật giao thông.')
 
     session_id = str(uuid.uuid4())
     cand_durations = {c.candidate_id.value: c.total_duration_minutes for c in candidates}
@@ -124,25 +130,14 @@ async def mutate_itinerary(payload: MutateRequest, request: Request) -> MutateRe
     registry: CorridorRegistry = request.app.state.registry
     goong: GoongClient = request.app.state.goong
 
+    async with registry.session_lock(payload.session_id):
+        return await _mutate_locked(payload, registry, goong)
+
+
+async def _mutate_locked(payload: MutateRequest, registry: CorridorRegistry, goong: GoongClient) -> MutateResponse:
     persisted_session = registry.load_session(payload.session_id)
     if persisted_session is None:
-        if not payload.corridor_id or payload.corridor_id not in registry.corridors:
-            raise HTTPException(status_code=404, detail=f"Session '{payload.session_id}' not found.")
-        c_meta = registry.corridors[payload.corridor_id]
-        persisted_session = SessionRecord(
-            session_id=payload.session_id,
-            corridor_id=c_meta.corridor_id,
-            direction=payload.direction or "outbound",
-            departure_iso=payload.new_departure_iso or "2026-10-16T06:00:00+07:00",
-            powertrain="ice",
-            sedan_safe_only=True,
-            active_start_km=0.0,
-            active_end_km=c_meta.total_spine_km,
-            origin_lat=c_meta.origin_lat,
-            origin_lng=c_meta.origin_lng,
-            dest_lat=c_meta.dest_lat,
-            dest_lng=c_meta.dest_lng,
-        )
+        raise HTTPException(status_code=404, detail=f"Session '{payload.session_id}' not found.")
 
     # Atomic Copy-on-Write: mutate an in-memory clone first! Never persist before feasibility is verified.
     staged = persisted_session.clone()
@@ -210,9 +205,12 @@ async def mutate_itinerary(payload: MutateRequest, request: Request) -> MutateRe
             ),
         )
 
-    await goong.decorate_candidate_polyline(
-        orig_coord, dest_coord, matched, vehicle="car", departure_iso=staged.departure_iso
-    )
+    try:
+        await goong.decorate_candidate_polyline(
+            orig_coord, dest_coord, matched, vehicle="car", departure_iso=staged.departure_iso
+        )
+    except InfeasibleLiveSchedule as exc:
+        raise HTTPException(status_code=409, detail=f'{exc}; phiên làm việc được giữ nguyên.') from exc
 
     prev_duration = staged.candidate_durations.get(
         matched.candidate_id.value, matched.total_duration_minutes
@@ -221,7 +219,10 @@ async def mutate_itinerary(payload: MutateRequest, request: Request) -> MutateRe
     staged.candidate_durations[matched.candidate_id.value] = matched.total_duration_minutes
 
     # Commit atomically ONLY after feasibility and archetype integrity succeed
-    registry.save_session(staged)
+    try:
+        registry.save_session(staged)
+    except SessionConflict as exc:
+        raise HTTPException(status_code=409, detail=str(exc)) from exc
 
     sign_str = f"+{duration_delta}" if duration_delta >= 0 else f"{duration_delta}"
     delta_msg = (
@@ -242,7 +243,7 @@ async def mutate_itinerary(payload: MutateRequest, request: Request) -> MutateRe
 async def corridor_health(request: Request) -> CorridorHealthResponse:
     registry: CorridorRegistry = request.app.state.registry
     registry.reload()
-    with sqlite3.connect(registry.runtime_db_path) as conn:
+    with sqlite3.connect(registry.runtime_db_path, timeout=15) as conn:
         verified_counts = dict(conn.execute(
             "SELECT p.corridor_id,COUNT(*) FROM pois p JOIN poi_verifications v USING(poi_id) GROUP BY p.corridor_id"
         ))

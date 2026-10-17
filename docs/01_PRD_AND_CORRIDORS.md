@@ -1,5 +1,7 @@
 # 01 — Product Requirements & Physical Corridor Topologies (Freeze-Spec v3.0)
 
+**Corridor Topologies:** The topology intervals below define the physical stop-exclusion contracts for highway interchanges. Toll pricing sums registered, branch-compatible plazas inside the requested slice. Supplied tariff and road parameters remain operational estimates pending live verification.
+
 ## 1. Product Vision & Real-World Peace-of-Mind Standard
 Happy Path synthesizes **3 Pareto-optimal road-trip itineraries** (`P1_EXPRESS`, `P2_ICONIC`, `P3_SCENIC`) across 3 bidirectional Southern Vietnam corridors. A route is only acceptable if a real family or driver in Vietnam can execute it at the requested hour without encountering closed venues, impossible cross-mountain highway jumps, illegal median-barrier U-turns, midday heat exhaustion, EV battery stranding, or corrupted voice-session state.
 

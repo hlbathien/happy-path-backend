@@ -23,7 +23,23 @@ CREATE TABLE IF NOT EXISTS corridor_branches (
     diverge_km REAL NOT NULL,
     merge_km REAL NOT NULL,
     toll_delta_vnd INTEGER NOT NULL DEFAULT 0,
+    real_branch_km REAL NOT NULL DEFAULT 0,
+    branch_waypoints_json TEXT NOT NULL DEFAULT '[]',
     PRIMARY KEY (corridor_id, branch_id)
+);
+
+CREATE TABLE IF NOT EXISTS toll_plazas (
+    plaza_id TEXT PRIMARY KEY,
+    corridor_id TEXT NOT NULL REFERENCES corridors(corridor_id),
+    branch_id TEXT NOT NULL,
+    name_vi TEXT NOT NULL,
+    corridor_km REAL NOT NULL,
+    lat REAL NOT NULL,
+    lng REAL NOT NULL,
+    fee_vnd INTEGER NOT NULL CHECK (fee_vnd >= 0),
+    operator TEXT NOT NULL,
+    source_url TEXT NOT NULL,
+    FOREIGN KEY (corridor_id, branch_id) REFERENCES corridor_branches(corridor_id, branch_id)
 );
 
 CREATE TABLE IF NOT EXISTS pois (
@@ -40,6 +56,13 @@ CREATE TABLE IF NOT EXISTS pois (
     direction_allowed TEXT NOT NULL CHECK (direction_allowed IN ('BOTH', 'OUTBOUND', 'INBOUND')),
     sedan_safe INTEGER NOT NULL DEFAULT 1,
     has_ev_charge INTEGER NOT NULL DEFAULT 0,
+    ev_max_kw INTEGER NOT NULL DEFAULT 0,
+    ev_stall_count INTEGER NOT NULL DEFAULT 0,
+    ev_connector_type TEXT NOT NULL DEFAULT 'NONE',
+    is_24h INTEGER NOT NULL DEFAULT 0,
+    google_place_id TEXT NOT NULL DEFAULT '',
+    google_rating REAL,
+    user_rating_count INTEGER NOT NULL DEFAULT 0,
     midday_sun_trap INTEGER NOT NULL DEFAULT 0,
     is_arrival_anchor INTEGER NOT NULL DEFAULT 0,
     exertion_level TEXT NOT NULL DEFAULT 'LOW' CHECK (exertion_level IN ('LOW', 'MODERATE', 'HIGH')),
@@ -132,7 +155,8 @@ CREATE TABLE IF NOT EXISTS trip_sessions (
     locked_poi_ids_json TEXT NOT NULL DEFAULT '[]',
     rejected_poi_ids_json TEXT NOT NULL DEFAULT '[]',
     skip_categories_json TEXT NOT NULL DEFAULT '[]',
-    candidate_durations_json TEXT NOT NULL DEFAULT '{}'
+    candidate_durations_json TEXT NOT NULL DEFAULT '{}',
+    version INTEGER NOT NULL DEFAULT 1
 );
 
 CREATE INDEX IF NOT EXISTS idx_pois_corridor_km ON pois(corridor_id, corridor_km);

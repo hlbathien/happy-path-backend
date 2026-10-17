@@ -1,4 +1,6 @@
+import asyncio
 import fcntl
+import weakref
 import hashlib
 import json
 import math
@@ -77,6 +79,8 @@ class BranchMeta:
     diverge_km: float
     merge_km: float
     toll_delta_vnd: int
+    real_branch_km: float = 0.0
+    branch_waypoints: List[Tuple[float, float, float]] = field(default_factory=list)
 
 @dataclass(frozen=True)
 class CorridorMeta:
@@ -122,6 +126,15 @@ class POINode:
     archetype_affinity: str
     tradeoff_note_vi: str
     source_url: str
+    is_24h: bool = False
+    ev_max_kw: int = 0
+    ev_stall_count: int = 0
+    ev_connector_type: str = 'NONE'
+
+
+class SessionConflict(Exception):
+    """Another worker committed a newer version of this session."""
+
 
 @dataclass
 class SessionRecord:
@@ -141,6 +154,7 @@ class SessionRecord:
     rejected_poi_ids: Set[str] = field(default_factory=set)
     skip_categories: Set[str] = field(default_factory=set)
     candidate_durations: Dict[str, int] = field(default_factory=dict)
+    version: int = 0
 
     def clone(self) -> "SessionRecord":
         return SessionRecord(
@@ -160,6 +174,7 @@ class SessionRecord:
             rejected_poi_ids=set(self.rejected_poi_ids),
             skip_categories=set(self.skip_categories),
             candidate_durations=dict(self.candidate_durations),
+            version=self.version,
         )
 
 class CorridorRegistry:
@@ -179,6 +194,8 @@ class CorridorRegistry:
         self.pois_by_id: Dict[str, POINode] = {}
         self.edges: Dict[Tuple[str, str, str, str], Tuple[int, float, float, str]] = {}
         self.co_occurrence: Dict[Tuple[str, str, str], float] = {}
+        self.toll_plazas: List[dict] = []
+        self._session_locks = weakref.WeakValueDictionary()
         try:
             self._load()
         except sqlite3.DatabaseError as exc:
@@ -193,25 +210,33 @@ class CorridorRegistry:
         if header != SQLITE_HEADER:
             raise RuntimeError(f"Corrupt database header in {path}")
 
-    def _resolve_runtime_db_path(self, src_path: Path) -> Path:
-        self._verify_sqlite_file(src_path)
+    @staticmethod
+    def _resolve_runtime_db_path(src_path: Path) -> Path:
+        CorridorRegistry._verify_sqlite_file(src_path)
         try:
-            conn = sqlite3.connect(str(src_path), timeout=5.0)
+            conn = sqlite3.connect(str(src_path), timeout=15.0)
             try:
                 conn.execute("PRAGMA journal_mode = DELETE;")
                 conn.execute("PRAGMA synchronous = NORMAL;")
-                conn.execute("PRAGMA busy_timeout = 5000;")
+                conn.execute("PRAGMA busy_timeout = 15000;")
                 for table in ("corridors", "corridor_branches", "pois", "corridor_edges", "poi_co_occurrence", "trip_sessions"):
                     conn.execute(f"SELECT * FROM {table} LIMIT 0;")
                 try:
                     conn.execute("BEGIN IMMEDIATE;")
-                except sqlite3.OperationalError:
-                    pass  # Only a failed lock acquisition selects shared storage.
+                except sqlite3.OperationalError as exc:
+                    message = str(exc).lower()
+                    if not any(term in message for term in ('disk i/o error', 'locking protocol', 'readonly', 'read-only')):
+                        raise
                 else:
                     conn.execute("ROLLBACK;")
                     return src_path
             finally:
                 conn.close()
+        except sqlite3.OperationalError as exc:
+            if 'locked' in str(exc).lower() or 'busy' in str(exc).lower():
+                raise  # Contention never selects another authoritative store.
+            if not any(term in str(exc).lower() for term in ('disk i/o error', 'locking protocol', 'readonly', 'read-only')):
+                raise RuntimeError(f'Invalid SQLite schema in {src_path}: {exc}') from exc
         except sqlite3.DatabaseError as exc:
             raise RuntimeError(f"Corrupt SQLite schema in {src_path}: {exc}") from exc
 
@@ -229,15 +254,15 @@ class CorridorRegistry:
                     staging.replace(shared_tmp)
                 finally:
                     staging.unlink(missing_ok=True)
-            self._verify_sqlite_file(shared_tmp)
+            CorridorRegistry._verify_sqlite_file(shared_tmp)
         return shared_tmp
 
     def _connect(self) -> sqlite3.Connection:
-        conn = sqlite3.connect(str(self.runtime_db_path), timeout=5.0, isolation_level=None)
+        conn = sqlite3.connect(str(self.runtime_db_path), timeout=15.0, isolation_level=None)
         conn.row_factory = sqlite3.Row
         conn.execute("PRAGMA journal_mode = DELETE;")
         conn.execute("PRAGMA synchronous = NORMAL;")
-        conn.execute("PRAGMA busy_timeout = 5000;")
+        conn.execute("PRAGMA busy_timeout = 15000;")
         return conn
 
     def _load(self) -> None:
@@ -249,6 +274,7 @@ class CorridorRegistry:
                 p_rows = conn.execute("SELECT * FROM pois ORDER BY corridor_km ASC").fetchall()
                 e_rows = conn.execute("SELECT * FROM corridor_edges").fetchall()
                 co_rows = conn.execute("SELECT * FROM poi_co_occurrence").fetchall()
+                self.toll_plazas = [dict(row) for row in conn.execute('SELECT * FROM toll_plazas')]
                 conn.execute("SELECT * FROM trip_sessions LIMIT 0;")
             except sqlite3.Error as exc:
                 raise RuntimeError(f"Failed loading required tables from {self.runtime_db_path}: {exc}") from exc
@@ -285,6 +311,9 @@ class CorridorRegistry:
                     diverge_km=float(row["diverge_km"]),
                     merge_km=float(row["merge_km"]),
                     toll_delta_vnd=int(row["toll_delta_vnd"]),
+                    real_branch_km=float(row['real_branch_km']),
+                    branch_waypoints=[(float(p['lat']), float(p['lng']), float(p['km']))
+                                      for p in json.loads(row['branch_waypoints_json'])],
                 )
                 self.branches_by_corridor[bm.corridor_id][bm.branch_id] = bm
 
@@ -316,6 +345,10 @@ class CorridorRegistry:
                     archetype_affinity=row["archetype_affinity"],
                     tradeoff_note_vi=row["tradeoff_note_vi"],
                     source_url=row["source_url"],
+                    is_24h=bool(row['is_24h']),
+                    ev_max_kw=int(row['ev_max_kw']),
+                    ev_stall_count=int(row['ev_stall_count']),
+                    ev_connector_type=row['ev_connector_type'],
                 )
                 self.pois_by_corridor[node.corridor_id].append(node)
                 self.pois_by_id[node.poi_id] = node
@@ -366,8 +399,13 @@ class CorridorRegistry:
     ) -> float:
         if coord is None:
             return 0.0 if is_origin else corridor.total_spine_km
+        progress, _ = self.project_pin_to_corridor(corridor, direction, coord)
+        return progress
 
-        # Piecewise projection onto corridor.spine_waypoints
+    def project_pin_to_corridor(
+        self, corridor: CorridorMeta, direction: str, coord: Coordinate
+    ) -> Tuple[float, float]:
+        """Return directional progress and perpendicular access distance in km."""
         wps = corridor.spine_waypoints
         best_dist = float("inf")
         best_hcm_km = 0.0
@@ -375,24 +413,48 @@ class CorridorRegistry:
         for idx in range(len(wps) - 1):
             lat1, lng1, km1 = wps[idx]
             lat2, lng2, km2 = wps[idx + 1]
-            dx = lng2 - lng1
+            lng_scale = math.cos(math.radians(coord.lat))
+            dx = (lng2 - lng1) * lng_scale
             dy = lat2 - lat1
             seg_len_sq = dx * dx + dy * dy
             if seg_len_sq < 1e-12:
                 t = 0.0
             else:
-                t = ((coord.lng - lng1) * dx + (coord.lat - lat1) * dy) / seg_len_sq
+                t = ((coord.lng - lng1) * lng_scale * dx + (coord.lat - lat1) * dy) / seg_len_sq
                 t = max(0.0, min(1.0, t))
             proj_lat = lat1 + t * dy
-            proj_lng = lng1 + t * dx
+            proj_lng = lng1 + t * (lng2 - lng1)
             d = haversine_km(coord.lat, coord.lng, proj_lat, proj_lng)
             if d < best_dist:
                 best_dist = d
                 best_hcm_km = km1 + t * (km2 - km1)
 
-        if direction == "outbound":
-            return round(max(0.0, min(corridor.total_spine_km, best_hcm_km)), 1)
-        return round(max(0.0, min(corridor.total_spine_km, corridor.total_spine_km - best_hcm_km)), 1)
+        if best_dist > 30.0:
+            raise ValueError(f'CORRIDOR_ACCESS_OUT_OF_RANGE: pin is {best_dist:.1f} km from the supported corridor (maximum 30 km).')
+        progress = best_hcm_km if direction == 'outbound' else corridor.total_spine_km - best_hcm_km
+        return round(max(0.0, min(corridor.total_spine_km, progress)), 1), best_dist
+
+    def access_drive_minutes(self, corridor: CorridorMeta, direction: str, coord: Coordinate) -> int:
+        _, distance = self.project_pin_to_corridor(corridor, direction, coord)
+        return round(distance / 45.0 * 60) if distance > 5.0 else 0
+
+    def estimate_toll(self, corridor: CorridorMeta, direction: str, branch_id: str, start: float, end: float) -> int:
+        branch = self.branches_by_corridor[corridor.corridor_id][branch_id]
+        total = 0
+        for plaza in self.toll_plazas:
+            if plaza['corridor_id'] != corridor.corridor_id:
+                continue
+            km = plaza['corridor_km']
+            progress = km if direction == 'outbound' else corridor.total_spine_km - km
+            if not start <= progress <= end:
+                continue
+            if plaza['branch_id'] == 'MAIN_SPINE':
+                if branch_id != 'MAIN_SPINE' and branch.diverge_km < km < branch.merge_km:
+                    continue
+            elif plaza['branch_id'] != branch_id:
+                continue
+            total += plaza['fee_vnd']
+        return total
 
     def build_sliced_polyline(
         self,
@@ -412,7 +474,13 @@ class CorridorRegistry:
         """
         pts: List[Tuple[float, float]] = [(origin_coord.lat, origin_coord.lng)]
         wps_directional = []
-        for lat, lng, hcm_km in corridor.spine_waypoints:
+        branches = self.branches_by_corridor[corridor.corridor_id]
+        active = [branches[bid] for bid in {p.branch_id for p in stops} if bid != 'MAIN_SPINE']
+        waypoints = [(lat, lng, km) for lat, lng, km in corridor.spine_waypoints
+                     if not any(br.diverge_km < km < br.merge_km for br in active)]
+        waypoints += [(lat, lng, km) for br in active for lat, lng, km in br.branch_waypoints
+                      if br.diverge_km <= km <= br.merge_km]
+        for lat, lng, hcm_km in waypoints:
             prog_km = hcm_km if direction == "outbound" else (corridor.total_spine_km - hcm_km)
             if active_start_km < prog_km < active_end_km:
                 wps_directional.append((prog_km, lat, lng))
@@ -439,18 +507,33 @@ class CorridorRegistry:
         pts.append((dest_coord.lat, dest_coord.lng))
         return encode_polyline(pts)
 
+    def session_lock(self, session_id: str) -> asyncio.Lock:
+        lock = self._session_locks.get(session_id)
+        if lock is None:
+            lock = asyncio.Lock()
+            self._session_locks[session_id] = lock
+        return lock
+
     def save_session(self, record: SessionRecord) -> None:
         conn = self._connect()
         try:
             conn.execute("BEGIN IMMEDIATE;")
-            conn.execute(
-                """INSERT OR REPLACE INTO trip_sessions (
+            cursor = conn.execute(
+                """INSERT INTO trip_sessions (
                     session_id, corridor_id, direction, departure_iso, powertrain,
                     sedan_safe_only, active_start_km, active_end_km,
                     origin_lat, origin_lng, dest_lat, dest_lng,
                     locked_poi_ids_json, rejected_poi_ids_json, skip_categories_json,
-                    candidate_durations_json
-                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+                    candidate_durations_json, version
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 1)
+                ON CONFLICT(session_id) DO UPDATE SET
+                    departure_iso=excluded.departure_iso,
+                    locked_poi_ids_json=excluded.locked_poi_ids_json,
+                    rejected_poi_ids_json=excluded.rejected_poi_ids_json,
+                    skip_categories_json=excluded.skip_categories_json,
+                    candidate_durations_json=excluded.candidate_durations_json,
+                    version=trip_sessions.version+1
+                WHERE trip_sessions.version=?""",
                 (
                     record.session_id,
                     record.corridor_id,
@@ -468,11 +551,16 @@ class CorridorRegistry:
                     json.dumps(sorted(record.rejected_poi_ids)),
                     json.dumps(sorted(record.skip_categories)),
                     json.dumps(record.candidate_durations),
+                    record.version,
                 ),
             )
+            if cursor.rowcount != 1:
+                raise SessionConflict('SESSION_VERSION_CONFLICT: reload the session before retrying the mutation.')
             conn.execute("COMMIT;")
+            record.version += 1
         except Exception:
-            conn.execute("ROLLBACK;")
+            if conn.in_transaction:
+                conn.execute("ROLLBACK;")
             raise
         finally:
             conn.close()
@@ -502,6 +590,7 @@ class CorridorRegistry:
                 rejected_poi_ids=set(json.loads(row["rejected_poi_ids_json"])),
                 skip_categories=set(json.loads(row["skip_categories_json"])),
                 candidate_durations={k: int(v) for k, v in json.loads(row["candidate_durations_json"]).items()},
+                version=int(row['version']),
             )
         finally:
             conn.close()

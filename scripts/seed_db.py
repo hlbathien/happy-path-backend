@@ -5,6 +5,7 @@ Atomic SQLite Seed Compiler (Freeze-Spec v3.0):
 - Enforces physical branch interchange topology: never generates edges between MAIN_SPINE stops inside (diverge_km, merge_km) and an alternative branch.
 - Publishes atomically via os.replace from /tmp staging so concurrent readers never observe a partial database.
 """
+import argparse
 import json
 import os
 import shutil
@@ -14,7 +15,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 SCHEMA_PATH = ROOT / "data" / "schema.sql"
 SEED_JSON_PATH = ROOT / "data" / "seed_corridors.json"
-DEFAULT_DB_PATH = ROOT / "data" / "happy_path.db"
+DEFAULT_DB_PATH = Path(os.getenv('HAPPY_PATH_DB_PATH', str(ROOT / 'data' / 'happy_path.db')))
 
 TIME_BUCKETS = {
     "early_morning": (62.0, 1.00),
@@ -100,6 +101,14 @@ def build_database(db_path: Path = DEFAULT_DB_PATH) -> None:
                     (br["branch_id"], cid, br["name_vi"], br["diverge_km"], br["merge_km"], br["toll_delta_vnd"]),
                 )
 
+            for br in corr.get('branches', []):
+                conn.execute('UPDATE corridor_branches SET real_branch_km=?,branch_waypoints_json=? WHERE corridor_id=? AND branch_id=?',
+                             (br.get('real_branch_km', 0), json.dumps(br.get('branch_waypoints', [])), cid, br['branch_id']))
+            for plaza in corr.get('toll_plazas', []):
+                conn.execute('INSERT INTO toll_plazas VALUES (?,?,?,?,?,?,?,?,?,?)',
+                             (plaza['plaza_id'], cid, plaza['branch_id'], plaza['name_vi'], plaza['corridor_km'],
+                              plaza['lat'], plaza['lng'], plaza['fee_vnd'], plaza.get('operator', 'VETC/ePass'), plaza['source_url']))
+
             pois = corr["pois"]
             for p in pois:
                 conn.execute(
@@ -122,6 +131,12 @@ def build_database(db_path: Path = DEFAULT_DB_PATH) -> None:
                     ),
                 )
 
+            for p in pois:
+                conn.execute('UPDATE pois SET is_24h=?,ev_max_kw=?,ev_stall_count=?,ev_connector_type=?,google_place_id=?,google_rating=?,user_rating_count=? WHERE poi_id=?',
+                             (p.get('is_24h', int(p['open_minute'] == 0 and p['close_minute'] == 1440)),
+                              p.get('ev_max_kw', 0), p.get('ev_stall_count', 0), p.get('ev_connector_type', 'NONE'),
+                              p.get('google_place_id', ''), p.get('google_rating'), p.get('user_rating_count', 0), p['poi_id']))
+
             for co in corr.get("co_occurrence", []):
                 conn.execute(
                     """INSERT INTO poi_co_occurrence (corridor_id, from_poi_id, to_poi_id, synergy_bonus)
@@ -143,7 +158,14 @@ def build_database(db_path: Path = DEFAULT_DB_PATH) -> None:
                     dist = abs(v_km - u_km)
                     if dist < 0.5:
                         dist = 2.0
-                    poly = _encode_coords_polyline([(u_lat, u_lng), (v_lat, v_lng)])
+                    active_branches = [branches_map[bid] for bid in {u_br, v_br} if bid != 'MAIN_SPINE']
+                    lo, hi = sorted((u_km, v_km))
+                    waypoints = [(km, lat, lng) for lat, lng, km in corr['spine_waypoints']
+                                 if lo < km < hi and not any(b['diverge_km'] < km < b['merge_km'] for b in active_branches)]
+                    waypoints += [(wp['km'], wp['lat'], wp['lng']) for b in active_branches for wp in b.get('branch_waypoints', [])
+                                  if lo < wp['km'] < hi and b['diverge_km'] <= wp['km'] <= b['merge_km']]
+                    waypoints.sort(reverse=v_km < u_km)
+                    poly = _encode_coords_polyline([(u_lat, u_lng)] + [(lat, lng) for km, lat, lng in waypoints] + [(v_lat, v_lng)])
                     for bucket, (speed_kmh, detour_mult) in TIME_BUCKETS.items():
                         base_drive = (dist / speed_kmh) * 60.0
                         detour_cost = (v_det * 0.65) * detour_mult
@@ -174,4 +196,9 @@ def build_database(db_path: Path = DEFAULT_DB_PATH) -> None:
     print(f"[OK] Atomically built and published SQLite database at {db_path}")
 
 if __name__ == "__main__":
-    build_database()
+    parser = argparse.ArgumentParser(description='Compile seed data; explicit reset unless --if-missing is supplied.')
+    parser.add_argument('--db-path', type=Path, default=DEFAULT_DB_PATH)
+    parser.add_argument('--if-missing', action='store_true')
+    args = parser.parse_args()
+    if not args.if_missing or not args.db_path.exists():
+        build_database(args.db_path)
