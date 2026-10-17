@@ -18,7 +18,7 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-scraping = ["crawl4ai>=0.9.5", "yt-dlp>=2026.8.19"]
+scraping = ["crawl4ai>=0.9.5", "yt-dlp>=2026.8.19", "python-dotenv>=1.0"]
 
 [tool.setuptools.packages.find]
 where = ["src"]

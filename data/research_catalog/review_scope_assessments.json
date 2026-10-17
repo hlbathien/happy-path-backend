@@ -1,0 +1,692 @@
+[
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/lam-dong/thac-dambri",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://www.foody.vn/lam-dong/ta-hine-cafe-homestay/binh-luan",
+    "status": "coordinate_in_discovery_region",
+    "reason": "Source coordinates are 14.228 km from the nearest hcm_dalat discovery center; branch safety is unverified"
+  },
+  {
+    "source_url": "https://www.foody.vn/lam-dong/com-ga-son-ky/binh-luan",
+    "status": "coordinate_in_discovery_region",
+    "reason": "Source coordinates are 1.048 km from the nearest hcm_dalat discovery center; branch safety is unverified"
+  },
+  {
+    "source_url": "https://www.foody.vn/lam-dong/com-ga-hoang-dieu/binh-luan",
+    "status": "coordinate_in_discovery_region",
+    "reason": "Source coordinates are 1.099 km from the nearest hcm_dalat discovery center; branch safety is unverified"
+  },
+  {
+    "source_url": "https://www.foody.vn/lam-dong/chili-house-quan-cay/binh-luan",
+    "status": "coordinate_in_discovery_region",
+    "reason": "Source coordinates are 1.542 km from the nearest hcm_dalat discovery center; branch safety is unverified"
+  },
+  {
+    "source_url": "https://www.foody.vn/ninh-thuan/hang-rai/binh-luan",
+    "status": "coordinate_in_discovery_region",
+    "reason": "Source coordinates are 5.029 km from the nearest hcm_nhatrang discovery center; branch safety is unverified"
+  },
+  {
+    "source_url": "https://www.foody.vn/lam-dong/ngoc-vu-tiem-thuoc-bac-cac-mon-bo/binh-luan",
+    "status": "coordinate_in_discovery_region",
+    "reason": "Source coordinates are 5.470 km from the nearest hcm_dalat discovery center; branch safety is unverified"
+  },
+  {
+    "source_url": "https://www.foody.vn/ninh-thuan/lang-gom-bau-truc/binh-luan",
+    "status": "coordinate_in_discovery_region",
+    "reason": "Source coordinates are 8.306 km from the nearest hcm_nhatrang discovery center; branch safety is unverified"
+  },
+  {
+    "source_url": "https://www.foody.vn/lam-dong/bui-van-ngo-coffee-duong-3-thang-4/binh-luan",
+    "status": "coordinate_in_discovery_region",
+    "reason": "Source coordinates are 1.799 km from the nearest hcm_dalat discovery center; branch safety is unverified"
+  },
+  {
+    "source_url": "https://www.foody.vn/ninh-thuan/an-vat-quang-trung/binh-luan",
+    "status": "coordinate_in_discovery_region",
+    "reason": "Source coordinates are 0.251 km from the nearest hcm_nhatrang discovery center; branch safety is unverified"
+  },
+  {
+    "source_url": "https://www.foody.vn/lam-dong/a-ti-bot-chien-xap-xap-banh-trang-tron/binh-luan",
+    "status": "coordinate_in_discovery_region",
+    "reason": "Source coordinates are 1.106 km from the nearest hcm_dalat discovery center; branch safety is unverified"
+  },
+  {
+    "source_url": "https://www.foody.vn/ninh-thuan/chao-hao-ghenh-da-ho-xuan-huong/binh-luan",
+    "status": "coordinate_in_discovery_region",
+    "reason": "Source coordinates are 0.638 km from the nearest hcm_nhatrang discovery center; branch safety is unverified"
+  },
+  {
+    "source_url": "https://www.foody.vn/lam-dong/phe-la-tra-ca-phe-dac-san-nguyen-chi-thanh/binh-luan",
+    "status": "coordinate_in_discovery_region",
+    "reason": "Source coordinates are 0.410 km from the nearest hcm_dalat discovery center; branch safety is unverified"
+  },
+  {
+    "source_url": "https://www.foody.vn/ninh-thuan/mai-ly-banh-canh-cha-cuon/binh-luan",
+    "status": "coordinate_in_discovery_region",
+    "reason": "Source coordinates are 1.157 km from the nearest hcm_nhatrang discovery center; branch safety is unverified"
+  },
+  {
+    "source_url": "https://www.foody.vn/lam-dong/co-hang-an-vat-binh-dan/binh-luan",
+    "status": "coordinate_in_discovery_region",
+    "reason": "Source coordinates are 0.481 km from the nearest hcm_dalat discovery center; branch safety is unverified"
+  },
+  {
+    "source_url": "https://www.foody.vn/ninh-thuan/tiem-banh-thuy-tran-hoang-dieu/binh-luan",
+    "status": "coordinate_in_discovery_region",
+    "reason": "Source coordinates are 1.031 km from the nearest hcm_nhatrang discovery center; branch safety is unverified"
+  },
+  {
+    "source_url": "https://www.foody.vn/lam-dong/banh-uot-long-ga-chip-chip-tang-bat-ho/binh-luan",
+    "status": "coordinate_in_discovery_region",
+    "reason": "Source coordinates are 0.746 km from the nearest hcm_dalat discovery center; branch safety is unverified"
+  },
+  {
+    "source_url": "https://www.foody.vn/ninh-thuan/five-star-chicken-cho-phan-rang/binh-luan",
+    "status": "coordinate_in_discovery_region",
+    "reason": "Source coordinates are 1.012 km from the nearest hcm_nhatrang discovery center; branch safety is unverified"
+  },
+  {
+    "source_url": "https://www.foody.vn/lam-dong/banh-uot-long-ga-18/binh-luan",
+    "status": "coordinate_in_discovery_region",
+    "reason": "Source coordinates are 0.684 km from the nearest hcm_dalat discovery center; branch safety is unverified"
+  },
+  {
+    "source_url": "https://www.foody.vn/ninh-thuan/lotteria-coopmart-phan-rang/binh-luan",
+    "status": "coordinate_in_discovery_region",
+    "reason": "Source coordinates are 0.643 km from the nearest hcm_nhatrang discovery center; branch safety is unverified"
+  },
+  {
+    "source_url": "https://www.foody.vn/lam-dong/thao-hien-banh-mi-thit-nuong/binh-luan",
+    "status": "coordinate_in_discovery_region",
+    "reason": "Source coordinates are 3.255 km from the nearest hcm_dalat discovery center; branch safety is unverified"
+  },
+  {
+    "source_url": "https://www.foody.vn/ninh-thuan/banh-xeo-banh-can/binh-luan",
+    "status": "coordinate_in_discovery_region",
+    "reason": "Source coordinates are 0.169 km from the nearest hcm_nhatrang discovery center; branch safety is unverified"
+  },
+  {
+    "source_url": "https://www.foody.vn/lam-dong/lien-hoa-bakery/binh-luan",
+    "status": "coordinate_in_discovery_region",
+    "reason": "Source coordinates are 1.404 km from the nearest hcm_dalat discovery center; branch safety is unverified"
+  },
+  {
+    "source_url": "https://www.foody.vn/ninh-thuan/banh-xeo-truong-chinh/binh-luan",
+    "status": "coordinate_in_discovery_region",
+    "reason": "Source coordinates are 2.413 km from the nearest hcm_nhatrang discovery center; branch safety is unverified"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/lam-dong/an-cafe-dalat",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://www.foody.vn/ninh-thuan/banh-xeo-phan-rang/binh-luan",
+    "status": "coordinate_in_discovery_region",
+    "reason": "Source coordinates are 1.130 km from the nearest hcm_nhatrang discovery center; branch safety is unverified"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/lam-dong/an-khue-farmhouse",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://www.foody.vn/ninh-thuan/son-men-pho-bo-bun-bo/binh-luan",
+    "status": "coordinate_in_discovery_region",
+    "reason": "Source coordinates are 0.817 km from the nearest hcm_nhatrang discovery center; branch safety is unverified"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/lam-dong/bang-ghe-trang-nha-thieu-nhi-da-lat",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://www.foody.vn/ninh-thuan/lau-bo-so-ri/binh-luan",
+    "status": "coordinate_in_discovery_region",
+    "reason": "Source coordinates are 1.242 km from the nearest hcm_nhatrang discovery center; branch safety is unverified"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/lam-dong/banh-can-tang-bat-ho",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://www.foody.vn/ninh-thuan/com-ga-ngoc/binh-luan",
+    "status": "coordinate_in_discovery_region",
+    "reason": "Source coordinates are 0.922 km from the nearest hcm_nhatrang discovery center; branch safety is unverified"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/lam-dong/banh-mi-xiu-mai-hoang-dieu",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/ninh-thuan/bai-bien-binh-tien",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/lam-dong/barefoot-village",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/ninh-thuan/bai-bien-ninh-chu",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/lam-dong/biet-thu-hang-nga-crazy-house-dalat",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/ninh-thuan/bai-chuoi-ninh-thuan",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/lam-dong/buc-tuong-han-quoc-soul-and-story-da-lat",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/ninh-thuan/bai-hom-bai-rua",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/lam-dong/ca-phe-f-canh-dong-hoa",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/ninh-thuan/bai-kinh-ninh-thuan",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/lam-dong/ca-phe-little-paris",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/ninh-thuan/bai-nuoc-ngot",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/lam-dong/ca-phe-me-linh-da-lat-me-linh-coffee-garden",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/ninh-thuan/bai-phu-hon-quy",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/lam-dong/cafe-nong-trai-vui-ve-sunny-farm-da-lat-sunny-farm-da-lat",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/ninh-thuan/bai-tam-ba-dien",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/lam-dong/camp-art-da-lat",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/ninh-thuan/bai-thung-ninh-thuan",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/lam-dong/canh-dong-hoa-cam-tu-cau-da-lat-hydrangea-garden",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/ninh-thuan/bai-trang-mui-dinh",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/lam-dong/canh-dong-lavender-khu-vuc-ho-tuyen-lam",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/ninh-thuan/bao-tang-ninh-thuan",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/lam-dong/cau-go-san-may-cau-dat-farm",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/ninh-thuan/bien-ca-na",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/lam-dong/cay-cau-sat-giua-rung-da-lat",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/ninh-thuan/bo-ke-khanh-hoi",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/lam-dong/cay-thong-co-don-ho-suoi-vang",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/ninh-thuan/canh-dong-hoa-thi-la",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/lam-dong/che-he-da-lat",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/ninh-thuan/cau-an-dong",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/lam-dong/chika-farm",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/ninh-thuan/cau-ninh-chu",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/lam-dong/cho-dem-da-lat",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/ninh-thuan/cong-vien-bien-binh-son",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/lam-dong/chua-di-da",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/ninh-thuan/cung-duong-bien-701-ca-na-phan-rang",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/lam-dong/chua-di-da-thac-tam-hop",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/ninh-thuan/cung-duong-bien-702-phan-rang-binh-tien",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/lam-dong/chua-linh-an",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/ninh-thuan/dam-nai-tri-thuy",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/lam-dong/chua-linh-phuoc",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/ninh-thuan/dap-lam-cam",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/lam-dong/chua-linh-quy-phap-an",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/ninh-thuan/deo-ngoan-muc",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/lam-dong/chua-linh-son",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/ninh-thuan/dia-diem-suoi-lanh",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/lam-dong/chua-thien-vuong-co-sat-chua-tau-da-lat",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/ninh-thuan/doi-cat-nam-cuong",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/lam-dong/con-duong-mai-anh-dao-doc-da-quy-trai-mat",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/ninh-thuan/doi-cat-son-hai",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://www.foody.vn/vung-tau/khang-com-chien-mi-xao-367-thong-nhat.nxbvka/binh-luan",
+    "status": "coordinate_in_discovery_region",
+    "reason": "Source coordinates are 1.653 km from the nearest hcm_vungtau discovery center; branch safety is unverified"
+  },
+  {
+    "source_url": "https://www.foody.vn/vung-tau/quan-nhi-quynh-hai-san-tuoi-song/binh-luan",
+    "status": "coordinate_in_discovery_region",
+    "reason": "Source coordinates are 1.956 km from the nearest hcm_vungtau discovery center; branch safety is unverified"
+  },
+  {
+    "source_url": "https://www.foody.vn/vung-tau/met-tre-bun-dau-mam-tom-truong-cong-dinh/binh-luan",
+    "status": "coordinate_in_discovery_region",
+    "reason": "Source coordinates are 1.228 km from the nearest hcm_vungtau discovery center; branch safety is unverified"
+  },
+  {
+    "source_url": "https://www.foody.vn/vung-tau/bun-rieu-cua-gio/binh-luan",
+    "status": "coordinate_in_discovery_region",
+    "reason": "Source coordinates are 0.184 km from the nearest hcm_vungtau discovery center; branch safety is unverified"
+  },
+  {
+    "source_url": "https://www.foody.vn/vung-tau/ga-ac-tiem-thuoc-bac-37-xo-viet-nghe-tinh/binh-luan",
+    "status": "coordinate_in_discovery_region",
+    "reason": "Source coordinates are 1.006 km from the nearest hcm_vungtau discovery center; branch safety is unverified"
+  },
+  {
+    "source_url": "https://www.foody.vn/vung-tau/banh-khot-mien-dong/binh-luan",
+    "status": "coordinate_in_discovery_region",
+    "reason": "Source coordinates are 0.590 km from the nearest hcm_vungtau discovery center; branch safety is unverified"
+  },
+  {
+    "source_url": "https://www.foody.vn/vung-tau/a-ty-lo-banh-bong-lan-trung-muoi/binh-luan",
+    "status": "coordinate_in_discovery_region",
+    "reason": "Source coordinates are 0.347 km from the nearest hcm_vungtau discovery center; branch safety is unverified"
+  },
+  {
+    "source_url": "https://www.foody.vn/vung-tau/thuan-phuc-bun-rieu-tom/binh-luan",
+    "status": "coordinate_in_discovery_region",
+    "reason": "Source coordinates are 1.159 km from the nearest hcm_vungtau discovery center; branch safety is unverified"
+  },
+  {
+    "source_url": "https://www.foody.vn/vung-tau/mi-quang-bep-phong-nguyen-thien-thuat/binh-luan",
+    "status": "coordinate_in_discovery_region",
+    "reason": "Source coordinates are 5.121 km from the nearest hcm_vungtau discovery center; branch safety is unverified"
+  },
+  {
+    "source_url": "https://www.foody.vn/vung-tau/bo-kho-phuc/binh-luan",
+    "status": "coordinate_in_discovery_region",
+    "reason": "Source coordinates are 0.804 km from the nearest hcm_vungtau discovery center; branch safety is unverified"
+  },
+  {
+    "source_url": "https://www.foody.vn/vung-tau/co-tu-quan-nuong/binh-luan",
+    "status": "coordinate_in_discovery_region",
+    "reason": "Source coordinates are 1.000 km from the nearest hcm_vungtau discovery center; branch safety is unverified"
+  },
+  {
+    "source_url": "https://www.foody.vn/vung-tau/quan-72-bo-nuong-la-lot/binh-luan",
+    "status": "coordinate_in_discovery_region",
+    "reason": "Source coordinates are 0.534 km from the nearest hcm_vungtau discovery center; branch safety is unverified"
+  },
+  {
+    "source_url": "https://www.foody.vn/vung-tau/tra-sua-zozo/binh-luan",
+    "status": "coordinate_in_discovery_region",
+    "reason": "Source coordinates are 0.219 km from the nearest hcm_vungtau discovery center; branch safety is unverified"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/ba-ria-vung-tau/bach-dinh",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/ba-ria-vung-tau/bai-bien-dam-trau",
+    "status": "outside_drivable_corridor",
+    "reason": "Côn Đảo requires an island crossing and is outside these road corridors"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/ba-ria-vung-tau/bai-nhat-con-dao",
+    "status": "outside_drivable_corridor",
+    "reason": "Côn Đảo requires an island crossing and is outside these road corridors"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/ba-ria-vung-tau/bai-ong-dung-con-dao",
+    "status": "outside_drivable_corridor",
+    "reason": "Côn Đảo requires an island crossing and is outside these road corridors"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/ba-ria-vung-tau/bai-sau",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/ba-ria-vung-tau/bai-truoc",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/ba-ria-vung-tau/bai-vong-nguyet",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/ba-ria-vung-tau/banh-bong-lan-trung-muoi-goc-cot-dien",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/ba-ria-vung-tau/banh-canh-long-huong",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/ba-ria-vung-tau/banh-hoi-an-nhut",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/ba-ria-vung-tau/banh-khot-goc-vu-sua",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/ba-ria-vung-tau/bao-tang-vu-khi-co-vung-tau",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/ba-ria-vung-tau/ben-thuyen-vung-tau-marina",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/ba-ria-vung-tau/bien-long-hai",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/ba-ria-vung-tau/bun-rieu-cua-ba-hai-khiem",
+    "status": "outside_drivable_corridor",
+    "reason": "Côn Đảo requires an island crossing and is outside these road corridors"
+  },
+  {
+    "source_url": "https://www.foody.vn/binh-thuan/banh-can-lan-nguyet-hai-thuong-lan-ong/binh-luan",
+    "status": "coordinate_in_discovery_region",
+    "reason": "Source coordinates are 0.129 km from the nearest hcm_nhatrang discovery center; branch safety is unverified"
+  },
+  {
+    "source_url": "https://www.foody.vn/binh-thuan/banh-can-thong-nhat/binh-luan",
+    "status": "coordinate_in_discovery_region",
+    "reason": "Source coordinates are 9.882 km from the nearest hcm_nhatrang discovery center; branch safety is unverified"
+  },
+  {
+    "source_url": "https://www.foody.vn/binh-thuan/banh-canh-cha-ca-co-xi-huynh-thuc-khang/binh-luan",
+    "status": "outside_discovery_regions",
+    "reason": "Source coordinates are 20.247 km from the nearest hcm_nhatrang discovery center; branch safety is unverified"
+  },
+  {
+    "source_url": "https://www.foody.vn/binh-thuan/banh-hoi-chao-long-co-yen-tran-phu/binh-luan",
+    "status": "coordinate_in_discovery_region",
+    "reason": "Source coordinates are 0.288 km from the nearest hcm_nhatrang discovery center; branch safety is unverified"
+  },
+  {
+    "source_url": "https://www.foody.vn/binh-thuan/banh-trang-nuong-mam-ruoc-thu-khoa-huan/binh-luan",
+    "status": "coordinate_in_discovery_region",
+    "reason": "Source coordinates are 1.203 km from the nearest hcm_nhatrang discovery center; branch safety is unverified"
+  },
+  {
+    "source_url": "https://www.foody.vn/binh-thuan/banh-trang-nuong-mam-ruoc/binh-luan",
+    "status": "coordinate_in_discovery_region",
+    "reason": "Source coordinates are 0.851 km from the nearest hcm_nhatrang discovery center; branch safety is unverified"
+  },
+  {
+    "source_url": "https://www.foody.vn/binh-thuan/kfc-ton-duc-thang/binh-luan",
+    "status": "coordinate_in_discovery_region",
+    "reason": "Source coordinates are 1.250 km from the nearest hcm_nhatrang discovery center; branch safety is unverified"
+  },
+  {
+    "source_url": "https://www.foody.vn/binh-thuan/mr-crab-bo-ke-lam-vien/binh-luan",
+    "status": "coordinate_in_discovery_region",
+    "reason": "Source coordinates are 12.871 km from the nearest hcm_nhatrang discovery center; branch safety is unverified"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/binh-thuan/bai-bien-cam-binh-la-gi",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/binh-thuan/bai-bien-da-co-thach",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/binh-thuan/bai-bien-doi-duong",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/binh-thuan/bai-bien-mui-ne",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/binh-thuan/bai-bien-rang",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/binh-thuan/bai-da-ong-dia",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/binh-thuan/bao-tang-ho-chi-minh",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/binh-thuan/bao-tang-nuoc-mam-lang-chai-xua",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://www.foody.vn/khanh-hoa/banh-canh-tom-tit-thit-cua/binh-luan",
+    "status": "coordinate_in_discovery_region",
+    "reason": "Source coordinates are 0.286 km from the nearest hcm_nhatrang discovery center; branch safety is unverified"
+  },
+  {
+    "source_url": "https://www.foody.vn/khanh-hoa/bbq-un-in-beer-garden/binh-luan",
+    "status": "coordinate_in_discovery_region",
+    "reason": "Source coordinates are 2.060 km from the nearest hcm_nhatrang discovery center; branch safety is unverified"
+  },
+  {
+    "source_url": "https://www.foody.vn/khanh-hoa/bun-ca-hanh-nhien/binh-luan",
+    "status": "coordinate_in_discovery_region",
+    "reason": "Source coordinates are 0.276 km from the nearest hcm_nhatrang discovery center; branch safety is unverified"
+  },
+  {
+    "source_url": "https://www.foody.vn/khanh-hoa/com-ga-ha/binh-luan",
+    "status": "coordinate_in_discovery_region",
+    "reason": "Source coordinates are 0.261 km from the nearest hcm_nhatrang discovery center; branch safety is unverified"
+  },
+  {
+    "source_url": "https://www.foody.vn/khanh-hoa/com-ga-hai-chua/binh-luan",
+    "status": "coordinate_in_discovery_region",
+    "reason": "Source coordinates are 1.328 km from the nearest hcm_nhatrang discovery center; branch safety is unverified"
+  },
+  {
+    "source_url": "https://www.foody.vn/khanh-hoa/com-tam-suon-que-thien-an-ngo-gia-tu/binh-luan",
+    "status": "coordinate_in_discovery_region",
+    "reason": "Source coordinates are 0.286 km from the nearest hcm_nhatrang discovery center; branch safety is unverified"
+  },
+  {
+    "source_url": "https://www.foody.vn/khanh-hoa/ga-ran-burger-mcdonald-s-tttm-a-b-tower-nha-trang/binh-luan",
+    "status": "coordinate_in_discovery_region",
+    "reason": "Source coordinates are 0.694 km from the nearest hcm_nhatrang discovery center; branch safety is unverified"
+  },
+  {
+    "source_url": "https://www.foody.vn/khanh-hoa/ga-ran-kfc-nha-trang-center/binh-luan",
+    "status": "coordinate_in_discovery_region",
+    "reason": "Source coordinates are 1.100 km from the nearest hcm_nhatrang discovery center; branch safety is unverified"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/khanh-hoa/bai-bien-dai-lanh",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/khanh-hoa/bai-bien-doc-let",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/khanh-hoa/bai-dai-nha-trang",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  },
+  {
+    "source_url": "https://gody.vn/chau-a/viet-nam/khanh-hoa/bai-tranh-nha-trang",
+    "status": "province_group_only",
+    "reason": "Source province groups discovery; exact corridor/branch location is not yet independently bound"
+  }
+]

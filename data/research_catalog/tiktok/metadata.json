@@ -1,0 +1,65 @@
+[
+  {
+    "video_id": "7294550657371999506",
+    "success": 0,
+    "reason": "PUBLIC_VIDEO_EXTRACTION_FAILED",
+    "payload_json": "{}",
+    "collected_at": "2026-10-17T05:14:22.060222+00:00"
+  },
+  {
+    "video_id": "7312651511652224274",
+    "success": 0,
+    "reason": "PUBLIC_VIDEO_EXTRACTION_FAILED",
+    "payload_json": "{}",
+    "collected_at": "2026-10-17T05:14:24.657874+00:00"
+  },
+  {
+    "video_id": "7487218013414952247",
+    "success": 0,
+    "reason": "PUBLIC_VIDEO_EXTRACTION_FAILED",
+    "payload_json": "{}",
+    "collected_at": "2026-10-17T05:14:28.034437+00:00"
+  },
+  {
+    "video_id": "7275311567028194567",
+    "success": 0,
+    "reason": "PUBLIC_VIDEO_EXTRACTION_FAILED",
+    "payload_json": "{}",
+    "collected_at": "2026-10-17T05:14:30.874321+00:00"
+  },
+  {
+    "video_id": "7296474123851599122",
+    "success": 0,
+    "reason": "PUBLIC_VIDEO_EXTRACTION_FAILED",
+    "payload_json": "{}",
+    "collected_at": "2026-10-17T05:14:33.692953+00:00"
+  },
+  {
+    "video_id": "7419199062760557831",
+    "success": 0,
+    "reason": "PUBLIC_VIDEO_EXTRACTION_FAILED",
+    "payload_json": "{}",
+    "collected_at": "2026-10-17T05:14:36.459297+00:00"
+  },
+  {
+    "video_id": "7253698445356190981",
+    "success": 0,
+    "reason": "PUBLIC_VIDEO_EXTRACTION_FAILED",
+    "payload_json": "{}",
+    "collected_at": "2026-10-17T05:14:39.941070+00:00"
+  },
+  {
+    "video_id": "7265349146322701586",
+    "success": 0,
+    "reason": "PUBLIC_VIDEO_EXTRACTION_FAILED",
+    "payload_json": "{}",
+    "collected_at": "2026-10-17T05:14:47.646360+00:00"
+  },
+  {
+    "video_id": "7294241824439405826",
+    "success": 0,
+    "reason": "PUBLIC_VIDEO_EXTRACTION_FAILED",
+    "payload_json": "{}",
+    "collected_at": "2026-10-17T05:14:50.350038+00:00"
+  }
+]

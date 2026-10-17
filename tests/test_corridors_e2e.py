@@ -1,9 +1,11 @@
 import asyncio
 import hashlib
+import os
 import shutil
 import sqlite3
 import tempfile
 from concurrent.futures import ThreadPoolExecutor
+from contextlib import closing
 from datetime import datetime, timedelta, timezone
 import time
 import unicodedata
@@ -141,7 +143,8 @@ class TestHappyPathFreezeSpecV3E2E(unittest.TestCase):
             source = Path(tmpdir) / "seed.db"
             shutil.copy2(DB_PATH, source)
             path_hash = hashlib.md5(str(source.resolve()).encode("utf-8")).hexdigest()
-            shared = Path(f"/tmp/happy_path_shared_{path_hash}.db")
+            shared_directory = Path(tempfile.gettempdir()) if os.name == "nt" else Path("/tmp")
+            shared = shared_directory / f"happy_path_shared_{path_hash}.db"
             for artifact in [shared, shared.with_suffix(".lock"), shared.with_suffix(".tmp")]:
                 self.addCleanup(artifact.unlink, missing_ok=True)
 
@@ -998,7 +1001,7 @@ class TestHappyPathFreezeSpecV3E2E(unittest.TestCase):
             good_cand.review_evidence = evidence
             self.assertTrue(promote_verified_candidate_to_db(tmp_db, good_cand).accepted)
             self.assertTrue(promote_verified_candidate_to_db(tmp_db, good_cand).accepted)
-            with sqlite3.connect(tmp_db) as conn:
+            with closing(sqlite3.connect(tmp_db)) as conn:
                 stored = conn.execute("SELECT name_vi,has_ev_charge,open_minute,close_minute,tradeoff_note_vi FROM pois WHERE poi_id=?",
                                       (good_cand.poi_id,)).fetchone()
                 self.assertEqual(stored[:4], ("Trạm Nghỉ Thử Nghiệm", 1, 360, 1200))
@@ -1017,7 +1020,7 @@ class TestHappyPathFreezeSpecV3E2E(unittest.TestCase):
             good_cand.co_occurrence_sources = {"vt_nha_lon_long_son": ["https://example.org/trip/1", "https://example.org/trip/2"]}
             with self.assertRaises(sqlite3.IntegrityError):
                 promote_verified_candidate_to_db(tmp_db, good_cand)
-            with sqlite3.connect(tmp_db) as conn:
+            with closing(sqlite3.connect(tmp_db)) as conn:
                 self.assertIsNone(conn.execute("SELECT 1 FROM pois WHERE poi_id='dl_rollback_test'").fetchone())
 
 if __name__ == "__main__":

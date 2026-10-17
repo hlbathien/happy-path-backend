@@ -1,0 +1,53 @@
+[
+  {
+    "video_id": "7294550657371999506",
+    "source_url": "https://www.tiktok.com/embed/7294550657371999506",
+    "success": 1,
+    "http_status": 200,
+    "reason": "OK",
+    "collected_at": "2026-10-17T05:22:17.445834+00:00",
+    "payload": {
+      "description": "Khi livestream các bạn hay hỏi mình là đậu xe ở đâu nên nay mình làm clip hướng dẫn nha #reviewdalat #dauxedalat #ducdodalat #dalat #hoxuanhuong #ducdochiduong",
+      "published_at": null,
+      "method": "initial_httpx_embed_probe_visible_text",
+      "identity_evidence": "requested_public_embed_url",
+      "retained_from": "successful HTTP 200 probe in this crawl session; creator name omitted"
+    }
+  },
+  {
+    "video_id": "7253698445356190981",
+    "source_url": "https://www.tiktok.com/embed/7253698445356190981",
+    "success": 0,
+    "http_status": 503,
+    "reason": "OVERLOAD_PROTECTION",
+    "collected_at": "2026-10-17T05:23:50.992108+00:00",
+    "payload": {}
+  },
+  {
+    "video_id": "7275311567028194567",
+    "source_url": "https://www.tiktok.com/embed/7275311567028194567",
+    "success": 0,
+    "http_status": 503,
+    "reason": "OVERLOAD_PROTECTION",
+    "collected_at": "2026-10-17T05:24:36.327881+00:00",
+    "payload": {}
+  },
+  {
+    "video_id": "7312651511652224274",
+    "source_url": "https://www.tiktok.com/embed/7312651511652224274",
+    "success": 0,
+    "http_status": 503,
+    "reason": "OVERLOAD_PROTECTION",
+    "collected_at": "2026-10-17T05:26:06.669586+00:00",
+    "payload": {}
+  },
+  {
+    "video_id": "7265349146322701586",
+    "source_url": "https://www.tiktok.com/embed/7265349146322701586",
+    "success": 0,
+    "http_status": 503,
+    "reason": "OVERLOAD_PROTECTION",
+    "collected_at": "2026-10-17T05:29:06.962893+00:00",
+    "payload": {}
+  }
+]

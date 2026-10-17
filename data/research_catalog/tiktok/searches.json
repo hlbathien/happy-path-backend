@@ -1,0 +1,290 @@
+[
+  {
+    "query": "site:tiktok.com Dambri Bảo Lộc",
+    "corridor": "hcm_dalat",
+    "search_url": "https://www.google.com/search?q=site%3Atiktok.com+Dambri+B%E1%BA%A3o+L%E1%BB%99c&num=10&hl=vi",
+    "status": 200,
+    "reason": "OK",
+    "collected_at": "2026-10-17T05:12:03.384621+00:00"
+  },
+  {
+    "query": "site:tiktok.com Vĩnh Hy review",
+    "corridor": "hcm_nhatrang",
+    "search_url": "https://www.google.com/search?q=site%3Atiktok.com+V%C4%A9nh+Hy+review&num=10&hl=vi",
+    "status": 200,
+    "reason": "OK",
+    "collected_at": "2026-10-17T05:12:07.159482+00:00"
+  },
+  {
+    "query": "site:tiktok.com Long Sơn Vũng Tàu quán ăn",
+    "corridor": "hcm_vungtau",
+    "search_url": "https://www.google.com/search?q=site%3Atiktok.com+Long+S%C6%A1n+V%C5%A9ng+T%C3%A0u+qu%C3%A1n+%C4%83n&num=10&hl=vi",
+    "status": 200,
+    "reason": "OK",
+    "collected_at": "2026-10-17T05:12:11.043278+00:00"
+  },
+  {
+    "query": "site:tiktok.com Madagui review",
+    "corridor": "hcm_dalat",
+    "search_url": "https://www.google.com/search?q=site%3Atiktok.com+Madagui+review&num=10&hl=vi",
+    "status": 200,
+    "reason": "OK",
+    "collected_at": "2026-10-17T05:12:14.953069+00:00"
+  },
+  {
+    "query": "site:tiktok.com Cà Ná trạm dừng chân",
+    "corridor": "hcm_nhatrang",
+    "search_url": "https://www.google.com/search?q=site%3Atiktok.com+C%C3%A0+N%C3%A1+tr%E1%BA%A1m+d%E1%BB%ABng+ch%C3%A2n&num=10&hl=vi",
+    "status": 200,
+    "reason": "OK",
+    "collected_at": "2026-10-17T05:12:18.986717+00:00"
+  },
+  {
+    "query": "site:tiktok.com Suối Nghệ đồng cừu review",
+    "corridor": "hcm_vungtau",
+    "search_url": "https://www.google.com/search?q=site%3Atiktok.com+Su%E1%BB%91i+Ngh%E1%BB%87+%C4%91%E1%BB%93ng+c%E1%BB%ABu+review&num=10&hl=vi",
+    "status": 200,
+    "reason": "OK",
+    "collected_at": "2026-10-17T05:12:22.647874+00:00"
+  },
+  {
+    "query": "site:tiktok.com trạm dừng chân Tâm Châu",
+    "corridor": "hcm_dalat",
+    "search_url": "https://www.google.com/search?q=site%3Atiktok.com+tr%E1%BA%A1m+d%E1%BB%ABng+ch%C3%A2n+T%C3%A2m+Ch%C3%A2u&num=10&hl=vi",
+    "status": 200,
+    "reason": "OK",
+    "collected_at": "2026-10-17T05:12:26.299186+00:00"
+  },
+  {
+    "query": "site:tiktok.com Phan Thiết trạm sạc",
+    "corridor": "hcm_nhatrang",
+    "search_url": "https://www.google.com/search?q=site%3Atiktok.com+Phan+Thi%E1%BA%BFt+tr%E1%BA%A1m+s%E1%BA%A1c&num=10&hl=vi",
+    "status": 200,
+    "reason": "OK",
+    "collected_at": "2026-10-17T05:12:30.068538+00:00"
+  },
+  {
+    "query": "site:tiktok.com Long Thành trạm dừng chân",
+    "corridor": "hcm_vungtau",
+    "search_url": "https://www.google.com/search?q=site%3Atiktok.com+Long+Th%C3%A0nh+tr%E1%BA%A1m+d%E1%BB%ABng+ch%C3%A2n&num=10&hl=vi",
+    "status": 200,
+    "reason": "OK",
+    "collected_at": "2026-10-17T05:12:33.788690+00:00"
+  },
+  {
+    "query": "site:tiktok.com Đèo Bảo Lộc đường đi",
+    "corridor": "hcm_dalat",
+    "search_url": "https://www.google.com/search?q=site%3Atiktok.com+%C4%90%C3%A8o+B%E1%BA%A3o+L%E1%BB%99c+%C4%91%C6%B0%E1%BB%9Dng+%C4%91i&num=10&hl=vi",
+    "status": 200,
+    "reason": "OK",
+    "collected_at": "2026-10-17T05:12:37.488759+00:00"
+  },
+  {
+    "query": "site:tiktok.com Bàu Trắng đường đi",
+    "corridor": "hcm_nhatrang",
+    "search_url": "https://www.google.com/search?q=site%3Atiktok.com+B%C3%A0u+Tr%E1%BA%AFng+%C4%91%C6%B0%E1%BB%9Dng+%C4%91i&num=10&hl=vi",
+    "status": 200,
+    "reason": "OK",
+    "collected_at": "2026-10-17T05:12:41.250600+00:00"
+  },
+  {
+    "query": "site:tiktok.com Phú Mỹ trạm sạc",
+    "corridor": "hcm_vungtau",
+    "search_url": "https://www.google.com/search?q=site%3Atiktok.com+Ph%C3%BA+M%E1%BB%B9+tr%E1%BA%A1m+s%E1%BA%A1c&num=10&hl=vi",
+    "status": 200,
+    "reason": "OK",
+    "collected_at": "2026-10-17T05:12:45.112254+00:00"
+  },
+  {
+    "query": "site:tiktok.com Di Linh ăn uống",
+    "corridor": "hcm_dalat",
+    "search_url": "https://www.google.com/search?q=site%3Atiktok.com+Di+Linh+%C4%83n+u%E1%BB%91ng&num=10&hl=vi",
+    "status": 200,
+    "reason": "OK",
+    "collected_at": "2026-10-17T05:12:48.801326+00:00"
+  },
+  {
+    "query": "site:tiktok.com Mũi Né review",
+    "corridor": "hcm_nhatrang",
+    "search_url": "https://www.google.com/search?q=site%3Atiktok.com+M%C5%A9i+N%C3%A9+review&num=10&hl=vi",
+    "status": 200,
+    "reason": "OK",
+    "collected_at": "2026-10-17T05:12:52.560974+00:00"
+  },
+  {
+    "query": "site:tiktok.com Bà Rịa quán ăn",
+    "corridor": "hcm_vungtau",
+    "search_url": "https://www.google.com/search?q=site%3Atiktok.com+B%C3%A0+R%E1%BB%8Ba+qu%C3%A1n+%C4%83n&num=10&hl=vi",
+    "status": 200,
+    "reason": "OK",
+    "collected_at": "2026-10-17T05:12:56.295959+00:00"
+  },
+  {
+    "query": "site:tiktok.com Đức Trọng trạm sạc",
+    "corridor": "hcm_dalat",
+    "search_url": "https://www.google.com/search?q=site%3Atiktok.com+%C4%90%E1%BB%A9c+Tr%E1%BB%8Dng+tr%E1%BA%A1m+s%E1%BA%A1c&num=10&hl=vi",
+    "status": 200,
+    "reason": "OK",
+    "collected_at": "2026-10-17T05:13:00.076017+00:00"
+  },
+  {
+    "query": "site:tiktok.com Phan Rang quán ăn",
+    "corridor": "hcm_nhatrang",
+    "search_url": "https://www.google.com/search?q=site%3Atiktok.com+Phan+Rang+qu%C3%A1n+%C4%83n&num=10&hl=vi",
+    "status": 200,
+    "reason": "OK",
+    "collected_at": "2026-10-17T05:13:03.734332+00:00"
+  },
+  {
+    "query": "site:tiktok.com Vũng Tàu bãi đỗ xe",
+    "corridor": "hcm_vungtau",
+    "search_url": "https://www.google.com/search?q=site%3Atiktok.com+V%C5%A9ng+T%C3%A0u+b%C3%A3i+%C4%91%E1%BB%97+xe&num=10&hl=vi",
+    "status": 200,
+    "reason": "OK",
+    "collected_at": "2026-10-17T05:13:07.603452+00:00"
+  },
+  {
+    "query": "site:tiktok.com Pongour giá vé",
+    "corridor": "hcm_dalat",
+    "search_url": "https://www.google.com/search?q=site%3Atiktok.com+Pongour+gi%C3%A1+v%C3%A9&num=10&hl=vi",
+    "status": 200,
+    "reason": "OK",
+    "collected_at": "2026-10-17T05:13:11.361906+00:00"
+  },
+  {
+    "query": "site:tiktok.com Cam Ranh trạm dừng chân",
+    "corridor": "hcm_nhatrang",
+    "search_url": "https://www.google.com/search?q=site%3Atiktok.com+Cam+Ranh+tr%E1%BA%A1m+d%E1%BB%ABng+ch%C3%A2n&num=10&hl=vi",
+    "status": 200,
+    "reason": "OK",
+    "collected_at": "2026-10-17T05:13:15.217626+00:00"
+  },
+  {
+    "query": "site:tiktok.com Hồ Đá Xanh review",
+    "corridor": "hcm_vungtau",
+    "search_url": "https://www.google.com/search?q=site%3Atiktok.com+H%E1%BB%93+%C4%90%C3%A1+Xanh+review&num=10&hl=vi",
+    "status": 200,
+    "reason": "OK",
+    "collected_at": "2026-10-17T05:13:18.920171+00:00"
+  },
+  {
+    "query": "site:tiktok.com Datanla review",
+    "corridor": "hcm_dalat",
+    "search_url": "https://www.google.com/search?q=site%3Atiktok.com+Datanla+review&num=10&hl=vi",
+    "status": 200,
+    "reason": "OK",
+    "collected_at": "2026-10-17T05:13:22.550999+00:00"
+  },
+  {
+    "query": "site:tiktok.com Nha Trang bãi đỗ xe",
+    "corridor": "hcm_nhatrang",
+    "search_url": "https://www.google.com/search?q=site%3Atiktok.com+Nha+Trang+b%C3%A3i+%C4%91%E1%BB%97+xe&num=10&hl=vi",
+    "status": 200,
+    "reason": "OK",
+    "collected_at": "2026-10-17T05:13:26.600805+00:00"
+  },
+  {
+    "query": "site:tiktok.com Hải đăng Vũng Tàu đường đi",
+    "corridor": "hcm_vungtau",
+    "search_url": "https://www.google.com/search?q=site%3Atiktok.com+H%E1%BA%A3i+%C4%91%C4%83ng+V%C5%A9ng+T%C3%A0u+%C4%91%C6%B0%E1%BB%9Dng+%C4%91i&num=10&hl=vi",
+    "status": 200,
+    "reason": "OK",
+    "collected_at": "2026-10-17T05:13:30.515982+00:00"
+  },
+  {
+    "query": "site:tiktok.com Đà Lạt bãi đỗ xe",
+    "corridor": "hcm_dalat",
+    "search_url": "https://www.google.com/search?q=site%3Atiktok.com+%C4%90%C3%A0+L%E1%BA%A1t+b%C3%A3i+%C4%91%E1%BB%97+xe&num=10&hl=vi",
+    "status": 200,
+    "reason": "OK",
+    "collected_at": "2026-10-17T05:13:34.397873+00:00"
+  },
+  {
+    "query": "site:tiktok.com Tuy Phong quán ăn",
+    "corridor": "hcm_nhatrang",
+    "search_url": "https://www.google.com/search?q=site%3Atiktok.com+Tuy+Phong+qu%C3%A1n+%C4%83n&num=10&hl=vi",
+    "status": 200,
+    "reason": "OK",
+    "collected_at": "2026-10-17T05:13:38.464090+00:00"
+  },
+  {
+    "query": "site:tiktok.com Bến thuyền Marina Vũng Tàu review",
+    "corridor": "hcm_vungtau",
+    "search_url": "https://www.google.com/search?q=site%3Atiktok.com+B%E1%BA%BFn+thuy%E1%BB%81n+Marina+V%C5%A9ng+T%C3%A0u+review&num=10&hl=vi",
+    "status": 200,
+    "reason": "OK",
+    "collected_at": "2026-10-17T05:13:42.381664+00:00"
+  },
+  {
+    "query": "site:tiktok.com Dầu Giây trạm dừng chân",
+    "corridor": "hcm_dalat",
+    "search_url": "https://www.google.com/search?q=site%3Atiktok.com+D%E1%BA%A7u+Gi%C3%A2y+tr%E1%BA%A1m+d%E1%BB%ABng+ch%C3%A2n&num=10&hl=vi",
+    "status": 200,
+    "reason": "OK",
+    "collected_at": "2026-10-17T05:13:46.213624+00:00"
+  },
+  {
+    "query": "site:tiktok.com Hàm Tân trạm dừng chân",
+    "corridor": "hcm_nhatrang",
+    "search_url": "https://www.google.com/search?q=site%3Atiktok.com+H%C3%A0m+T%C3%A2n+tr%E1%BA%A1m+d%E1%BB%ABng+ch%C3%A2n&num=10&hl=vi",
+    "status": 200,
+    "reason": "OK",
+    "collected_at": "2026-10-17T05:13:50.044799+00:00"
+  },
+  {
+    "query": "site:tiktok.com Long Sơn nhà bè review",
+    "corridor": "hcm_vungtau",
+    "search_url": "https://www.google.com/search?q=site%3Atiktok.com+Long+S%C6%A1n+nh%C3%A0+b%C3%A8+review&num=10&hl=vi",
+    "status": 200,
+    "reason": "OK",
+    "collected_at": "2026-10-17T05:13:53.754980+00:00"
+  },
+  {
+    "query": "site:tiktok.com Định Quán quán ăn",
+    "corridor": "hcm_dalat",
+    "search_url": "https://www.google.com/search?q=site%3Atiktok.com+%C4%90%E1%BB%8Bnh+Qu%C3%A1n+qu%C3%A1n+%C4%83n&num=10&hl=vi",
+    "status": 200,
+    "reason": "OK",
+    "collected_at": "2026-10-17T05:13:57.760062+00:00"
+  },
+  {
+    "query": "site:tiktok.com Hang Rái giá vé",
+    "corridor": "hcm_nhatrang",
+    "search_url": "https://www.google.com/search?q=site%3Atiktok.com+Hang+R%C3%A1i+gi%C3%A1+v%C3%A9&num=10&hl=vi",
+    "status": 200,
+    "reason": "OK",
+    "collected_at": "2026-10-17T05:14:01.570055+00:00"
+  },
+  {
+    "query": "site:tiktok.com Vũng Tàu trạm sạc",
+    "corridor": "hcm_vungtau",
+    "search_url": "https://www.google.com/search?q=site%3Atiktok.com+V%C5%A9ng+T%C3%A0u+tr%E1%BA%A1m+s%E1%BA%A1c&num=10&hl=vi",
+    "status": 200,
+    "reason": "OK",
+    "collected_at": "2026-10-17T05:14:05.418489+00:00"
+  },
+  {
+    "query": "site:tiktok.com Bảo Lộc trạm sạc",
+    "corridor": "hcm_dalat",
+    "search_url": "https://www.google.com/search?q=site%3Atiktok.com+B%E1%BA%A3o+L%E1%BB%99c+tr%E1%BA%A1m+s%E1%BA%A1c&num=10&hl=vi",
+    "status": 200,
+    "reason": "OK",
+    "collected_at": "2026-10-17T05:14:09.264976+00:00"
+  },
+  {
+    "query": "site:tiktok.com Suối Tiên Mũi Né review",
+    "corridor": "hcm_nhatrang",
+    "search_url": "https://www.google.com/search?q=site%3Atiktok.com+Su%E1%BB%91i+Ti%C3%AAn+M%C5%A9i+N%C3%A9+review&num=10&hl=vi",
+    "status": 200,
+    "reason": "OK",
+    "collected_at": "2026-10-17T05:14:12.909589+00:00"
+  },
+  {
+    "query": "site:tiktok.com Bánh sữa Long Thành review",
+    "corridor": "hcm_vungtau",
+    "search_url": "https://www.google.com/search?q=site%3Atiktok.com+B%C3%A1nh+s%E1%BB%AFa+Long+Th%C3%A0nh+review&num=10&hl=vi",
+    "status": 200,
+    "reason": "OK",
+    "collected_at": "2026-10-17T05:14:16.608405+00:00"
+  }
+]

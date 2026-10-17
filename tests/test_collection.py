@@ -11,6 +11,42 @@ from happy_path.core.collection import _youtube, collect_candidates
 
 
 class TestCollectionEvidence(unittest.IsolatedAsyncioTestCase):
+    async def test_http_error_page_cannot_supply_rating_evidence(self):
+        name = "Thác Dambri"
+        body = '<script type="application/ld+json">' + json.dumps({
+            "@type": "TouristAttraction", "name": name,
+            "aggregateRating": {"ratingValue": 4.9},
+        }) + '</script>'
+
+        class Crawler:
+            def __init__(self, **kwargs):
+                pass
+
+            async def __aenter__(self):
+                return self
+
+            async def __aexit__(self, *args):
+                pass
+
+            async def arun(self, url, **kwargs):
+                return SimpleNamespace(url=url, html=body, success=True, status_code=404,
+                                       markdown=SimpleNamespace(raw_markdown="Page not found"))
+
+        transport = SimpleNamespace(AsyncWebCrawler=Crawler, BrowserConfig=lambda **kwargs: kwargs,
+                                    CrawlerRunConfig=lambda **kwargs: kwargs, CacheMode=SimpleNamespace(BYPASS="bypass"))
+        target = dict(poi_id="dl_thac_dambri", corridor_id="hcm_dalat", name_vi=name,
+                      commune_name="Đam Bri", source_url="https://example.org/missing")
+        with tempfile.TemporaryDirectory() as directory, patch.dict("sys.modules", {"crawl4ai": transport}), patch(
+            "happy_path.core.collection._youtube", new=AsyncMock(return_value=[])
+        ), patch("happy_path.core.collection._facebook", new=AsyncMock(return_value=[])):
+            log = Path(directory) / "sources.jsonl"
+            candidates = await collect_candidates(DB_PATH, "", "https://rsapi.goong.io", log, [target])
+            self.assertIsNone(candidates[0].lifetime_rating)
+            receipts = [json.loads(line) for line in log.read_text(encoding="utf-8").splitlines()]
+            web = [row for row in receipts if row["engine"] == "crawl4ai"]
+            self.assertTrue(web)
+            self.assertTrue(all(not row["success"] and row["reason"] == "WEB_HTTP_404" for row in web))
+
     async def test_unrelated_youtube_results_cannot_become_venue_evidence(self):
         venue = "Đồi Cừu Suối Nghệ"
         for relevant in (False, True):

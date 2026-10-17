@@ -9,6 +9,7 @@ import json
 import os
 import shutil
 import sqlite3
+import tempfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -58,7 +59,8 @@ def _is_pair_physically_connected(u_branch: str, u_km: float, v_branch: str, v_k
 
 def build_database(db_path: Path = DEFAULT_DB_PATH) -> None:
     db_path.parent.mkdir(parents=True, exist_ok=True)
-    tmp_db = Path(f"/tmp/happy_path_seed_staging_{os.getpid()}.db")
+    staging_directory = Path(tempfile.gettempdir()) if os.name == "nt" else Path("/tmp")
+    tmp_db = staging_directory / f"happy_path_seed_staging_{os.getpid()}.db"
     if tmp_db.exists():
         tmp_db.unlink()
 
