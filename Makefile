@@ -1,10 +1,11 @@
 .PHONY: setup seed migrate test openapi run clean
 
-PYTHON ?= python3
+PYTHON ?= .venv/bin/python
+UV ?= uv
 PYTHONPATH := src
 
 setup:
-	$(PYTHON) -m pip install -e . pyyaml
+	$(UV) sync --frozen --python 3.10
 
 # Explicit destructive reset; serving, export and tests never depend on this target.
 seed:

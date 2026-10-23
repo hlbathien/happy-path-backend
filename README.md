@@ -15,9 +15,9 @@ Our data describes where you can drive, where you can stop, and whether that sto
 ## Getting Started
 
 ```bash
-# On a fresh checkout, create a virtual environment if needed
-python3 -m venv .venv
-make setup PYTHON=.venv/bin/python
+# Ubuntu 22.04 / Python 3.10; install the pinned environment manager
+python3 -m pip install uv==0.12.21
+make setup
 
 # Configure environment variables (never commit credentials)
 cp .env.example .env
@@ -52,6 +52,25 @@ make migrate PYTHON=.venv/bin/python    # Additive schema upgrade; honors HAPPY_
 
 **`make seed` is an explicit destructive reset**, not a startup prerequisite. For an existing production DB, use `make migrate` instead.
 
+## Reproducible Team Handoff
+
+`uv.lock` pins the backend and optional scraping dependency graph with artifact hashes. Use **Python 3.10 on Ubuntu 22.04** and **uv 0.12.21**, then `make setup`; do not use an unlocked `pip install -e .` for reproduction. CI installs this lock, runs the full disposable-database suite, and checks the OpenAPI export. `Dockerfile` uses the same frozen lock.
+
+```bash
+make setup
+make test
+make openapi
+git diff --exit-code -- openapi.yaml
+```
+
+The authoritative reproducible inputs are `data/schema.sql` and `data/seed_corridors.json`, together with the checked-in catalog, intake evidence, provenance, and source package. Runtime SQLite databases and user sessions are intentionally not distributed. Startup rebuilds a missing DB from the seed; existing deployments must migrate instead of resetting. `.env` and local browser/agent state are excluded; `.env.example` contains blank credential placeholders only.
+
+**Scope:** reproduction means the locked software, checked-in data, offline planning rules, and test outcomes—not byte-identical HTTP responses. Session IDs and timings vary. Goong traffic, scraped pages, authenticated Facebook access, browser binaries, and future evidence change independently; live runs require team-provided credentials and are not frozen by this repository. Container OS packages and image tags are not an archival bit-for-bit build guarantee.
+
+### Expanding to more Vietnam routes
+
+The current dataset covers only HCMC–Đà Lạt, HCMC–Nha Trang, and HCMC–Vũng Tàu; it is not nationwide coverage. Add evidence-backed corridor spines, directional branches/interchanges, branch-bound toll plazas, and venue metadata to the seed/catalog intake. Follow [`docs/01_PRD_AND_CORRIDORS.md`](docs/01_PRD_AND_CORRIDORS.md), [`docs/02_ARCHITECTURE_AND_SOLVER.md`](docs/02_ARCHITECTURE_AND_SOLVER.md), and [`docs/03_SCRAPING_PLAYBOOK_2026.md`](docs/03_SCRAPING_PLAYBOOK_2026.md). Validate each new corridor against the nine invariants in `AGENTS.md`, rebuild a disposable database, and run `make test` before publishing. Research observations are not verified venue admissions or real-world safety guarantees.
+
 ## Data Intake & Provenance
 
 ```bash
@@ -65,7 +84,7 @@ Configured branch controls and branch-bound toll plazas are retained separately 
 For candidate scraping and collection:
 
 ```bash
-.venv/bin/python -m pip install -e '.[scraping]'
+uv sync --frozen --extra scraping --python 3.10
 PYTHONPATH=src .venv/bin/python scripts/scrape_corridors.py --targets data/ingestion_targets.json --promote-to-db
 ```
 
