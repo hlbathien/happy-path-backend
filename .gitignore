@@ -47,10 +47,6 @@ htmlcov/
 .tox/
 .nox/
 
-# Runtime databases are rebuilt from the committed schema and seed.
-data/*.db
-data/*.sqlite3
-
 # Database temporary files & locks
 *.db-journal
 *.db-wal

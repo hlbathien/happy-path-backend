@@ -10,6 +10,4 @@
 .env
 .env.*
 !.env.example
-data/*.db
 data/*.db-*
-happy-path-data-package.zip

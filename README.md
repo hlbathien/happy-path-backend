@@ -63,7 +63,7 @@ make openapi
 git diff --exit-code -- openapi.yaml
 ```
 
-The authoritative reproducible inputs are `data/schema.sql` and `data/seed_corridors.json`, together with the checked-in catalog, intake evidence, provenance, and source package. Runtime SQLite databases and user sessions are intentionally not distributed. Startup rebuilds a missing DB from the seed; existing deployments must migrate instead of resetting. `.env` and local browser/agent state are excluded; `.env.example` contains blank credential placeholders only.
+The authoritative reproducible inputs are `data/schema.sql` and `data/seed_corridors.json`, together with the checked-in catalog, intake evidence, provenance, and source package. The current SQLite snapshot is also included at `data/happy_path.db`, including its stored trip sessions and ingestion audit. Treat this as a development snapshot, not an empty production database. Docker includes the same snapshot and source package. Startup rebuilds a missing DB from the seed; existing deployments must migrate instead of resetting. `.env` and local browser/agent state are excluded; `.env.example` contains blank credential placeholders only.
 
 **Scope:** reproduction means the locked software, checked-in data, offline planning rules, and test outcomes—not byte-identical HTTP responses. Session IDs and timings vary. Goong traffic, scraped pages, authenticated Facebook access, browser binaries, and future evidence change independently; live runs require team-provided credentials and are not frozen by this repository. Container OS packages and image tags are not an archival bit-for-bit build guarantee.
 
